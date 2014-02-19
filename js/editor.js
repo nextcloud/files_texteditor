@@ -24,6 +24,7 @@ function setSyntaxMode(ext) {
 	filetype["jsm"] = "javascript";
 	filetype["json"] = "json";
 	filetype["latex"] = "latex";
+	filetype["tex"] = "latex";
 	filetype["less"] = "less";
 	filetype["ly"] = "latex";
 	filetype["ily"] = "latex";
