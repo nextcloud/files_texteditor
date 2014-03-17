@@ -363,6 +363,10 @@ $(document).ready(function () {
 			showFileEditor($('#dir').val(), filename);
 		});
 		FileActions.setDefault('application/x-pearl', 'Edit');
+		FileActions.register('application/x-tex', 'Edit', OC.PERMISSION_READ, '', function (filename) {
+			showFileEditor($('#dir').val(), filename);
+		});
+		FileActions.setDefault('application/x-tex', 'Edit');
 
 	}
 	
