@@ -19,6 +19,7 @@ function setSyntaxMode(ext) {
 	filetype["haxe"] = "hx";
 	filetype["htm"] = "html";
 	filetype["html"] = "html";
+	filetype["tt"] = "html";
 	filetype["java"] = "java";
 	filetype["js"] = "javascript";
 	filetype["jsm"] = "javascript";
