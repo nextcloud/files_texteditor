@@ -25,6 +25,7 @@ function setSyntaxMode(ext) {
 	filetype["jsm"] = "javascript";
 	filetype["json"] = "json";
 	filetype["latex"] = "latex";
+	filetype["tex"] = "latex";
 	filetype["less"] = "less";
 	filetype["ly"] = "latex";
 	filetype["ily"] = "latex";
@@ -363,6 +364,10 @@ $(document).ready(function () {
 			showFileEditor($('#dir').val(), filename);
 		});
 		FileActions.setDefault('application/x-pearl', 'Edit');
+		FileActions.register('application/x-tex', 'Edit', OC.PERMISSION_READ, '', function (filename) {
+			showFileEditor($('#dir').val(), filename);
+		});
+		FileActions.setDefault('application/x-tex', 'Edit');
 
 	}
 	
