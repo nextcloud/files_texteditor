@@ -255,7 +255,9 @@ function showFileEditor(dir, filename) {
 								sender: "editor"
 							},
 							exec: function () {
-								doFileSave();
+								if(!$('#editor').attr('data-saving')){
+									doFileSave();
+								}
 							}
 						});
 						giveEditorFocus();
