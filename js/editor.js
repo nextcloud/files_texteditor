@@ -71,8 +71,8 @@ function showControls(dir, filename, writeable) {
 	}
 	editorbarhtml += '<label for="editorseachval">' + t('files_texteditor', 'Search');
 	editorbarhtml += '</label><input type="text" name="editorsearchval" id="editorsearchval">';
-	editorbarhtml += '<button id="editor_close">';
-	editorbarhtml += t('files_texteditor', 'Close') + '</button></div>';
+	editorbarhtml += '<button id="editor_close" class="icon-close"></button>';
+	editorbarhtml += '</div>';
 
 	$('#controls').append(editorbarhtml);
 	$('#editorcontrols').show();
