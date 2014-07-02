@@ -138,6 +138,8 @@ function doFileSave() {
 	if (editorIsShown()) {
 		// Changed contents?
 		if ($('#editor').attr('data-edited') == 'true') {
+			$('#editor').attr('data-edited', 'false');
+			$('#editor').attr('data-saving', 'true');
 			// Get file path
 			var path = $('#editor').attr('data-dir') + '/' + $('#editor').attr('data-filename');
 			// Get original mtime
@@ -155,18 +157,21 @@ function doFileSave() {
 					$('#editor_save').text(t('files_texteditor', 'Save'));
 					$('#notification').html(t('files_texteditor', 'Failed to save file'));
 					$('#notification').fadeIn();
-					$('#editor_save').live('click', doFileSave);
+					$('#editor').attr('data-edited', 'true');
+					$('#editor').attr('data-saving', 'false');
 				} else {
 					// Save OK
 					// Update mtime
 					$('#editor').attr('data-mtime', jsondata.data.mtime);
 					$('#editor_save').text(t('files_texteditor', 'Save'));
-					$("#editor_save").live('click', doFileSave);
 					// Update titles
-					$('#editor').attr('data-edited', 'false');
-					$('.crumb.last a').text($('#editor').attr('data-filename'));
-					document.title = $('#editor').attr('data-filename') + ' - ownCloud';
+					if($('#editor').attr('data-edited') != 'true') {
+						$('.crumb.last a').text($('#editor').attr('data-filename'));
+						document.title = $('#editor').attr('data-filename') + ' - ownCloud';
+					}
+					$('#editor').attr('data-saving', 'false');
 				}
+				$('#editor_save').live('click', doFileSave);
 			}, 'json');
 		}
 	}
@@ -237,8 +242,10 @@ function showFileEditor(dir, filename) {
 						window.aceEditor.getSession().on('change', function () {
 							if ($('#editor').attr('data-edited') != 'true') {
 								$('#editor').attr('data-edited', 'true');
-								$('.crumb.last a').text($('.crumb.last a').text() + ' *');
-								document.title = $('#editor').attr('data-filename') + ' * - ownCloud';
+								if($('#editor').attr('data-saving') != 'true') {
+									$('.crumb.last a').text($('.crumb.last a').text() + ' *');
+									document.title = $('#editor').attr('data-filename') + ' * - ownCloud';
+								}
 							}
 						});
 						// Add the ctrl+s event
@@ -250,7 +257,9 @@ function showFileEditor(dir, filename) {
 								sender: "editor"
 							},
 							exec: function () {
-								doFileSave();
+								if(!$('#editor').attr('data-saving')){
+									doFileSave();
+								}
 							}
 						});
 						giveEditorFocus();
