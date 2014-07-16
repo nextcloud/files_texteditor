@@ -71,11 +71,14 @@ function showControls(dir, filename, writeable) {
 	}
 	editorbarhtml += '<label for="editorseachval">' + t('files_texteditor', 'Search');
 	editorbarhtml += '</label><input type="text" name="editorsearchval" id="editorsearchval">';
-	editorbarhtml += '<button id="editor_close" class="icon-close"></button>';
+	editorbarhtml += '<button id="editor_close" class="icon-close svg"></button>';
 	editorbarhtml += '</div>';
 
 	$('#controls').append(editorbarhtml);
 	$('#editorcontrols').show();
+	if (!OC.Util.hasSVGSupport()) {
+		OC.Util.replaceSVG($('#editorcontrols'));
+	}
 }
 
 function bindControlEvents() {
