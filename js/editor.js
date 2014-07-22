@@ -369,10 +369,10 @@ $(document).ready(function () {
 			showFileEditor($('#dir').val(), filename);
 		});
 		FileActions.setDefault('application/javascript', 'Edit');
-		FileActions.register('application/x-pearl', 'Edit', OC.PERMISSION_READ, '', function (filename) {
+		FileActions.register('application/x-perl', 'Edit', OC.PERMISSION_READ, '', function (filename) {
 			showFileEditor($('#dir').val(), filename);
 		});
-		FileActions.setDefault('application/x-pearl', 'Edit');
+		FileActions.setDefault('application/x-perl', 'Edit');
 		FileActions.register('application/x-tex', 'Edit', OC.PERMISSION_READ, '', function (filename) {
 			showFileEditor($('#dir').val(), filename);
 		});
