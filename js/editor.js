@@ -189,7 +189,7 @@ function giveEditorFocus() {
 // Loads the file editor. Accepts two parameters, dir and filename.
 function showFileEditor(dir, filename) {
 	// Check if unsupported file format
-	if(FileActions.getCurrentMimeType() === 'text/rtf') {
+	if(FileActions.currentFile && FileActions.getCurrentMimeType() === 'text/rtf') {
 		// Download the file instead.
 		window.location = OC.filePath('files', 'ajax', 'download.php') + '?files=' + encodeURIComponent(filename) + '&dir=' + encodeURIComponent($('#dir').val());
 	} else {
