@@ -213,6 +213,7 @@ function showFileEditor(dir, filename) {
 					if (result.status === 'success') {
 						// Save mtime
 						$('#editor').attr('data-mtime', result.data.mtime);
+						$('#editor').attr('data-saving', 'false');
 						// Initialise the editor
 						if (window.FileList){
 							FileList.setViewerMode(true);
@@ -260,7 +261,7 @@ function showFileEditor(dir, filename) {
 								sender: "editor"
 							},
 							exec: function () {
-								if(!$('#editor').attr('data-saving')){
+								if($('#editor').attr('data-saving') == 'false'){
 									doFileSave();
 								}
 							}
