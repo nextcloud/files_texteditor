@@ -28,12 +28,14 @@ $filecontents = $_POST['filecontents'];
 $path = isset($_POST['path']) ? $_POST['path'] : '';
 $mtime = isset($_POST['mtime']) ? $_POST['mtime'] : '';
 
+$l = OC_L10N::get('files_texteditor');
+
 if($path != '' && $mtime != '') {
 	// Get file mtime
 	$filemtime = \OC\Files\Filesystem::filemtime($path);
 	if($mtime != $filemtime) {
 		// Then the file has changed since opening
-		OCP\JSON::error();
+		OCP\JSON::error(array('data' => array( 'message' => $l->t('Cannot save file as it has been modified since opening'))));
 		OCP\Util::writeLog(
 			'files_texteditor',
 			"File: ".$path." modified since opening.",
@@ -52,7 +54,7 @@ if($path != '' && $mtime != '') {
 			OCP\JSON::success(array('data' => array('mtime' => $newmtime, 'size' => $newsize)));
 		} else {
 			// Not writeable!
-			OCP\JSON::error(array('data' => array( 'message' => 'Insufficient permissions')));
+			OCP\JSON::error(array('data' => array( 'message' => $l->t('Insufficient permissions'))));
 			OCP\Util::writeLog(
 				'files_texteditor',
 				"User does not have permission to write to file: ".$path,
@@ -61,9 +63,9 @@ if($path != '' && $mtime != '') {
 		}
 	}
 } else if($path == '') {
-	OCP\JSON::error(array('data' => array( 'message' => 'File path not supplied')));
+	OCP\JSON::error(array('data' => array( 'message' => $l->t('File path not supplied'))));
 	OCP\Util::writeLog('files_texteditor','No file path supplied', OCP\Util::ERROR);
 } else if($mtime == '') {
-	OCP\JSON::error(array('data' => array( 'message' => 'File mtime not supplied')));
+	OCP\JSON::error(array('data' => array( 'message' => $l->t('File mtime not supplied'))));
 	OCP\Util::writeLog('files_texteditor','No file mtime supplied' ,OCP\Util::ERROR);
 }
