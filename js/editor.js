@@ -158,7 +158,7 @@ function doFileSave() {
 				if (jsondata.status != 'success') {
 					// Save failed
 					$('#editor_save').text(t('files_texteditor', 'Save'));
-					$('#notification').html(t('files_texteditor', 'Failed to save file'));
+					$('#notification').text(jsondata.data.message);
 					$('#notification').fadeIn();
 					$('#editor').attr('data-edited', 'true');
 					$('#editor').attr('data-saving', 'false');
@@ -383,7 +383,7 @@ $(document).ready(function () {
 		FileActions.setDefault('application/x-tex', 'Edit');
 
 	}
-	
+
 	//legacy search result customization
 	OC.search.customResults.Text = function (row, item) {
 		var text = item.link.substr(item.link.indexOf('download') + 8);
