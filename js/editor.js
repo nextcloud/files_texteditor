@@ -314,7 +314,7 @@ function hideFileEditor() {
 		document.title = $('body').attr('old_title');
 		FileList.setViewerMode(false);
 		$('#content table').show();
-		OC.Notification.show(t('files_texteditor', 'There were unsaved changes, click here to go back'));
+		OC.Notification.showTemporary(t('files_texteditor', 'There were unsaved changes, click here to go back'));
 		$('#notification').data('reopeneditor', true);
 		is_editor_shown = false;
 	} else {
