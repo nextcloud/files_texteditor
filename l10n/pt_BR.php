@@ -1,12 +1,16 @@
-<?php $TRANSLATIONS = array(
+<?php
+$TRANSLATIONS = array(
+"Cannot save file as it has been modified since opening" => "Não é possível salvar arquivo como ele foi modificado desde a abertura",
+"Insufficient permissions" => "Permissões insuficientes",
+"File path not supplied" => "Caminho do arquivo não fornecido",
+"File mtime not supplied" => "Data de mudança mtime do arquivo não especificada",
 "Save" => "Salvar",
 "Search" => "Perquisar",
-"Close" => "Fechar",
 "Next" => "Próximo",
 "Clear" => "Limpar",
 "Saving..." => "Salvando...",
-"Failed to save file" => "Falha ao salvar arquivo",
 "An error occurred!" => "Ocorreu um erro!",
 "There are unsaved changes in the text editor" => "Há alterações não salvas no editor de texto",
 "There were unsaved changes, click here to go back" => "Existem alterações não salvas, clique aqui para voltar"
 );
+$PLURAL_FORMS = "nplurals=2; plural=(n > 1);";
