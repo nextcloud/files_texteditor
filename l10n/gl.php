@@ -1,7 +1,9 @@
 <?php
 $TRANSLATIONS = array(
-"Insufficient permissions" => "Permisos insuficientes",
-"File path not supplied" => "Non proveeu unha ruta de ficheiro",
+"Cannot save file as it has been modified since opening" => "Non é posíbel gardar o ficheiro, xa que foi modificado trala súa apertura",
+"Insufficient permissions" => "Non ten permisos abondo",
+"File path not supplied" => "Non forneceu unha ruta de ficheiro",
+"File mtime not supplied" => "Non forneceu o ficheiro mtime",
 "Save" => "Gardar",
 "Search" => "Buscar",
 "Next" => "Seguinte",
