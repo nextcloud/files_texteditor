@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Cannot save file as it has been modified since opening" : "変更したファイルは使用中のため保存できません",
     "Insufficient permissions" : "権限が不足しています",
+    "File path not supplied" : "ファイルパスが足りません",
     "Save" : "保存",
     "Search" : "検索",
     "Next" : "次",
