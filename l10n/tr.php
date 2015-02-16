@@ -2,8 +2,8 @@
 $TRANSLATIONS = array(
 "Cannot save file as it has been modified since opening" => "Dosya açıldıktan sonra değiştirildiği için kaydedilemedi",
 "Insufficient permissions" => "Yetersiz izin",
-"File path not supplied" => "Dosya izi kaynaklanmamış",
-"File mtime not supplied" => "Dosya mtime kaynaklanmamış",
+"File path not supplied" => "Dosya yolu belirtilmemiş",
+"File mtime not supplied" => "Dosya mtime belirtilmemiş",
 "Save" => "Kaydet",
 "Search" => "Ara",
 "Next" => "Sonraki",
