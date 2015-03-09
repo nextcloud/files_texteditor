@@ -4,7 +4,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Soubor nelze uložit, protože byl od otevření upraven",
     "Insufficient permissions" : "Nedostatečná oprávnění",
     "File path not supplied" : "Nebyla dodána cesta k souboru",
-    "File mtime not supplied" : "Nebyl dodán mtime souboru",
+    "File mtime not supplied" : "Nebyl dodán čas změny souboru",
     "Save" : "Uložit",
     "Search" : "Hledat",
     "Next" : "Následující",
