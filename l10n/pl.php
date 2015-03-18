@@ -1,12 +1,16 @@
-<?php $TRANSLATIONS = array(
+<?php
+$TRANSLATIONS = array(
+"Cannot save file as it has been modified since opening" => "Nie mogę zapisać pliku, został zmodyfikowany podczas otwarcia.",
+"Insufficient permissions" => "Niewystarczające uprawnienia",
+"File path not supplied" => "Ścieżka pliku nie została podana",
+"File mtime not supplied" => "Plik mtime nie został podany",
 "Save" => "Zapisz",
 "Search" => "Szukaj",
-"Close" => "Zamknij",
 "Next" => "Następny",
 "Clear" => "Wyczyść",
 "Saving..." => "Zapisywanie...",
-"Failed to save file" => "Błąd zapisu pliku",
 "An error occurred!" => "Wystąpił błąd!",
 "There are unsaved changes in the text editor" => "Są niezapisane zmiany w edytorze tekstu",
-"There were unsaved changes, click here to go back" => "Są niezapisane zmiany, kliknij żeby wrócić"
+"There were unsaved changes, click here to go back" => "Były niezapisane zmiany, kliknij aby wrócić"
 );
+$PLURAL_FORMS = "nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);";
