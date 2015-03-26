@@ -4,6 +4,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Δεν είναι δυνατή η αποθήκευση του αρχείου, όπως έχει τροποποιηθεί από το άνοιγμα.",
     "Insufficient permissions" : "Μη επαρκή δικαιώματα",
     "File path not supplied" : "Η διαδρομή του αρχείου δεν παρέχεται.",
+    "File mtime not supplied" : "Ο χρόνος τροποποίησης  του αρχείου δεν παρέχεται",
     "Save" : "Αποθήκευση",
     "Search" : "Αναζήτηση",
     "Next" : "Επόμενο",
