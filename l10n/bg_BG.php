@@ -1,11 +1,16 @@
-<?php $TRANSLATIONS = array(
-"Save" => "Запис",
+<?php
+$TRANSLATIONS = array(
+"Cannot save file as it has been modified since opening" => "Файлът не може да бъде запаметен, защото е бил модифициран след отварянето му",
+"Insufficient permissions" => "Недостатъчни права",
+"File path not supplied" => "Не е предоставен път до файл",
+"File mtime not supplied" => "Не е предоставено време на модификация на файла - mtime",
+"Save" => "Запиши",
 "Search" => "Търсене",
-"Close" => "Затвори",
 "Next" => "Следваща",
 "Clear" => "Изчисти",
 "Saving..." => "Записване...",
-"Failed to save file" => "Неуспешно запазване на файл",
 "An error occurred!" => "Възникна грешка!",
-"There were unsaved changes, click here to go back" => "Имаше незапазени промени, кликнете тук за да се върнете"
+"There are unsaved changes in the text editor" => "Има незапазени промени в текстовия редактор.",
+"There were unsaved changes, click here to go back" => "Имаше незапазени промени, кликнете тук за да се върнете."
 );
+$PLURAL_FORMS = "nplurals=2; plural=(n != 1);";
