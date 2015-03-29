@@ -1,9 +1,9 @@
 <?php
 $TRANSLATIONS = array(
-"Cannot save file as it has been modified since opening" => "Impossible de sauvegarder le fichier, il a été modifié depuis l'ouverture",
+"Cannot save file as it has been modified since opening" => "Impossible de sauvegarder le fichier, il a été modifié entre temps",
 "Insufficient permissions" => "Permissions insuffisantes",
 "File path not supplied" => "Chemin du fichier non fourni",
-"File mtime not supplied" => "Fichier mtime non disponible",
+"File mtime not supplied" => "Fichier mtime non fourni",
 "Save" => "Enregistrer",
 "Search" => "Rechercher",
 "Next" => "Suivant",
