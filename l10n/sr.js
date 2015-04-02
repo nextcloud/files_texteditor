@@ -7,7 +7,7 @@ OC.L10N.register(
     "File mtime not supplied" : "Није добијено време измене фајла",
     "Save" : "Сачувај",
     "Search" : "Тражи",
-    "Next" : "Следећа",
+    "Next" : "Следеће",
     "Clear" : "Очисти",
     "Saving..." : "Уписујем...",
     "An error occurred!" : "Дошло је до грешке!",
