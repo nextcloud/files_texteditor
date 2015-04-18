@@ -28,7 +28,7 @@ $filecontents = $_POST['filecontents'];
 $path = isset($_POST['path']) ? $_POST['path'] : '';
 $mtime = isset($_POST['mtime']) ? $_POST['mtime'] : '';
 
-$l = OC_L10N::get('files_texteditor');
+$l = \OC_L10N('files_texteditor');
 
 if($path != '' && $mtime != '') {
 	// Get file mtime
