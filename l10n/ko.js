@@ -1,10 +1,10 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Cannot save file as it has been modified since opening" : "파일을 연후 수정했기때문에 저장할수 없습니다",
-    "Insufficient permissions" : "충분하지 않는 권한들",
-    "File path not supplied" : "파일 경로가 제공되지 않았습니다.",
-    "File mtime not supplied" : "파일의 수정시간이 제공되지 않았습니다.",
+    "Cannot save file as it has been modified since opening" : "파일을 연 후 수정했기 때문에 저장할 수 없음",
+    "Insufficient permissions" : "권한 부족",
+    "File path not supplied" : "파일 경로가 지정되지 않았음",
+    "File mtime not supplied" : "파일 수정 시간이 지정되지 않았음",
     "Save" : "저장",
     "Search" : "검색",
     "Next" : "다음",
