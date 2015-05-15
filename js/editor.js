@@ -206,11 +206,12 @@ function showFileEditor(dir, filename) {
 			// bigger text for better readability
 			document.getElementById('editor').style.fontSize = '16px';
 
-			var data = $.getJSON(
-				OC.filePath('files_texteditor', 'ajax', 'loadfile.php'),
-				{file: filename, dir: dir},
-				function (result) {
-					if (result.status === 'success') {
+			var data = $.ajax(
+				{
+					dataType: "json",
+			    		url: OC.filePath('files_texteditor', 'ajax', 'loadfile.php'),
+					data: {file: filename, dir: dir},
+			    		success: function (result) {
 						// Save mtime
 						$('#editor').attr('data-mtime', result.data.mtime);
 						$('#editor').attr('data-saving', 'false');
@@ -267,9 +268,11 @@ function showFileEditor(dir, filename) {
 							}
 						});
 						giveEditorFocus();
-					} else {
+					},
+					error: function(result) {
 						// Failed to get the file.
-						OC.dialogs.alert(result.data.message, t('files_texteditor', 'An error occurred!'));
+						OC.dialogs.alert('', t('files_texteditor', 'An error occurred!'));
+						hideFileEditor();
 					}
 					// End success
 				}
