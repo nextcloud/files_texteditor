@@ -2,10 +2,8 @@
 
 // only load text editor if the user is logged in
 if (\OCP\User::isLoggedIn()) {
-	$app = new \OCP\AppFramework\App('files_texteditor');
-	$c = $app->getContainer();	
-	$request = $c->query('Request');
-	
+	$request = \OC::$server->getRequest();
+
 	if (isset($request->server['REQUEST_URI'])) {
 		$url = $request->server['REQUEST_URI'];
 		if (preg_match('%index.php/apps/files(/.*)?%', $url)	|| preg_match('%index.php/s/(/.*)?%', $url)) {	
