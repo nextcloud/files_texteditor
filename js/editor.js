@@ -3,17 +3,13 @@
  * Version 2.0 Alpha
  *
  * Known bugs:
- * - Title incorrect after closing editor
  * - No feedback for successful save
  * - JS files are loaded on all web requests
- * - No feedback on loading
  * - No limit to text filesize
  * - No check for file save size
- * - Filename is not shown in the breadcrumb
+ * - Control is lost on scroll of a large document
  *
  * Ideas:
- * - Autosave
- * - 2px #eee solid border below editor controls
  */
 
 var Files_Texteditor = {
@@ -248,7 +244,7 @@ var Files_Texteditor = {
 	 * Load the editor control bar
 	 */
 	loadControlBar: function(file, context) {
-		var html = '<small class="filename">'+file.name+'</small><button id="editor_save">' + t('files_texteditor', 'Save') + '</button><small class="lastsaved">Last saved: Never</small>';
+		var html = '<small class="filename">'+file.name+'</small><button id="editor_save">' + t('files_texteditor', 'Save') + '</button><small class="lastsaved">'+t('files_texteditor', 'Last saved: never')+'</small>';
 		html += '<button id="editor_close" class="icon-close svg"></button>';
 		var controlBar = $('<div id="editor_controls"></div>').html(html);
 		$('#'+this.editor).before(controlBar);
