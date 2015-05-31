@@ -26,7 +26,7 @@ var Files_Texteditor = {
 	/**
 	 * Holds the editor element ID
 	 */
-	editor: '#editor',
+	editor: 'editor',
 
 	/**
 	 * Stores info on the file being edited
@@ -36,7 +36,6 @@ var Files_Texteditor = {
 		mtime: null,
 		dir: null,
 		name: null,
-		getData: function() { return $(this.editor).text(); },
 		writeable: null,
 		mime: null
 	},
@@ -50,6 +49,11 @@ var Files_Texteditor = {
 	 * Current files app context
 	 */
 	currentContext: null,
+
+	/**
+	 * Stores the autosave timer
+	 */
+	saveTimer: null,
 
 	/*
 	 * Save handler, triggered by the button, or keyboard
@@ -72,9 +76,11 @@ var Files_Texteditor = {
 				// Yay
 				// TODO only reset edited value if not editing during saving
 				document.title = document.title.slice(2);
+				$('#editor_container small.filename').text($('#editor_container small.filename').text().slice(2));
 				OCA.Files_Texteditor.file.mtime = newmtime;
 				OCA.Files_Texteditor.file.edited = false;
 				$('#editor_save').removeClass('icon-loading').text(t('files_texteditor', 'Save'));
+				$('#editor_controls small.lastsaved').text(('files_texteditor', 'Last saved: ')+moment().fromNow());
 			},
 			function(message){
 				// Boo
@@ -137,6 +143,7 @@ var Files_Texteditor = {
 	 */
 	_onUnsaved: function() {
 		document.title = '* '+document.title;
+		$('#editor_container small.filename').text('* '+$('#editor_container small.filename').text());
 	},
 
 	/**
@@ -211,7 +218,7 @@ var Files_Texteditor = {
 	loadEditor: function(container, file) {
 		var _self = this;
 		// Insert the editor into the container
-		container.html('<div id="editor_container"><div id="editor"></div></div>');
+		container.html('<div id="editor_overlay"></div><div id="editor_container" class="icon-loading"><div id="editor"></div></div>');
 		$('#app-content').append(container);
 
 		// Get the file data
@@ -220,15 +227,15 @@ var Files_Texteditor = {
 			file.name,
 			function(file, data){
 				// Success!
-				FileList.setViewerMode(true);
 				// Sort the title
 				document.title = file.name + ' - ' + document.title;
 				// Load ace
-				$(_self.editor).text(data);
+				$('#'+_self.editor).text(data);
 				// Configure ace
 				_self.configureACE(file);
 				// Show the controls
 				_self.loadControlBar(file, _self.currentContext);
+				//window.aceEditor.getSession().on('change', _self.setupAutosave);
 				window.aceEditor.focus();
 			},
 			function(message){
@@ -241,20 +248,18 @@ var Files_Texteditor = {
 	 * Load the editor control bar
 	 */
 	loadControlBar: function(file, context) {
-		var html = '<small>'+file.name+'</small><button id="editor_save">' + t('files_texteditor', 'Save') + '</button>';
+		var html = '<small class="filename">'+file.name+'</small><button id="editor_save">' + t('files_texteditor', 'Save') + '</button><small class="lastsaved">Last saved: Never</small>';
 		html += '<button id="editor_close" class="icon-close svg"></button>';
 		var controlBar = $('<div id="editor_controls"></div>').html(html);
-		context.fileList.$el.find('#controls').append(controlBar);
-		$('div.breadcrumb').hide();
+		$('#'+this.editor).before(controlBar);
 		this.bindControlBar();
 	},
 
 	/**
-	 * Removes the contorl bar and restores the breadcrum
+	 * Removes the contorl bar
 	 */
 	unloadControlBar: function() {
 		$('#editor_controls').remove();
-		$('div.breadcrumb').show();
 	},
 
 	/**
@@ -273,7 +278,7 @@ var Files_Texteditor = {
 	 * Configure the ACE editor
 	 */
 	configureACE: function(file) {
-		window.aceEditor = ace.edit('editor');
+		window.aceEditor = ace.edit(this.editor);
 		aceEditor.setShowPrintMargin(false);
 		aceEditor.getSession().setUseWrapMode(true);
 		if (!file.writeable) { aceEditor.setReadOnly(true); }
@@ -411,7 +416,6 @@ var Files_Texteditor = {
 	 * Close the editor for good
 	 */
 	closeEditor: function() {
-		FileList.setViewerMode(false);
 		if(window.FileList) { window.FileList.reload(); }
 		this.$container.html('');
 		this.unloadControlBar();
@@ -422,7 +426,6 @@ var Files_Texteditor = {
 	 * Hide the editor (unsaved changes)
 	 */
 	hideEditor: function() {
-		FileList.setViewerMode(false);
 		this.$container.hide();
 		this.unloadControlBar();
 		document.title = this.oldTitle;
@@ -432,9 +435,17 @@ var Files_Texteditor = {
 	 * Re opens the editor
 	 */
 	reOpenEditor: function() {
-		FileList.setViewerMode(true);
 		this.$container.show();
 	}
+
+
+	/**
+	 * Configure the autosave timer
+	 */
+	//setupAutosave: function() {
+	//	clearTimeout(this.saveTimer);
+	//	this.saveTimer = setTimeout(OCA.Files_Texteditor._onSaveTrigger, 3000);
+	//}
 
 }
 

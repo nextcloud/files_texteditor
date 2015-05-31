@@ -3,7 +3,14 @@
 	font-size: 12px !important;
 }
 
-#editor_container #editor {
+#editor_controls {
+	background-color: white;
+	height: 44px;
+	border-bottom: 2px solid #eee;
+
+}
+
+#editor {
 	position: relative;
 	display: block;
 	top: 0;
@@ -11,27 +18,37 @@
 	z-index: 20;
 	height: 100%;
 	width: 100%;
+	overflow: hidden;
 }
 
 #editor_container{
-	position: absolute;
-	display: block;
-	top: 0;
-	padding-top: 44px;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    position: fixed;
+    top: 8%;
+    left: 5%;
+    width: 90%;
+    height: 88%;
+    z-index:1002;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    background-color: white;
+}
+
+@media(max-width: 768px) {
+	#editor_container {
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		border: none;
+		margin-top: 45px;
+	}
 }
 
 #editor_save, #editor_next {
-	margin-left: 7px;
-	margin-right: 0;
+	margin: 5px 0 0 7px;
 	float: left;
 	padding-top: 5px !important;
 	height: 34px !important;
-	margin-top: 5px;
 }
 
 #editor_save.icon-loading {
@@ -46,7 +63,6 @@
 	padding: 22px !important;
 	margin: 0 !important;
 	border-radius: 0;
-	position: fixed;
 	right: 0;
 }
 
@@ -68,14 +84,43 @@
 	width: initial: !important;
 }
 
-#editor_controls small {
+#editor_controls small.filename {
 	float: left;
 	color: #555;
 	font-family: inherit;
 	font-size: 100%;
-	padding: 11px 7px 0 14px;
+	padding: 12px 4px 0 14px;
 	font-weight: bolder;
 	text-overflow: ellipsis;
-	max-width: 275px;
+	max-width: 237px;
 	overflow: hidden;
+}
+
+#editor_controls small.lastsaved {
+	float: left;
+	color: #ccc;
+	font-family: inherit;
+	font-size: 90%;
+	padding: 12px 4px 0 14px;
+	overflow: hidden;
+}
+
+/* This is to hide the saved time when getting narrow */
+@media(max-width: 540px) {
+	#editor_controls small.lastsaved {
+		display: none;
+	}
+}
+
+ #editor_overlay{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    filter: alpha(opacity=70);
 }
