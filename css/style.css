@@ -67,3 +67,15 @@
 .viewer-mode #app-navigation+#app-content #controls {
 	width: initial: !important;
 }
+
+#editor_controls small {
+	float: left;
+	color: #555;
+	font-family: inherit;
+	font-size: 100%;
+	padding: 11px 7px 0 14px;
+	font-weight: bolder;
+	text-overflow: ellipsis;
+	max-width: 275px;
+	overflow: hidden;
+}
