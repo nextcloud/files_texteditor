@@ -15,7 +15,7 @@
 var Files_Texteditor = {
 	
 	/**
-	 * Holds the editor contianer
+	 * Holds the editor container
 	 */
 	$container: null,
 
@@ -51,7 +51,7 @@ var Files_Texteditor = {
 	 */
 	saveTimer: null,
 
-	/*
+	/**
 	 * Save handler, triggered by the button, or keyboard
 	 */
 	_onSaveTrigger: function() {
@@ -172,6 +172,9 @@ var Files_Texteditor = {
 		}						
 	 },
 
+	/** 
+	 * Setup on page load
+	 */
 	initialize: function(container) {
 		// Don't load if not in the files app TODO: Fix for sharing
 		if(!$('#content.app-files').length) { return; }
@@ -244,15 +247,21 @@ var Files_Texteditor = {
 	 * Load the editor control bar
 	 */
 	loadControlBar: function(file, context) {
-		var html = '<small class="filename">'+file.name+'</small><button id="editor_save">' + t('files_texteditor', 'Save') + '</button><small class="lastsaved">'+t('files_texteditor', 'Last saved: never')+'</small>';
-		html += '<button id="editor_close" class="icon-close svg"></button>';
+		var html = 
+			'<small class="filename">'+escapeHTML(file.name)
+			+'</small><button id="editor_save">'
+			+t('files_texteditor', 'Save')
+			+'</button><small class="lastsaved">'
+			+t('files_texteditor', 'Last saved: never')
+			+'</small>'
+			+'<button id="editor_close" class="icon-close svg"></button>';
 		var controlBar = $('<div id="editor_controls"></div>').html(html);
 		$('#'+this.editor).before(controlBar);
 		this.bindControlBar();
 	},
 
 	/**
-	 * Removes the contorl bar
+	 * Removes the control bar
 	 */
 	unloadControlBar: function() {
 		$('#editor_controls').remove();
@@ -363,7 +372,7 @@ var Files_Texteditor = {
 		}
 	},
 
-	/*
+	/**
 	 * Loads the data through AJAX
 	 */
 	loadFile: function(dir, filename, success, failure) {
@@ -385,7 +394,7 @@ var Files_Texteditor = {
 		});
 	},
 
-	/*
+	/**
 	 * Send the new file data back to the server
 	 */
 	saveFile: function(data, file, success, failure) {
