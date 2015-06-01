@@ -63,7 +63,9 @@ var Files_Texteditor = {
 			OCA.Files_Texteditor.edited = false;
 		}
 		// Set the saving status
-		$('#editor_save').addClass('icon-loading').width($('#editor_save').width()).text('');
+		$('#editor_save')
+			.addClass('icon-loading')
+			.width($('#editor_save').width()).text('');
 		// Send to server
 		OCA.Files_Texteditor.saveFile(
 			window.aceEditor.getSession().getValue(),
@@ -72,16 +74,27 @@ var Files_Texteditor = {
 				// Yay
 				// TODO only reset edited value if not editing during saving
 				document.title = document.title.slice(2);
-				$('#editor_container small.filename').text($('#editor_container small.filename').text().slice(2));
+				$('#editor_container small.filename')
+					.text($('#editor_container small.filename').text().slice(2));
 				OCA.Files_Texteditor.file.mtime = newmtime;
 				OCA.Files_Texteditor.file.edited = false;
-				$('#editor_save').removeClass('icon-loading').text(t('files_texteditor', 'Save'));
-				$('#editor_controls small.lastsaved').text(('files_texteditor', 'Last saved: ')+moment().fromNow());
+				$('#editor_save')
+					.removeClass('icon-loading')
+					.text(t('files_texteditor', 'Save'));
+				$('#editor_controls small.lastsaved')
+					.text(('files_texteditor', 'Last saved: ')+moment().fromNow());
 			},
 			function(message){
 				// Boo
-				OC.Notification.showTemporary(t('files_texteditor', 'There was an error saving the file. Please try again.'));
-				$('#editor_save').removeClass('icon-loading').text(t('files_texteditor', 'Save'));
+				OC.Notification.showTemporary(
+					t(
+						'files_texteditor',
+						'There was an error saving the file. Please try again.'
+					)
+				);
+				$('#editor_save')
+					.removeClass('icon-loading')
+					.text(t('files_texteditor', 'Save'));
 			}
 		);
 		OCA.Files_Texteditor.saving = false;
@@ -96,8 +109,17 @@ var Files_Texteditor = {
 		if(!OCA.Files_Texteditor.file.edited) {
 			OCA.Files_Texteditor.closeEditor();
 		} else {
-			OC.Notification.showTemporary(t('files_texteditor', 'There were unsaved changes, click here to go back'));
-			$('#notification').data('reopeneditor', true).on('click', OCA.Files_Texteditor._onReOpenTrigger);
+			OC.Notification.showTemporary(
+				t(
+					'files_texteditor',
+					'There were unsaved changes, click here to go back'
+				)
+			);
+			$('#notification')
+				.data('reopeneditor', true).on(
+					'click',
+					OCA.Files_Texteditor._onReOpenTrigger
+				);
 			OCA.Files_Texteditor.hideEditor();
 		}
 	},
@@ -118,7 +140,10 @@ var Files_Texteditor = {
 		OCA.Files_Texteditor.currentContext = context;
 		OCA.Files_Texteditor.file.name = filename;
 		OCA.Files_Texteditor.file.dir = context.dir;
-		OCA.Files_Texteditor.loadEditor(OCA.Files_Texteditor.$container, OCA.Files_Texteditor.file);
+		OCA.Files_Texteditor.loadEditor(
+			OCA.Files_Texteditor.$container,
+			OCA.Files_Texteditor.file
+		);
 		history.pushState({file:filename, dir:context.dir}, 'Editor', '#editor');
 	},
 
@@ -139,7 +164,8 @@ var Files_Texteditor = {
 	 */
 	_onUnsaved: function() {
 		document.title = '* '+document.title;
-		$('#editor_container small.filename').text('* '+$('#editor_container small.filename').text());
+		$('#editor_container small.filename')
+			.text('* '+$('#editor_container small.filename').text());
 	},
 
 	/**
@@ -166,7 +192,9 @@ var Files_Texteditor = {
 			// Show next and clear buttons
 			// check if already there
 			if ($('#editor_next').length == 0) {
-				var nextbtnhtml = '<button id="editor_next">' + t('files_texteditor', 'Next') + '</button>';
+				var nextbtnhtml = '<button id="editor_next">'
+					+t('files_texteditor', 'Next')
+					+'</button>';
 				$('#editor_save').after(nextbtnhtml);
 			}
 		}						
@@ -217,7 +245,10 @@ var Files_Texteditor = {
 	loadEditor: function(container, file) {
 		var _self = this;
 		// Insert the editor into the container
-		container.html('<div id="editor_overlay"></div><div id="editor_container" class="icon-loading"><div id="editor"></div></div>');
+		container.html(
+			'<div id="editor_overlay"></div>'
+			+'<div id="editor_container" class="icon-loading">'
+			+'<div id="editor"></div></div>');
 		$('#app-content').append(container);
 
 		// Get the file data
@@ -291,12 +322,18 @@ var Files_Texteditor = {
 			this.setEditorSyntaxMode('html');
 		} else {
 			// Set the syntax mode based on the file extension
-			this.setEditorSyntaxMode(file.name.split('.')[file.name.split('.').length - 1]);
+			this.setEditorSyntaxMode(
+				file.name.split('.')[file.name.split('.').length - 1]
+			);
 		}
 		// Set the theme
-		OC.addScript('files_texteditor', 'vendor/ace/src-noconflict/theme-clouds', function () {
-			window.aceEditor.setTheme("ace/theme/clouds");
-		});
+		OC.addScript(
+			'files_texteditor',
+			'vendor/ace/src-noconflict/theme-clouds',
+			function () {
+				window.aceEditor.setTheme("ace/theme/clouds");
+			}
+		);
 		// Bind the edit event
 		window.aceEditor.getSession().on('change', this._onEdit);
 		// Bind save trigger
@@ -365,10 +402,14 @@ var Files_Texteditor = {
 		if (filetype[extension] != null) {
 			// Then it must be in the array, so load the custom syntax mode
 			// Set the syntax mode
-			OC.addScript('files_texteditor', 'vendor/ace/src-noconflict/mode-' + filetype[extension], function () {
-				var SyntaxMode = ace.require("ace/mode/" + filetype[extension]).Mode;
-				window.aceEditor.getSession().setMode(new SyntaxMode());
-			});
+			OC.addScript(
+				'files_texteditor',
+				'vendor/ace/src-noconflict/mode-'+filetype[extension],
+				function () {
+					var SyntaxMode = ace.require("ace/mode/" + filetype[extension]).Mode;
+					window.aceEditor.getSession().setMode(new SyntaxMode());
+				}
+			);
 		}
 	},
 
