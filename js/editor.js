@@ -168,6 +168,7 @@ var Files_Texteditor = {
 			// Hide clear button
 			window.aceEditor.gotoLine(0);
 			$('#editor_next').remove();
+			$('div.editor_separator.next_separator').remove();
 		} else {
 			// New search
 			// Reset cursor
@@ -183,10 +184,11 @@ var Files_Texteditor = {
 			// Show next and clear buttons
 			// check if already there
 			if ($('#editor_next').length == 0) {
-				var nextbtnhtml = '<button id="editor_next">'
+				var nextbtnhtml = '<div class="editor_separator next_separator"></div><button id="editor_next">'
 					+t('files_texteditor', 'Next')
 					+'</button>';
-				$('#editor_save').after(nextbtnhtml);
+				$('small.lastsaved').after(nextbtnhtml);
+				OCA.Files_Texteditor.setFilenameMaxLength();
 			}
 		}						
 	 },
@@ -270,16 +272,20 @@ var Files_Texteditor = {
 	 */
 	loadControlBar: function(file, context) {
 		var html = 
-			'<small class="filename">'+escapeHTML(file.name)
-			+'</small><button id="editor_save">'
+			'<small class="filename">'+escapeHTML(file.name)+'</small>'
+			+'<div class="editor_separator save_separator"></div>'
+			+'<button id="editor_save">'
 			+t('files_texteditor', 'Save')
-			+'</button><small class="lastsaved">'
+			+'</button><div class="editor_separator lastsaved_separator"></div><small class="lastsaved">'
 			+t('files_texteditor', 'Last saved: never')
 			+'</small>'
-			+'<button id="editor_close" class="icon-close svg"></button>';
+			+'<button id="editor_close" class="icon-close svg"></button>'
+			+'<div class="editor_separator close_separator">';
 		var controlBar = $('<div id="editor_controls"></div>').html(html);
 		$('#editor_wrap').before(controlBar);
+		this.setFilenameMaxLength();
 		this.bindControlBar();
+
 	},
 
 	/**
@@ -287,6 +293,28 @@ var Files_Texteditor = {
 	 */
 	unloadControlBar: function() {
 		$('#editor_controls').remove();
+	},
+
+	/**
+	 * Set the max width of the filename to prevent wrapping
+	 */
+	setFilenameMaxLength: function() {
+		// Get the width of the control bar
+		var controlBar = $('#editor_controls').width();
+		// Get the width of all of the other controls
+		var controls = $('div.editor_separator.save_separator').outerWidth(true);
+		controls += $('#editor_save').outerWidth(true);
+		if($('small.lastsaved').is(':visible')) {
+			controls += $('div.editor_separator.lastsaved_separator').outerWidth(true);
+			controls += $('small.lastsaved').outerWidth(true);
+		}
+		if($('#editor_next').is(':visible')) {
+			controls += $('#editor_next').outerWidth(true);
+			controls += $('div.editor_separator.next_separator').outerWidth(true);
+		}
+		controls += $('#editor_close').outerWidth(true);
+		// Set the max width
+		$('small.filename').css('max-width', controlBar-controls-28);
 	},
 
 	/**
@@ -299,6 +327,7 @@ var Files_Texteditor = {
 		$('#content').on('click', '#editor_next', function() {
 			window.aceEditor.findNext();
 		});
+		$(window).resize(OCA.Files_Texteditor.setFilenameMaxLength);
 	},
 
 	/**

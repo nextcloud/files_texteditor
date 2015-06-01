@@ -55,15 +55,36 @@
 	}
 }
 
-#editor_save, #editor_next {
-	margin: 5px 0 0 7px;
-	float: left;
-	padding-top: 5px !important;
-	height: 34px !important;
-}
-
 #editor_save.icon-loading {
 	background-size: 20px;
+}
+
+#editor_save, #editor_next {
+	height: 44px;
+	border: none;
+	background-color: transparent;
+	margin: 0 !important;
+	border-radius: 0;
+	float: left;
+	padding: 5px 8px;
+}
+
+div.editor_separator {
+	background-color: #ddd;
+	width: 1px;
+	height: 24px;
+	display: block;
+	float: left;
+	margin: 10px 6px 0;
+}
+
+div.editor_separator.close_separator {
+	float: right;
+	margin-right: -1px !important;
+}
+
+div.editor_separator.save_separator {
+	margin-left: 9px !important;
 }
 
 #editor_close {
@@ -77,7 +98,7 @@
 	right: 0;
 }
 
-#editor_close:hover {
+#editor_close:hover, #editor_save:hover, #editor_next:hover {
 	background-color: #ddd;
 }
 
@@ -94,7 +115,7 @@
 	padding: 12px 4px 0 14px;
 	font-weight: bolder;
 	text-overflow: ellipsis;
-	max-width: 237px;
+	max-width: 218px;
 	overflow: hidden;
 }
 
@@ -103,13 +124,13 @@
 	color: #ccc;
 	font-family: inherit;
 	font-size: 90%;
-	padding: 12px 4px 0 14px;
+	padding: 13px 10px;
 	overflow: hidden;
 }
 
 /* This is to hide the saved time when getting narrow */
 @media(max-width: 540px) {
-	#editor_controls small.lastsaved {
+	#editor_controls small.lastsaved, div.editor_separator.lastsaved_separator {
 		display: none;
 	}
 }
