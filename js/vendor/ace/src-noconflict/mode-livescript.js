@@ -1,4 +1,44 @@
-ace.define('ace/mode/livescript', ['require', 'exports', 'module' , 'ace/tokenizer', 'ace/mode/matching_brace_outdent', 'ace/range', 'ace/mode/text'], function(require, exports, module) {
+ace.define("ace/mode/matching_brace_outdent",["require","exports","module","ace/range"], function(require, exports, module) {
+"use strict";
+
+var Range = require("../range").Range;
+
+var MatchingBraceOutdent = function() {};
+
+(function() {
+
+    this.checkOutdent = function(line, input) {
+        if (! /^\s+$/.test(line))
+            return false;
+
+        return /^\s*\}/.test(input);
+    };
+
+    this.autoOutdent = function(doc, row) {
+        var line = doc.getLine(row);
+        var match = line.match(/^(\s*\})/);
+
+        if (!match) return 0;
+
+        var column = match[1].length;
+        var openBracePos = doc.findMatchingBracket({row: row, column: column});
+
+        if (!openBracePos || openBracePos.row == row) return 0;
+
+        var indent = this.$getIndent(doc.getLine(openBracePos.row));
+        doc.replace(new Range(row, 0, row, column-1), indent);
+    };
+
+    this.$getIndent = function(line) {
+        return line.match(/^\s*/)[0];
+    };
+
+}).call(MatchingBraceOutdent.prototype);
+
+exports.MatchingBraceOutdent = MatchingBraceOutdent;
+});
+
+ace.define("ace/mode/livescript",["require","exports","module","ace/tokenizer","ace/mode/matching_brace_outdent","ace/range","ace/mode/text"], function(require, exports, module){
   var identifier, LiveScriptMode, keywordend, stringfill;
   identifier = '(?![\\d\\s])[$\\w\\xAA-\\uFFDC](?:(?!\\s)[$\\w\\xAA-\\uFFDC]|-[A-Za-z])*';
   exports.Mode = LiveScriptMode = (function(superclass){
@@ -9,6 +49,7 @@ ace.define('ace/mode/livescript', ['require', 'exports', 'module' , 'ace/tokeniz
       if (that = require('../mode/matching_brace_outdent')) {
         this.$outdent = new that.MatchingBraceOutdent;
       }
+      this.$id = "ace/mode/livescript";
     }
     indenter = RegExp('(?:[({[=:]|[-~]>|\\b(?:e(?:lse|xport)|d(?:o|efault)|t(?:ry|hen)|finally|import(?:\\s*all)?|const|var|let|new|catch(?:\\s*' + identifier + ')?))\\s*$');
     prototype.getNextLineIndent = function(state, line, tab){
@@ -51,8 +92,7 @@ ace.define('ace/mode/livescript', ['require', 'exports', 'module' , 'ace/tokeniz
   }(require('../mode/text').Mode));
   keywordend = '(?![$\\w]|-[A-Za-z]|\\s*:(?![:=]))';
   stringfill = {
-    token: 'string',
-    regex: '.+'
+    defaultToken: 'string'
   };
   LiveScriptMode.Rules = {
     start: [
@@ -145,7 +185,7 @@ ace.define('ace/mode/livescript', ['require', 'exports', 'module' , 'ace/tokeniz
         next: 'key'
       }, {
         token: 'keyword.operator',
-        regex: '\\S+'
+        regex: '[\\^!|&%+\\-]+'
       }, {
         token: 'text',
         regex: '\\s+'
@@ -163,8 +203,7 @@ ace.define('ace/mode/livescript', ['require', 'exports', 'module' , 'ace/tokeniz
         token: 'comment.regex',
         regex: '\\s+(?:#.*)?'
       }, {
-        token: 'string.regex',
-        regex: '\\S+'
+        defaultToken: 'string.regex'
       }
     ],
     key: [
@@ -177,7 +216,7 @@ ace.define('ace/mode/livescript', ['require', 'exports', 'module' , 'ace/tokeniz
         next: 'start'
       }, {
         token: 'text',
-        regex: '.',
+        regex: '',
         next: 'start'
       }
     ],
@@ -187,8 +226,7 @@ ace.define('ace/mode/livescript', ['require', 'exports', 'module' , 'ace/tokeniz
         regex: '.*?\\*/',
         next: 'start'
       }, {
-        token: 'comment.doc',
-        regex: '.+'
+        defaultToken: 'comment.doc'
       }
     ],
     qdoc: [
@@ -245,44 +283,4 @@ function import$(obj, src){
   for (var key in src) if (own.call(src, key)) obj[key] = src[key];
   return obj;
 }
-});
-
-ace.define('ace/mode/matching_brace_outdent', ['require', 'exports', 'module' , 'ace/range'], function(require, exports, module) {
-
-
-var Range = require("../range").Range;
-
-var MatchingBraceOutdent = function() {};
-
-(function() {
-
-    this.checkOutdent = function(line, input) {
-        if (! /^\s+$/.test(line))
-            return false;
-
-        return /^\s*\}/.test(input);
-    };
-
-    this.autoOutdent = function(doc, row) {
-        var line = doc.getLine(row);
-        var match = line.match(/^(\s*\})/);
-
-        if (!match) return 0;
-
-        var column = match[1].length;
-        var openBracePos = doc.findMatchingBracket({row: row, column: column});
-
-        if (!openBracePos || openBracePos.row == row) return 0;
-
-        var indent = this.$getIndent(doc.getLine(openBracePos.row));
-        doc.replace(new Range(row, 0, row, column-1), indent);
-    };
-
-    this.$getIndent = function(line) {
-        return line.match(/^\s*/)[0];
-    };
-
-}).call(MatchingBraceOutdent.prototype);
-
-exports.MatchingBraceOutdent = MatchingBraceOutdent;
 });
