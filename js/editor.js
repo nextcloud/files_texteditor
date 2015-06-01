@@ -1,15 +1,6 @@
 /**
  * Text Editor
  * Version 2.0 Alpha
- *
- * Known bugs:
- * - No feedback for successful save
- * - JS files are loaded on all web requests
- * - No limit to text filesize
- * - No check for file save size
- * - Control is lost on scroll of a large document
- *
- * Ideas:
  */
 
 var Files_Texteditor = {
