@@ -7,15 +7,26 @@
 	background-color: white;
 	height: 44px;
 	border-bottom: 2px solid #eee;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
 
+#editor div.ace_gutter, #editor div.ace_scroller {
+	margin-top: 46px;
 }
 
 #editor {
-	position: relative;
 	display: block;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+#editor_wrap {
+	position: absolute;
 	top: 0;
-	left: 0;
-	z-index: 20;
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
@@ -70,18 +81,9 @@
 	background-color: #ddd;
 }
 
-#editorcontrols > button, #editorsearchval  {
+#editorcontrols > button {
 	height: 30px !important;
 	margin-top: 7px;
-}
-
-#nextsearchbtn {
-	padding-top: 5px !important;
-	margin-top: 6px !important;
-}
-
-.viewer-mode #app-navigation+#app-content #controls {
-	width: initial: !important;
 }
 
 #editor_controls small.filename {

@@ -248,7 +248,7 @@ var Files_Texteditor = {
 		container.html(
 			'<div id="editor_overlay"></div>'
 			+'<div id="editor_container" class="icon-loading">'
-			+'<div id="editor"></div></div>');
+			+'<div id="editor_wrap"><div id="editor"></div></div></div>');
 		$('#app-content').append(container);
 
 		// Get the file data
@@ -287,7 +287,7 @@ var Files_Texteditor = {
 			+'</small>'
 			+'<button id="editor_close" class="icon-close svg"></button>';
 		var controlBar = $('<div id="editor_controls"></div>').html(html);
-		$('#'+this.editor).before(controlBar);
+		$('#editor_wrap').before(controlBar);
 		this.bindControlBar();
 	},
 
