@@ -12,6 +12,8 @@ function setSyntaxMode(ext) {
 	filetype["clj"] = "clojure";
 	filetype["coffee"] = "coffee"; // coffescript can be compiled to javascript
 	filetype["coldfusion"] = "cfc";
+	filetype["cnf"] = "text";
+	filetype["conf"] = "text";
 	filetype["cpp"] = "c_cpp";
 	filetype["cs"] = "csharp";
 	filetype["css"] = "css";
@@ -50,6 +52,8 @@ function setSyntaxMode(ext) {
 	filetype["svg"] = "svg";
 	filetype["textile"] = "textile"; // related to markdown
 	filetype["xml"] = "xml";
+	filetype["yaml"] = "yaml";
+	filetype["yml"] = "yaml";
 
 	if (filetype[ext] != null) {
 		// Then it must be in the array, so load the custom syntax mode
