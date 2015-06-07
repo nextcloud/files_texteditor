@@ -1,5 +1,6 @@
 <?php
 $TRANSLATIONS = array(
+"Invalid file path supplied." => "Ugyldig sti angitt.",
 "Cannot save file as it has been modified since opening" => "Kan ikke lagre filen siden den har blitt endret.",
 "Insufficient permissions" => "Ikke rettigheter",
 "File path not supplied" => "Filbane ikke angitt",

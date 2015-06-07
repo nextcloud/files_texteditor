@@ -1,5 +1,6 @@
 <?php
 $TRANSLATIONS = array(
+"Invalid file path supplied." => "Ongeldig pad opgegeven.",
 "Cannot save file as it has been modified since opening" => "Kan het bestand niet opslaan omdat het is gewijzigd na het openen",
 "Insufficient permissions" => "Onvoldoende rechten",
 "File path not supplied" => "Bestandspad niet opgegeven",

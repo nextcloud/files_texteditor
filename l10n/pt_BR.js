@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Invalid file path supplied." : "O caminho do arquivo que foi fornecido é inválido.",
     "Cannot save file as it has been modified since opening" : "Não é possível salvar arquivo como ele foi modificado desde a abertura",
     "Insufficient permissions" : "Permissões insuficientes",
     "File path not supplied" : "Caminho do arquivo não fornecido",
