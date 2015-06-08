@@ -1,5 +1,6 @@
 <?php
 $TRANSLATIONS = array(
+"Invalid file path supplied." => "Geçersiz dosya yolu sağlandı",
 "Cannot save file as it has been modified since opening" => "Dosya açıldıktan sonra değiştirildiği için kaydedilemedi",
 "Insufficient permissions" => "Yetersiz izin",
 "File path not supplied" => "Dosya yolu belirtilmemiş",
