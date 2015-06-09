@@ -41,10 +41,6 @@ script:
 matrix:
   include:
     - php: 5.4
-      env: DB=mysql
-    - php: 5.4
-      env: DB=pgsql
-    - php: 5.4
       env: "DB=mysql CORE_BRANCH=stable8"
 
   allow_failures:
