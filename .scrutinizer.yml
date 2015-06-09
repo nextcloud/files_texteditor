@@ -2,6 +2,7 @@ filter:
     excluded_paths:
         - 'vendor/*'
         - 'js/jquery*'
+        - 'js/vendor/*'
         - 'l10n/*'
 
 imports:
