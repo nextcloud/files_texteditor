@@ -75,11 +75,11 @@ class FileHandlingController extends Controller{
 		try {
 			if (!empty($filename)) {
 				$path = $dir . '/' . $filename;
-				$writable = $this->view->isUpdatable($path);
-				$mime = $this->view->getMimeType($path);
-				$mtime = $this->view->filemtime($path);
 				$filecontents = $this->view->file_get_contents($path);
-				if ($filecontents) {
+				if ($filecontents !== false) {
+					$writable = $this->view->isUpdatable($path);
+					$mime = $this->view->getMimeType($path);
+					$mtime = $this->view->filemtime($path);
 					$encoding = mb_detect_encoding($filecontents . "a", "UTF-8, WINDOWS-1252, ISO-8859-15, ISO-8859-1, ASCII", true);
 					if ($encoding == "") {
 						// set default encoding if it couldn't be detected

@@ -109,6 +109,8 @@ class FileHandlingControllerTest extends TestCase {
 	public function dataTestLoad() {
 		return array(
 			array('test.txt', 'file content', 200, ''),
+			array('test.txt', '', 200, ''),
+			array('test.txt', '0', 200, ''),
 			array('', 'file content', 400, 'Invalid file path supplied.'),
 			array('test.txt', false, 400, 'Can not read the file.'),
 		);
