@@ -319,26 +319,29 @@ function hideFileEditor() {
 		// and also the breadcrumb
 		window.FileList.reload();
 	}
-	if ($('#editor').attr('data-edited') == 'true') {
+	var $editorWasEdited = $('#editor').attr('data-edited') == 'true';
+
+	// Fade out editor
+	if ($editorWasEdited) {
 		// Hide, not remove
 		$('#editorcontrols,#editor_container').hide();
-		// Fade out editor
-		// Reset document title
+	} else {
+		$('#editor_container, #editorcontrols').remove();
+	}
+
+	// Reset document title
+	if (typeof $('body').attr('old_title') !== 'undefined') {
 		document.title = $('body').attr('old_title');
-		FileList.setViewerMode(false);
-		$('#content table').show();
+	}
+	FileList.setViewerMode(false);
+	$('#content table').show();
+
+	if ($editorWasEdited) {
 		OC.Notification.showTemporary(t('files_texteditor', 'There were unsaved changes, click here to go back'));
 		$('#notification').data('reopeneditor', true);
-		is_editor_shown = false;
-	} else {
-		// Fade out editor
-		$('#editor_container, #editorcontrols').remove();
-		// Reset document title
-		document.title = $('body').attr('old_title');
-		FileList.setViewerMode(false);
-		$('#content table').show();
-		is_editor_shown = false;
 	}
+
+	is_editor_shown = false;
 }
 
 // Reopens the last document
