@@ -4,7 +4,7 @@
  */
 
 var Files_Texteditor = {
-	
+
 	/**
 	 * Holds the editor container
 	 */
@@ -46,7 +46,7 @@ var Files_Texteditor = {
 	 * Save handler, triggered by the button, or keyboard
 	 */
 	_onSaveTrigger: function() {
-		// Don't save if not edited		
+		// Don't save if not edited
 		if(!OCA.Files_Texteditor.file.edited) { return; }
 		// Don't try to save twice
 		if(OCA.Files_Texteditor.saving) { return; } else {
@@ -138,7 +138,7 @@ var Files_Texteditor = {
 		history.pushState({file:filename, dir:context.dir}, 'Editor', '#editor');
 	},
 
-	/** 
+	/**
 	 * Handler for edits detected
 	 */
 	_onEdit: function () {
@@ -190,10 +190,10 @@ var Files_Texteditor = {
 				$('small.lastsaved').after(nextbtnhtml);
 				OCA.Files_Texteditor.setFilenameMaxLength();
 			}
-		}						
+		}
 	 },
 
-	/** 
+	/**
 	 * Setup on page load
 	 */
 	initialize: function(container) {
@@ -204,7 +204,7 @@ var Files_Texteditor = {
 		this.oldTitle = document.title;
 	},
 
-	/** 
+	/**
 	 * Registers the file actions
 	 */
 	registerFileActions: function() {
@@ -271,16 +271,14 @@ var Files_Texteditor = {
 	 * Load the editor control bar
 	 */
 	loadControlBar: function(file, context) {
-		var html = 
+		var html =
 			'<small class="filename">'+escapeHTML(file.name)+'</small>'
-			+'<div class="editor_separator save_separator"></div>'
 			+'<button id="editor_save">'
 			+t('files_texteditor', 'Save')
-			+'</button><div class="editor_separator lastsaved_separator"></div><small class="lastsaved">'
+			+'</button><small class="lastsaved">'
 			+t('files_texteditor', 'Last saved: never')
 			+'</small>'
-			+'<button id="editor_close" class="icon-close svg"></button>'
-			+'<div class="editor_separator close_separator">';
+			+'<button id="editor_close" class="icon-close svg"></button>';
 		var controlBar = $('<div id="editor_controls"></div>').html(html);
 		$('#editor_wrap').before(controlBar);
 		this.setFilenameMaxLength();
@@ -488,7 +486,7 @@ var Files_Texteditor = {
 		document.title = this.oldTitle;
 	},
 
-	/** 
+	/**
 	 * Hide the editor (unsaved changes)
 	 */
 	hideEditor: function() {
