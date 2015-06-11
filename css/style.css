@@ -39,8 +39,8 @@
 #editor_container{
     position: fixed;
     top: 8%;
-    left: 5%;
-    width: 90%;
+	left: 15%;
+	width: 70%;
     height: 88%;
     z-index:1002;
     overflow: hidden;
