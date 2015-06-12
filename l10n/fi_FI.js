@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Can not read the file." : "Tiedostoa ei voi lukea.",
     "Invalid file path supplied." : "Virheellinen tiedostopolku.",
     "Cannot save file as it has been modified since opening" : "Tiedostoa ei voi tallentaa, koska sitä on muokattu avaamisen jälkeen",
     "Insufficient permissions" : "Oikeudet eivät riitä",
