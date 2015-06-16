@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Can not read the file." : "Impossibile leggere il file.",
     "Invalid file path supplied." : "Fornito un percorso del file non valido.",
     "Cannot save file as it has been modified since opening" : "Impossibile salvare il file poiché è stato modificato dopo la sua apertura",
     "Insufficient permissions" : "Permessi insufficienti",
