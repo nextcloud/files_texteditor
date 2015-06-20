@@ -96,7 +96,7 @@ class FileHandlingController extends Controller{
 						Http::STATUS_OK
 					);
 				} else {
-					return new DataResponse(['message' => (string)$this->l->t('Can not read the file.')], Http::STATUS_BAD_REQUEST);
+					return new DataResponse(['message' => (string)$this->l->t('Cannot read the file.')], Http::STATUS_BAD_REQUEST);
 				}
 			} else {
 				return new DataResponse(['message' => (string)$this->l->t('Invalid file path supplied.')], Http::STATUS_BAD_REQUEST);
