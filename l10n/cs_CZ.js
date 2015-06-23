@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Can not read the file." : "Soubor nelze přečíst.",
     "Cannot save file as it has been modified since opening" : "Soubor nelze uložit, protože byl od otevření upraven",
     "Insufficient permissions" : "Nedostatečná oprávnění",
     "File path not supplied" : "Nebyla dodána cesta k souboru",
