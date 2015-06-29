@@ -1,5 +1,6 @@
 <?php
 $TRANSLATIONS = array(
+"Can not read the file." => "ファイルを読み込めません",
 "Cannot save file as it has been modified since opening" => "変更したファイルは使用中のため保存できません",
 "Insufficient permissions" => "権限が不足しています",
 "File path not supplied" => "ファイルパスが足りません",
