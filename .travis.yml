@@ -45,5 +45,4 @@ matrix:
 
   allow_failures:
     - php: hhvm
-    - php: 7
   fast_finish: true
