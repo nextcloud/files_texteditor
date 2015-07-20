@@ -1,5 +1,6 @@
 <?php
 $TRANSLATIONS = array(
+"Can not read the file." => "Datei kann nicht gelesen werden",
 "Invalid file path supplied." => "Ungültiger Dateipfad angegeben.",
 "Cannot save file as it has been modified since opening" => "Die Datei konnte nicht gespeichert werden, weil sie seit dem Öffnen verändert worden ist",
 "Insufficient permissions" => "Nicht ausreichende Berechtigungen",
