@@ -397,6 +397,10 @@ $(document).ready(function () {
 			showFileEditor($('#dir').val(), filename);
 		});
 		FileActions.setDefault('application/x-tex', 'Edit');
+		FileActions.register('application/yaml', 'Edit', OC.PERMISSION_READ, '', function (filename) {
+			showFileEditor($('#dir').val(), filename);
+		});
+		FileActions.setDefault('application/yaml', 'Edit');
 
 	}
 
