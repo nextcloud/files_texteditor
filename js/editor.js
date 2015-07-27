@@ -86,11 +86,11 @@ function showControls(dir, filename, writeable) {
 }
 
 function bindControlEvents() {
-	$('#content').on('click', '#editor_save', doFileSave);
-	$('#content').on('click', '#editor_close', hideFileEditor);
-	$('#content').on('keyup', '#editorsearchval', doSearch);
-	$('#content').on('click', '#clearsearchbtn', resetSearch);
-	$('#content').on('click', '#nextsearchbtn', nextSearchResult);
+	$('#app-content').on('click', '#editor_save', doFileSave);
+	$('#app-content').on('click', '#editor_close', hideFileEditor);
+	$('#app-content').on('keyup', '#editorsearchval', doSearch);
+	$('#app-content').on('click', '#clearsearchbtn', resetSearch);
+	$('#app-content').on('click', '#nextsearchbtn', nextSearchResult);
 }
 
 // returns true or false if the editor is in view or not
@@ -213,7 +213,7 @@ function showFileEditor(dir, filename) {
 			}
 			$('#editor').remove();
 			// Loads the file editor and display it.
-			$('#content').append('<div id="editor_container"><div id="editor"></div></div>');
+			$('#app-content').append('<div id="editor_container"><div id="editor"></div></div>');
 
 			// bigger text for better readability
 			document.getElementById('editor').style.fontSize = '16px';
