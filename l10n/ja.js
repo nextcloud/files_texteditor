@@ -12,7 +12,7 @@ OC.L10N.register(
     "Clear" : "クリア",
     "Saving..." : "保存中...",
     "An error occurred!" : "エラーが発生しました。",
-    "There are unsaved changes in the text editor" : "テキストエディタに未保存の変更があります",
+    "There are unsaved changes in the text editor" : "テキストエディターに未保存の変更があります",
     "There were unsaved changes, click here to go back" : "変更が保存されていません、クリックして戻ります。"
 },
 "nplurals=1; plural=0;");
