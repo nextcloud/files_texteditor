@@ -123,7 +123,8 @@ var Files_Texteditor = {
 	 */
 	_onReOpenTrigger: function() {
 		if($('#notification').data('reopeneditor') == true) {
-			alert('todo'); // TODO
+			document.title = OCA.Files_Texteditor.file.name + ' - ' + document.title;
+			OCA.Files_Texteditor.$container.show();
 		}
 	},
 
@@ -262,7 +263,6 @@ var Files_Texteditor = {
 				_self.configureACE(file);
 				// Show the controls
 				_self.loadControlBar(file, _self.currentContext);
-				//window.aceEditor.getSession().on('change', _self.setupAutosave);
 				window.aceEditor.focus();
 			},
 			function(message){
@@ -509,24 +509,8 @@ var Files_Texteditor = {
 	 */
 	hideEditor: function() {
 		this.$container.hide();
-		this.unloadControlBar();
 		document.title = this.oldTitle;
 	},
-
-	/**
-	 * Re opens the editor
-	 */
-	reOpenEditor: function() {
-		this.$container.show();
-	}
-
-	/**
-	 * Configure the autosave timer
-	 */
-	//setupAutosave: function() {
-	//	clearTimeout(this.saveTimer);
-	//	this.saveTimer = setTimeout(OCA.Files_Texteditor._onSaveTrigger, 3000);
-	//}
 
 }
 
