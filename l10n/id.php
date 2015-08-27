@@ -1,5 +1,7 @@
 <?php
 $TRANSLATIONS = array(
+"Can not read the file." => "Tidak dapat membaca berkas.",
+"Invalid file path supplied." => "Lokasi berkas yang diberikan tidak sah.",
 "Cannot save file as it has been modified since opening" => "Tidak dapat menyimpan berkas karena sudah diubah sejak dibuka",
 "Insufficient permissions" => "Izin tidak cukup",
 "File path not supplied" => "Lokasi berkas belum diberikan",

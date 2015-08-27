@@ -52,6 +52,7 @@ var Files_Texteditor = {
 		if(OCA.Files_Texteditor.saving) { return; } else {
 			OCA.Files_Texteditor.saving = true;
 			OCA.Files_Texteditor.edited = false;
+
 		}
 		// Set the saving status
 		$('#editor_save')
@@ -61,7 +62,8 @@ var Files_Texteditor = {
 		OCA.Files_Texteditor.saveFile(
 			window.aceEditor.getSession().getValue(),
 			OCA.Files_Texteditor.file,
-			function(newmtime){
+			function(data){
+				newmtime = data.mtime;
 				// Yay
 				// TODO only reset edited value if not editing during saving
 				document.title = document.title.slice(2);
@@ -112,6 +114,7 @@ var Files_Texteditor = {
 					OCA.Files_Texteditor._onReOpenTrigger
 				);
 			OCA.Files_Texteditor.hideEditor();
+
 		}
 	},
 
@@ -451,6 +454,23 @@ var Files_Texteditor = {
 					failure(result.data.message);
 				}
 		});
+
+		$.get(
+			OC.generateUrl('/apps/files_texteditor/ajax/loadfile'),
+			{
+				filename: filename,
+				dir: dir
+			}
+		).done(function(data) {
+					// Call success callback
+					OCA.Files_Texteditor.file.writeable = data.writeable;
+					OCA.Files_Texteditor.file.mime = data.mime;
+					OCA.Files_Texteditor.file.mtime = data.mtime;
+					success(OCA.Files_Texteditor.file, data.filecontents);
+
+		}).fail(function(jqXHR) {
+			failure(JSON.parse(jqXHR.responseText).message);
+		});
 	},
 
 	/**
@@ -458,22 +478,19 @@ var Files_Texteditor = {
 	 */
 	saveFile: function(data, file, success, failure) {
 		// Send the post request
-		$.post(
-			OC.filePath('files_texteditor', 'ajax', 'savefile.php'),
-			{
+		$.ajax({
+			type: 'PUT',
+			url: OC.generateUrl('/apps/files_texteditor/ajax/savefile'),
+			data: {
 				filecontents: data,
 				path: file.dir+'/'+file.name,
 				mtime: file.mtime
-			},
-			function (json) {
-				if (json.status != 'success') {
-					failure(json.data.message);
-				} else {
-					success(json.data.mtime);
-				}
-			},
-			'json'
-		);
+			}
+		})
+		.done(success)
+		.fail(function(jqXHR) {
+			failure(JSON.parse(jqXHR.responseText).message);
+		});
 	},
 
 	/**
@@ -501,7 +518,6 @@ var Files_Texteditor = {
 	reOpenEditor: function() {
 		this.$container.show();
 	}
-
 
 	/**
 	 * Configure the autosave timer

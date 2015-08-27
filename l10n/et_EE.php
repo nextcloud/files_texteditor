@@ -1,12 +1,18 @@
-<?php $TRANSLATIONS = array(
+<?php
+$TRANSLATIONS = array(
+"Can not read the file." => "Faili lugemine ebaõnnestus.",
+"Invalid file path supplied." => "Faili asukoht on vigane.",
+"Cannot save file as it has been modified since opening" => "Faili ei saa salvestada, kune seda on pärast avamist muudetud",
+"Insufficient permissions" => "Pole piisavalt õiguseid",
+"File path not supplied" => "Faili asukoht on määramata",
+"File mtime not supplied" => "Faili mtime puudub",
 "Save" => "Salvesta",
 "Search" => "Otsi",
-"Close" => "Sulge",
 "Next" => "Järgmine",
 "Clear" => "Tühjenda",
 "Saving..." => "Salvestamine...",
-"Failed to save file" => "Faili salvestamine ebaõnnestus",
 "An error occurred!" => "Tekis tõrge!",
 "There are unsaved changes in the text editor" => "Tekstiredaktoris on salvestamata muudatusi",
 "There were unsaved changes, click here to go back" => "Mõned muudatused olid salvestamata, tagasi minemiseks kliki siia"
 );
+$PLURAL_FORMS = "nplurals=2; plural=(n != 1);";

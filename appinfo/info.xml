@@ -6,9 +6,11 @@
 More information is available in the Text Editor documentation.
 </description>
 	<licence>AGPL</licence>
-	<author>Tom Needham</author>
-	<require>4.93</require>
+	<author>Tom Needham, Björn Schießle</author>
 	<shipped>true</shipped>
 	<default_enable/>
 	<ocsid>166051</ocsid>
+	<dependencies>
+		<owncloud min-version="8.1" />
+	</dependencies>
 </info>

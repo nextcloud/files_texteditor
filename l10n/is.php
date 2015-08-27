@@ -1,10 +1,18 @@
-<?php $TRANSLATIONS = array(
+<?php
+$TRANSLATIONS = array(
+"Can not read the file." => "Get ekki lesið skrána.",
+"Invalid file path supplied." => "Ógild skráarslóð.",
+"Cannot save file as it has been modified since opening" => "Get ekki vistað skrána þar sem það hefur verið gerð breytt á henni frá opnun",
+"Insufficient permissions" => "Ekki næg réttindi",
+"File path not supplied" => "Skrá slóð fylgir ekki",
+"File mtime not supplied" => "mtime skrá fylgir ekki",
 "Save" => "Vista",
-"Close" => "Loka",
+"Search" => "Leita",
 "Next" => "Næst",
 "Clear" => "Hreinsa",
 "Saving..." => "Er að vista ...",
-"Failed to save file" => "Ekki tókst að vista skrána",
 "An error occurred!" => "Villa kom upp!",
-"There were unsaved changes, click here to go back" => "Það átti eftir að vista breytingar, smellti hér til að fara til baka"
+"There are unsaved changes in the text editor" => "Það eru óvistaðar breytingar í texta ritlinum",
+"There were unsaved changes, click here to go back" => "Það átti eftir að vista breytingar, smelltu hér til að fara til baka"
 );
+$PLURAL_FORMS = "nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);";

@@ -1,6 +1,8 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Can not read the file." : "Не удается прочитать файл.",
+    "Invalid file path supplied." : "Указан некорректный путь.",
     "Cannot save file as it has been modified since opening" : "Невозможно сохранить файл поскольку он был изменен после открытия ",
     "Insufficient permissions" : "Недостаточно прав доступа",
     "File path not supplied" : "Неизвестен путь файла",
