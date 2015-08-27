@@ -218,7 +218,8 @@ var Files_Texteditor = {
 			'application/x-php',
 			'application/javascript',
 			'application/x-pearl',
-			'application/x-text'
+			'application/x-text',
+			'application/yaml'
 		);
 
 		_self = this;
