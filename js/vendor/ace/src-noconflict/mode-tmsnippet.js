@@ -1,4 +1,4 @@
-ace.define('ace/mode/snippets', ['require', 'exports', 'module' , 'ace/lib/oop', 'ace/mode/text', 'ace/tokenizer', 'ace/mode/text_highlight_rules', 'ace/mode/folding/coffee'], function(require, exports, module) {
+ace.define('ace/mode/tmsnippet', ['require', 'exports', 'module' , 'ace/lib/oop', 'ace/mode/text', 'ace/tokenizer', 'ace/mode/text_highlight_rules', 'ace/mode/folding/coffee'], function(require, exports, module) {
 
 
 var oop = require("../lib/oop");
@@ -103,7 +103,9 @@ var Mode = function() {
 oop.inherits(Mode, TextMode);
 
 (function() {
-    this.$indentWithTabs = true;
+    this.getNextLineIndent = function(state, line, tab) {
+        return this.$getIndent(line);
+    };
 }).call(Mode.prototype);
 exports.Mode = Mode;
 

@@ -1,5 +1,5 @@
-ace.define("ace/snippets/perl",["require","exports","module"], function(require, exports, module) {
-"use strict";
+ace.define('ace/snippets/perl', ['require', 'exports', 'module' ], function(require, exports, module) {
+
 
 exports.snippetText = "# #!/usr/bin/perl\n\
 snippet #!\n\

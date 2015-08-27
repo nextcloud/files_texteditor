@@ -1,5 +1,5 @@
-ace.define("ace/snippets/tcl",["require","exports","module"], function(require, exports, module) {
-"use strict";
+ace.define('ace/snippets/tcl', ['require', 'exports', 'module' ], function(require, exports, module) {
+
 
 exports.snippetText = "# #!/usr/bin/env tclsh\n\
 snippet #!\n\

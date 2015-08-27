@@ -1,5 +1,35 @@
-ace.define("ace/ext/whitespace",["require","exports","module","ace/lib/lang"], function(require, exports, module) {
-"use strict";
+/* ***** BEGIN LICENSE BLOCK *****
+ * Distributed under the BSD license:
+ *
+ * Copyright (c) 2010, Ajax.org B.V.
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above copyright
+ *       notice, this list of conditions and the following disclaimer in the
+ *       documentation and/or other materials provided with the distribution.
+ *     * Neither the name of Ajax.org B.V. nor the
+ *       names of its contributors may be used to endorse or promote products
+ *       derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL AJAX.ORG B.V. BE LIABLE FOR ANY
+ * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+ace.define('ace/ext/whitespace', ['require', 'exports', 'module' , 'ace/lib/lang'], function(require, exports, module) {
+
 
 var lang = require("../lib/lang");
 exports.$detectIndentation = function(lines, fallback) {
@@ -13,6 +43,7 @@ exports.$detectIndentation = function(lines, fallback) {
         if (!/^\s*[^*+\-\s]/.test(line))
             continue;
 
+        var tabs = line.match(/^\t*/)[0].length;
         if (line[0] == "\t")
             tabIndents++;
 
@@ -25,10 +56,10 @@ exports.$detectIndentation = function(lines, fallback) {
             stats[spaces] = (stats[spaces] || 0) + 1;
         }
         prevSpaces = spaces;
-        while (i < max && line[line.length - 1] == "\\")
+        while (line[line.length - 1] == "\\")
             line = lines[i++];
-    }
-    
+    };
+
     function getScore(indent) {
         var score = 0;
         for (var i = indent; i < stats.length; i += indent)
@@ -41,17 +72,15 @@ exports.$detectIndentation = function(lines, fallback) {
     var first = {score: 0, length: 0};
     var spaceIndents = 0;
     for (var i = 1; i < 12; i++) {
-        var score = getScore(i);
         if (i == 1) {
-            spaceIndents = score;
-            score = stats[1] ? 0.9 : 0.8;
-            if (!stats.length)
-                score = 0
+            spaceIndents = getScore(i);
+            var score = 1;
         } else
-            score /= spaceIndents;
+            var score = getScore(i) / spaceIndents;
 
-        if (changes[i])
+        if (changes[i]) {
             score += changes[i] / changesTotal;
+        }
 
         if (score > first.score)
             first = {score: score, length: i};
@@ -63,7 +92,7 @@ exports.$detectIndentation = function(lines, fallback) {
     if (tabIndents > spaceIndents + 1)
         return {ch: "\t", length: tabLength};
 
-    if (spaceIndents > tabIndents + 1)
+    if (spaceIndents + 1 > tabIndents)
         return {ch: " ", length: tabLength};
 };
 
@@ -79,17 +108,15 @@ exports.detectIndentation = function(session) {
     return indent;
 };
 
-exports.trimTrailingSpace = function(session, trimEmpty) {
+exports.trimTrailingSpace = function(session) {
     var doc = session.getDocument();
     var lines = doc.getAllLines();
-    
-    var min = trimEmpty ? -1 : 0;
 
     for (var i = 0, l=lines.length; i < l; i++) {
         var line = lines[i];
         var index = line.search(/\s+$/);
 
-        if (index > min)
+        if (index !== -1)
             doc.removeInLine(i, index, line.length);
     }
 };
@@ -128,14 +155,14 @@ exports.convertIndentation = function(session, ch, len) {
 };
 
 exports.$parseStringArg = function(text) {
-    var indent = {};
+    var indent = {}
     if (/t/.test(text))
         indent.ch = "\t";
     else if (/s/.test(text))
         indent.ch = " ";
     var m = text.match(/\d+/);
     if (m)
-        indent.length = parseInt(m[0], 10);
+        indent.length = parseInt(m[0]);
     return indent;
 };
 
@@ -147,7 +174,7 @@ exports.$parseArg = function(arg) {
     if (typeof arg.text == "string")
         return exports.$parseStringArg(arg.text);
     return arg;
-};
+}
 
 exports.commands = [{
     name: "detectIndentation",
@@ -163,7 +190,7 @@ exports.commands = [{
     name: "convertIndentation",
     exec: function(editor, arg) {
         var indent = exports.$parseArg(arg);
-        exports.convertIndentation(editor.session, indent.ch, indent.length);
+        exports.convertIndentation(editor.session, arg.ch, arg.length);
     }
 }, {
     name: "setIndentation",
@@ -172,10 +199,6 @@ exports.commands = [{
         indent.length && editor.session.setTabSize(indent.length);
         indent.ch && editor.session.setUseSoftTabs(indent.ch == " ");
     }
-}];
+}]
 
 });
-                (function() {
-                    ace.require(["ace/ext/whitespace"], function() {});
-                })();
-            

@@ -1,5 +1,5 @@
-ace.define("ace/snippets/css",["require","exports","module"], function(require, exports, module) {
-"use strict";
+ace.define('ace/snippets/css', ['require', 'exports', 'module' ], function(require, exports, module) {
+
 
 exports.snippetText = "snippet .\n\
 	${1} {\n\

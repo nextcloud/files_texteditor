@@ -1,5 +1,5 @@
-ace.define("ace/snippets/c_cpp",["require","exports","module"], function(require, exports, module) {
-"use strict";
+ace.define('ace/snippets/c_cpp', ['require', 'exports', 'module' ], function(require, exports, module) {
+
 
 exports.snippetText = "## STL Collections\n\
 # std::array\n\

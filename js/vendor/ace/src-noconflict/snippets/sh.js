@@ -1,5 +1,5 @@
-ace.define("ace/snippets/sh",["require","exports","module"], function(require, exports, module) {
-"use strict";
+ace.define('ace/snippets/sh', ['require', 'exports', 'module' ], function(require, exports, module) {
+
 
 exports.snippetText = "# Shebang. Executing bash via /usr/bin/env makes scripts more portable.\n\
 snippet #!\n\

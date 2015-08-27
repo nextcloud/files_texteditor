@@ -1,5 +1,5 @@
-ace.define("ace/snippets/markdown",["require","exports","module"], function(require, exports, module) {
-"use strict";
+ace.define('ace/snippets/markdown', ['require', 'exports', 'module' ], function(require, exports, module) {
+
 
 exports.snippetText = "# Markdown\n\
 \n\
@@ -26,15 +26,14 @@ snippet ![:*\n\
 	![${1:id}]: ${2:`@*`} \"${3:title}\"\n\
 \n\
 snippet ===\n\
-regex /^/=+/=*//\n\
-	${PREV_LINE/./=/g}\n\
+	`repeat('=', strlen(getline(line(\".\") - 1)))`\n\
 	\n\
-	${0}\n\
+	${1}\n\
 snippet ---\n\
-regex /^/-+/-*//\n\
-	${PREV_LINE/./-/g}\n\
+	`repeat('-', strlen(getline(line(\".\") - 1)))`\n\
 	\n\
-	${0}\n\
+	${1}\n\
+\n\
 snippet blockquote\n\
 	{% blockquote %}\n\
 	${1:quote}\n\
