@@ -16,9 +16,10 @@
 	margin-top: 46px;
 }
 
-.ace-clouds .ace_gutter {
-	background: #fff;
-	color: #aaa;
+#editor div.ace_gutter {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	opacity: .2;
+ 	background-color: transparent;
 }
 
 #editor {
