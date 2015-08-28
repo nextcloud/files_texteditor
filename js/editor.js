@@ -330,6 +330,9 @@ var Files_Texteditor = {
 			window.aceEditor.findNext();
 		});
 		$(window).resize(OCA.Files_Texteditor.setFilenameMaxLength);
+		window.onpopstate = function(e) {
+			OCA.Files_Texteditor._onCloseTrigger();
+		}
 	},
 
 	/**
