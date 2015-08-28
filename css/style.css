@@ -58,6 +58,7 @@
 		left: 0;
 		border: none;
 		margin-top: 45px;
+		border-radius: 0px;
 	}
 }
 
@@ -119,6 +120,8 @@
 	#editor_controls small.lastsaved, div.editor_separator.lastsaved_separator {
 		display: none;
 	}
+
+
 }
 
  #editor_overlay{
