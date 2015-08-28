@@ -55,9 +55,7 @@ var Files_Texteditor = {
 
 		}
 		// Set the saving status
-		$('#editor_save')
-			.addClass('icon-loading')
-			.width($('#editor_save').width()).text('');
+		$('#editor_controls small.lastsaved').text(t('files_texteditor', 'Saving...'));
 		// Send to server
 		OCA.Files_Texteditor.saveFile(
 			window.aceEditor.getSession().getValue(),
@@ -67,15 +65,11 @@ var Files_Texteditor = {
 				// Yay
 				// TODO only reset edited value if not editing during saving
 				document.title = document.title.slice(2);
-				$('#editor_container small.filename')
-					.text($('#editor_container small.filename').text().slice(2));
+				$('small.unsaved-star').css('display', 'none');
 				OCA.Files_Texteditor.file.mtime = newmtime;
 				OCA.Files_Texteditor.file.edited = false;
-				$('#editor_save')
-					.removeClass('icon-loading')
-					.text(t('files_texteditor', 'Save'));
 				$('#editor_controls small.lastsaved')
-					.text(('files_texteditor', 'Last saved: ')+moment().fromNow());
+					.text(t('files_texteditor', 'saved ')+moment().fromNow());
 			},
 			function(message){
 				// Boo
@@ -85,9 +79,7 @@ var Files_Texteditor = {
 						'There was an error saving the file. Please try again.'
 					)
 				);
-				$('#editor_save')
-					.removeClass('icon-loading')
-					.text(t('files_texteditor', 'Save'));
+				// TODO show the old saved time still
 			}
 		);
 		OCA.Files_Texteditor.saving = false;
@@ -102,19 +94,34 @@ var Files_Texteditor = {
 		if(!OCA.Files_Texteditor.file.edited) {
 			OCA.Files_Texteditor.closeEditor();
 		} else {
-			OC.Notification.showTemporary(
-				t(
-					'files_texteditor',
-					'There were unsaved changes, click here to go back'
-				)
-			);
-			$('#notification')
-				.data('reopeneditor', true).on(
-					'click',
-					OCA.Files_Texteditor._onReOpenTrigger
-				);
+			// Hide the editor
 			OCA.Files_Texteditor.hideEditor();
-
+			// Try to save
+			OCA.Files_Texteditor.saveFile(
+				window.aceEditor.getSession().getValue(),
+				OCA.Files_Texteditor.file,
+				function(data){
+					OC.Notification.showTemporary(t(
+						'files_texteditor',
+						'Saved'
+						)
+					);
+					// Remove the editor
+					OCA.Files_Texteditor.closeEditor();
+				},
+				function(message){
+					OC.Notification.showTemporary(t(
+						'files_texteditor',
+						'There was a problem saving your changes. Click to resume editing.'
+						)
+					);
+					$('#notification')
+						.data('reopeneditor', true).on(
+							'click',
+							OCA.Files_Texteditor._onReOpenTrigger
+						);
+				}
+			);
 		}
 	},
 
@@ -159,8 +166,7 @@ var Files_Texteditor = {
 	 */
 	_onUnsaved: function() {
 		document.title = '* '+document.title;
-		$('#editor_container small.filename')
-			.text('* '+$('#editor_container small.filename').text());
+		$('small.unsaved-star').css('display', 'inline-block');
 	},
 
 	/**
@@ -172,7 +178,6 @@ var Files_Texteditor = {
 			// Hide clear button
 			window.aceEditor.gotoLine(0);
 			$('#editor_next').remove();
-			$('div.editor_separator.next_separator').remove();
 		} else {
 			// New search
 			// Reset cursor
@@ -188,7 +193,7 @@ var Files_Texteditor = {
 			// Show next and clear buttons
 			// check if already there
 			if ($('#editor_next').length == 0) {
-				var nextbtnhtml = '<div class="editor_separator next_separator"></div><button id="editor_next">'
+				var nextbtnhtml = '<button id="editor_next">'
 					+t('files_texteditor', 'Next')
 					+'</button>';
 				$('small.lastsaved').after(nextbtnhtml);
@@ -263,6 +268,7 @@ var Files_Texteditor = {
 				_self.configureACE(file);
 				// Show the controls
 				_self.loadControlBar(file, _self.currentContext);
+				window.aceEditor.getSession().on('change', _self.setupAutosave);
 				window.aceEditor.focus();
 			},
 			function(message){
@@ -277,10 +283,8 @@ var Files_Texteditor = {
 	loadControlBar: function(file, context) {
 		var html =
 			'<small class="filename">'+escapeHTML(file.name)+'</small>'
-			+'<button id="editor_save">'
-			+t('files_texteditor', 'Save')
-			+'</button><small class="lastsaved">'
-			+t('files_texteditor', 'Last saved: never')
+			+'<small class="unsaved-star" style="display: none">*</small>'
+			+'<small class="lastsaved">'
 			+'</small>'
 			+'<button id="editor_close" class="icon-close svg"></button>';
 		var controlBar = $('<div id="editor_controls"></div>').html(html);
@@ -304,16 +308,14 @@ var Files_Texteditor = {
 		// Get the width of the control bar
 		var controlBar = $('#editor_controls').width();
 		// Get the width of all of the other controls
-		var controls = $('div.editor_separator.save_separator').outerWidth(true);
-		controls += $('#editor_save').outerWidth(true);
+		var controls = 0;
 		if($('small.lastsaved').is(':visible')) {
-			controls += $('div.editor_separator.lastsaved_separator').outerWidth(true);
 			controls += $('small.lastsaved').outerWidth(true);
 		}
 		if($('#editor_next').is(':visible')) {
 			controls += $('#editor_next').outerWidth(true);
-			controls += $('div.editor_separator.next_separator').outerWidth(true);
 		}
+		controls += $('small.unsaved-star').outerWidth(true);
 		controls += $('#editor_close').outerWidth(true);
 		// Set the max width
 		$('small.filename').css('max-width', controlBar-controls-28);
@@ -324,7 +326,6 @@ var Files_Texteditor = {
 	 */
 	bindControlBar: function() {
 		$('#editor_close').on('click', this._onCloseTrigger);
-		$('#editor_save').on('click', this._onSaveTrigger);
 		$('#searchbox').on('input', this._onSearchKeyup);
 		$('#content').on('click', '#editor_next', function() {
 			window.aceEditor.findNext();
@@ -514,6 +515,14 @@ var Files_Texteditor = {
 		this.$container.hide();
 		document.title = this.oldTitle;
 	},
+
+	/**
+	 * Configure the autosave timer
+	 */
+	setupAutosave: function() {
+		clearTimeout(this.saveTimer);
+		this.saveTimer = setTimeout(OCA.Files_Texteditor._onSaveTrigger, 3000);
+	}
 
 }
 
