@@ -47,15 +47,19 @@ var Files_Texteditor = {
 	 */
 	_onSaveTrigger: function() {
 		// Don't save if not edited
-		if(!OCA.Files_Texteditor.file.edited) { return; }
+		if(!OCA.Files_Texteditor.file.edited) {
+			return;
+		}
 		// Don't try to save twice
-		if(OCA.Files_Texteditor.saving) { return; } else {
+		if(OCA.Files_Texteditor.saving) {
+			return;
+		} else {
 			OCA.Files_Texteditor.saving = true;
 			OCA.Files_Texteditor.edited = false;
-
 		}
+
 		// Set the saving status
-		$('#editor_controls small.lastsaved').text(t('files_texteditor', 'Saving...'));
+		$('#editor_controls small.lastsaved').text(t('files_texteditor', 'saving...'));
 		// Send to server
 		OCA.Files_Texteditor.saveFile(
 			window.aceEditor.getSession().getValue(),
@@ -73,13 +77,8 @@ var Files_Texteditor = {
 			},
 			function(message){
 				// Boo
-				OC.Notification.showTemporary(
-					t(
-						'files_texteditor',
-						'There was an error saving the file. Please try again.'
-					)
-				);
-				// TODO show the old saved time still
+				$('small.lastsaved').text(t('files_texteditor', 'saving failed!'));
+				OCA.Files_Texteditor.edited = true;
 			}
 		);
 		OCA.Files_Texteditor.saving = false;
@@ -94,6 +93,8 @@ var Files_Texteditor = {
 		if(!OCA.Files_Texteditor.file.edited) {
 			OCA.Files_Texteditor.closeEditor();
 		} else {
+			// Trick the autosave attempt into thinking we have no changes
+			OCA.Files_Texteditor.file.edited = false;
 			// Hide the editor
 			OCA.Files_Texteditor.hideEditor();
 			// Try to save
@@ -115,11 +116,11 @@ var Files_Texteditor = {
 						'There was a problem saving your changes. Click to resume editing.'
 						)
 					);
-					$('#notification')
-						.data('reopeneditor', true).on(
-							'click',
-							OCA.Files_Texteditor._onReOpenTrigger
-						);
+					$('#notification').data('reopeneditor', true).on(
+						'click',
+						OCA.Files_Texteditor._onReOpenTrigger
+					);
+					OCA.Files_Texteditor.file.edited = true;
 				}
 			);
 		}
@@ -483,12 +484,17 @@ var Files_Texteditor = {
 	 */
 	saveFile: function(data, file, success, failure) {
 		// Send the post request
+		if(file.dir == '/') {
+			var path = file.dir + file.name;
+		} else {
+			var path = file.dir + '/' + file.name;
+		}
 		$.ajax({
 			type: 'PUT',
 			url: OC.generateUrl('/apps/files_texteditor/ajax/savefile'),
 			data: {
 				filecontents: data,
-				path: file.dir+'/'+file.name,
+				path: path,
 				mtime: file.mtime
 			}
 		})
@@ -503,7 +509,7 @@ var Files_Texteditor = {
 	 */
 	closeEditor: function() {
 		if(window.FileList) { window.FileList.reload(); }
-		this.$container.html('');
+		this.$container.html('').show();
 		this.unloadControlBar();
 		document.title = this.oldTitle;
 	},
