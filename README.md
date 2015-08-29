@@ -1,13 +1,32 @@
-files_texteditor
-================
+# Files_Texteditor
+==================
 
-A text editor app for ownCloud
+[![Build Status](https://travis-ci.org/owncloud/files_texteditor.svg?branch=master)](https://travis-ci.org/owncloud/files_texteditor)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/owncloud/files_texteditor/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/owncloud/files_texteditor/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/owncloud/files_texteditor/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/owncloud/files_texteditor/?branch=master)
 
-To see which files are editable, see [here](https://github.com/owncloud/files_texteditor/blob/master/js/editor.js)
+
+The original text editor app for ownCloud, based on [Ace](http://ace.c9.io/).
+
+Features:
+ - Syntax highlighting
+ - Autosave
+ - Syntax checking
+ - Responsive design (optimised on mobile and desktop)
+
+## Install
+Simply copy the `files_texteditor` folder into the `apps` directory and enable the app within the ownCloud settings.
+
+## Usage
+To use the editer, click on a [supported file](https://github.com/owncloud/files_texteditor/blob/master/js/editor.js#L6) within the Files app and the file will be loaded into the editor. Saving is automatic, but can also be triggered manually with `Ctrl+S` or `Cmd+S`.
+
+## Contributors
+Maintainer: [Tom Needham](http://github.com/tomneedham)
+Past contributors: [Thomas Müller](http://github.com/deepdiver1975) [Robin Appelman](http://github.com/icewind) [Jörn Friedrich Dreyer](http://github.com/butonic) [Vincent Petry](http://github.com/pvince)
 
 
 Preview apps
-----
+------------
 
 Apps can add side-by-side previews to the app for certain file types by using the preview api
 
