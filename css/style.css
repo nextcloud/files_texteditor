@@ -47,6 +47,34 @@
 	border-radius: 3px;
 }
 
+#editor_container.hasPreview {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border: none;
+	margin-top: 45px;
+	border-radius: 0px;
+}
+
+#editor_container.hasPreview #preview {
+	display:block;
+}
+
+#editor_container.hasPreview #editor {
+	width: 50%;
+}
+
+#preview {
+	right: 0;
+	position: absolute;
+	top: 0;
+	display: none;
+	height: 100%;
+	width:50%;
+	padding-top: 46px;
+}
+
 @media(max-width: 768px) {
 	#editor_container {
 		width: 100%;
@@ -56,6 +84,14 @@
 		border: none;
 		margin-top: 45px;
 		border-radius: 0px;
+	}
+
+	#editor_container.hasPreview #preview {
+		display: none;
+	}
+
+	#editor_container.hasPreview #editor {
+		width: 100%;
 	}
 }
 
