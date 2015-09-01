@@ -509,7 +509,6 @@ var Files_Texteditor = {
 	 * Close the editor for good
 	 */
 	closeEditor: function() {
-		if(window.FileList) { window.FileList.reload(); }
 		this.$container.html('').show();
 		this.unloadControlBar();
 		document.title = this.oldTitle;
