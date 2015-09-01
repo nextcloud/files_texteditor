@@ -278,6 +278,7 @@ var Files_Texteditor = {
 					_self.previewPluginOnChange = _.debounce(_self.previewPlugins[file.mime].preview, 200);
 					var text = window.aceEditor.getSession().getValue();
 					_self.previewPluginOnChange(text, _self.preview);
+					window.aceEditor.resize();
 				} else {
 					_self.previewPluginOnChange = null;
 				}
