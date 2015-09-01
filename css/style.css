@@ -12,10 +12,6 @@
 	z-index: 1000;
 }
 
-#editor div.ace_gutter, #editor div.ace_scroller {
-	margin-top: 46px;
-}
-
 #editor div.ace_gutter {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
 	opacity: .2;
@@ -28,9 +24,12 @@
 	width: 100%;
 	overflow: hidden;
 	min-height: 440px;
+	position: relative;
 }
 
 #editor_wrap {
+	box-sizing: border-box;
+	padding-top: 46px;
 	position: absolute;
 	top: 0;
 	height: 100%;
