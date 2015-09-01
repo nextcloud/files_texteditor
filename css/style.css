@@ -12,6 +12,10 @@
 	z-index: 1000;
 }
 
+.ace-clouds .ace_marker-layer .ace_active-line {
+    background-color: #f8f8f8 !important;
+}
+
 #editor div.ace_gutter {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
 	opacity: .2;
