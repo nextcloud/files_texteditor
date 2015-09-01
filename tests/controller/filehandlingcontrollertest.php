@@ -131,7 +131,7 @@ class FileHandlingControllerTest extends TestCase {
 
 		$this->assertSame(400, $result->getStatus());
 		$this->assertArrayHasKey('message', $data);
-		$this->assertSame($exceptionHint, $data['message']);
+		$this->assertSame('An internal server error occurred.', $data['message']);
 	}
 
 	/**
