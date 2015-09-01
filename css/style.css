@@ -58,7 +58,7 @@
 	border-radius: 0;
 }
 
-#editor_container.hasPreview #preview {
+#editor_container.hasPreview #preview, #editor_container.hasPreview #preview_wrap {
 	display:block;
 }
 
@@ -81,6 +81,7 @@
 	right: 0;
 	position: absolute;
 	top: 0;
+	display: none;
 	padding-top: 91px; /** main navigation + controls */
 }
 
