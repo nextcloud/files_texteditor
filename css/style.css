@@ -23,8 +23,6 @@
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
-	min-height: 440px;
-	position: relative;
 }
 
 #editor_wrap {
@@ -61,16 +59,6 @@
 	}
 }
 
-#editor_next {
-	height: 44px;
-	border: none;
-	background-color: transparent;
-	margin: 0 !important;
-	border-radius: 0;
-	float: left;
-	padding: 5px 8px;
-}
-
 #editor_close {
 	float: right;
 	width: 34px;
@@ -83,7 +71,7 @@
 	opacity: 0.3;
 }
 
-#editor_close:hover, #editor_next:hover {
+#editor_close:hover {
 	background-color: #ddd;
 }
 
@@ -105,22 +93,13 @@
 	white-space: nowrap;
 }
 
-#editor_controls small.lastsaved {
+#editor_controls small.saving-message {
 	float: left;
 	color: #ccc;
 	font-family: inherit;
 	font-size: 90%;
 	padding: 13px 0 13px 17px;
 	overflow: hidden;
-}
-
-/* This is to hide the saved time when getting narrow */
-@media(max-width: 540px) {
-	#editor_controls small.lastsaved, div.editor_separator.lastsaved_separator {
-		display: none;
-	}
-
-
 }
 
  #editor_overlay{
@@ -140,4 +119,5 @@ small.unsaved-star {
 	position:absolute;
 	padding: 9px 0 0 4px;
 	display: inline-block;
+	float: left;
 }
