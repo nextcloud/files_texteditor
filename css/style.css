@@ -1,6 +1,6 @@
-.ie8 #editor_container div{
+#editor_container div{
 	/* override core style.css font-size:100% that messes up the editor in IE8 */
-	font-size: 12px !important;
+	font-size: 13px !important;
 }
 
 #editor_controls {
@@ -158,12 +158,13 @@
 }
 
 #editor_controls small.saving-message {
-	float: left;
 	color: #ccc;
 	font-family: inherit;
 	font-size: 90%;
 	padding: 13px 0 13px 17px;
 	overflow: hidden;
+	display: inline-block;
+	padding: 13px 0 0 17px;
 }
 
  #editor_overlay{
