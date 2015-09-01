@@ -259,6 +259,7 @@ var Files_Texteditor = {
 			+'<div id="preview_wrap"><div id="preview"></div></div></div></div>');
 		$('#app-content').append(container);
 
+
 		// Get the file data
 		this.loadFile(
 			file.dir,
@@ -286,6 +287,11 @@ var Files_Texteditor = {
 					window.aceEditor.resize();
 				} else {
 					_self.previewPluginOnChange = null;
+				}
+
+				// IE8 support
+				if(!OC.Util.hasSVGSupport()){ //replace all svg images with png images for browser that dont support svg
+					OC.Util.replaceSVG();
 				}
 			},
 			function(message){
