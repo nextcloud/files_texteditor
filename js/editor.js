@@ -1,6 +1,11 @@
 /**
- * Text Editor
- * Version 2.0 Alpha
+ * ownCloud - Files_Texteditor
+ *
+ * This file is licensed under the Affero General Public License version 3 or
+ * later. See the COPYING file.
+ *
+ * @author Tom Needham <tom@owncloud.com>
+ * @copyright Tom Needham 2015
  */
 
 var Files_Texteditor = {
