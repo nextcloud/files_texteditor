@@ -176,7 +176,9 @@ var Files_Texteditor = {
 			OCA.Files_Texteditor.$container,
 			OCA.Files_Texteditor.file
 		);
-		history.pushState({file:filename, dir:context.dir}, 'Editor', '#editor');
+		if(!$('html').hasClass('ie8')) {
+			history.pushState({file:filename, dir:context.dir}, 'Editor', '#editor');
+		}
 	},
 
 	/**
@@ -344,8 +346,10 @@ var Files_Texteditor = {
 	bindControlBar: function() {
 		$('#editor_close').on('click', this._onCloseTrigger);
 		$(window).resize(OCA.Files_Texteditor.setFilenameMaxLength);
-		window.onpopstate = function(e) {
-			OCA.Files_Texteditor._onCloseTrigger();
+		if(!$('html').hasClass('ie8')) {
+			window.onpopstate = function (e) {
+				OCA.Files_Texteditor._onCloseTrigger();
+			}
 		}
 	},
 
