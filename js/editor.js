@@ -250,7 +250,8 @@ var Files_Texteditor = {
 		container.html(
 			'<div id="editor_overlay"></div>'
 			+'<div id="editor_container" class="icon-loading">'
-			+'<div id="editor_wrap"><div id="editor"></div><div id="preview"></div></div></div>');
+			+'<div id="editor_wrap"><div id="editor"></div>'
+			+'<div id="preview_wrap"><div id="preview"></div></div></div></div>');
 		$('#app-content').append(container);
 
 		// Get the file data
