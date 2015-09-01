@@ -43,6 +43,22 @@ var Files_Texteditor = {
 	saveTimer: null,
 
 	/**
+	 * preview plugins by mimetype
+	 */
+	previewPlugins: {},
+
+	registerPreviewPlugin: function(mimeType, plugin) {
+		this.previewPlugins[mimeType] = plugin;
+	},
+
+	/**
+	 * preview element
+	 */
+	preview: null,
+
+	previewPluginOnChange: null,
+
+	/**
 	 * Save handler, triggered by the button, or keyboard
 	 */
 	_onSaveTrigger: function() {
@@ -168,6 +184,10 @@ var Files_Texteditor = {
 				OCA.Files_Texteditor._onUnsaved();
 			}
 		}
+		if (this.previewPluginOnChange) {
+			var text = window.aceEditor.getSession().getValue();
+			this.previewPluginOnChange(text, this.preview);
+		}
 	},
 
 	/**
@@ -187,6 +207,9 @@ var Files_Texteditor = {
 		this.$container = container;
 		this.registerFileActions();
 		this.oldTitle = document.title;
+		$.each(this.previewPlugins, function(mime, plugin) {
+			plugin.init();
+		});
 	},
 
 	/**
@@ -227,7 +250,8 @@ var Files_Texteditor = {
 		container.html(
 			'<div id="editor_overlay"></div>'
 			+'<div id="editor_container" class="icon-loading">'
-			+'<div id="editor_wrap"><div id="editor"></div></div></div>');
+			+'<div id="editor_wrap"><div id="editor"></div>'
+			+'<div id="preview_wrap"><div id="preview"></div></div></div></div>');
 		$('#app-content').append(container);
 
 		// Get the file data
@@ -246,6 +270,18 @@ var Files_Texteditor = {
 				_self.loadControlBar(file, _self.currentContext);
 				window.aceEditor.getSession().on('change', _self.setupAutosave);
 				window.aceEditor.focus();
+
+				if (_self.previewPlugins[file.mime]){
+					_self.preview = container.find('#preview');
+					_self.preview.addClass(file.mime.replace('/','-'));
+					container.find('#editor_container').addClass('hasPreview');
+					_self.previewPluginOnChange = _.debounce(_self.previewPlugins[file.mime].preview, 200);
+					var text = window.aceEditor.getSession().getValue();
+					_self.previewPluginOnChange(text, _self.preview);
+					window.aceEditor.resize();
+				} else {
+					_self.previewPluginOnChange = null;
+				}
 			},
 			function(message){
 				// Oh dear
@@ -327,7 +363,7 @@ var Files_Texteditor = {
 			}
 		);
 		// Bind the edit event
-		window.aceEditor.getSession().on('change', this._onEdit);
+		window.aceEditor.getSession().on('change', this._onEdit.bind(this));
 		// Bind save trigger
 		window.aceEditor.commands.addCommand({
 			name: "save",
