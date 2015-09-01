@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Can not read the file." : "파일을 읽을 수 없습니다.",
     "Invalid file path supplied." : "잘못된 경로를 지정하였습니다.",
     "Cannot save file as it has been modified since opening" : "파일을 연 후 수정했기 때문에 저장할 수 없음",
     "Insufficient permissions" : "권한 부족",

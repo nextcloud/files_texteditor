@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Can not read the file." : "Datoteke ni mogoče prebrati.",
     "Invalid file path supplied." : "Podana je neveljavna pot do datoteke.",
     "Cannot save file as it has been modified since opening" : "Ni mogoče shraniti datoteke, ker je bila v času trenutne seje že spremenjena.",
     "Insufficient permissions" : "Neustrezna dovoljenja",

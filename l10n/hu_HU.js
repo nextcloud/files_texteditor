@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Can not read the file." : "Nem tudom a fáljt olvasni",
     "Invalid file path supplied." : "Helytelen elérési utat adott meg.",
     "Cannot save file as it has been modified since opening" : "Nem tudom a fáljt menteni, mert időközben a tartalma megváltozott.",
     "Insufficient permissions" : "Nincs jogosultsága hozzá",

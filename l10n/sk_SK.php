@@ -1,6 +1,5 @@
 <?php
 $TRANSLATIONS = array(
-"Can not read the file." => "Nemožno čítať súbor.",
 "Invalid file path supplied." => "Neplatná cesta k súboru.",
 "Cannot save file as it has been modified since opening" => "Nie je možné uložiť súbor, pretože bol od otvorenia zmenený",
 "Insufficient permissions" => "Nedostatočné oprávnenia",

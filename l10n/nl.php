@@ -1,6 +1,5 @@
 <?php
 $TRANSLATIONS = array(
-"Can not read the file." => "Kan het bestand niet lezen.",
 "Invalid file path supplied." => "Ongeldig pad opgegeven.",
 "Cannot save file as it has been modified since opening" => "Kan het bestand niet opslaan omdat het is gewijzigd na het openen",
 "Insufficient permissions" => "Onvoldoende rechten",

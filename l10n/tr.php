@@ -1,6 +1,5 @@
 <?php
 $TRANSLATIONS = array(
-"Can not read the file." => "Dosya okunamıyor.",
 "Invalid file path supplied." => "Geçersiz dosya yolu sağlandı",
 "Cannot save file as it has been modified since opening" => "Dosya açıldıktan sonra değiştirildiği için kaydedilemedi",
 "Insufficient permissions" => "Yetersiz izin",
