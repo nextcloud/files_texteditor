@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Cannot read the file." : "Kan ikke læse filen.",
     "Invalid file path supplied." : "Der blev angivet en ugyldig filsti.",
     "Cannot save file as it has been modified since opening" : "Kan ikke gemme filen, da den er blevet ændret efter den blev åbnet",
     "Insufficient permissions" : "Utilstrækkeligt med rettigheder",

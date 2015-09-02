@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Cannot read the file." : "Get ekki lesið skrána.",
     "Invalid file path supplied." : "Ógild skráarslóð.",
     "Cannot save file as it has been modified since opening" : "Get ekki vistað skrána þar sem það hefur verið gerð breytt á henni frá opnun",
     "Insufficient permissions" : "Ekki næg réttindi",
