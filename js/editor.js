@@ -1,442 +1,555 @@
-function getFileExtension(file) {
-	var parts = file.split('.');
-	return parts[parts.length - 1];
-}
+/**
+ * ownCloud - Files_Texteditor
+ *
+ * This file is licensed under the Affero General Public License version 3 or
+ * later. See the COPYING file.
+ *
+ * @author Tom Needham <tom@owncloud.com>
+ * @copyright Tom Needham 2015
+ */
 
-function setSyntaxMode(ext) {
-	// Loads the syntax mode files and tells the editor
-	var filetype = new Array();
-	// add file extensions like this: filetype["extension"] = "filetype":
-	filetype["h"] = "c_cpp";
-	filetype["c"] = "c_cpp";
-	filetype["clj"] = "clojure";
-	filetype["coffee"] = "coffee"; // coffescript can be compiled to javascript
-	filetype["coldfusion"] = "cfc";
-	filetype["cnf"] = "text";
-	filetype["conf"] = "text";
-	filetype["cpp"] = "c_cpp";
-	filetype["cs"] = "csharp";
-	filetype["css"] = "css";
-	filetype["groovy"] = "groovy";
-	filetype["haxe"] = "hx";
-	filetype["htm"] = "html";
-	filetype["html"] = "html";
-	filetype["tt"] = "html";
-	filetype["java"] = "java";
-	filetype["js"] = "javascript";
-	filetype["jsm"] = "javascript";
-	filetype["json"] = "json";
-	filetype["latex"] = "latex";
-	filetype["tex"] = "latex";
-	filetype["less"] = "less";
-	filetype["ly"] = "latex";
-	filetype["ily"] = "latex";
-	filetype["lua"] = "lua";
-	filetype["markdown"] = "markdown";
-	filetype["md"] = "markdown";
-	filetype["mdown"] = "markdown";
-	filetype["mdwn"] = "markdown";
-	filetype["mkd"] = "markdown";
-	filetype["ml"] = "ocaml";
-	filetype["mli"] = "ocaml";
-	filetype["pl"] = "perl";
-	filetype["php"] = "php";
-	filetype["powershell"] = "ps1";
-	filetype["py"] = "python";
-	filetype["rb"] = "ruby";
-	filetype["scad"] = "scad"; // seems to be something like 3d model files printed with e.g. reprap
-	filetype["scala"] = "scala";
-	filetype["scss"] = "scss"; // "sassy css"
-	filetype["sh"] = "sh";
-	filetype["sql"] = "sql";
-	filetype["svg"] = "svg";
-	filetype["textile"] = "textile"; // related to markdown
-	filetype["xml"] = "xml";
-	filetype["yaml"] = "yaml";
-	filetype["yml"] = "yaml";
+var Files_Texteditor = {
 
-	if (filetype[ext] != null) {
-		// Then it must be in the array, so load the custom syntax mode
-		// Set the syntax mode
-		OC.addScript('files_texteditor', 'vendor/ace/src-noconflict/mode-' + filetype[ext], function () {
-			var SyntaxMode = ace.require("ace/mode/" + filetype[ext]).Mode;
-			window.aceEditor.getSession().setMode(new SyntaxMode());
-		});
-	}
-}
+	/**
+	 * Holds the editor container
+	 */
+	$container: null,
 
-function showControls(dir, filename, writeable) {
-	// Loads the control bar at the top.
-	OC.Breadcrumb.show(dir, filename, '#');
-	// Load the new toolbar.
-	var editorbarhtml = '<div id="editorcontrols" style="display: none;">';
-	if (writeable) {
-		editorbarhtml += '<button id="editor_save">' + t('files_texteditor', 'Save') + '</button>';
-	}
-	editorbarhtml += '<label for="editorseachval">' + t('files_texteditor', 'Search');
-	editorbarhtml += '</label><input type="text" name="editorsearchval" id="editorsearchval">';
-	editorbarhtml += '<button id="editor_close" class="icon-close svg"></button>';
-	editorbarhtml += '</div>';
+	/**
+	 * Holds the editor element ID
+	 */
+	editor: 'editor',
 
-	$('#controls').append(editorbarhtml);
-	$('#editorcontrols').show();
-	if (!OC.Util.hasSVGSupport()) {
-		OC.Util.replaceSVG($('#editorcontrols'));
-	}
-}
+	/**
+	 * Stores info on the file being edited
+	 */
+	file: {
+		edited: false,
+		mtime: null,
+		dir: null,
+		name: null,
+		writeable: null,
+		mime: null
+	},
 
-function bindControlEvents() {
-	$('#app-content').on('click', '#editor_save', doFileSave);
-	$('#app-content').on('click', '#editor_close', hideFileEditor);
-	$('#app-content').on('keyup', '#editorsearchval', doSearch);
-	$('#app-content').on('click', '#clearsearchbtn', resetSearch);
-	$('#app-content').on('click', '#nextsearchbtn', nextSearchResult);
-}
+	/**
+	 * Stored the saving state
+	 */
+	saving: false,
 
-// returns true or false if the editor is in view or not
-function editorIsShown() {
-	return is_editor_shown;
-}
+	/**
+	 * Current files app context
+	 */
+	currentContext: null,
 
-//resets the search
-function resetSearch() {
-	$('#editorsearchval').val('');
-	$('#nextsearchbtn').remove();
-	$('#clearsearchbtn').remove();
-	window.aceEditor.gotoLine(0);
-}
+	/**
+	 * Stores the autosave timer
+	 */
+	saveTimer: null,
 
-// moves the cursor to the next search resukt
-function nextSearchResult() {
-	window.aceEditor.findNext();
-}
-// Performs the initial search
-function doSearch() {
-	// check if search box empty?
-	if ($('#editorsearchval').val() == '') {
-		// Hide clear button
-		window.aceEditor.gotoLine(0);
-		$('#nextsearchbtn').remove();
-		$('#clearsearchbtn').remove();
-	} else {
-		// New search
-		// Reset cursor
-		window.aceEditor.gotoLine(0);
-		// Do search
-		window.aceEditor.find($('#editorsearchval').val(), {
-			backwards: false,
-			wrap: false,
-			caseSensitive: false,
-			wholeWord: false,
-			regExp: false
-		});
-		// Show next and clear buttons
-		// check if already there
-		if ($('#nextsearchbtn').length == 0) {
-			var nextbtnhtml = '<button id="nextsearchbtn">' + t('files_texteditor', 'Next') + '</button>';
-			var clearbtnhtml = '<button id="clearsearchbtn">' + t('files_texteditor', 'Clear') + '</button>';
-			$('#editorsearchval').after(nextbtnhtml).after(clearbtnhtml);
+	/**
+	 * preview plugins by mimetype
+	 */
+	previewPlugins: {},
+
+	registerPreviewPlugin: function(mimeType, plugin) {
+		this.previewPlugins[mimeType] = plugin;
+	},
+
+	/**
+	 * preview element
+	 */
+	preview: null,
+
+	previewPluginOnChange: null,
+
+	/**
+	 * Save handler, triggered by the button, or keyboard
+	 */
+	_onSaveTrigger: function() {
+		// Don't save if not edited
+		if(!OCA.Files_Texteditor.file.edited) {
+			return;
 		}
-	}
-}
+		// Don't try to save twice
+		if(OCA.Files_Texteditor.saving) {
+			return;
+		} else {
+			OCA.Files_Texteditor.saving = true;
+			OCA.Files_Texteditor.edited = false;
+		}
 
-// Tries to save the file.
-function doFileSave() {
-	if (editorIsShown()) {
-		// Changed contents?
-		if ($('#editor').attr('data-edited') == 'true') {
-			$('#editor').attr('data-edited', 'false');
-			$('#editor').attr('data-saving', 'true');
-			// Get file path
-			var path = $('#editor').attr('data-dir') + '/' + $('#editor').attr('data-filename');
-			// Get original mtime
-			var mtime = $('#editor').attr('data-mtime');
-			// Show saving spinner
-			$("#editor_save").die('click', doFileSave);
-			$('#save_result').remove();
-			$('#editor_save').text(t('files_texteditor', 'Saving...'));
-			// Get the data
-			var filecontents = window.aceEditor.getSession().getValue();
-			// Send the data
-			$.ajax({
-				type: 'PUT',
-				url: OC.generateUrl('/apps/files_texteditor/ajax/savefile'),
-				data: {
-					filecontents: filecontents,
-					path: path,
-					mtime: mtime
-				}
-			}).done(function(data) {
-					// Save OK
-					// Update mtime
-					$('#editor').attr('data-mtime', data.mtime);
-					$('#editor_save').text(t('files_texteditor', 'Save'));
-					// Update titles
-					if($('#editor').attr('data-edited') != 'true') {
-						$('.crumb.last a').text($('#editor').attr('data-filename'));
-						document.title = $('#editor').attr('data-filename') + ' - ownCloud';
-					}
-					$('#editor').attr('data-saving', 'false');
-					$('#editor_save').live('click', doFileSave);
-				}
-			).fail(function(jqXHR) {
-					$('#editor_save').text(t('files_texteditor', 'Save'));
-					$('#notification').text(JSON.parse(jqXHR.responseText).message);
-					$('#notification').fadeIn();
-					$('#editor').attr('data-edited', 'true');
-					$('#editor').attr('data-saving', 'false');
-					$('#editor_save').live('click', doFileSave);
+		// Set the saving status
+		$('#editor_controls small.saving-message')
+			.text(t('files_texteditor', 'saving...'))
+			.show();
+		// Send to server
+		OCA.Files_Texteditor.saveFile(
+			window.aceEditor.getSession().getValue(),
+			OCA.Files_Texteditor.file,
+			function(data){
+				newmtime = data.mtime;
+				// Yay
+				// TODO only reset edited value if not editing during saving
+				document.title = document.title.slice(2);
+				$('small.unsaved-star').css('display', 'none');
+				OCA.Files_Texteditor.file.mtime = newmtime;
+				OCA.Files_Texteditor.file.edited = false;
+				$('#editor_controls small.saving-message')
+					.text(t('files_texteditor', 'saved!'));
+				setTimeout(function() {
+					$('small.saving-message').fadeOut(200);
+				}, 2000);
+			},
+			function(message){
+				// Boo
+				$('small.saving-message').text(t('files_texteditor', 'failed!'));
+				setTimeout(function() {
+					$('small.saving-message').fadeOut(200);
+				}, 5000);
+				OCA.Files_Texteditor.edited = true;
+			}
+		);
+		OCA.Files_Texteditor.saving = false;
+		window.aceEditor.focus();
+	},
+
+	/**
+	 * Handles on close button click
+	 */
+	_onCloseTrigger: function() {
+		// Hide or close?
+		if(!OCA.Files_Texteditor.file.edited) {
+			OCA.Files_Texteditor.closeEditor();
+		} else {
+			// Trick the autosave attempt into thinking we have no changes
+			OCA.Files_Texteditor.file.edited = false;
+			// Hide the editor
+			OCA.Files_Texteditor.hideEditor();
+			// Try to save
+			OCA.Files_Texteditor.saveFile(
+				window.aceEditor.getSession().getValue(),
+				OCA.Files_Texteditor.file,
+				function(data){
+					OC.Notification.showTemporary(t(
+						'files_texteditor',
+						'Saved'
+						)
+					);
+					// Remove the editor
+					OCA.Files_Texteditor.closeEditor();
+				},
+				function(message){
+					OC.Notification.showTemporary(t(
+						'files_texteditor',
+						'There was a problem saving your changes. Click to resume editing.'
+						)
+					);
+					$('#notification').data('reopeneditor', true).on(
+						'click',
+						OCA.Files_Texteditor._onReOpenTrigger
+					);
+					OCA.Files_Texteditor.file.edited = true;
 				}
 			);
 		}
-	}
-	giveEditorFocus();
-};
+	},
 
-// Gives the editor focus
-function giveEditorFocus() {
-	window.aceEditor.focus();
-};
-
-// Loads the file editor. Accepts two parameters, dir and filename.
-function showFileEditor(dir, filename) {
-	// Check if unsupported file format
-	if(FileActions.currentFile && FileActions.getCurrentMimeType() === 'text/rtf') {
-		// Download the file instead.
-		window.location = OC.filePath('files', 'ajax', 'download.php') + '?files=' + encodeURIComponent(filename) + '&dir=' + encodeURIComponent($('#dir').val());
-	} else {
-		if (!editorIsShown()) {
-			is_editor_shown = true;
-			// Delete any old editors
-			if ($('#notification').data('reopeneditor')) {
-				OC.Notification.hide();
-			}
-			$('#editor').remove();
-			// Loads the file editor and display it.
-			$('#app-content').append('<div id="editor_container"><div id="editor"></div></div>');
-
-			// bigger text for better readability
-			document.getElementById('editor').style.fontSize = '16px';
-
-
-			$.get(
-			OC.generateUrl('/apps/files_texteditor/ajax/loadfile'),
-				{
-					filename: filename,
-					dir: dir
-				}
-			).done(function (data) {
-						// Save mtime
-						$('#editor').attr('data-mtime', data.mtime);
-						$('#editor').attr('data-saving', 'false');
-						// Initialise the editor
-						if (window.FileList){
-							FileList.setViewerMode(true);
-							enableEditorUnsavedWarning(true);
-							$('#fileList').on('changeDirectory.texteditor', textEditorOnChangeDirectory);
-						}
-						// Show the control bar
-						showControls(dir, filename, data.writeable);
-						// Update document title
-						$('body').attr('old_title', document.title);
-						document.title = filename + ' - ownCloud';
-						$('#editor').text(data.filecontents);
-						$('#editor').attr('data-dir', dir);
-						$('#editor').attr('data-filename', filename);
-						$('#editor').attr('data-edited', 'false');
-						window.aceEditor = ace.edit("editor");
-						aceEditor.setShowPrintMargin(false);
-						aceEditor.getSession().setUseWrapMode(true);
-						if ( ! data.writeable ) {
-							aceEditor.setReadOnly(true);
-						}
-						if (data.mime && data.mime === 'text/html') {
-							setSyntaxMode('html');
-						} else {
-							setSyntaxMode(getFileExtension(filename));
-						}
-						OC.addScript('files_texteditor', 'vendor/ace/src-noconflict/theme-clouds', function () {
-							window.aceEditor.setTheme("ace/theme/clouds");
-						});
-						window.aceEditor.getSession().on('change', function () {
-							if ($('#editor').attr('data-edited') != 'true') {
-								$('#editor').attr('data-edited', 'true');
-								if($('#editor').attr('data-saving') != 'true') {
-									$('.crumb.last a').text($('.crumb.last a').text() + ' *');
-									document.title = $('#editor').attr('data-filename') + ' * - ownCloud';
-								}
-							}
-						});
-						// Add the ctrl+s event
-						window.aceEditor.commands.addCommand({
-							name: "save",
-							bindKey: {
-								win: "Ctrl-S",
-								mac: "Command-S",
-								sender: "editor"
-							},
-							exec: function () {
-								if($('#editor').attr('data-saving') == 'false'){
-									doFileSave();
-								}
-							}
-						});
-						giveEditorFocus();
-					}
-			).fail(function(jqXHR) {
-					// Failed to get the file.
-					OC.dialogs.alert(JSON.parse(jqXHR.responseText).message, t('files_texteditor', 'An error occurred!'));
-					hideFileEditor();
-				}
-			);
+	/**
+	 * Handles the trigger or re open editor
+	 */
+	_onReOpenTrigger: function() {
+		if($('#notification').data('reopeneditor') == true) {
+			document.title = OCA.Files_Texteditor.file.name + ' - ' + document.title;
+			OCA.Files_Texteditor.$container.show();
 		}
-	}
-}
+	},
 
-function enableEditorUnsavedWarning(enable) {
-	$(window).unbind('beforeunload.texteditor');
-	if (enable) {
-		$(window).bind('beforeunload.texteditor', function () {
-			if ($('#editor').attr('data-edited') == 'true') {
-				return t('files_texteditor', 'There are unsaved changes in the text editor');
+	/**
+	 * Handles the FileAction click event
+	 */
+	_onEditorTrigger: function(filename, context) {
+		OCA.Files_Texteditor.currentContext = context;
+		OCA.Files_Texteditor.file.name = filename;
+		OCA.Files_Texteditor.file.dir = context.dir;
+		OCA.Files_Texteditor.loadEditor(
+			OCA.Files_Texteditor.$container,
+			OCA.Files_Texteditor.file
+		);
+		if(!$('html').hasClass('ie8')) {
+			history.pushState({file:filename, dir:context.dir}, 'Editor', '#editor');
+		}
+	},
+
+	/**
+	 * Handler for edits detected
+	 */
+	_onEdit: function () {
+		if(!OCA.Files_Texteditor.file.edited) {
+			OCA.Files_Texteditor.file.edited = true;
+			if(!OCA.Files_Texteditor.saving) {
+				OCA.Files_Texteditor._onUnsaved();
 			}
-		});
-	}
-}
+		}
+		if (this.previewPluginOnChange) {
+			var text = window.aceEditor.getSession().getValue();
+			this.previewPluginOnChange(text, this.preview);
+		}
+	},
 
-function textEditorOnChangeDirectory(ev){
-	// if the directory is changed, it is usually due to browser back
-	// navigation. In this case, simply close the editor
-	hideFileEditor();
-}
+	/**
+	 * Handler when unsaved work is detected
+	 */
+	_onUnsaved: function() {
+		document.title = '* '+document.title;
+		$('small.unsaved-star').css('display', 'inline-block');
+	},
 
-// Fades out the editor.
-function hideFileEditor() {
-	$('#fileList').off('changeDirectory.texteditor');
-	enableEditorUnsavedWarning(false);
-	if (window.FileList){
-		// reload the directory content with the updated file size + thumbnail
-		// and also the breadcrumb
-		window.FileList.reload();
-	}
-	var $editorWasEdited = $('#editor').attr('data-edited') == 'true';
+	/**
+	 * Setup on page load
+	 */
+	initialize: function(container) {
+		// Don't load if not in the files app TODO: Fix for sharing
+		if(!$('#content.app-files').length) { return; }
+		this.$container = container;
+		this.registerFileActions();
+		this.oldTitle = document.title;
+		$.each(this.previewPlugins, function(mime, plugin) {
+			plugin.init();
+		});
+	},
 
-	// Fade out editor
-	if ($editorWasEdited) {
-		// Hide, not remove
-		$('#editorcontrols,#editor_container').hide();
-	} else {
-		$('#editor_container, #editorcontrols').remove();
-	}
+	/**
+	 * Registers the file actions
+	 */
+	registerFileActions: function() {
+		var mimes = Array(
+			'text',
+			'application/xml',
+			'application/x-empty',
+			'application/x-php',
+			'application/javascript',
+			'application/x-pearl',
+			'application/x-text',
+			'application/yaml'
+		);
 
-	// Reset document title
-	if (typeof $('body').attr('old_title') !== 'undefined') {
-		document.title = $('body').attr('old_title');
-	}
-	FileList.setViewerMode(false);
-	$('#content table').show();
+		_self = this;
 
-	if ($editorWasEdited) {
-		OC.Notification.showTemporary(t('files_texteditor', 'There were unsaved changes, click here to go back'));
-		$('#notification').data('reopeneditor', true);
-	}
-
-	is_editor_shown = false;
-}
-
-// Reopens the last document
-function reopenEditor() {
-	FileList.setViewerMode(true);
-	enableEditorUnsavedWarning(true);
-	$('#fileList').on('changeDirectory.texteditor', textEditorOnChangeDirectory);
-	$('#controls .last').not('#breadcrumb_file').removeClass('last');
-	$('#editor_container').show();
-	$('#editorcontrols').show();
-	OC.Breadcrumb.show($('#editor').attr('data-dir'), $('#editor').attr('data-filename') + ' *', '#');
-	document.title = $('#editor').attr('data-filename') + ' * - ownCloud';
-	is_editor_shown = true;
-	giveEditorFocus();
-}
-
-var is_editor_shown = false;
-$(document).ready(function () {
-	if ($('#isPublic').val()){
-		// disable editor in public mode (not supported yet)
-		return;
-	}
-	if (typeof FileActions !== 'undefined') {
-		FileActions.register('text', 'Edit', OC.PERMISSION_READ, '', function (filename) {
-			showFileEditor($('#dir').val(), filename);
-		});
-		FileActions.setDefault('text', 'Edit');
-		FileActions.register('application/xml', 'Edit', OC.PERMISSION_READ, '', function (filename) {
-			showFileEditor($('#dir').val(), filename);
-		});
-		FileActions.setDefault('application/xml', 'Edit');
-		FileActions.register('application/x-empty', 'Edit', OC.PERMISSION_READ, '', function (filename) {
-			showFileEditor($('#dir').val(), filename);
-		});
-		FileActions.setDefault('application/x-empty', 'Edit');
-		FileActions.register('inode/x-empty', 'Edit', OC.PERMISSION_READ, '', function (filename) {
-			showFileEditor($('#dir').val(), filename);
-		});
-		FileActions.setDefault('inode/x-empty', 'Edit');
-		FileActions.register('application/x-php', 'Edit', OC.PERMISSION_READ, '', function (filename) {
-			showFileEditor($('#dir').val(), filename);
-		});
-		FileActions.setDefault('application/x-php', 'Edit');
-		FileActions.register('application/javascript', 'Edit', OC.PERMISSION_READ, '', function (filename) {
-			showFileEditor($('#dir').val(), filename);
-		});
-		FileActions.setDefault('application/javascript', 'Edit');
-		FileActions.register('application/x-perl', 'Edit', OC.PERMISSION_READ, '', function (filename) {
-			showFileEditor($('#dir').val(), filename);
-		});
-		FileActions.setDefault('application/x-perl', 'Edit');
-		FileActions.register('application/x-tex', 'Edit', OC.PERMISSION_READ, '', function (filename) {
-			showFileEditor($('#dir').val(), filename);
-		});
-		FileActions.setDefault('application/x-tex', 'Edit');
-		FileActions.register('application/yaml', 'Edit', OC.PERMISSION_READ, '', function (filename) {
-			showFileEditor($('#dir').val(), filename);
-		});
-		FileActions.setDefault('application/yaml', 'Edit');
-
-	}
-
-	//legacy search result customization
-	OC.search.customResults.Text = function (row, item) {
-		var text = item.link.substr(item.link.indexOf('download') + 8);
-		var a = row.find('td.result a');
-		a.data('file', text);
-		a.attr('href', '#');
-		a.click(function () {
-			text = decodeURIComponent(text);
-			var pos = text.lastIndexOf('/');
-			var file = text.substr(pos + 1);
-			var dir = text.substr(0, pos);
-			showFileEditor(dir, file);
-		});
-	};
-	// customize file results when we can edit them
-	OC.search.customResults.file = function (row, item) {
-		var validFile = /(text\/*|application\/xml)/;
-		if (validFile.test(item.mime_type)) {
-			var a = row.find('td.result a');
-			a.data('file', item.name);
-			a.attr('href', '#');
-			a.click(function () {
-				showFileEditor(OC.dirname(item.path), item.name);
+		$.each(mimes, function(key, value) {
+			OCA.Files.fileActions.registerAction({
+				name: 'Edit',
+				mime: value,
+				actionHandler: _self._onEditorTrigger,
+				permissions: OC.PERMISSION_READ
 			});
+			OCA.Files.fileActions.setDefault(value, 'Edit');
+		});
+
+	},
+
+	/**
+	 * Actually fire up the editor in a container
+	 */
+	loadEditor: function(container, file) {
+		var _self = this;
+		// Insert the editor into the container
+		container.html(
+			'<div id="editor_overlay"></div>'
+			+'<div id="editor_container" class="icon-loading">'
+			+'<div id="editor_wrap"><div id="editor"></div>'
+			+'<div id="preview_wrap"><div id="preview"></div></div></div></div>');
+		$('#app-content').append(container);
+
+
+		// Get the file data
+		this.loadFile(
+			file.dir,
+			file.name,
+			function(file, data){
+				// Success!
+				// Sort the title
+				document.title = file.name + ' - ' + document.title;
+				// Load ace
+				$('#'+_self.editor).text(data);
+				// Configure ace
+				_self.configureACE(file);
+				// Show the controls
+				_self.loadControlBar(file, _self.currentContext);
+				window.aceEditor.getSession().on('change', _self.setupAutosave);
+				window.aceEditor.focus();
+
+				if (_self.previewPlugins[file.mime]){
+					_self.preview = container.find('#preview');
+					_self.preview.addClass(file.mime.replace('/','-'));
+					container.find('#editor_container').addClass('hasPreview');
+					_self.previewPluginOnChange = _.debounce(_self.previewPlugins[file.mime].preview, 200);
+					var text = window.aceEditor.getSession().getValue();
+					_self.previewPluginOnChange(text, _self.preview);
+					window.aceEditor.resize();
+				} else {
+					_self.previewPluginOnChange = null;
+				}
+
+				// IE8 support
+				if(!OC.Util.hasSVGSupport()){ //replace all svg images with png images for browser that dont support svg
+					OC.Util.replaceSVG();
+				}
+			},
+			function(message){
+				// Oh dear
+				OC.dialogs.alert(message, t('files_texteditor', 'An error occurred!'));
+			});
+	},
+
+	/**
+	 * Load the editor control bar
+	 */
+	loadControlBar: function(file, context) {
+		var html =
+			'<small class="filename">'+escapeHTML(file.name)+'</small>'
+			+'<small class="unsaved-star" style="display: none">*</small>'
+			+'<small class="saving-message">'
+			+'</small>'
+			+'<button id="editor_close" class="icon-close svg"></button>';
+		var controlBar = $('<div id="editor_controls"></div>').html(html);
+		$('#editor_wrap').before(controlBar);
+		this.setFilenameMaxLength();
+		this.bindControlBar();
+
+	},
+
+	/**
+	 * Removes the control bar
+	 */
+	unloadControlBar: function() {
+		$('#editor_controls').remove();
+	},
+
+	/**
+	 * Set the max width of the filename to prevent wrapping
+	 */
+	setFilenameMaxLength: function() {
+		// Get the width of the control bar
+		var controlBar = $('#editor_controls').width();
+		// Get the width of all of the other controls
+		var controls = $('small.saving-message').outerWidth(true);
+		controls += $('small.unsaved-star').outerWidth(true);
+		controls += $('#editor_close').outerWidth(true);
+		// Set the max width
+		$('small.filename').css('max-width', controlBar-controls-28);
+	},
+
+	/**
+	 * Binds the control events on the control bar
+	 */
+	bindControlBar: function() {
+		$('#editor_close').on('click', this._onCloseTrigger);
+		$(window).resize(OCA.Files_Texteditor.setFilenameMaxLength);
+		if(!$('html').hasClass('ie8')) {
+			window.onpopstate = function (e) {
+				OCA.Files_Texteditor._onCloseTrigger();
+			}
 		}
-	};
-	// Binds the file save and close editor events, and gotoline button
-	bindControlEvents();
-	$('#editor_container').remove();
-	$('#notification').click(function () {
-		if ($('#notification').data('reopeneditor')) {
-			reopenEditor();
-			OC.Notification.hide();
+	},
+
+	/**
+	 * Configure the ACE editor
+	 */
+	configureACE: function(file) {
+		window.aceEditor = ace.edit(this.editor);
+		aceEditor.setShowPrintMargin(false);
+		aceEditor.getSession().setUseWrapMode(true);
+		if (!file.writeable) { aceEditor.setReadOnly(true); }
+		if (file.mime && file.mime === 'text/html') {
+			this.setEditorSyntaxMode('html');
+		} else {
+			// Set the syntax mode based on the file extension
+			this.setEditorSyntaxMode(
+				file.name.split('.')[file.name.split('.').length - 1]
+			);
 		}
-	});
+		// Set the theme
+		OC.addScript(
+			'files_texteditor',
+			'vendor/ace/src-noconflict/theme-clouds',
+			function () {
+				window.aceEditor.setTheme("ace/theme/clouds");
+			}
+		);
+		// Bind the edit event
+		window.aceEditor.getSession().on('change', this._onEdit.bind(this));
+		// Bind save trigger
+		window.aceEditor.commands.addCommand({
+			name: "save",
+			bindKey: {
+				win: "Ctrl-S",
+				mac: "Command-S",
+				sender: "editor"
+			},
+			exec: OCA.Files_Texteditor._onSaveTrigger
+		});
+	},
+
+	/**
+	 * Sets the syntax highlighting for the editor based on the file extension
+	 */
+	setEditorSyntaxMode: function(extension) {
+		// Loads the syntax mode files and tells the editor
+		var filetype = new Array();
+		// add file extensions like this: filetype["extension"] = "filetype":
+		filetype["h"] = "c_cpp";
+		filetype["c"] = "c_cpp";
+		filetype["clj"] = "clojure";
+		filetype["coffee"] = "coffee"; // coffescript can be compiled to javascript
+		filetype["coldfusion"] = "cfc";
+		filetype["cpp"] = "c_cpp";
+		filetype["cs"] = "csharp";
+		filetype["css"] = "css";
+		filetype["groovy"] = "groovy";
+		filetype["haxe"] = "hx";
+		filetype["htm"] = "html";
+		filetype["html"] = "html";
+		filetype["tt"] = "html";
+		filetype["java"] = "java";
+		filetype["js"] = "javascript";
+		filetype["jsm"] = "javascript";
+		filetype["json"] = "json";
+		filetype["latex"] = "latex";
+		filetype["tex"] = "latex";
+		filetype["less"] = "less";
+		filetype["ly"] = "latex";
+		filetype["ily"] = "latex";
+		filetype["lua"] = "lua";
+		filetype["markdown"] = "markdown";
+		filetype["md"] = "markdown";
+		filetype["mdown"] = "markdown";
+		filetype["mdwn"] = "markdown";
+		filetype["mkd"] = "markdown";
+		filetype["ml"] = "ocaml";
+		filetype["mli"] = "ocaml";
+		filetype["pl"] = "perl";
+		filetype["php"] = "php";
+		filetype["powershell"] = "ps1";
+		filetype["py"] = "python";
+		filetype["rb"] = "ruby";
+		filetype["scad"] = "scad"; // seems to be something like 3d model files printed with e.g. reprap
+		filetype["scala"] = "scala";
+		filetype["scss"] = "scss"; // "sassy css"
+		filetype["sh"] = "sh";
+		filetype["sql"] = "sql";
+		filetype["svg"] = "svg";
+		filetype["textile"] = "textile"; // related to markdown
+		filetype["xml"] = "xml";
+
+		if (filetype[extension] != null) {
+			// Then it must be in the array, so load the custom syntax mode
+			// Set the syntax mode
+			OC.addScript(
+				'files_texteditor',
+				'vendor/ace/src-noconflict/mode-'+filetype[extension],
+				function () {
+					var SyntaxMode = ace.require("ace/mode/" + filetype[extension]).Mode;
+					window.aceEditor.getSession().setMode(new SyntaxMode());
+				}
+			);
+		}
+	},
+
+	/**
+	 * Loads the data through AJAX
+	 */
+	loadFile: function(dir, filename, success, failure) {
+		var _self = this;
+		var data = $.getJSON(
+			OC.filePath('files_texteditor', 'ajax', 'loadfile.php'),
+			{file: filename, dir: dir},
+			function (result) {
+				if(result.status === 'success') {
+					// Call success callback
+					OCA.Files_Texteditor.file.writeable = result.data.writeable;
+					OCA.Files_Texteditor.file.mime = result.data.mime;
+					OCA.Files_Texteditor.file.mtime = result.data.mtime;
+					success(OCA.Files_Texteditor.file, result.data.filecontents);
+				} else {
+					// Call failure callback
+					failure(result.data.message);
+				}
+		});
+
+		$.get(
+			OC.generateUrl('/apps/files_texteditor/ajax/loadfile'),
+			{
+				filename: filename,
+				dir: dir
+			}
+		).done(function(data) {
+					// Call success callback
+					OCA.Files_Texteditor.file.writeable = data.writeable;
+					OCA.Files_Texteditor.file.mime = data.mime;
+					OCA.Files_Texteditor.file.mtime = data.mtime;
+					success(OCA.Files_Texteditor.file, data.filecontents);
+
+		}).fail(function(jqXHR) {
+			failure(JSON.parse(jqXHR.responseText).message);
+		});
+	},
+
+	/**
+	 * Send the new file data back to the server
+	 */
+	saveFile: function(data, file, success, failure) {
+		// Send the post request
+		if(file.dir == '/') {
+			var path = file.dir + file.name;
+		} else {
+			var path = file.dir + '/' + file.name;
+		}
+		$.ajax({
+			type: 'PUT',
+			url: OC.generateUrl('/apps/files_texteditor/ajax/savefile'),
+			data: {
+				filecontents: data,
+				path: path,
+				mtime: file.mtime
+			}
+		})
+		.done(success)
+		.fail(function(jqXHR) {
+			failure(JSON.parse(jqXHR.responseText).message);
+		});
+	},
+
+	/**
+	 * Close the editor for good
+	 */
+	closeEditor: function() {
+		this.$container.html('').show();
+		this.unloadControlBar();
+		document.title = this.oldTitle;
+	},
+
+	/**
+	 * Hide the editor (unsaved changes)
+	 */
+	hideEditor: function() {
+		this.$container.hide();
+		document.title = this.oldTitle;
+	},
+
+	/**
+	 * Configure the autosave timer
+	 */
+	setupAutosave: function() {
+		clearTimeout(this.saveTimer);
+		this.saveTimer = setTimeout(OCA.Files_Texteditor._onSaveTrigger, 3000);
+	}
+
+}
+
+OCA.Files_Texteditor = Files_Texteditor;
+
+$(document).ready(function () {
+	$('#editor').remove();
+	OCA.Files_Texteditor.initialize($('<div id="app-content-texteditor"></div>'));
 });

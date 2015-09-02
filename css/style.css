@@ -1,37 +1,192 @@
-.ie8 #editor_container div{
+#editor_container div{
 	/* override core style.css font-size:100% that messes up the editor in IE8 */
-	font-size: 12px !important;
+	font-size: 13px !important;
 }
 
-#editor_container #editor {
-	position: relative;
-	display: block;
+#editor_controls {
+	background-color: white;
+	height: 44px;
+	position: absolute;
 	top: 0;
-	left: 0;
-	z-index: 20;
+	width: 100%;
+	z-index: 1000;
+}
+
+.ace-clouds .ace_marker-layer .ace_active-line {
+    background-color: #f8f8f8 !important;
+}
+
+#editor div.ace_gutter {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	opacity: .2;
+ 	background-color: transparent;
+}
+
+#editor {
+	display: block;
 	height: 100%;
 	width: 100%;
+	overflow: hidden;
+}
+
+#editor_wrap {
+	box-sizing: border-box;
+	padding-top: 46px;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 
 #editor_container{
-	position: absolute;
-	display: block;
-	top: 0;
-	left: 0;
-	padding-top: 44px;
-	height: 100%;
-	width: 100%;
-	-moz-box-sizing: border-box;
+    position: fixed;
+    top: 8%;
+	left: 15%;
+	width: 70%;
+    height: 88%;
+    z-index: 9999;
+    overflow: hidden;
+    background-color: #fff;
+	border-radius: 3px;
 	box-sizing: border-box;
 }
 
-#editor_save {
-	margin-left: 7px;
-	margin-right: 20px;
-	float: left;
+#editor_container.hasPreview {
+	z-index: 1002;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border: none;
+	border-radius: 0;
+}
+
+#editor_container.hasPreview #preview, #editor_container.hasPreview #preview_wrap {
+	display:block;
+}
+
+#editor_container.hasPreview #editor {
+	width: 50%;
+}
+
+#editor_container.hasPreview #editor_controls {
+	top: 45px;
+}
+
+#editor_container.hasPreview #editor_wrap {
+	padding-top: 91px; /** main navigation + controls */
+}
+
+#preview_wrap {
+	box-sizing: border-box;
+	height: 100%;
+	width: 50%;
+	right: 0;
+	position: absolute;
+	top: 0;
+	display: none;
+	padding-top: 91px; /** main navigation + controls */
+}
+
+#preview {
+	overflow: auto;
+	box-sizing: border-box;
+	padding: 15px;
+	display: none;
+	height: 100%;
+	width:100%;
+	color: #252525;
+	background-color: #f9f9f9;
+}
+
+@media(max-width: 768px) {
+	#editor_container {
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		border: none;
+		border-radius: 0;
+	}
+
+	#editor_controls {
+		top: 45px;
+	}
+
+	#editor_wrap {
+		padding-top: 91px; /** main navigation + controls */
+	}
+
+	#editor_container.hasPreview #preview {
+		display: none;
+	}
+
+	#editor_container.hasPreview #editor {
+		width: 100%;
+	}
 }
 
 #editor_close {
 	float: right;
-	margin-right: 9px;
+	width: 34px;
+	border: none;
+	background-color: transparent;
+	padding: 22px !important;
+	margin: 0 !important;
+	border-radius: 0;
+	right: 0;
+	opacity: 0.3;
+}
+
+#editor_close:hover {
+	background-color: #ddd;
+}
+
+#editorcontrols > button {
+	height: 30px !important;
+	margin-top: 7px;
+}
+
+#editor_controls small.filename {
+	float: left;
+	color: #555;
+	font-family: inherit;
+	font-size: 100%;
+	font-weight: bolder;
+	text-overflow: ellipsis;
+	padding: 12px 0 0 14px;
+	max-width: 218px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#editor_controls small.saving-message {
+	color: #ccc;
+	font-family: inherit;
+	font-size: 90%;
+	padding: 13px 0 13px 17px;
+	overflow: hidden;
+	display: inline-block;
+	padding: 13px 0 0 17px;
+}
+
+ #editor_overlay{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    filter: alpha(opacity=70);
+}
+
+small.unsaved-star {
+	position:absolute;
+	padding: 9px 0 0 4px;
+	display: inline-block;
+	float: left;
 }
