@@ -7,13 +7,11 @@ OC.L10N.register(
     "Insufficient permissions" : "Permissões insuficientes",
     "File path not supplied" : "Caminho do arquivo não fornecido",
     "File mtime not supplied" : "Data de mudança mtime do arquivo não especificada",
-    "Save" : "Salvar",
-    "Search" : "Perquisar",
-    "Next" : "Próximo",
-    "Clear" : "Limpar",
-    "Saving..." : "Salvando...",
-    "An error occurred!" : "Ocorreu um erro!",
-    "There are unsaved changes in the text editor" : "Há alterações não salvas no editor de texto",
-    "There were unsaved changes, click here to go back" : "Existem alterações não salvas, clique aqui para voltar"
+    "saving..." : "salvando...",
+    "saved!" : "salvo!",
+    "failed!" : "falhou!",
+    "Saved" : "Salvo",
+    "There was a problem saving your changes. Click to resume editing." : "Houve um problema ao salvar suas alterações. Clica para retomar a edição.",
+    "An error occurred!" : "Ocorreu um erro!"
 },
 "nplurals=2; plural=(n > 1);");

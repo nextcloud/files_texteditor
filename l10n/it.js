@@ -7,13 +7,11 @@ OC.L10N.register(
     "Insufficient permissions" : "Permessi insufficienti",
     "File path not supplied" : "Percorso del file non fornito",
     "File mtime not supplied" : "mtime del file non fornito",
-    "Save" : "Salva",
-    "Search" : "Cerca",
-    "Next" : "Successivo",
-    "Clear" : "Cancella",
-    "Saving..." : "Salvataggio in corso...",
-    "An error occurred!" : "Si è verificato un errore!",
-    "There are unsaved changes in the text editor" : "Ci sono delle modifiche non salvate nell'editor di testo",
-    "There were unsaved changes, click here to go back" : "C'erano delle modifiche non salvate, fai clic qui per tornare indietro"
+    "saving..." : "salvataggio in corso...",
+    "saved!" : "salvato!",
+    "failed!" : " non riuscito!",
+    "Saved" : "Salvato",
+    "There was a problem saving your changes. Click to resume editing." : "Si è verificato un problema durante il salvataggio delle modifiche. Fai clic per riprendere la modifica.",
+    "An error occurred!" : "Si è verificato un errore!"
 },
 "nplurals=2; plural=(n != 1);");

@@ -6,13 +6,11 @@ $TRANSLATIONS = array(
 "Insufficient permissions" => "Utilstrækkeligt med rettigheder",
 "File path not supplied" => "Filstien er ikke angivet",
 "File mtime not supplied" => "Filen mtime er ikke anvist",
-"Save" => "Gem",
-"Search" => "Søg",
-"Next" => "Næste",
-"Clear" => "Ryd",
-"Saving..." => "Gemmer...",
-"An error occurred!" => "Der opstod en fejl!",
-"There are unsaved changes in the text editor" => "Der er ændringer som ikke er gemt i tekstbehandleren",
-"There were unsaved changes, click here to go back" => "Ændringer blev ikke gemt - klik her for at gå tilbage"
+"saving..." => "gemmer...",
+"saved!" => "gemt!",
+"failed!" => "mislykkedes!",
+"Saved" => "Gemt",
+"There was a problem saving your changes. Click to resume editing." => "Der opstod et problem ved lagringen af dine ændringer. Klik for at genoptage redigeringen.",
+"An error occurred!" => "Der opstod en fejl!"
 );
 $PLURAL_FORMS = "nplurals=2; plural=(n != 1);";
