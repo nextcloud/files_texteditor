@@ -89,7 +89,7 @@
 	padding-top: 91px; /** main navigation + controls */
 }
 
-#preview {
+#editor_container #preview {
 	overflow: auto;
 	box-sizing: border-box;
 	padding: 15px;
