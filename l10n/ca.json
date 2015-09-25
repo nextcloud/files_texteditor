@@ -3,13 +3,10 @@
     "Insufficient permissions" : "Permisos insuficients",
     "File path not supplied" : "No s'ha proporcionat la ruta del arxiu",
     "File mtime not supplied" : "No s'ha proporcionat l'hora de modificació de l'arxiu",
-    "Save" : "Desa",
-    "Search" : "Cerca",
-    "Next" : "Següent",
-    "Clear" : "Neteja",
-    "Saving..." : "Desant...",
-    "An error occurred!" : "S'ha produït un error!",
-    "There are unsaved changes in the text editor" : "Hi ha canvis no desats a l'editor de text",
-    "There were unsaved changes, click here to go back" : "Hi havia canvis que no desats, feu click aquí per anar enrera"
+    "saving..." : "Desant...",
+    "saved!" : "Desat!",
+    "failed!" : "ha fallat!",
+    "Saved" : "Desat",
+    "An error occurred!" : "S'ha produït un error!"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
