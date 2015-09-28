@@ -460,23 +460,6 @@ var Files_Texteditor = {
 	 * Loads the data through AJAX
 	 */
 	loadFile: function(dir, filename, success, failure) {
-		var _self = this;
-		var data = $.getJSON(
-			OC.filePath('files_texteditor', 'ajax', 'loadfile.php'),
-			{file: filename, dir: dir},
-			function (result) {
-				if(result.status === 'success') {
-					// Call success callback
-					OCA.Files_Texteditor.file.writeable = result.data.writeable;
-					OCA.Files_Texteditor.file.mime = result.data.mime;
-					OCA.Files_Texteditor.file.mtime = result.data.mtime;
-					success(OCA.Files_Texteditor.file, result.data.filecontents);
-				} else {
-					// Call failure callback
-					failure(result.data.message);
-				}
-		});
-
 		$.get(
 			OC.generateUrl('/apps/files_texteditor/ajax/loadfile'),
 			{
@@ -484,12 +467,11 @@ var Files_Texteditor = {
 				dir: dir
 			}
 		).done(function(data) {
-					// Call success callback
-					OCA.Files_Texteditor.file.writeable = data.writeable;
-					OCA.Files_Texteditor.file.mime = data.mime;
-					OCA.Files_Texteditor.file.mtime = data.mtime;
-					success(OCA.Files_Texteditor.file, data.filecontents);
-
+			// Call success callback
+			OCA.Files_Texteditor.file.writeable = data.writeable;
+			OCA.Files_Texteditor.file.mime = data.mime;
+			OCA.Files_Texteditor.file.mtime = data.mtime;
+			success(OCA.Files_Texteditor.file, data.filecontents);
 		}).fail(function(jqXHR) {
 			failure(JSON.parse(jqXHR.responseText).message);
 		});
