@@ -389,6 +389,9 @@ var Files_Texteditor = {
 			},
 			exec: OCA.Files_Texteditor._onSaveTrigger
 		});
+
+		// disable Ctrl-T shortcut in ace to allow new tab feature in browser
+		window.aceEditor.commands.removeCommand(window.aceEditor.commands.byName.transposeletters);
 	},
 
 	/**
