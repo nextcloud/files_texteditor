@@ -79,7 +79,7 @@ class FileHandlingController extends Controller{
 				// default of 4MB
 				$maxSize = 4194304;
 				if ($this->view->filesize($path) > $maxSize) {
-					return new DataResponse(['message' => (string)$this->l->t('The file is too big.')], Http::STATUS_BAD_REQUEST);
+					return new DataResponse(['message' => (string)$this->l->t('This file is too big to be opened. Please download the file instead.')], Http::STATUS_BAD_REQUEST);
 				}
 				$fileContents = $this->view->file_get_contents($path);
 				if ($fileContents !== false) {
