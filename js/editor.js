@@ -299,6 +299,7 @@ var Files_Texteditor = {
 			function(message){
 				// Oh dear
 				OC.dialogs.alert(message, t('files_texteditor', 'An error occurred!'));
+				_self.closeEditor();
 			});
 	},
 
