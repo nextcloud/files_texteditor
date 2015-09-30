@@ -169,10 +169,11 @@ var Files_Texteditor = {
 	 * Handles the FileAction click event
 	 */
 	_onEditorTrigger: function(filename, context) {
-		OCA.Files_Texteditor.currentContext = context;
-		OCA.Files_Texteditor.file.name = filename;
-		OCA.Files_Texteditor.file.dir = context.dir;
-		OCA.Files_Texteditor.loadEditor(
+		this.currentContext = context;
+		this.file.name = filename;
+		this.file.dir = context.dir;
+		this.fileInfoModel = context.fileList.getModelForFile(filename);
+		this.loadEditor(
 			OCA.Files_Texteditor.$container,
 			OCA.Files_Texteditor.file
 		);
@@ -240,7 +241,7 @@ var Files_Texteditor = {
 			OCA.Files.fileActions.registerAction({
 				name: 'Edit',
 				mime: value,
-				actionHandler: _self._onEditorTrigger,
+				actionHandler: _.bind(_self._onEditorTrigger, _self),
 				permissions: OC.PERMISSION_READ
 			});
 			OCA.Files.fileActions.setDefault(value, 'Edit');
@@ -345,11 +346,12 @@ var Files_Texteditor = {
 	 * Binds the control events on the control bar
 	 */
 	bindControlBar: function() {
-		$('#editor_close').on('click', this._onCloseTrigger);
+		var self = this;
+		$('#editor_close').on('click', _.bind(this._onCloseTrigger, this));
 		$(window).resize(OCA.Files_Texteditor.setFilenameMaxLength);
 		if(!$('html').hasClass('ie8')) {
 			window.onpopstate = function (e) {
-				OCA.Files_Texteditor._onCloseTrigger();
+				self._onCloseTrigger();
 			}
 		}
 	},
@@ -512,6 +514,14 @@ var Files_Texteditor = {
 	closeEditor: function() {
 		this.$container.html('').show();
 		this.unloadControlBar();
+		if (this.fileInfoModel) {
+			this.fileInfoModel.set({
+				// temp dummy, until we can do a PROPFIND
+				etag: this.fileInfoModel.get('id') + this.file.mtime,
+				mtime: this.file.mtime * 1000,
+				// TODO: set size if there is a way to know
+			});
+		}
 		document.title = this.oldTitle;
 	},
 
