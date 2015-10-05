@@ -177,6 +177,19 @@ class FileHandlingControllerTest extends TestCase {
 
 	}
 
+	public function testFileTooBig() {
+		$this->viewMock->expects($this->any())
+			->method('filesize')
+			->willReturn(4194304 + 1);
+
+		$result = $this->controller->load('/', 'foo.bar');
+		$data = $result->getData();
+		$status = $result->getStatus();
+		$this->assertSame(400, $status);
+		$this->assertArrayHasKey('message', $data);
+		$this->assertSame('The file is too big.', $data['message']);
+	}
+
 	public function dataTestSave() {
 		return array (
 			array('/test.txt', 'file content', 65638643, 65638643, true, 200, ''),
