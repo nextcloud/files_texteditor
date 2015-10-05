@@ -138,18 +138,18 @@ class FileHandlingControllerTest extends TestCase {
 	 * @dataProvider dataTestSave
 	 *
 	 * @param $path
-	 * @param $filecontents
-	 * @param $mtime
-	 * @param $filemtime
+	 * @param $fileContents
+	 * @param $mTime
+	 * @param $fileMTime
 	 * @param $isUpdatable
 	 * @param $expectedStatus
 	 * @param $expectedMessage
 	 */
-	public function testSave($path, $filecontents, $mtime, $filemtime, $isUpdatable, $expectedStatus, $expectedMessage) {
+	public function testSave($path, $fileContents, $mTime, $fileMTime, $isUpdatable, $expectedStatus, $expectedMessage) {
 
 		$this->viewMock->expects($this->any())
 			->method('filemtime')
-			->willReturn($filemtime);
+			->willReturn($fileMTime);
 
 		$this->viewMock->expects($this->any())
 			->method('isUpdatable')
@@ -157,12 +157,12 @@ class FileHandlingControllerTest extends TestCase {
 
 		if ($expectedStatus === 200) {
 			$this->viewMock->expects($this->once())
-				->method('file_put_contents')->with($path, $filecontents);
+				->method('file_put_contents')->with($path, $fileContents);
 		} else {
 			$this->viewMock->expects($this->never())->method(('file_put_contents'));
 		}
 
-		$result = $this->controller->save($path, $filecontents, $mtime);
+		$result = $this->controller->save($path, $fileContents, $mTime);
 		$status = $result->getStatus();
 		$data = $result->getData();
 
@@ -175,6 +175,19 @@ class FileHandlingControllerTest extends TestCase {
 			$this->assertSame($expectedMessage, $data['message']);
 		}
 
+	}
+
+	public function testFileTooBig() {
+		$this->viewMock->expects($this->any())
+			->method('filesize')
+			->willReturn(4194304 + 1);
+
+		$result = $this->controller->load('/', 'foo.bar');
+		$data = $result->getData();
+		$status = $result->getStatus();
+		$this->assertSame(400, $status);
+		$this->assertArrayHasKey('message', $data);
+		$this->assertSame('This file is too big to be opened. Please download the file instead.', $data['message']);
 	}
 
 	public function dataTestSave() {
