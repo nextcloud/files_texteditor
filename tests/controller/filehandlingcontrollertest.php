@@ -187,7 +187,7 @@ class FileHandlingControllerTest extends TestCase {
 		$status = $result->getStatus();
 		$this->assertSame(400, $status);
 		$this->assertArrayHasKey('message', $data);
-		$this->assertSame('The file is too big.', $data['message']);
+		$this->assertSame('This file is too big to be opened. Please download the file instead.', $data['message']);
 	}
 
 	public function dataTestSave() {
