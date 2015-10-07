@@ -1,5 +1,6 @@
 <?php
 $TRANSLATIONS = array(
+"This file is too big to be opened. Please download the file instead." => "Ez a fájl túl nagy a megnyitáshoz. Kérjük, helyette töltsd le a fájlt.",
 "Cannot read the file." => "Nem olvasható a fájl!",
 "Invalid file path supplied." => "Helytelen elérési utat adott meg.",
 "Cannot save file as it has been modified since opening" => "Nem tudom a fáljt menteni, mert időközben a tartalma megváltozott.",

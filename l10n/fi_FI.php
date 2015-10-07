@@ -1,5 +1,6 @@
 <?php
 $TRANSLATIONS = array(
+"This file is too big to be opened. Please download the file instead." => "Tiedosto on liian suuri avattavaksi. Lataa tiedosto, jotta voit avata sen.",
 "Cannot read the file." => "TIedoston lukeminen epäonnistui.",
 "Invalid file path supplied." => "Virheellinen tiedostopolku.",
 "Cannot save file as it has been modified since opening" => "Tiedostoa ei voi tallentaa, koska sitä on muokattu avaamisen jälkeen",
