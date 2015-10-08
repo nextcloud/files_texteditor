@@ -1,5 +1,6 @@
 <?php
 $TRANSLATIONS = array(
+"This file is too big to be opened. Please download the file instead." => "این فایل برای باز کردن بسیار بزرگ است. لطفا آنرا دانلود کنید.",
 "Cannot read the file." => "امکان خواندن فایل وجود ندارد",
 "Invalid file path supplied." => "مسیر فایل نامعتبر است.",
 "Cannot save file as it has been modified since opening" => "با توجه به تغییرات رخ داده بر روی فایل از زمان باز شدن آن، امکان ذخیره‌سازی وجود ندارد.",
