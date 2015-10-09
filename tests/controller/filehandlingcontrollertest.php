@@ -116,7 +116,25 @@ class FileHandlingControllerTest extends TestCase {
 		);
 	}
 
-	public function testLoadException() {
+	public function testLoadExceptionWithNoHint() {
+
+		$exceptionHint = 'test exception';
+
+		$this->viewMock->expects($this->any())
+			->method('file_get_contents')
+			->willReturnCallback(function() use ($exceptionHint) {
+				throw new \Exception();
+			});
+
+		$result = $this->controller->load('/', 'test.txt');
+		$data = $result->getData();
+
+		$this->assertSame(400, $result->getStatus());
+		$this->assertArrayHasKey('message', $data);
+		$this->assertSame('An internal server error occurred.', $data['message']);
+	}
+
+	public function testLoadExceptionWithHint() {
 
 		$exceptionHint = 'test exception';
 
@@ -131,7 +149,7 @@ class FileHandlingControllerTest extends TestCase {
 
 		$this->assertSame(400, $result->getStatus());
 		$this->assertArrayHasKey('message', $data);
-		$this->assertSame('An internal server error occurred.', $data['message']);
+		$this->assertSame($exceptionHint, $data['message']);
 	}
 
 	/**

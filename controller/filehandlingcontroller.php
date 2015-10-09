@@ -109,7 +109,12 @@ class FileHandlingController extends Controller{
 			}
 
 		} catch (\Exception $e) {
-			return new DataResponse(['message' => 'An internal server error occurred.'], Http::STATUS_BAD_REQUEST);
+			if(method_exists($e, 'getHint')) {
+				$message = (string)$e->getHint();
+			} else {
+				$message = (string)$this->l->t('An internal server error occurred.');
+			}
+			return new DataResponse(['message' => $message], Http::STATUS_BAD_REQUEST);
 		}
 	}
 
