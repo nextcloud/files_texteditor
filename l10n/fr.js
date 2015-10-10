@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "This file is too big to be opened. Please download the file instead." : "Ce fichier est trop volumineux pour être ouvert. S'il vous plaît télécharger le fichier à la place.",
+    "This file is too big to be opened. Please download the file instead." : "Ce fichier est trop volumineux pour être ouvert. Veuillez plutôt le télécharger.",
     "Cannot read the file." : "Impossible de lire le fichier.",
     "Invalid file path supplied." : "Chemin de fichier fourni non valide.",
     "Cannot save file as it has been modified since opening" : "Impossible de sauvegarder le fichier, il a été modifié entre temps",
