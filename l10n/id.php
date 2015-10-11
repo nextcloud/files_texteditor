@@ -1,5 +1,6 @@
 <?php
 $TRANSLATIONS = array(
+"This file is too big to be opened. Please download the file instead." => "Berkas ini terlalu besar untuk dibuka. Sebagai gantinya, silakan unduh berkas ini.",
 "Cannot read the file." => "Tidak dapat membaca berkas.",
 "Invalid file path supplied." => "Lokasi berkas yang diberikan tidak sah.",
 "Cannot save file as it has been modified since opening" => "Tidak dapat menyimpan berkas karena sudah diubah sejak dibuka",
