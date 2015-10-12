@@ -242,7 +242,10 @@ var Files_Texteditor = {
 				name: 'Edit',
 				mime: value,
 				actionHandler: _.bind(_self._onEditorTrigger, _self),
-				permissions: OC.PERMISSION_READ
+				permissions: OC.PERMISSION_READ,
+				icon: function () {
+					return OC.imagePath('core', 'actions/edit');
+				}
 			});
 			OCA.Files.fileActions.setDefault(value, 'Edit');
 		});
@@ -541,7 +544,7 @@ var Files_Texteditor = {
 		this.saveTimer = setTimeout(OCA.Files_Texteditor._onSaveTrigger, 3000);
 	}
 
-}
+};
 
 OCA.Files_Texteditor = Files_Texteditor;
 
