@@ -24,10 +24,10 @@ namespace OCA\Files_Texteditor\Controller;
 
 
 use OC\Files\View;
+use OC\HintException;
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http;
 use OCP\AppFramework\Http\DataResponse;
-use OCP\IConfig;
 use OCP\IL10N;
 use OCP\ILogger;
 use OCP\IRequest;
@@ -108,12 +108,11 @@ class FileHandlingController extends Controller{
 				return new DataResponse(['message' => (string)$this->l->t('Invalid file path supplied.')], Http::STATUS_BAD_REQUEST);
 			}
 
+		} catch (HintException $e) {
+			$message = (string)$e->getHint();
+			return new DataResponse(['message' => $message], Http::STATUS_BAD_REQUEST);
 		} catch (\Exception $e) {
-			if(method_exists($e, 'getHint')) {
-				$message = (string)$e->getHint();
-			} else {
-				$message = (string)$this->l->t('An internal server error occurred.');
-			}
+			$message = (string)$this->l->t('An internal server error occurred.');
 			return new DataResponse(['message' => $message], Http::STATUS_BAD_REQUEST);
 		}
 	}
