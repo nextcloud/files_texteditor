@@ -1,11 +1,17 @@
-<?php $TRANSLATIONS = array(
-"Save" => "Išsaugoti",
-"Search" => "Ieškoti",
-"Close" => "Užverti",
-"Next" => "Kitas",
-"Clear" => "Išvalyti",
-"Saving..." => "Saugoma...",
-"Failed to save file" => "Nepavyko išsaugoti failo",
-"An error occurred!" => "Įvyko klaida!",
-"There were unsaved changes, click here to go back" => "Turėjote neišsaugotų pakeitimų, spustelėkite čia, kad grįžtumėte"
+<?php
+$TRANSLATIONS = array(
+"This file is too big to be opened. Please download the file instead." => "Failas per didelis redagavimui. Pirmiausia parsisiųskite.",
+"Cannot read the file." => "Nepavyko atidaryti failo.",
+"Invalid file path supplied." => "Netinkamas failo kelias.",
+"Cannot save file as it has been modified since opening" => "Negalima išsaugoti failo, nes jis pakeistas po atidarymo",
+"Insufficient permissions" => "Nepakanka leidumų",
+"File path not supplied" => "Nepateiktas failo kelias",
+"File mtime not supplied" => "Failo modifikavimo laikas nepateiktas",
+"saving..." => "saugoma...",
+"saved!" => "Išsaugota!",
+"failed!" => "Klaida!",
+"Saved" => "Išsaugoti",
+"There was a problem saving your changes. Click to resume editing." => "Klaida išsaugant pakeitimus. Paspauskite redagavimo tęsimui.",
+"An error occurred!" => "Įvyko klaida!"
 );
+$PLURAL_FORMS = "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);";
