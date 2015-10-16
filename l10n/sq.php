@@ -1,12 +1,18 @@
-<?php $TRANSLATIONS = array(
-"Save" => "Ruaj",
-"Search" => "Kërko",
-"Close" => "Mbyll",
-"Next" => "Mëpasshëm",
-"Clear" => "Pastro",
-"Saving..." => "Duke ruajtur...",
-"Failed to save file" => "Dështoi në ruajtjen e dokumentit",
-"An error occurred!" => "Një gabim ndolli",
-"There are unsaved changes in the text editor" => "Ka ndryshime të paruajtura në përpunuesin e tekstit",
-"There were unsaved changes, click here to go back" => "Ka pasur ndryshime të pa'ruajtura, klikoni këtu për të shkuar mbrapa"
+<?php
+$TRANSLATIONS = array(
+"This file is too big to be opened. Please download the file instead." => "Kjo kartelë është shumë e madhe për hapje. Ju lutemi, në vend të kësaj, shkarkojeni.",
+"Cannot read the file." => "S’lexohet dot kartela.",
+"Invalid file path supplied." => "U dha shteg i pavlefshëm.",
+"An internal server error occurred." => "Ndodhi një gabim i brendshëm shërbyesi.",
+"Cannot save file as it has been modified since opening" => "S’ruhet dot kartela, ngaqë është ndryshuar që prej hapjes",
+"Insufficient permissions" => "Leje të pamjaftueshme",
+"File path not supplied" => "S’u dha shteg kartele",
+"File mtime not supplied" => "S’u dha mtime kartele",
+"saving..." => "po ruhet…",
+"saved!" => "u ruajt!",
+"failed!" => "dështoi!",
+"Saved" => "U ruajt",
+"There was a problem saving your changes. Click to resume editing." => "Pati një problem në ruajtjen e ndryshimeve tuaja.  Klikoni që të rimerret përpunimi.",
+"An error occurred!" => "Ndodhi një gabim!"
 );
+$PLURAL_FORMS = "nplurals=2; plural=(n != 1);";
