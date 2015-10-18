@@ -4,6 +4,7 @@ OC.L10N.register(
     "This file is too big to be opened. Please download the file instead." : "Ez a fájl túl nagy a megnyitáshoz. Kérjük, helyette töltsd le a fájlt.",
     "Cannot read the file." : "Nem olvasható a fájl!",
     "Invalid file path supplied." : "Helytelen elérési utat adott meg.",
+    "An internal server error occurred." : "Belső szerverhiba történt.",
     "Cannot save file as it has been modified since opening" : "Nem tudom a fáljt menteni, mert időközben a tartalma megváltozott.",
     "Insufficient permissions" : "Nincs jogosultsága hozzá",
     "File path not supplied" : "Fálj elérést nem adta meg",

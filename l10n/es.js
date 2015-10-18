@@ -1,8 +1,10 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "This file is too big to be opened. Please download the file instead." : "El archivo es muy grande para ser abierto. Por favor descarge el archivo en lugar de abrirlo.",
     "Cannot read the file." : "No se puede leer el archivo.",
     "Invalid file path supplied." : "Ruta de archivo inválida.",
+    "An internal server error occurred." : "Error interno del servidor",
     "Cannot save file as it has been modified since opening" : "No es posible guardar el archivo; pues ha sido modificado",
     "Insufficient permissions" : "Permisos insuficientes",
     "File path not supplied" : "No se ha proporcionado la ruta del archivo",

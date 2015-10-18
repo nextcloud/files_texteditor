@@ -3,6 +3,7 @@ $TRANSLATIONS = array(
 "This file is too big to be opened. Please download the file instead." => "Файл слишком большой для открытия. Пожалуйста скачайте его.",
 "Cannot read the file." => "Не удается прочитать файл.",
 "Invalid file path supplied." => "Указан некорректный путь.",
+"An internal server error occurred." => "Произошла внутренняя ошибка сервера.",
 "Cannot save file as it has been modified since opening" => "Невозможно сохранить файл поскольку он был изменен после открытия ",
 "Insufficient permissions" => "Недостаточно прав доступа",
 "File path not supplied" => "Неизвестен путь файла",
