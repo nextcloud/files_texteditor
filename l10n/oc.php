@@ -7,9 +7,9 @@ $TRANSLATIONS = array(
 "File path not supplied" => "Camin del fichièr pas provesit",
 "File mtime not supplied" => "mtime del fichièr pas provesit",
 "saving..." => "enregistrament...",
-"saved!" => "enregistrat!",
-"failed!" => "fracàs!",
-"Saved" => "Salvat",
+"saved!" => "enregistrat !",
+"failed!" => "fracàs !",
+"Saved" => "Enregistrat",
 "There was a problem saving your changes. Click to resume editing." => "Un problèma s'es produsit al moment del salvament de vòstras modificacions. Clicatz per contunhar l'edicion.",
 "An error occurred!" => "Una error s'es produsida !"
 );
