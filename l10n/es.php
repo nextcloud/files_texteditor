@@ -1,6 +1,6 @@
 <?php
 $TRANSLATIONS = array(
-"This file is too big to be opened. Please download the file instead." => "El archivo es muy grande para ser abierto. Por favor descarge el archivo en lugar de abrirlo.",
+"This file is too big to be opened. Please download the file instead." => "El archivo es muy grande para ser abierto. Por favor, descargue el archivo en lugar de abrirlo.",
 "Cannot read the file." => "No se puede leer el archivo.",
 "Invalid file path supplied." => "Ruta de archivo inválida.",
 "An internal server error occurred." => "Error interno del servidor",
