@@ -29,7 +29,8 @@ var Files_Texteditor = {
 		dir: null,
 		name: null,
 		writeable: null,
-		mime: null
+		mime: null,
+		size: null
 	},
 
 	/**
@@ -88,12 +89,12 @@ var Files_Texteditor = {
 			window.aceEditor.getSession().getValue(),
 			OCA.Files_Texteditor.file,
 			function(data){
-				newmtime = data.mtime;
 				// Yay
 				// TODO only reset edited value if not editing during saving
 				document.title = document.title.slice(2);
 				$('small.unsaved-star').css('display', 'none');
-				OCA.Files_Texteditor.file.mtime = newmtime;
+				OCA.Files_Texteditor.file.mtime = data.mtime;
+				OCA.Files_Texteditor.file.size = data.size;
 				OCA.Files_Texteditor.file.edited = false;
 				$('#editor_controls small.saving-message')
 					.text(t('files_texteditor', 'saved!'));
@@ -522,7 +523,7 @@ var Files_Texteditor = {
 				// temp dummy, until we can do a PROPFIND
 				etag: this.fileInfoModel.get('id') + this.file.mtime,
 				mtime: this.file.mtime * 1000,
-				// TODO: set size if there is a way to know
+				size: this.file.size
 			});
 		}
 		document.title = this.oldTitle;
