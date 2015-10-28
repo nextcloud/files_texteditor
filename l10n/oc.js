@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Cannot read the file." : "Impossible de legir lo fichièr.",
     "Invalid file path supplied." : "Camin de fichièr provesit invalid.",
+    "An internal server error occurred." : "Una error intèrna del servidor s'es produsida.",
     "Cannot save file as it has been modified since opening" : "Impossible de salvar lo fichièr, es estat modificat entre temps",
     "Insufficient permissions" : "Permissions insufisentas",
     "File path not supplied" : "Camin del fichièr pas provesit",
