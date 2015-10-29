@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "This file is too big to be opened. Please download the file instead." : "Aqueste fichièr es tròp voluminós per èsser dobèrt. Telecargatz-lo, puslèu.",
     "Cannot read the file." : "Impossible de legir lo fichièr.",
     "Invalid file path supplied." : "Camin de fichièr provesit invalid.",
     "An internal server error occurred." : "Una error intèrna del servidor s'es produsida.",
