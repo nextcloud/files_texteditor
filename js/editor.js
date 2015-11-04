@@ -282,6 +282,7 @@ var Files_Texteditor = {
 				// Show the controls
 				_self.loadControlBar(file, _self.currentContext);
 				window.aceEditor.getSession().on('change', _self.setupAutosave);
+				_self.bindVisibleActions();
 				window.aceEditor.focus();
 
 				if (_self.previewPlugins[file.mime]){
@@ -518,6 +519,7 @@ var Files_Texteditor = {
 	closeEditor: function() {
 		this.$container.html('').show();
 		this.unloadControlBar();
+		this.unBindVisibleActions();
 		if (this.fileInfoModel) {
 			this.fileInfoModel.set({
 				// temp dummy, until we can do a PROPFIND
@@ -535,6 +537,7 @@ var Files_Texteditor = {
 	hideEditor: function() {
 		this.$container.hide();
 		document.title = this.oldTitle;
+		this.unBindVisibleActions();
 	},
 
 	/**
@@ -543,7 +546,32 @@ var Files_Texteditor = {
 	setupAutosave: function() {
 		clearTimeout(this.saveTimer);
 		this.saveTimer = setTimeout(OCA.Files_Texteditor._onSaveTrigger, 3000);
-	}
+	},
+
+	/**
+	 * Handles event when clicking outside editor
+	 */
+	_onClickDocument: function(event) {
+		// Check if click was inside the editor or not.
+		if(!$(event.target).closest('#editor_container').length) {
+		   // Edit the editor
+		   OCA.Files_Texteditor._onCloseTrigger();
+	   }
+	},
+
+	/*
+	 * Binds actions that need to happen whilst the editor is visible
+	 */
+	 bindVisibleActions: function() {
+		 $(document).bind('click', this._onClickDocument);
+	 },
+
+	 /**
+	  * Unbinds actions that happen whilst the editor is visible
+	  */
+	 unBindVisibleActions: function() {
+		 $(document).unbind('click', this._onClickDocument);
+	 }
 
 };
 
