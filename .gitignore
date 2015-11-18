@@ -2,3 +2,4 @@
 .DS_Store
 # Tests - auto-generated files
 /tests/clover.xml
+/js/vendor/ace/src-noconflict/worker-*
