@@ -561,7 +561,45 @@ var Files_Texteditor = {
 
 };
 
+Files_Texteditor.NewFileMenuPlugin = {
+
+	attach: function(menu) {
+		var fileList = menu.fileList;
+
+		// only attach to main file list, public view is not supported yet
+		if (fileList.id !== 'files') {
+			return;
+		}
+
+		// register the new menu entry
+		menu.addMenuEntry({
+			id: 'file',
+			displayName: t('files_texteditor', 'Text file'),
+			templateName: t('files_texteditor', 'New text file.txt'),
+			iconClass: 'icon-filetype-text',
+			fileType: 'file',
+			actionHandler: function(name) {
+				var dir = fileList.getCurrentDirectory();
+				// first create the file
+				fileList.createFile(name).then(function() {
+					// once the file got successfully created,
+					// open the editor
+					Files_Texteditor._onEditorTrigger(
+						name,
+						{
+							fileList: fileList,
+							dir: dir
+						}
+					);
+				});
+			}
+		});
+	}
+};
+
 OCA.Files_Texteditor = Files_Texteditor;
+
+OC.Plugins.register('OCA.Files.NewFileMenu', Files_Texteditor.NewFileMenuPlugin);
 
 $(document).ready(function () {
 	$('#editor').remove();
