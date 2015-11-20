@@ -12,6 +12,8 @@ $TRANSLATIONS = array(
 "failed!" => "Klaida!",
 "Saved" => "Išsaugoti",
 "There was a problem saving your changes. Click to resume editing." => "Klaida išsaugant pakeitimus. Paspauskite redagavimo tęsimui.",
-"An error occurred!" => "Įvyko klaida!"
+"An error occurred!" => "Įvyko klaida!",
+"Text file" => "Teksto failas",
+"New text file.txt" => "Naujas tekstas file.txt"
 );
 $PLURAL_FORMS = "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);";

@@ -14,6 +14,8 @@ OC.L10N.register(
     "failed!" : "sikertelen!",
     "Saved" : "Elmentve",
     "There was a problem saving your changes. Click to resume editing." : "Hiba történt a módosítások mentésekor. Szerkesztés folytatásához kattints ide.",
-    "An error occurred!" : "Hiba történt!"
+    "An error occurred!" : "Hiba történt!",
+    "Text file" : "Szövegfájl",
+    "New text file.txt" : "Új szöveges fájl.txt"
 },
 "nplurals=2; plural=(n != 1);");

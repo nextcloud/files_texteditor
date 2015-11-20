@@ -14,6 +14,8 @@ OC.L10N.register(
     "failed!" : " 失敗しました！",
     "Saved" : "保存されました",
     "There was a problem saving your changes. Click to resume editing." : "変更を保存する際に問題が発生しました．クリックして編集を再開する．",
-    "An error occurred!" : "エラーが発生しました。"
+    "An error occurred!" : "エラーが発生しました。",
+    "Text file" : "テキストファイル",
+    "New text file.txt" : "新規のテキストファイル作成"
 },
 "nplurals=1; plural=0;");

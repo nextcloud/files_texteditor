@@ -13,6 +13,8 @@ OC.L10N.register(
     "failed!" : "неуспех!",
     "Saved" : "Сачувано",
     "There was a problem saving your changes. Click to resume editing." : "Десио се проблем приликом уписа ваших измена. Кликните за наставак уређивања.",
-    "An error occurred!" : "Дошло је до грешке!"
+    "An error occurred!" : "Дошло је до грешке!",
+    "Text file" : "текстуални фајл",
+    "New text file.txt" : "Нов текстуални фајл.txt"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);");

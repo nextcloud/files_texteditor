@@ -11,6 +11,8 @@ $TRANSLATIONS = array(
 "failed!" => "mislykkedes!",
 "Saved" => "Gemt",
 "There was a problem saving your changes. Click to resume editing." => "Der opstod et problem ved lagringen af dine ændringer. Klik for at genoptage redigeringen.",
-"An error occurred!" => "Der opstod en fejl!"
+"An error occurred!" => "Der opstod en fejl!",
+"Text file" => "Tekstfil",
+"New text file.txt" => "Ny tekst file.txt"
 );
 $PLURAL_FORMS = "nplurals=2; plural=(n != 1);";

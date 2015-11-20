@@ -14,6 +14,8 @@ OC.L10N.register(
     "failed!" : "mislukt!",
     "Saved" : "Bewaard",
     "There was a problem saving your changes. Click to resume editing." : "Probleem bij het opslaan van uw wijzigingen. Klik om door te gaan met bewerken.",
-    "An error occurred!" : "Er is iets fout gegaan!"
+    "An error occurred!" : "Er is iets fout gegaan!",
+    "Text file" : "Tekstbestand",
+    "New text file.txt" : "Nieuw tekstbestand.txt"
 },
 "nplurals=2; plural=(n != 1);");

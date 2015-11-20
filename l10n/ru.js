@@ -14,6 +14,8 @@ OC.L10N.register(
     "failed!" : "ошибка!",
     "Saved" : "Сохранено",
     "There was a problem saving your changes. Click to resume editing." : "Произошла ошибка во время сохранения изменений. Нажмите для продолжения редактирования.",
-    "An error occurred!" : "Произошла ошибка!"
+    "An error occurred!" : "Произошла ошибка!",
+    "Text file" : "Текстовый файл",
+    "New text file.txt" : "Новый текстовый документ.txt"
 },
 "nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);");

@@ -12,6 +12,7 @@ $TRANSLATIONS = array(
 "failed!" => "ناموفق!",
 "Saved" => "ذخیره شد",
 "There was a problem saving your changes. Click to resume editing." => "مشکلی در زمان ذخیره‌سازی تغییرات شما وجود داشت. برای ادامه ویرایش کلیک کنید.",
-"An error occurred!" => "یک خطا رخ‌داده است!"
+"An error occurred!" => "یک خطا رخ‌داده است!",
+"Text file" => "فایل متنی"
 );
 $PLURAL_FORMS = "nplurals=1; plural=0;";

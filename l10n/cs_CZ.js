@@ -14,6 +14,8 @@ OC.L10N.register(
     "failed!" : "selhalo!",
     "Saved" : "Uloženo",
     "There was a problem saving your changes. Click to resume editing." : "Došlo k chybě při ukládání změn. Klikněte pro pokračování v úpravách.",
-    "An error occurred!" : "Nastala chyba!"
+    "An error occurred!" : "Nastala chyba!",
+    "Text file" : "Textový soubor",
+    "New text file.txt" : "Nový textový soubor.txt"
 },
 "nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;");

@@ -13,6 +13,8 @@ $TRANSLATIONS = array(
 "failed!" => " non riuscito!",
 "Saved" => "Salvato",
 "There was a problem saving your changes. Click to resume editing." => "Si è verificato un problema durante il salvataggio delle modifiche. Fai clic per riprendere la modifica.",
-"An error occurred!" => "Si è verificato un errore!"
+"An error occurred!" => "Si è verificato un errore!",
+"Text file" => "File di testo",
+"New text file.txt" => "Nuovo file di testo.txt"
 );
 $PLURAL_FORMS = "nplurals=2; plural=(n != 1);";

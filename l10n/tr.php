@@ -11,6 +11,8 @@ $TRANSLATIONS = array(
 "failed!" => "başarısız oldu!",
 "Saved" => "Kaydedildi",
 "There was a problem saving your changes. Click to resume editing." => "Değişikliklerinizin kaydedilmesinde sorun oluştu. Düzenlemeye geri dönmek için tıklayın.",
-"An error occurred!" => "Hata oluştu!"
+"An error occurred!" => "Hata oluştu!",
+"Text file" => "Metin dosyası",
+"New text file.txt" => "Yeni metin dosyası.txt"
 );
 $PLURAL_FORMS = "nplurals=2; plural=(n > 1);";

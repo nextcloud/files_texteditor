@@ -14,6 +14,8 @@ OC.L10N.register(
     "failed!" : "dështoi!",
     "Saved" : "U ruajt",
     "There was a problem saving your changes. Click to resume editing." : "Pati një problem në ruajtjen e ndryshimeve tuaja.  Klikoni që të rimerret përpunimi.",
-    "An error occurred!" : "Ndodhi një gabim!"
+    "An error occurred!" : "Ndodhi një gabim!",
+    "Text file" : "Kartelë tekst",
+    "New text file.txt" : "Kartelë e re file.txt"
 },
 "nplurals=2; plural=(n != 1);");
