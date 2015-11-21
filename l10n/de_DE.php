@@ -10,6 +10,7 @@ $TRANSLATIONS = array(
 "saved!" => "gespeichert!",
 "failed!" => "fehlgeschlagen!",
 "Saved" => "Gespeichert",
-"An error occurred!" => "Ein Fehler ist aufgetreten!"
+"An error occurred!" => "Ein Fehler ist aufgetreten!",
+"Text file" => "Textdatei"
 );
 $PLURAL_FORMS = "nplurals=2; plural=(n != 1);";

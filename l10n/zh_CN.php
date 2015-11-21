@@ -10,6 +10,8 @@ $TRANSLATIONS = array(
 "failed!" => "失败",
 "Saved" => "已保存",
 "There was a problem saving your changes. Click to resume editing." => "在保存时出现了一些问题，点击以恢复编辑",
-"An error occurred!" => "发生错误！"
+"An error occurred!" => "发生错误！",
+"Text file" => "文本文件",
+"New text file.txt" => "创建文本文件 .txt"
 );
 $PLURAL_FORMS = "nplurals=1; plural=0;";

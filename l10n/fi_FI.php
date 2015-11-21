@@ -13,6 +13,8 @@ $TRANSLATIONS = array(
 "failed!" => "epäonnistui!",
 "Saved" => "Tallennettu",
 "There was a problem saving your changes. Click to resume editing." => "Muutoksien tallentamisessa ilmeni ongelmia. Napsauta palataksesi muokkaamiseen.",
-"An error occurred!" => "Tapahtui virhe!"
+"An error occurred!" => "Tapahtui virhe!",
+"Text file" => "Tekstitiedosto",
+"New text file.txt" => "Uusi tekstitiedosto.txt"
 );
 $PLURAL_FORMS = "nplurals=2; plural=(n != 1);";

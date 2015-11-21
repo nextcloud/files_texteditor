@@ -11,6 +11,7 @@ OC.L10N.register(
     "saved!" : "gespeichert!",
     "failed!" : "fehlgeschlagen!",
     "Saved" : "Gespeichert",
-    "An error occurred!" : "Ein Fehler ist aufgetreten!"
+    "An error occurred!" : "Ein Fehler ist aufgetreten!",
+    "Text file" : "Textdatei"
 },
 "nplurals=2; plural=(n != 1);");

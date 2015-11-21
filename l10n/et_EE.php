@@ -11,6 +11,7 @@ $TRANSLATIONS = array(
 "failed!" => "ebaõnnestus!",
 "Saved" => "Salvestatud",
 "There was a problem saving your changes. Click to resume editing." => "Sinu muudatuste salvestamisega tekkis viga. Kliki muutmise jätkamiseks.",
-"An error occurred!" => "Tekis tõrge!"
+"An error occurred!" => "Tekis tõrge!",
+"Text file" => "Tekstifail"
 );
 $PLURAL_FORMS = "nplurals=2; plural=(n != 1);";

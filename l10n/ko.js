@@ -14,6 +14,8 @@ OC.L10N.register(
     "failed!" : "실패했습니다!",
     "Saved" : "저장됨",
     "There was a problem saving your changes. Click to resume editing." : "변경 사항을 저장할 수 없습니다. 편집을 계속하려면 누르십시오.",
-    "An error occurred!" : "오류가 발생했습니다!"
+    "An error occurred!" : "오류가 발생했습니다!",
+    "Text file" : "텍스트 파일",
+    "New text file.txt" : "새 텍스트 파일.txt"
 },
 "nplurals=1; plural=0;");

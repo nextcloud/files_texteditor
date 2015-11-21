@@ -14,6 +14,8 @@ OC.L10N.register(
     "failed!" : "falhou!",
     "Saved" : "Guardado",
     "There was a problem saving your changes. Click to resume editing." : "Ocorreu um problema ao guardar as suas alterações. Clique para retomar a edição.",
-    "An error occurred!" : "Ocorreu um erro!"
+    "An error occurred!" : "Ocorreu um erro!",
+    "Text file" : "Ficheiro de Texto",
+    "New text file.txt" : "Novo texto ficheiro.txt"
 },
 "nplurals=2; plural=(n != 1);");

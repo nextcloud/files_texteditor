@@ -13,6 +13,8 @@ $TRANSLATIONS = array(
 "failed!" => "απέτυχε!",
 "Saved" => "Αποθηκεύτηκαν",
 "There was a problem saving your changes. Click to resume editing." => "Προέκυψε πρόβλημα κατά την αποθήκευση των αλλαγών σας. Κάντε κλικ για να συνεχίσετε την επεξεργασία.",
-"An error occurred!" => "Παρουσιάστηκε σφάλμα!"
+"An error occurred!" => "Παρουσιάστηκε σφάλμα!",
+"Text file" => "Αρχείο κειμένου",
+"New text file.txt" => "Νέο αρχείο κειμένου.txt"
 );
 $PLURAL_FORMS = "nplurals=2; plural=(n != 1);";
