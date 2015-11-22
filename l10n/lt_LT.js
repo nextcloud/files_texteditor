@@ -4,6 +4,7 @@ OC.L10N.register(
     "This file is too big to be opened. Please download the file instead." : "Failas per didelis redagavimui. Pirmiausia parsisiųskite.",
     "Cannot read the file." : "Nepavyko atidaryti failo.",
     "Invalid file path supplied." : "Netinkamas failo kelias.",
+    "An internal server error occurred." : "Vidinė serverio klaida.",
     "Cannot save file as it has been modified since opening" : "Negalima išsaugoti failo, nes jis pakeistas po atidarymo",
     "Insufficient permissions" : "Nepakanka leidumų",
     "File path not supplied" : "Nepateiktas failo kelias",
