@@ -1,7 +1,9 @@
 <?php
 $TRANSLATIONS = array(
+"This file is too big to be opened. Please download the file instead." => "Dosya açılmak için çok büyük bunun yerine lütfen dosyayı indirin",
 "Cannot read the file." => "Dosya okunamıyor.",
 "Invalid file path supplied." => "Geçersiz dosya yolu sağlandı",
+"An internal server error occurred." => "Dahili sunucu hatası!",
 "Cannot save file as it has been modified since opening" => "Dosya açıldıktan sonra değiştirildiği için kaydedilemedi",
 "Insufficient permissions" => "Yetersiz izin",
 "File path not supplied" => "Dosya yolu belirtilmemiş",
