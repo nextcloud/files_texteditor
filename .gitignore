@@ -7,3 +7,6 @@
 # Remove unnecessary themes, but keep the one we use!
 /js/vendor/ace/src-noconflict/theme-*
 !/js/vendor/ace/src-noconflict/theme-clouds.js
+# Remove unnecessary extensions
+/js/vendor/ace/src-noconflict/ext-*
+!/js/vendor/ace/src-noconflict/ext-modelist.js
