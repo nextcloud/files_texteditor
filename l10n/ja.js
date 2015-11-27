@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "This file is too big to be opened. Please download the file instead." : "ファイルが大きすぎます．ダウンロードしてから開いてください.",
+    "This file is too big to be opened. Please download the file instead." : "ファイルが大きすぎます。ダウンロードしてから開いてください。",
     "Cannot read the file." : "ファイルを読み込めません",
     "Invalid file path supplied." : "無効なファイルパスが提供されました。",
     "An internal server error occurred." : "内部サーバーエラーが発生しました。",
