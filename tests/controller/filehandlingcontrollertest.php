@@ -25,6 +25,8 @@ namespace OCA\Files_Texteditor\Tests\Controller;
 
 use OC\HintException;
 use OCA\Files_Texteditor\Controller\FileHandlingController;
+use OCP\Files\ForbiddenException;
+use OCP\Lock\LockedException;
 use Test\TestCase;
 
 class FileHandlingControllerTest extends TestCase {
@@ -116,32 +118,26 @@ class FileHandlingControllerTest extends TestCase {
 		);
 	}
 
-	public function testLoadExceptionWithNoHint() {
-
-		$exceptionHint = 'test exception';
-
-		$this->viewMock->expects($this->any())
-			->method('file_get_contents')
-			->willReturnCallback(function() use ($exceptionHint) {
-				throw new \Exception();
-			});
-
-		$result = $this->controller->load('/', 'test.txt');
-		$data = $result->getData();
-
-		$this->assertSame(400, $result->getStatus());
-		$this->assertArrayHasKey('message', $data);
-		$this->assertSame('An internal server error occurred.', $data['message']);
+	public function dataLoadExceptionWithException() {
+		return [
+			[new \Exception(), 'An internal server error occurred.'],
+			[new HintException('error message', 'test exception'), 'test exception'],
+			[new ForbiddenException('firewall', false), 'firewall'],
+			[new LockedException('secret/path/https://github.com/owncloud/files_texteditor/pull/96'), 'The file is locked.'],
+		];
 	}
 
-	public function testLoadExceptionWithHint() {
-
-		$exceptionHint = 'test exception';
+	/**
+	 * @dataProvider dataLoadExceptionWithException
+	 * @param \Exception $exception
+	 * @param string $expectedMessage
+	 */
+	public function testLoadExceptionWithException(\Exception $exception, $expectedMessage) {
 
 		$this->viewMock->expects($this->any())
 			->method('file_get_contents')
-			->willReturnCallback(function() use ($exceptionHint) {
-				throw new HintException('error message', $exceptionHint);
+			->willReturnCallback(function() use ($exception) {
+				throw $exception;
 			});
 
 		$result = $this->controller->load('/', 'test.txt');
@@ -149,7 +145,35 @@ class FileHandlingControllerTest extends TestCase {
 
 		$this->assertSame(400, $result->getStatus());
 		$this->assertArrayHasKey('message', $data);
-		$this->assertSame($exceptionHint, $data['message']);
+		$this->assertSame($expectedMessage, $data['message']);
+	}
+
+	/**
+	 * @dataProvider dataLoadExceptionWithException
+	 * @param \Exception $exception
+	 * @param string $expectedMessage
+	 */
+	public function testSaveExceptionWithException(\Exception $exception, $expectedMessage) {
+
+		$this->viewMock->expects($this->any())
+			->method('file_put_contents')
+			->willReturnCallback(function() use ($exception) {
+				throw $exception;
+			});
+
+		$this->viewMock->expects($this->any())
+			->method('filemtime')
+			->willReturn(42);
+		$this->viewMock->expects($this->any())
+			->method('isUpdatable')
+			->willReturn(true);
+
+		$result = $this->controller->save('/test.txt', 'content', 42);
+		$data = $result->getData();
+
+		$this->assertSame(400, $result->getStatus());
+		$this->assertArrayHasKey('message', $data);
+		$this->assertSame($expectedMessage, $data['message']);
 	}
 
 	/**
