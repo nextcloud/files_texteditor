@@ -39,10 +39,4 @@ script:
   - php ocular.phar code-coverage:upload --format=php-clover clover.xml
 
 matrix:
-  include:
-    - php: 5.4
-      env: "DB=mysql CORE_BRANCH=stable8"
-    - php: 5.4
-      env: "DB=mysql CORE_BRANCH=stable8.1"
-
   fast_finish: true
