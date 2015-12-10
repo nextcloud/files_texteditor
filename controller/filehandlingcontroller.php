@@ -28,9 +28,12 @@ use OC\HintException;
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http;
 use OCP\AppFramework\Http\DataResponse;
+use OCP\Files\ForbiddenException;
+use OCP\Files\StorageNotAvailableException;
 use OCP\IL10N;
 use OCP\ILogger;
 use OCP\IRequest;
+use OCP\Lock\LockedException;
 
 class FileHandlingController extends Controller{
 
@@ -108,6 +111,11 @@ class FileHandlingController extends Controller{
 				return new DataResponse(['message' => (string)$this->l->t('Invalid file path supplied.')], Http::STATUS_BAD_REQUEST);
 			}
 
+		} catch (LockedException $e) {
+			$message = (string) $this->l->t('The file is locked.');
+			return new DataResponse(['message' => $message], Http::STATUS_BAD_REQUEST);
+		} catch (ForbiddenException $e) {
+			return new DataResponse(['message' => $e->getMessage()], Http::STATUS_BAD_REQUEST);
 		} catch (HintException $e) {
 			$message = (string)$e->getHint();
 			return new DataResponse(['message' => $message], Http::STATUS_BAD_REQUEST);
@@ -128,42 +136,57 @@ class FileHandlingController extends Controller{
 	 * @return DataResponse
 	 */
 	public function save($path, $filecontents, $mtime) {
-
-		if($path !== '' && (is_integer($mtime) && $mtime > 0)) {
-			// Get file mtime
-			$filemtime = $this->view->filemtime($path);
-			if($mtime !== $filemtime) {
-				// Then the file has changed since opening
-				$this->logger->error('File: ' . $path . ' modified since opening.',
-					['app' => 'files_texteditor']);
-				return new DataResponse(
-					['message' => $this->l->t('Cannot save file as it has been modified since opening')],
-					Http::STATUS_BAD_REQUEST);
-			} else {
-				// File same as when opened, save file
-				if($this->view->isUpdatable($path)) {
-					$filecontents = iconv(mb_detect_encoding($filecontents), "UTF-8", $filecontents);
-					$this->view->file_put_contents($path, $filecontents);
-					// Clear statcache
-					clearstatcache();
-					// Get new mtime
-					$newmtime = $this->view->filemtime($path);
-					$newsize = $this->view->filesize($path);
-					return new DataResponse(['mtime' => $newmtime, 'size' => $newsize], Http::STATUS_OK);
-				} else {
-					// Not writeable!
-					$this->logger->error('User does not have permission to write to file: ' . $path,
+		try {
+			if($path !== '' && (is_integer($mtime) && $mtime > 0)) {
+				// Get file mtime
+				$filemtime = $this->view->filemtime($path);
+				if($mtime !== $filemtime) {
+					// Then the file has changed since opening
+					$this->logger->error('File: ' . $path . ' modified since opening.',
 						['app' => 'files_texteditor']);
-					return new DataResponse([ 'message' => $this->l->t('Insufficient permissions')],
+					return new DataResponse(
+						['message' => $this->l->t('Cannot save file as it has been modified since opening')],
 						Http::STATUS_BAD_REQUEST);
+				} else {
+					// File same as when opened, save file
+					if($this->view->isUpdatable($path)) {
+						$filecontents = iconv(mb_detect_encoding($filecontents), "UTF-8", $filecontents);
+						try {
+							$this->view->file_put_contents($path, $filecontents);
+						} catch (LockedException $e) {
+							$message = (string) $this->l->t('The file is locked.');
+							return new DataResponse(['message' => $message], Http::STATUS_BAD_REQUEST);
+						} catch (ForbiddenException $e) {
+							return new DataResponse(['message' => $e->getMessage()], Http::STATUS_BAD_REQUEST);
+						}
+						// Clear statcache
+						clearstatcache();
+						// Get new mtime
+						$newmtime = $this->view->filemtime($path);
+						$newsize = $this->view->filesize($path);
+						return new DataResponse(['mtime' => $newmtime, 'size' => $newsize], Http::STATUS_OK);
+					} else {
+						// Not writeable!
+						$this->logger->error('User does not have permission to write to file: ' . $path,
+							['app' => 'files_texteditor']);
+						return new DataResponse([ 'message' => $this->l->t('Insufficient permissions')],
+							Http::STATUS_BAD_REQUEST);
+					}
 				}
+			} else if ($path === '') {
+				$this->logger->error('No file path supplied');
+				return new DataResponse(['message' => $this->l->t('File path not supplied')], Http::STATUS_BAD_REQUEST);
+			} else {
+				$this->logger->error('No file mtime supplied', ['app' => 'files_texteditor']);
+				return new DataResponse(['message' => $this->l->t('File mtime not supplied')], Http::STATUS_BAD_REQUEST);
 			}
-		} else if($path === '') {
-			$this->logger->error('No file path supplied');
-			return new DataResponse(['message' => $this->l->t('File path not supplied')], Http::STATUS_BAD_REQUEST);
-		} else if(!is_integer($mtime) || $mtime <= 0) {
-			$this->logger->error('No file mtime supplied', ['app' => 'files_texteditor']);
-			return new DataResponse(['message' => $this->l->t('File mtime not supplied')], Http::STATUS_BAD_REQUEST);
+
+		} catch (HintException $e) {
+			$message = (string)$e->getHint();
+			return new DataResponse(['message' => $message], Http::STATUS_BAD_REQUEST);
+		} catch (\Exception $e) {
+			$message = (string)$this->l->t('An internal server error occurred.');
+			return new DataResponse(['message' => $message], Http::STATUS_BAD_REQUEST);
 		}
 	}
 

@@ -118,7 +118,11 @@ var Files_Texteditor = {
 			},
 			function(message){
 				// Boo
-				$('small.saving-message').text(t('files_texteditor', 'failed!'));
+				if (typeof message == 'undefined') {
+					$('small.saving-message').text(t('files_texteditor', 'failed!'));
+				} else {
+					$('small.saving-message').text(message);
+				}
 				OCA.Files_Texteditor.saveMessageTimeout = setTimeout(function() {
 					$('small.saving-message').fadeOut(200);
 				}, 5000);
@@ -523,7 +527,14 @@ var Files_Texteditor = {
 		})
 		.done(success)
 		.fail(function(jqXHR) {
-			failure(JSON.parse(jqXHR.responseText).message);
+			var message;
+
+			try{
+				message = JSON.parse(jqXHR.responseText).message;
+			}catch(e){
+			}
+
+			failure(message);
 		});
 	},
 
