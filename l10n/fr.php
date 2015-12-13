@@ -3,6 +3,7 @@ $TRANSLATIONS = array(
 "This file is too big to be opened. Please download the file instead." => "Ce fichier est trop volumineux pour être ouvert. Veuillez plutôt le télécharger.",
 "Cannot read the file." => "Impossible de lire le fichier.",
 "Invalid file path supplied." => "Chemin de fichier fourni non valide.",
+"The file is locked." => "Le fichier est verrouillé",
 "An internal server error occurred." => "Une erreur interne au serveur est survenue.",
 "Cannot save file as it has been modified since opening" => "Impossible de sauvegarder le fichier, il a été modifié entre temps",
 "Insufficient permissions" => "Permissions insuffisantes",
