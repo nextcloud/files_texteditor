@@ -307,6 +307,7 @@ var Files_Texteditor = {
 					_self.preview = container.find('#preview');
 					_self.preview.addClass(file.mime.replace('/','-'));
 					container.find('#editor_container').addClass('hasPreview');
+					container.find('#editor_overlay').addClass('hasPreview');
 					_self.previewPluginOnChange = _.debounce(_self.previewPlugins[file.mime].preview, 200);
 					var text = window.aceEditor.getSession().getValue();
 					_self.previewPluginOnChange(text, _self.preview);
