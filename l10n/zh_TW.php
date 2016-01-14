@@ -3,6 +3,7 @@ $TRANSLATIONS = array(
 "This file is too big to be opened. Please download the file instead." => "這個檔案太大以致於無法開啟，請您下載此檔案代替線上開啟",
 "Cannot read the file." => "無法讀取檔案。",
 "Invalid file path supplied." => "提供了無效的檔案路徑。",
+"The file is locked." => "這個檔案被鎖住了。",
 "An internal server error occurred." => "發生伺服器內部錯誤",
 "Cannot save file as it has been modified since opening" => "無法將變更內容儲存至檔案，檔案正被開啟中",
 "Insufficient permissions" => "權限不足",
