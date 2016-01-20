@@ -589,14 +589,14 @@ var Files_Texteditor = {
 	 * Binds actions that need to happen whilst the editor is visible
 	 */
 	 bindVisibleActions: function() {
-		 $(document).bind('click', this._onClickDocument);
+		 $(document).bind('mouseup', this._onClickDocument);
 	 },
 
 	 /**
 	  * Unbinds actions that happen whilst the editor is visible
 	  */
 	 unBindVisibleActions: function() {
-		 $(document).unbind('click', this._onClickDocument);
+		 $(document).unbind('mouseup', this._onClickDocument);
 	 }
 
 };
