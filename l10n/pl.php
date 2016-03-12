@@ -1,17 +1,21 @@
 <?php
 $TRANSLATIONS = array(
+"This file is too big to be opened. Please download the file instead." => "Plik jest zbyt duży by go otworzyć. Proszę pobrać plik",
+"Cannot read the file." => "Nie można odczytać pliku.",
 "Invalid file path supplied." => "Błędnie podana ścieżka do pliku.",
+"The file is locked." => "Plik jest zablokowany.",
+"An internal server error occurred." => "Wystąpił wewnętrzny błąd serwera.",
 "Cannot save file as it has been modified since opening" => "Nie mogę zapisać pliku, został zmodyfikowany podczas otwarcia.",
 "Insufficient permissions" => "Niewystarczające uprawnienia",
 "File path not supplied" => "Ścieżka pliku nie została podana",
 "File mtime not supplied" => "Plik mtime nie został podany",
-"Save" => "Zapisz",
-"Search" => "Szukaj",
-"Next" => "Następny",
-"Clear" => "Wyczyść",
-"Saving..." => "Zapisywanie...",
+"saving..." => "zapisywanie...",
+"saved!" => "zapisano!",
+"failed!" => "nie powiodło się!",
+"Saved" => "Zapisano",
+"There was a problem saving your changes. Click to resume editing." => "Pojawił się problem podczas zapisywania twoich zmian. Kliknij, aby powrócić do edycji.",
 "An error occurred!" => "Wystąpił błąd!",
-"There are unsaved changes in the text editor" => "Są niezapisane zmiany w edytorze tekstu",
-"There were unsaved changes, click here to go back" => "Były niezapisane zmiany, kliknij aby wrócić"
+"Text file" => "Plik tekstowy",
+"New text file.txt" => "Nowy plik tekstowy.txt"
 );
 $PLURAL_FORMS = "nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);";
