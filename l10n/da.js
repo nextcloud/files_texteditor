@@ -3,6 +3,8 @@ OC.L10N.register(
     {
     "Cannot read the file." : "Kan ikke læse filen.",
     "Invalid file path supplied." : "Der blev angivet en ugyldig filsti.",
+    "The file is locked." : "Filen er låst",
+    "An internal server error occurred." : "Der er opstået en intern serverfejl.",
     "Cannot save file as it has been modified since opening" : "Kan ikke gemme filen, da den er blevet ændret efter den blev åbnet",
     "Insufficient permissions" : "Utilstrækkeligt med rettigheder",
     "File path not supplied" : "Filstien er ikke angivet",
