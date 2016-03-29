@@ -14,6 +14,7 @@ OC.L10N.register(
     "saved!" : "gespeichert!",
     "failed!" : "fehlgeschlagen!",
     "Saved" : "Gespeichert",
+    "There was a problem saving your changes. Click to resume editing." : "Es gab ein Problem beim Speichern ihrer Änderungen. Klicken Sie um zur Bearbeitung zurückzukehren.",
     "An error occurred!" : "Ein Fehler ist aufgetreten!",
     "Text file" : "Textdatei",
     "New text file.txt" : "Neue Textdatei file.txt"

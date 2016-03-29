@@ -1,5 +1,6 @@
 <?php
 $TRANSLATIONS = array(
+"This file is too big to be opened. Please download the file instead." => "FIlen er for stor til at kunne åbnes direkte. Vær venlig at downloade filen i stedet",
 "Cannot read the file." => "Kan ikke læse filen.",
 "Invalid file path supplied." => "Der blev angivet en ugyldig filsti.",
 "The file is locked." => "Filen er låst",
