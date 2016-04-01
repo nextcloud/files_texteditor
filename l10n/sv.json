@@ -2,6 +2,7 @@
     "This file is too big to be opened. Please download the file instead." : "Denna fil är för stor för att öppnas. Var god ladda ner filen istället.",
     "Cannot read the file." : "Kan inte läsa av fil.",
     "Invalid file path supplied." : "Felaktig sökväg till fil angiven.",
+    "The file is locked." : "Denna filen är låst.",
     "An internal server error occurred." : "Ett server-fel har inträffat.",
     "Cannot save file as it has been modified since opening" : "Kan inte spara filen eftersom den har ändrats sedan den öppnats.",
     "Insufficient permissions" : "Otillräcklig behörighet.",
