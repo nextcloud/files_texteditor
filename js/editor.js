@@ -295,6 +295,8 @@ var Files_Texteditor = {
 				document.title = file.name + ' - ' + OCA.Files_Texteditor.oldTitle;
 				// Load ace
 				$('#'+_self.editor).text(data);
+				// Remove loading
+				$('#editor_container').removeClass('icon-loading');
 				// Configure ace
 				_self.configureACE(file);
 				// Show the controls
