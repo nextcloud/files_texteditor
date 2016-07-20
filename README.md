@@ -1,11 +1,11 @@
 # Texteditor
 
-[![Build Status](https://travis-ci.org/owncloud/files_texteditor.svg?branch=master)](https://travis-ci.org/owncloud/files_texteditor)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/owncloud/files_texteditor/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/owncloud/files_texteditor/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/owncloud/files_texteditor/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/owncloud/files_texteditor/?branch=master)
+[![Build Status](https://travis-ci.org/nextcloud/files_texteditor.svg?branch=master)](https://travis-ci.org/nextcloud/files_texteditor)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nextcloud/files_texteditor/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nextcloud/files_texteditor/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/nextcloud/files_texteditor/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/nextcloud/files_texteditor/?branch=master)
 
 
-The original text editor app for ownCloud, based on [Ace](http://ace.c9.io/).
+The original text editor app for Nextcloud, based on [Ace](http://ace.c9.io/).
 
 Features:
  - Syntax highlighting
@@ -14,10 +14,10 @@ Features:
  - Responsive design (optimised on mobile and desktop)
 
 ## Install
-Simply copy the `files_texteditor` folder into the `apps` directory and enable the app within the ownCloud settings.
+Simply copy the `files_texteditor` folder into the `apps` directory and enable the app within the Nextcloud settings.
 
 ## Usage
-To use the editer, click on a [supported file](https://github.com/owncloud/files_texteditor/blob/master/js/editor.js#L6) within the Files app and the file will be loaded into the editor. Saving is automatic, but can also be triggered manually with `Ctrl+S` or `Cmd+S`.
+To use the editer, click on a [supported file](https://github.com/nextcloud/files_texteditor/blob/master/js/editor.js#L6) within the Files app and the file will be loaded into the editor. Saving is automatic, but can also be triggered manually with `Ctrl+S` or `Cmd+S`.
 
 ## Contributors
 Maintainer: [Tom Needham](http://github.com/tomneedham)

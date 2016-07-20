@@ -18,9 +18,9 @@ branches:
     - /^stable\d+(\.\d+)?$/
 
 before_install:
-  - wget https://raw.githubusercontent.com/owncloud/administration/master/travis-ci/before_install.sh
+  - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh 
   - bash ./before_install.sh $APP $CORE_BRANCH $DB
-  - cd ../core
+  - cd ../server
   - php occ app:enable $APP
 
 before_script:
