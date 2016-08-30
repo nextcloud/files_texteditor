@@ -94,8 +94,8 @@ var Files_Texteditor = {
 		clearTimeout(OCA.Files_Texteditor.saveMessageTimeout);
 
 		// Set the saving status
-		$('#editor_controls small.saving-message')
-			.text(t('files_texteditor', 'saving...'))
+		var $message = $('#editor_controls').find('small.saving-message');
+		$message.text(t('files_texteditor', 'saving...'))
 			.show();
 		// Send to server
 		OCA.Files_Texteditor.saveFile(
@@ -110,8 +110,7 @@ var Files_Texteditor = {
 				OCA.Files_Texteditor.file.mtime = data.mtime;
 				OCA.Files_Texteditor.file.size = data.size;
 
-				$('#editor_controls small.saving-message')
-					.text(t('files_texteditor', 'saved!'));
+				$message.text(t('files_texteditor', 'saved!'));
 				OCA.Files_Texteditor.saveMessageTimeout = setTimeout(function() {
 					$('small.saving-message').fadeOut(200);
 				}, 2000);
@@ -149,21 +148,20 @@ var Files_Texteditor = {
 			OCA.Files_Texteditor.saveFile(
 				window.aceEditor.getSession().getValue(),
 				OCA.Files_Texteditor.file,
-				function(data){
+				function() {
 					OC.Notification.showTemporary(t(
 						'files_texteditor',
 						'Saved'
 						)
-					)
+					);
 					// Remove the editor
 					OCA.Files_Texteditor.closeEditor();
 				},
-				function(message){
+				function() {
 					OC.Notification.showTemporary(t(
 						'files_texteditor',
 						'There was a problem saving your changes. Click to resume editing.'
-						)
-					);
+					));
 					$('#notification').data('reopeneditor', true).on(
 						'click',
 						OCA.Files_Texteditor._onReOpenTrigger
@@ -253,9 +251,8 @@ var Files_Texteditor = {
 				'application/x-pearl',
 				'application/x-text',
 				'application/yaml'
-			];
-
-		_self = this;
+			],
+			_self = this;
 
 		$.each(mimes, function(key, value) {
 			OCA.Files.fileActions.registerAction({
@@ -301,7 +298,7 @@ var Files_Texteditor = {
 				// Configure ace
 				_self.configureACE(file);
 				// Show the controls
-				_self.loadControlBar(file, _self.currentContext);
+				_self.loadControlBar(file);
 				window.aceEditor.getSession().on('change', _self.setupAutosave);
 				_self.bindVisibleActions();
 				window.aceEditor.focus();
@@ -334,7 +331,7 @@ var Files_Texteditor = {
 	/**
 	 * Load the editor control bar
 	 */
-	loadControlBar: function(file, context) {
+	loadControlBar: function(file) {
 		var html =
 			'<small class="filename">'+escapeHTML(file.name)+'</small>'
 			+'<small class="unsaved-star" style="display: none">*</small>'
@@ -377,7 +374,7 @@ var Files_Texteditor = {
 		$('#editor_close').on('click', _.bind(this._onCloseTrigger, this));
 		$(window).resize(OCA.Files_Texteditor.setFilenameMaxLength);
 		if(!$('html').hasClass('ie8')) {
-			window.onpopstate = function (e) {
+			window.onpopstate = function () {
 				self._onCloseTrigger();
 			}
 		}
@@ -429,7 +426,7 @@ var Files_Texteditor = {
 	 */
 	setEditorSyntaxMode: function(extension) {
 		// Loads the syntax mode files and tells the editor
-		var filetype = new Array();
+		var filetype = [];
 		// add file extensions like this: filetype["extension"] = "filetype":
 		filetype["h"] = "c_cpp";
 		filetype["c"] = "c_cpp";
@@ -515,10 +512,9 @@ var Files_Texteditor = {
 	 */
 	saveFile: function(data, file, success, failure) {
 		// Send the post request
-		if(file.dir == '/') {
-			var path = file.dir + file.name;
-		} else {
-			var path = file.dir + '/' + file.name;
+		var path = file.dir + file.name;
+		if (file.dir !== '/') {
+			path = file.dir + '/' + file.name;
 		}
 		$.ajax({
 			type: 'PUT',
