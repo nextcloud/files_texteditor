@@ -243,16 +243,17 @@ var Files_Texteditor = {
 	 * Registers the file actions
 	 */
 	registerFileActions: function() {
-		var mimes = Array(
-			'text',
-			'application/xml',
-			'application/x-empty',
-			'application/x-php',
-			'application/javascript',
-			'application/x-pearl',
-			'application/x-text',
-			'application/yaml'
-		);
+		var mimes = [
+				'text',
+				'application/javascript',
+				'application/json',
+				'application/xml',
+				'application/x-empty',
+				'application/x-php',
+				'application/x-pearl',
+				'application/x-text',
+				'application/yaml'
+			];
 
 		_self = this;
 
