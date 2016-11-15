@@ -12,6 +12,6 @@ More information is available in the text editor documentation.
 	<default_enable/>
 	<ocsid>166051</ocsid>
 	<dependencies>
-		<owncloud min-version="9.2" max-version="9.2" />
+		<nextcloud min-version="11" max-version="11" />
 	</dependencies>
 </info>
