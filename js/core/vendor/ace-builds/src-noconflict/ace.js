@@ -3327,7 +3327,7 @@ exports.get = function (url, callback) {
 exports.loadScript = function(path, callback) {
     var head = dom.getDocumentHead();
     var s = document.createElement('script');
-
+    s.setAttribute('nonce', btoa(OC.requestToken));
     s.src = path;
     head.appendChild(s);
 
