@@ -399,7 +399,7 @@ var Files_Texteditor = {
 		// Set the theme
 		OC.addScript(
 			'files_texteditor',
-			'core/vendor/ace-builds/src-min-noconflict/theme-clouds',
+			'core/vendor/ace-builds/src-noconflict/theme-clouds',
 			function () {
 				window.aceEditor.setTheme("ace/theme/clouds");
 			}
