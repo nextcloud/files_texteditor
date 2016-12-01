@@ -1,0 +1,23 @@
+From 3f6863ca2119d81796dd2e769d1fc42c4547b3e4 Mon Sep 17 00:00:00 2001
+From: Lukas Reschke <lukas@statuscode.ch>
+Date: Wed, 30 Nov 2016 17:16:41 +0100
+Subject: [PATCH] Add nonce to loaded JS
+
+Signed-off-by: Lukas Reschke <lukas@statuscode.ch>
+---
+ js/core/vendor/ace-builds/src-noconflict/ace.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/js/core/vendor/ace-builds/src-noconflict/ace.js b/js/core/vendor/ace-builds/src-noconflict/ace.js
+index 2b601cc..19c1ae7 100644
+--- a/js/core/vendor/ace-builds/src-noconflict/ace.js
++++ b/js/core/vendor/ace-builds/src-noconflict/ace.js
+@@ -3327,7 +3327,7 @@ exports.get = function (url, callback) {
+ exports.loadScript = function(path, callback) {
+     var head = dom.getDocumentHead();
+     var s = document.createElement('script');
+-
++    s.setAttribute('nonce', btoa(OC.requestToken));
+     s.src = path;
+     head.appendChild(s);
+ 

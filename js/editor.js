@@ -399,7 +399,7 @@ var Files_Texteditor = {
 		// Set the theme
 		OC.addScript(
 			'files_texteditor',
-			'vendor/ace/src-noconflict/theme-clouds',
+			'core/vendor/ace-builds/src-noconflict/theme-clouds',
 			function () {
 				window.aceEditor.setTheme("ace/theme/clouds");
 			}
@@ -477,7 +477,7 @@ var Files_Texteditor = {
 			// Set the syntax mode
 			OC.addScript(
 				'files_texteditor',
-				'vendor/ace/src-noconflict/mode-'+filetype[extension],
+				'core/vendor/ace-builds/src-noconflict/mode-'+filetype[extension],
 				function () {
 					var SyntaxMode = ace.require("ace/mode/" + filetype[extension]).Mode;
 					window.aceEditor.getSession().setMode(new SyntaxMode());
