@@ -237,21 +237,25 @@ var Files_Texteditor = {
 		});
 	},
 
+	getSupportedMimetypes: function() {
+		return [
+			'text',
+			'application/javascript',
+			'application/json',
+			'application/xml',
+			'application/x-empty',
+			'application/x-php',
+			'application/x-pearl',
+			'application/x-text',
+			'application/yaml'
+		];
+	},
+
 	/**
 	 * Registers the file actions
 	 */
 	registerFileActions: function() {
-		var mimes = [
-				'text',
-				'application/javascript',
-				'application/json',
-				'application/xml',
-				'application/x-empty',
-				'application/x-php',
-				'application/x-pearl',
-				'application/x-text',
-				'application/yaml'
-			],
+		var mimes = this.getSupportedMimetypes(),
 			_self = this;
 
 		$.each(mimes, function(key, value) {
@@ -421,10 +425,7 @@ var Files_Texteditor = {
 		window.aceEditor.commands.removeCommand(window.aceEditor.commands.byName.transposeletters);
 	},
 
-	/**
-	 * Sets the syntax highlighting for the editor based on the file extension
-	 */
-	setEditorSyntaxMode: function(extension) {
+	getSyntaxMode: function(extension) {
 		// Loads the syntax mode files and tells the editor
 		var filetype = [];
 		// add file extensions like this: filetype["extension"] = "filetype":
@@ -475,15 +476,26 @@ var Files_Texteditor = {
 		if (filetype[extension] != null) {
 			// Then it must be in the array, so load the custom syntax mode
 			// Set the syntax mode
-			OC.addScript(
+			return OC.addScript(
 				'files_texteditor',
-				'core/vendor/ace-builds/src-noconflict/mode-'+filetype[extension],
-				function () {
-					var SyntaxMode = ace.require("ace/mode/" + filetype[extension]).Mode;
-					window.aceEditor.getSession().setMode(new SyntaxMode());
-				}
-			);
+				'core/vendor/ace-builds/src-noconflict/mode-' + filetype[extension]
+			).then(function () {
+				return ace.require("ace/mode/" + filetype[extension]).Mode;
+			});
 		}
+
+		return $.when();
+	},
+
+	/**
+	 * Sets the syntax highlighting for the editor based on the file extension
+	 */
+	setEditorSyntaxMode: function(extension) {
+		this.getSyntaxMode(extension).then(function(SyntaxMode) {
+			if (SyntaxMode) {
+				window.aceEditor.getSession().setMode(new SyntaxMode());
+			}
+		});
 	},
 
 	/**
