@@ -8,6 +8,7 @@ if (\OCP\User::isLoggedIn()) {
 		OCP\Util::addStyle('files_texteditor', 'style');
 		OCP\Util::addStyle('files_texteditor', 'mobile');
 		OCP\Util::addscript('files_texteditor', 'editor');
+		OCP\Util::addscript('files_texteditor', 'sidebarpreview');
 		OCP\Util::addscript('files_texteditor', 'core/vendor/ace-builds/src-noconflict/ace');
 
 		$cspManager = \OC::$server->getContentSecurityPolicyManager();

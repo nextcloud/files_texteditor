@@ -194,3 +194,11 @@ small.unsaved-star {
 	display: inline-block;
 	float: left;
 }
+
+#sidebar_editor .ace_gutter {
+	display: none;
+}
+
+#sidebar_editor .ace_scrollbar.ace_scrollbar-h {
+	display: none;
+}
