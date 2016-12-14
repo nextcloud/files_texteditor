@@ -7,11 +7,11 @@ More information is available in the text editor documentation.
 	</description>
 	<licence>AGPL</licence>
 	<author>Tom Needham, Björn Schießle</author>
-	<version>2.2</version>
+	<version>2.3</version>
 	<shipped>true</shipped>
 	<default_enable/>
 	<ocsid>166051</ocsid>
 	<dependencies>
-		<nextcloud min-version="11" max-version="11" />
+		<nextcloud min-version="12" max-version="12" />
 	</dependencies>
 </info>
