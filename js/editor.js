@@ -240,10 +240,12 @@ var Files_Texteditor = {
 	getSupportedMimetypes: function() {
 		return [
 			'text',
+			'application/cmd',
 			'application/javascript',
 			'application/json',
 			'application/xml',
 			'application/x-empty',
+			'application/x-msdos-program',
 			'application/x-php',
 			'application/x-pearl',
 			'application/x-text',
@@ -429,6 +431,8 @@ var Files_Texteditor = {
 		// Loads the syntax mode files and tells the editor
 		var filetype = [];
 		// add file extensions like this: filetype["extension"] = "filetype":
+		filetype["bat"] = "batchfile";
+		filetype["cmd"] = "batchfile";
 		filetype["h"] = "c_cpp";
 		filetype["c"] = "c_cpp";
 		filetype["clj"] = "clojure";
@@ -461,7 +465,7 @@ var Files_Texteditor = {
 		filetype["mli"] = "ocaml";
 		filetype["pl"] = "perl";
 		filetype["php"] = "php";
-		filetype["powershell"] = "ps1";
+		filetype["ps1"] = "powershell";
 		filetype["py"] = "python";
 		filetype["rb"] = "ruby";
 		filetype["scad"] = "scad"; // seems to be something like 3d model files printed with e.g. reprap
