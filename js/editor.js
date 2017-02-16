@@ -316,6 +316,7 @@ var Files_Texteditor = {
 					var text = window.aceEditor.getSession().getValue();
 					_self.previewPluginOnChange(text, _self.preview);
 					window.aceEditor.resize();
+					_self.loadPreviewControlBar();
 				} else {
 					_self.previewPluginOnChange = null;
 				}
@@ -347,6 +348,54 @@ var Files_Texteditor = {
 		this.setFilenameMaxLength();
 		this.bindControlBar();
 
+	},
+
+	setPreviewMode: function(mode) {
+		var container = $('#app-content-texteditor');
+		var controlBar = $('#preview_editor_controls');
+		controlBar.find('button').removeClass('active');
+		controlBar.find('button[data-type="' + mode + '"]').addClass('active');
+		switch (mode) {
+			case 'mixed':
+				container.find('#editor_container').addClass('hasPreview');
+				container.find('#editor').show();
+				container.find('#preview_wrap').css('width', '50%');
+				break;
+			case 'text':
+				container.find('#editor_container').removeClass('hasPreview');
+				container.find('#editor').show();
+				container.find('#preview_wrap').css('width', '50%');
+				break;
+			case 'image':
+				container.find('#editor_container').addClass('hasPreview');
+				container.find('#editor').hide();
+				container.find('#preview_wrap').css('width', '100%');
+				break;
+		}
+	},
+
+	loadPreviewControlBar: function() {
+		var makeButton = function (type, tooltip, active) {
+			var button = $('<button/>');
+			button.tooltip({
+				title: tooltip,
+				container: 'body',
+				placement: 'bottom',
+				delay: {show: 500, hide: 0}
+			});
+			if (active) {
+				button.addClass('active');
+			}
+			button.click(this.setPreviewMode.bind(this, type));
+			button.attr('data-type', type);
+			return button.css('background-image', 'url("' + OC.imagePath('files_texteditor', type) + '")');
+		}.bind(this);
+
+		var controls = $('<span/>').attr('id', 'preview_editor_controls');
+		controls.append(makeButton('text', t('files_texteditor', 'Edit')));
+		controls.append(makeButton('mixed', t('files_texteditor', 'Mixed'), true));
+		controls.append(makeButton('image', t('files_texteditor', 'Preview')));
+		$('#editor_close').after(controls);
 	},
 
 	/**
