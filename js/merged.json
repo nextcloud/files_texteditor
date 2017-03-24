@@ -1,0 +1,5 @@
+[
+  "editor.js",
+  "sidebarpreview.js",
+  "core/vendor/ace-builds/src-noconflict/ace.js"
+]
