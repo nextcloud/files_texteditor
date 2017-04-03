@@ -25,7 +25,12 @@ namespace OCA\Files_Texteditor\Tests\Controller;
 
 use OC\HintException;
 use OCA\Files_Texteditor\Controller\FileHandlingController;
+use OCP\Files\File;
+use OCP\Files\Folder;
 use OCP\Files\ForbiddenException;
+use OCP\IL10N;
+use OCP\ILogger;
+use OCP\IRequest;
 use OCP\Lock\LockedException;
 use Test\TestCase;
 
@@ -37,33 +42,25 @@ class FileHandlingControllerTest extends TestCase {
 	/** @var string */
 	protected $appName;
 
-	/** @var \OCP\IRequest | \PHPUnit_Framework_MockObject_MockObject */
+	/** @var IRequest|\PHPUnit_Framework_MockObject_MockObject */
 	protected $requestMock;
 
-	/** @var \OCP\IL10N | \PHPUnit_Framework_MockObject_MockObject */
+	/** @var IL10N|\PHPUnit_Framework_MockObject_MockObject */
 	private $l10nMock;
 
-	/** @var \OCP\ILogger | \PHPUnit_Framework_MockObject_MockObject */
+	/** @var ILogger|\PHPUnit_Framework_MockObject_MockObject */
 	private $loggerMock;
 
-	/** @var \OC\Files\View | \PHPUnit_Framework_MockObject_MockObject */
-	private $viewMock;
+	/** @var Folder|\PHPUnit_Framework_MockObject_MockObject */
+	private $userFolderMock;
 
 	public function setUp() {
 		parent::setUp();
 		$this->appName = 'files_texteditor';
-		$this->requestMock = $this->getMockBuilder('OCP\IRequest')
-			->disableOriginalConstructor()
-			->getMock();
-		$this->l10nMock = $this->getMockBuilder('OCP\IL10N')
-			->disableOriginalConstructor()
-			->getMock();
-		$this->loggerMock = $this->getMockBuilder('OCP\ILogger')
-			->disableOriginalConstructor()
-			->getMock();
-		$this->viewMock = $this->getMockBuilder('OC\Files\View')
-			->disableOriginalConstructor()
-			->getMock();
+		$this->requestMock = $this->createMock(IRequest::class);
+		$this->l10nMock = $this->createMock(IL10N::class);
+		$this->loggerMock = $this->createMock(ILogger::class);
+		$this->userFolderMock = $this->createMock(Folder::class);
 
 		$this->l10nMock->expects($this->any())->method('t')->willReturnCallback(
 			function($message) {
@@ -75,8 +72,8 @@ class FileHandlingControllerTest extends TestCase {
 			$this->appName,
 			$this->requestMock,
 			$this->l10nMock,
-			$this->viewMock,
-			$this->loggerMock);
+			$this->loggerMock,
+			$this->userFolderMock);
 	}
 
 	/**
@@ -88,9 +85,12 @@ class FileHandlingControllerTest extends TestCase {
 	 * @param string $expectedMessage
 	 */
 	public function testLoad($filename, $fileContent, $expectedStatus, $expectedMessage) {
-		$this->viewMock->expects($this->any())
-			->method('file_get_contents')
+		$file = $this->createMock(File::class);
+		$file->method('getContent')
 			->willReturn($fileContent);
+		$this->userFolderMock->method('get')
+			->with('//'.$filename)
+			->willReturn($file);
 
 		$result = $this->controller->load('/', $filename);
 		$data = $result->getData();
@@ -133,12 +133,12 @@ class FileHandlingControllerTest extends TestCase {
 	 * @param string $expectedMessage
 	 */
 	public function testLoadExceptionWithException(\Exception $exception, $expectedMessage) {
-
-		$this->viewMock->expects($this->any())
-			->method('file_get_contents')
-			->willReturnCallback(function() use ($exception) {
-				throw $exception;
-			});
+		$file = $this->createMock(File::class);
+		$file->method('getContent')
+			->willThrowException($exception);
+		$this->userFolderMock->method('get')
+			->with('//test.txt')
+			->willReturn($file);
 
 		$result = $this->controller->load('/', 'test.txt');
 		$data = $result->getData();
@@ -154,19 +154,15 @@ class FileHandlingControllerTest extends TestCase {
 	 * @param string $expectedMessage
 	 */
 	public function testSaveExceptionWithException(\Exception $exception, $expectedMessage) {
+		$file = $this->createMock(File::class);
+		$file->method('putContent')
+			->willThrowException($exception);
+		$this->userFolderMock->method('get')
+			->with('/test.txt')
+			->willReturn($file);
 
-		$this->viewMock->expects($this->any())
-			->method('file_put_contents')
-			->willReturnCallback(function() use ($exception) {
-				throw $exception;
-			});
-
-		$this->viewMock->expects($this->any())
-			->method('filemtime')
-			->willReturn(42);
-		$this->viewMock->expects($this->any())
-			->method('isUpdatable')
-			->willReturn(true);
+		$file->method('getMTime')->willReturn(42);
+		$file->method('isUpdateable')->willReturn(true);
 
 		$result = $this->controller->save('/test.txt', 'content', 42);
 		$data = $result->getData();
@@ -188,20 +184,19 @@ class FileHandlingControllerTest extends TestCase {
 	 * @param $expectedMessage
 	 */
 	public function testSave($path, $fileContents, $mTime, $fileMTime, $isUpdatable, $expectedStatus, $expectedMessage) {
+		$file = $this->createMock(File::class);
+		$this->userFolderMock->method('get')
+			->with('/test.txt')
+			->willReturn($file);
 
-		$this->viewMock->expects($this->any())
-			->method('filemtime')
-			->willReturn($fileMTime);
-
-		$this->viewMock->expects($this->any())
-			->method('isUpdatable')
-			->willReturn($isUpdatable);
+		$file->method('getMTime')->willReturn($fileMTime);
+		$file->method('isUpdateable')->willReturn($isUpdatable);
 
 		if ($expectedStatus === 200) {
-			$this->viewMock->expects($this->once())
-				->method('file_put_contents')->with($path, $fileContents);
+			$file->expects($this->once())
+				->method('putContent')->with($fileContents);
 		} else {
-			$this->viewMock->expects($this->never())->method(('file_put_contents'));
+			$file->expects($this->never())->method('putContent');
 		}
 
 		$result = $this->controller->save($path, $fileContents, $mTime);
@@ -220,9 +215,11 @@ class FileHandlingControllerTest extends TestCase {
 	}
 
 	public function testFileTooBig() {
-		$this->viewMock->expects($this->any())
-			->method('filesize')
-			->willReturn(4194304 + 1);
+		$file = $this->createMock(File::class);
+		$this->userFolderMock->method('get')
+			->with('//foo.bar')
+			->willReturn($file);
+		$file->method('getSize')->willReturn(4194304 + 1);
 
 		$result = $this->controller->load('/', 'foo.bar');
 		$data = $result->getData();
