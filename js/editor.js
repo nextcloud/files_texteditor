@@ -678,7 +678,7 @@ Files_Texteditor.NewFileMenuPlugin = {
 		// register the new menu entry
 		menu.addMenuEntry({
 			id: 'file',
-			displayName: t('files_texteditor', 'Text file'),
+			displayName: t('files_texteditor', 'New text file'),
 			templateName: t('files_texteditor', 'New text file.txt'),
 			iconClass: 'icon-filetype-text',
 			fileType: 'file',
