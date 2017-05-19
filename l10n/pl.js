@@ -1,11 +1,13 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "You can not open a folder" : "Nie możesz otworzyć folderu",
     "This file is too big to be opened. Please download the file instead." : "Plik jest zbyt duży by go otworzyć. Proszę pobrać plik",
     "Cannot read the file." : "Nie można odczytać pliku.",
     "Invalid file path supplied." : "Błędnie podana ścieżka do pliku.",
     "The file is locked." : "Plik jest zablokowany.",
     "An internal server error occurred." : "Wystąpił wewnętrzny błąd serwera.",
+    "You can not write to a folder" : "Nie możesz wprowadzać zmian w folderze",
     "Cannot save file as it has been modified since opening" : "Nie mogę zapisać pliku, został zmodyfikowany podczas otwarcia.",
     "Insufficient permissions" : "Niewystarczające uprawnienia",
     "File path not supplied" : "Ścieżka pliku nie została podana",
@@ -16,7 +18,9 @@ OC.L10N.register(
     "Saved" : "Zapisano",
     "There was a problem saving your changes. Click to resume editing." : "Pojawił się problem podczas zapisywania twoich zmian. Kliknij, aby powrócić do edycji.",
     "An error occurred!" : "Wystąpił błąd!",
-    "Text file" : "Plik tekstowy",
+    "Edit" : "Edytuj",
+    "Preview" : "Podgląd",
+    "New text file" : "Nowy plik tekstowy",
     "New text file.txt" : "Nowy plik tekstowy.txt"
 },
-"nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);");
+"nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>=14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);");

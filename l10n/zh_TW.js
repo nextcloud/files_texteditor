@@ -16,7 +16,6 @@ OC.L10N.register(
     "Saved" : "已儲存",
     "There was a problem saving your changes. Click to resume editing." : "在儲存您的變更時發生錯誤，點選以回復編輯狀態。",
     "An error occurred!" : "發生錯誤！",
-    "Text file" : "文字檔",
     "New text file.txt" : "新文字檔.txt"
 },
 "nplurals=1; plural=0;");

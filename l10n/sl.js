@@ -16,7 +16,6 @@ OC.L10N.register(
     "Saved" : "Shranjeno",
     "There was a problem saving your changes. Click to resume editing." : "Prišlo je do napake med shranjevanjem sprememb. Kliknite za nadaljevanje urejanja.",
     "An error occurred!" : "Prišlo je do napake!",
-    "Text file" : "Besedilna datoteka",
     "New text file.txt" : "Nova datoteka.txt"
 },
 "nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);");

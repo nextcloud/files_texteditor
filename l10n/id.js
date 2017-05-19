@@ -15,7 +15,6 @@ OC.L10N.register(
     "Saved" : "Disimpan",
     "There was a problem saving your changes. Click to resume editing." : "Terdapat masalah saat menyimpan perubahan. Klik untuk melanjutkan penyuntingan.",
     "An error occurred!" : "Terjadi kesalahan!",
-    "Text file" : "Berkas teks",
     "New text file.txt" : "Teks baru file.txt"
 },
 "nplurals=1; plural=0;");

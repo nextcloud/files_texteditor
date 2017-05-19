@@ -16,7 +16,6 @@ OC.L10N.register(
     "Saved" : "Sparad",
     "There was a problem saving your changes. Click to resume editing." : "Det uppstod ett fel när vi försökte spara dina ändringar. Klicka för att fortsätta redigera.",
     "An error occurred!" : "Ett fel uppstod!",
-    "Text file" : "Textfil",
     "New text file.txt" : "nytextfil.txt"
 },
 "nplurals=2; plural=(n != 1);");
