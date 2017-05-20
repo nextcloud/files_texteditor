@@ -19,8 +19,10 @@ OC.L10N.register(
     "There was a problem saving your changes. Click to resume editing." : "Pojawił się problem podczas zapisywania twoich zmian. Kliknij, aby powrócić do edycji.",
     "An error occurred!" : "Wystąpił błąd!",
     "Edit" : "Edytuj",
+    "Mixed" : "Mieszane",
     "Preview" : "Podgląd",
     "New text file" : "Nowy plik tekstowy",
-    "New text file.txt" : "Nowy plik tekstowy.txt"
+    "New text file.txt" : "Nowy plik tekstowy.txt",
+    "Text editor" : "Edytor tekstu"
 },
 "nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>=14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);");
