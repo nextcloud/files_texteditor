@@ -1,4 +1,5 @@
 { "translations": {
+    "You can not open a folder" : "Ne morete odpreti mape",
     "This file is too big to be opened. Please download the file instead." : "Datoteka je prevelika in je ni mogoče odpreti. Datoteko prejmite na disk in urejajte krajevno.",
     "Cannot read the file." : "Datoteke ni mogoče prebrati.",
     "Invalid file path supplied." : "Podana je neveljavna pot do datoteke.",
