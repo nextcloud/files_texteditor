@@ -6,7 +6,7 @@ php:
 
 env:
   global:
-    - CORE_BRANCH=master
+    - CORE_BRANCH=stable12
     - APP=files_texteditor
   matrix:
     - DB=sqlite
@@ -17,7 +17,7 @@ branches:
     - /^stable\d+(\.\d+)?$/
 
 before_install:
-  - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh 
+  - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
   - bash ./before_install.sh $APP $CORE_BRANCH $DB
   - cd ../server
   - php occ app:enable $APP
