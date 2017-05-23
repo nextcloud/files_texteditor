@@ -12,7 +12,7 @@ OC.L10N.register(
     "Insufficient permissions" : "Nicht ausreichende Berechtigungen",
     "File path not supplied" : "Dateipfad nicht angegeben",
     "File mtime not supplied" : "Dateiänderungsdatum nicht angegeben",
-    "saving..." : "speichern...",
+    "saving..." : "speichere …",
     "saved!" : "gespeichert!",
     "failed!" : "fehlgeschlagen!",
     "Saved" : "Gespeichert",
