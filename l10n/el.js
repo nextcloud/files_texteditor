@@ -20,6 +20,8 @@ OC.L10N.register(
     "An error occurred!" : "Παρουσιάστηκε σφάλμα!",
     "Edit" : "Επεξεργασία",
     "Preview" : "Προεπισκόπηση",
-    "New text file.txt" : "Νέο αρχείο κειμένου.txt"
+    "New text file" : "Νέο αρχείο κειμένου",
+    "New text file.txt" : "Νέο αρχείο κειμένου.txt",
+    "Text editor" : "Επεξεργαστής κειμένου"
 },
 "nplurals=2; plural=(n != 1);");
