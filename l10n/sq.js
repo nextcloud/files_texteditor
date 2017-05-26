@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "You can not open a folder" : "Ju nuk mund të hapni një dosje",
     "This file is too big to be opened. Please download the file instead." : "Kjo kartelë është shumë e madhe për hapje. Ju lutemi, në vend të kësaj, shkarkojeni.",
     "Cannot read the file." : "S’lexohet dot kartela.",
     "Invalid file path supplied." : "U dha shteg i pavlefshëm.",

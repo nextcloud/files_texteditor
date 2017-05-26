@@ -22,6 +22,7 @@ OC.L10N.register(
     "Mixed" : "Gemengd",
     "Preview" : "Voorbeeldweergave",
     "New text file" : "Nieuw tekstbestand",
-    "New text file.txt" : "Nieuw tekstbestand.txt"
+    "New text file.txt" : "Nieuw tekstbestand.txt",
+    "Text editor" : "Tekstverwerker"
 },
 "nplurals=2; plural=(n != 1);");
