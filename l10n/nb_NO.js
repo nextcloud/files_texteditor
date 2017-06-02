@@ -14,7 +14,7 @@ OC.L10N.register(
     "File mtime not supplied" : "Filens mtime ikke angitt",
     "saving..." : "lagrer...",
     "saved!" : "lagret!",
-    "failed!" : "feilet!",
+    "failed!" : "mislyktes!",
     "Saved" : "Lagret",
     "There was a problem saving your changes. Click to resume editing." : "Det oppstod et problem ved lagring av endringene dine. Klikk for å fortsette redigering.",
     "An error occurred!" : "En feil oppstod!",
