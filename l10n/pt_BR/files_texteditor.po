@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ownCloud files_texteditor package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud files_texteditor 8.0.0\n"
+"Report-Msgid-Bugs-To: translations@owncloud.org\n"
+"POT-Creation-Date: 2017-06-03 07:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Morris Jobke <hey@morrisjobke.de>, 2017\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/nextcloud/teams/64236/pt_BR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: controller/filehandlingcontroller.php:87
+msgid "You can not open a folder"
+msgstr "Você não pode abrir uma pasta"
+
+#: controller/filehandlingcontroller.php:93
+msgid "This file is too big to be opened. Please download the file instead."
+msgstr ""
+"Este arquivo é muito grande para ser aberto. Por favor baixe o arquivo ao "
+"invés de abri-lo."
+
+#: controller/filehandlingcontroller.php:116
+msgid "Cannot read the file."
+msgstr "Não é possível ler o arquivo."
+
+#: controller/filehandlingcontroller.php:119
+msgid "Invalid file path supplied."
+msgstr "O caminho do arquivo que foi fornecido é inválido."
+
+#: controller/filehandlingcontroller.php:123
+#: controller/filehandlingcontroller.php:173
+msgid "The file is locked."
+msgstr "O arquivo está bloqueado."
+
+#: controller/filehandlingcontroller.php:131
+#: controller/filehandlingcontroller.php:204
+msgid "An internal server error occurred."
+msgstr "Ocorreu um erro interno do servidor."
+
+#: controller/filehandlingcontroller.php:154
+msgid "You can not write to a folder"
+msgstr "Você não pode gravar em uma pasta"
+
+#: controller/filehandlingcontroller.php:164
+msgid "Cannot save file as it has been modified since opening"
+msgstr ""
+"Não é possível salvar este arquivo pois ele foi modificado desde a abertura"
+
+#: controller/filehandlingcontroller.php:188
+msgid "Insufficient permissions"
+msgstr "Permissões insuficientes"
+
+#: controller/filehandlingcontroller.php:194
+msgid "File path not supplied"
+msgstr "Caminho do arquivo não fornecido"
+
+#: controller/filehandlingcontroller.php:197
+msgid "File mtime not supplied"
+msgstr "Data de mudança mtime do arquivo não especificada"
+
+#: js/editor.js:98
+msgid "saving..."
+msgstr "salvando..."
+
+#: js/editor.js:113
+msgid "saved!"
+msgstr "salvo!"
+
+#: js/editor.js:121
+msgid "failed!"
+msgstr "falhou!"
+
+#: js/editor.js:154
+msgid "Saved"
+msgstr "Salvo"
+
+#: js/editor.js:163
+msgid "There was a problem saving your changes. Click to resume editing."
+msgstr ""
+"Houve um problema ao salvar suas alterações. Clique para retomar a edição."
+
+#: js/editor.js:333
+msgid "An error occurred!"
+msgstr "Ocorreu um erro!"
+
+#: js/editor.js:397
+msgid "Edit"
+msgstr "Editar"
+
+#: js/editor.js:398
+msgid "Mixed"
+msgstr "Misturado"
+
+#: js/editor.js:399
+msgid "Preview"
+msgstr "Visualizar"
+
+#: js/editor.js:681
+msgid "New text file"
+msgstr "Novo arquivo de texto"
+
+#: js/editor.js:682
+msgid "New text file.txt"
+msgstr "Novo texto file.txt"
+
+#: specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Text editor"
+msgstr "Editor de texto"
+
+#: js/editor.js:628
+msgid "Text file"
+msgstr ""

@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ownCloud files_texteditor package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud files_texteditor 8.0.0\n"
+"Report-Msgid-Bugs-To: translations@owncloud.org\n"
+"POT-Creation-Date: 2017-06-03 07:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Jean Schwerer <jean@famille-schwerer.com>, 2017\n"
+"Language-Team: French (https://www.transifex.com/nextcloud/teams/64236/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: controller/filehandlingcontroller.php:87
+msgid "You can not open a folder"
+msgstr "Vous ne pouvez pas ouvrir ce dossier"
+
+#: controller/filehandlingcontroller.php:93
+msgid "This file is too big to be opened. Please download the file instead."
+msgstr ""
+"Ce fichier est trop volumineux pour être ouvert. Veuillez plutôt le "
+"télécharger."
+
+#: controller/filehandlingcontroller.php:116
+msgid "Cannot read the file."
+msgstr "Impossible de lire le fichier."
+
+#: controller/filehandlingcontroller.php:119
+msgid "Invalid file path supplied."
+msgstr "Chemin de fichier fourni non valide."
+
+#: controller/filehandlingcontroller.php:123
+#: controller/filehandlingcontroller.php:173
+msgid "The file is locked."
+msgstr "Le fichier est verrouillé."
+
+#: controller/filehandlingcontroller.php:131
+#: controller/filehandlingcontroller.php:204
+msgid "An internal server error occurred."
+msgstr "Une erreur interne au serveur est survenue."
+
+#: controller/filehandlingcontroller.php:154
+msgid "You can not write to a folder"
+msgstr "Vous ne pouvez pas écrire dans ce dossier"
+
+#: controller/filehandlingcontroller.php:164
+msgid "Cannot save file as it has been modified since opening"
+msgstr "Impossible de sauvegarder le fichier, il a été modifié entre temps"
+
+#: controller/filehandlingcontroller.php:188
+msgid "Insufficient permissions"
+msgstr "Permissions insuffisantes"
+
+#: controller/filehandlingcontroller.php:194
+msgid "File path not supplied"
+msgstr "Chemin du fichier non fourni"
+
+#: controller/filehandlingcontroller.php:197
+msgid "File mtime not supplied"
+msgstr "mtime du fichier non fourni"
+
+#: js/editor.js:98
+msgid "saving..."
+msgstr "enregistrement..."
+
+#: js/editor.js:113
+msgid "saved!"
+msgstr "enregistré!"
+
+#: js/editor.js:121
+msgid "failed!"
+msgstr "échec!"
+
+#: js/editor.js:154
+msgid "Saved"
+msgstr "Sauvegardé"
+
+#: js/editor.js:163
+msgid "There was a problem saving your changes. Click to resume editing."
+msgstr ""
+"Un problème est survenu lors de la sauvegarde de vos modifications. Cliquez "
+"pour continuer l'édition."
+
+#: js/editor.js:333
+msgid "An error occurred!"
+msgstr "Une erreur est survenue !"
+
+#: js/editor.js:397
+msgid "Edit"
+msgstr "Éditer"
+
+#: js/editor.js:398
+msgid "Mixed"
+msgstr "Mélangé"
+
+#: js/editor.js:399
+msgid "Preview"
+msgstr "Aperçu"
+
+#: js/editor.js:681
+msgid "New text file"
+msgstr "Nouveau fichier texte"
+
+#: js/editor.js:682
+msgid "New text file.txt"
+msgstr "Nouveau fichier texte.txt"
+
+#: specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Text editor"
+msgstr "Éditeur de texte"
+
+#: js/editor.js:628
+msgid "Text file"
+msgstr ""

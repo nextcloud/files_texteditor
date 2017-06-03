@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ownCloud files_texteditor package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud files_texteditor 8.0.0\n"
+"Report-Msgid-Bugs-To: translations@owncloud.org\n"
+"POT-Creation-Date: 2017-06-03 07:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Garry Holmqvist Birkehorn <garry@stridig.se>, 2017\n"
+"Language-Team: Swedish (https://www.transifex.com/nextcloud/teams/64236/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: controller/filehandlingcontroller.php:87
+msgid "You can not open a folder"
+msgstr "Du kan inte öppna en mapp"
+
+#: controller/filehandlingcontroller.php:93
+msgid "This file is too big to be opened. Please download the file instead."
+msgstr ""
+"Denna fil är för stor för att öppnas. Var god ladda ner filen istället."
+
+#: controller/filehandlingcontroller.php:116
+msgid "Cannot read the file."
+msgstr "Kan inte läsa av fil."
+
+#: controller/filehandlingcontroller.php:119
+msgid "Invalid file path supplied."
+msgstr "Felaktig sökväg till fil angiven."
+
+#: controller/filehandlingcontroller.php:123
+#: controller/filehandlingcontroller.php:173
+msgid "The file is locked."
+msgstr "Denna filen är låst."
+
+#: controller/filehandlingcontroller.php:131
+#: controller/filehandlingcontroller.php:204
+msgid "An internal server error occurred."
+msgstr "Ett server-fel har inträffat."
+
+#: controller/filehandlingcontroller.php:154
+msgid "You can not write to a folder"
+msgstr "Du kan inte skriva till en mapp"
+
+#: controller/filehandlingcontroller.php:164
+msgid "Cannot save file as it has been modified since opening"
+msgstr "Kan inte spara filen eftersom den har ändrats sedan den öppnats."
+
+#: controller/filehandlingcontroller.php:188
+msgid "Insufficient permissions"
+msgstr "Otillräcklig behörighet."
+
+#: controller/filehandlingcontroller.php:194
+msgid "File path not supplied"
+msgstr "Ingen sökväg till fil angiven."
+
+#: controller/filehandlingcontroller.php:197
+msgid "File mtime not supplied"
+msgstr "Inget mtime-attribut angivet för filen."
+
+#: js/editor.js:98
+msgid "saving..."
+msgstr "sparar..."
+
+#: js/editor.js:113
+msgid "saved!"
+msgstr "sparad!"
+
+#: js/editor.js:121
+msgid "failed!"
+msgstr "misslyckades."
+
+#: js/editor.js:154
+msgid "Saved"
+msgstr "Sparad"
+
+#: js/editor.js:163
+msgid "There was a problem saving your changes. Click to resume editing."
+msgstr ""
+"Det uppstod ett fel när vi försökte spara dina ändringar. Klicka för att "
+"fortsätta redigera."
+
+#: js/editor.js:333
+msgid "An error occurred!"
+msgstr "Ett fel uppstod!"
+
+#: js/editor.js:397
+msgid "Edit"
+msgstr "Redigera"
+
+#: js/editor.js:398
+msgid "Mixed"
+msgstr "Blandad"
+
+#: js/editor.js:399
+msgid "Preview"
+msgstr "Förhandsvisa"
+
+#: js/editor.js:681
+msgid "New text file"
+msgstr "Ny Textfil"
+
+#: js/editor.js:682
+msgid "New text file.txt"
+msgstr "nytextfil.txt"
+
+#: specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Text editor"
+msgstr "Textredigerare"
+
+#: js/editor.js:628
+msgid "Text file"
+msgstr ""

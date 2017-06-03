@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ownCloud files_texteditor package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud files_texteditor 8.0.0\n"
+"Report-Msgid-Bugs-To: translations@owncloud.org\n"
+"POT-Creation-Date: 2017-06-03 07:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Venelin Georgiev <veni_georgiev@mail.bg>, 2017\n"
+"Language-Team: Bulgarian (Bulgaria) (https://www.transifex.com/nextcloud/teams/64236/bg_BG/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: bg_BG\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: controller/filehandlingcontroller.php:87
+msgid "You can not open a folder"
+msgstr "Не можете да отворите папката"
+
+#: controller/filehandlingcontroller.php:93
+msgid "This file is too big to be opened. Please download the file instead."
+msgstr "Този файл е твърде голям, за да се отвори. Моля, изтеглете файла."
+
+#: controller/filehandlingcontroller.php:116
+msgid "Cannot read the file."
+msgstr "файлът неможе да бъде прочетен."
+
+#: controller/filehandlingcontroller.php:119
+msgid "Invalid file path supplied."
+msgstr "Предоставен е невалиден път до файл."
+
+#: controller/filehandlingcontroller.php:123
+#: controller/filehandlingcontroller.php:173
+msgid "The file is locked."
+msgstr "Файлът е заключен."
+
+#: controller/filehandlingcontroller.php:131
+#: controller/filehandlingcontroller.php:204
+msgid "An internal server error occurred."
+msgstr "Възникна вътрешна грешка на сървъра."
+
+#: controller/filehandlingcontroller.php:154
+msgid "You can not write to a folder"
+msgstr "Не можете да записвате в папката"
+
+#: controller/filehandlingcontroller.php:164
+msgid "Cannot save file as it has been modified since opening"
+msgstr ""
+"Файлът не може да бъде запаметен, защото е бил модифициран след отварянето "
+"му"
+
+#: controller/filehandlingcontroller.php:188
+msgid "Insufficient permissions"
+msgstr "Недостатъчни права"
+
+#: controller/filehandlingcontroller.php:194
+msgid "File path not supplied"
+msgstr "Не е предоставен път до файл"
+
+#: controller/filehandlingcontroller.php:197
+msgid "File mtime not supplied"
+msgstr "Не е предоставено време на модификация на файла - mtime"
+
+#: js/editor.js:98
+msgid "saving..."
+msgstr "записва..."
+
+#: js/editor.js:113
+msgid "saved!"
+msgstr "записан!"
+
+#: js/editor.js:121
+msgid "failed!"
+msgstr "неуспешно!"
+
+#: js/editor.js:154
+msgid "Saved"
+msgstr "Запазено"
+
+#: js/editor.js:163
+msgid "There was a problem saving your changes. Click to resume editing."
+msgstr ""
+"Възникна проблем при записване на промените. Кликнете, за да се възобнови "
+"редактирането."
+
+#: js/editor.js:333
+msgid "An error occurred!"
+msgstr "Възникна грешка!"
+
+#: js/editor.js:397
+msgid "Edit"
+msgstr "Редакция"
+
+#: js/editor.js:398
+msgid "Mixed"
+msgstr "Комбинирано"
+
+#: js/editor.js:399
+msgid "Preview"
+msgstr "Преглед"
+
+#: js/editor.js:681
+msgid "New text file"
+msgstr "Нов текстов файл"
+
+#: js/editor.js:682
+msgid "New text file.txt"
+msgstr "Нов текст file.txt"
+
+#: specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Text editor"
+msgstr "Текстов редактор"
+
+#: js/editor.js:628
+msgid "Text file"
+msgstr ""

@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ownCloud files_texteditor package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud files_texteditor 8.0.0\n"
+"Report-Msgid-Bugs-To: translations@owncloud.org\n"
+"POT-Creation-Date: 2017-06-03 07:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>, 2017\n"
+"Language-Team: Icelandic (https://www.transifex.com/nextcloud/teams/64236/is/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: is\n"
+"Plural-Forms: nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);\n"
+
+#: controller/filehandlingcontroller.php:87
+msgid "You can not open a folder"
+msgstr "Þú getur ekki opnað möppu"
+
+#: controller/filehandlingcontroller.php:93
+msgid "This file is too big to be opened. Please download the file instead."
+msgstr ""
+"Þessi skrá er of stór til að opna hana hér. Halaðu henni niður í staðinn."
+
+#: controller/filehandlingcontroller.php:116
+msgid "Cannot read the file."
+msgstr "Get ekki lesið skrána."
+
+#: controller/filehandlingcontroller.php:119
+msgid "Invalid file path supplied."
+msgstr "Ógild skráarslóð."
+
+#: controller/filehandlingcontroller.php:123
+#: controller/filehandlingcontroller.php:173
+msgid "The file is locked."
+msgstr "Skráin er læst."
+
+#: controller/filehandlingcontroller.php:131
+#: controller/filehandlingcontroller.php:204
+msgid "An internal server error occurred."
+msgstr "Innri villa kom upp."
+
+#: controller/filehandlingcontroller.php:154
+msgid "You can not write to a folder"
+msgstr "Þú getur ekki skrifað í möppu"
+
+#: controller/filehandlingcontroller.php:164
+msgid "Cannot save file as it has been modified since opening"
+msgstr ""
+"Get ekki vistað skrána þar sem henni hefur verið breytt síðan hún var opnuð"
+
+#: controller/filehandlingcontroller.php:188
+msgid "Insufficient permissions"
+msgstr "Ekki næg réttindi"
+
+#: controller/filehandlingcontroller.php:194
+msgid "File path not supplied"
+msgstr "Skrá slóð fylgir ekki"
+
+#: controller/filehandlingcontroller.php:197
+msgid "File mtime not supplied"
+msgstr "mtime skrá fylgir ekki"
+
+#: js/editor.js:98
+msgid "saving..."
+msgstr "er að vista ..."
+
+#: js/editor.js:113
+msgid "saved!"
+msgstr "vistað!"
+
+#: js/editor.js:121
+msgid "failed!"
+msgstr "mistókst!"
+
+#: js/editor.js:154
+msgid "Saved"
+msgstr "Vistað"
+
+#: js/editor.js:163
+msgid "There was a problem saving your changes. Click to resume editing."
+msgstr ""
+"Það kom upp vandamál við að vista breytingarnar þínar. Smelltu til að halda "
+"ritun áfram."
+
+#: js/editor.js:333
+msgid "An error occurred!"
+msgstr "Villa kom upp!"
+
+#: js/editor.js:397
+msgid "Edit"
+msgstr "Breyta"
+
+#: js/editor.js:398
+msgid "Mixed"
+msgstr "Blandað"
+
+#: js/editor.js:399
+msgid "Preview"
+msgstr "Forskoðun"
+
+#: js/editor.js:681
+msgid "New text file"
+msgstr "Ný textaskrá"
+
+#: js/editor.js:682
+msgid "New text file.txt"
+msgstr "Ný textaskrá.txt"
+
+#: specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Text editor"
+msgstr "Textaritill"
+
+#: js/editor.js:628
+msgid "Text file"
+msgstr ""

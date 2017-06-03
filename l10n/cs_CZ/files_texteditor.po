@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ownCloud files_texteditor package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud files_texteditor 8.0.0\n"
+"Report-Msgid-Bugs-To: translations@owncloud.org\n"
+"POT-Creation-Date: 2017-06-03 07:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Disassembler . <disassembler@dasm.cz>, 2017\n"
+"Language-Team: Czech (Czech Republic) (https://www.transifex.com/nextcloud/teams/64236/cs_CZ/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: cs_CZ\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: controller/filehandlingcontroller.php:87
+msgid "You can not open a folder"
+msgstr "Tuto složku nemůžete otevřít"
+
+#: controller/filehandlingcontroller.php:93
+msgid "This file is too big to be opened. Please download the file instead."
+msgstr "Soubor je pro otevření příliš veliký. Namísto otevření ho stáhněte."
+
+#: controller/filehandlingcontroller.php:116
+msgid "Cannot read the file."
+msgstr "Soubor nelze přečíst."
+
+#: controller/filehandlingcontroller.php:119
+msgid "Invalid file path supplied."
+msgstr "Zadána neplatná cesta k souboru."
+
+#: controller/filehandlingcontroller.php:123
+#: controller/filehandlingcontroller.php:173
+msgid "The file is locked."
+msgstr "Soubor je uzamčen."
+
+#: controller/filehandlingcontroller.php:131
+#: controller/filehandlingcontroller.php:204
+msgid "An internal server error occurred."
+msgstr "Došlo k interní chybě serveru."
+
+#: controller/filehandlingcontroller.php:154
+msgid "You can not write to a folder"
+msgstr "Do tohoto adresáře nemůžete nahrávat "
+
+#: controller/filehandlingcontroller.php:164
+msgid "Cannot save file as it has been modified since opening"
+msgstr "Soubor nelze uložit, protože byl od otevření upraven"
+
+#: controller/filehandlingcontroller.php:188
+msgid "Insufficient permissions"
+msgstr "Nedostatečná oprávnění"
+
+#: controller/filehandlingcontroller.php:194
+msgid "File path not supplied"
+msgstr "Nebyla dodána cesta k souboru"
+
+#: controller/filehandlingcontroller.php:197
+msgid "File mtime not supplied"
+msgstr "Nebyl dodán čas změny souboru"
+
+#: js/editor.js:98
+msgid "saving..."
+msgstr "ukládání..."
+
+#: js/editor.js:113
+msgid "saved!"
+msgstr "uloženo!"
+
+#: js/editor.js:121
+msgid "failed!"
+msgstr "selhalo!"
+
+#: js/editor.js:154
+msgid "Saved"
+msgstr "Uloženo"
+
+#: js/editor.js:163
+msgid "There was a problem saving your changes. Click to resume editing."
+msgstr "Došlo k chybě při ukládání změn. Klikněte pro pokračování v úpravách."
+
+#: js/editor.js:333
+msgid "An error occurred!"
+msgstr "Nastala chyba!"
+
+#: js/editor.js:397
+msgid "Edit"
+msgstr "Upravit"
+
+#: js/editor.js:398
+msgid "Mixed"
+msgstr "Smíšený"
+
+#: js/editor.js:399
+msgid "Preview"
+msgstr "Náhled"
+
+#: js/editor.js:681
+msgid "New text file"
+msgstr "Nový textový soubor"
+
+#: js/editor.js:682
+msgid "New text file.txt"
+msgstr "Nový textový soubor.txt"
+
+#: specialAppInfoFakeDummyForL10nScript.php:2
+msgid "Text editor"
+msgstr "Textový editor"
+
+#: js/editor.js:628
+msgid "Text file"
+msgstr ""
