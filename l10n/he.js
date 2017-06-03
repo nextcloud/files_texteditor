@@ -16,7 +16,6 @@ OC.L10N.register(
     "Saved" : "נשמר",
     "There was a problem saving your changes. Click to resume editing." : "אירעה בעייה בשמירת השינויים. יש ללחוץ לחידוש העריכה.",
     "An error occurred!" : "אירעה תקלה!",
-    "Text file" : "קובץ טקסט",
     "New text file.txt" : "קובץ טקסט חדש.txt"
 },
 "nplurals=2; plural=(n != 1);");

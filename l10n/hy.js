@@ -15,7 +15,6 @@ OC.L10N.register(
     "Saved" : "Պահված",
     "There was a problem saving your changes. Click to resume editing." : "Խնդիր եղավ փոփոխությունները պահելիս։ Կտտացրու խմբագրումը շարունակելու համար։",
     "An error occurred!" : "Սխալ պատահեց",
-    "Text file" : "Տեքստ ֆայլ",
     "New text file.txt" : "Նոր տեքստ ֆայլ.txt"
 },
 "nplurals=2; plural=(n != 1);");

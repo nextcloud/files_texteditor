@@ -15,7 +15,6 @@ OC.L10N.register(
     "Saved" : "Salvestatud",
     "There was a problem saving your changes. Click to resume editing." : "Sinu muudatuste salvestamisega tekkis viga. Kliki muutmise jätkamiseks.",
     "An error occurred!" : "Tekis tõrge!",
-    "Text file" : "Tekstifail",
     "New text file.txt" : "Uus tekstifail.txt"
 },
 "nplurals=2; plural=(n != 1);");
