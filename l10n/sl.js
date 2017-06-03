@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "You can not open a folder" : "Ne morete odpreti mape",
     "This file is too big to be opened. Please download the file instead." : "Datoteka je prevelika in je ni mogoče odpreti. Datoteko prejmite na disk in urejajte krajevno.",
     "Cannot read the file." : "Datoteke ni mogoče prebrati.",
     "Invalid file path supplied." : "Podana je neveljavna pot do datoteke.",
@@ -16,7 +17,6 @@ OC.L10N.register(
     "Saved" : "Shranjeno",
     "There was a problem saving your changes. Click to resume editing." : "Prišlo je do napake med shranjevanjem sprememb. Kliknite za nadaljevanje urejanja.",
     "An error occurred!" : "Prišlo je do napake!",
-    "Text file" : "Besedilna datoteka",
     "New text file.txt" : "Nova datoteka.txt"
 },
 "nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);");

@@ -1,11 +1,13 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "You can not open a folder" : "Et voi avata kansiota",
     "This file is too big to be opened. Please download the file instead." : "Tiedosto on liian suuri avattavaksi. Lataa tiedosto, jotta voit avata sen.",
     "Cannot read the file." : "TIedoston lukeminen epäonnistui.",
     "Invalid file path supplied." : "Virheellinen tiedostopolku.",
     "The file is locked." : "Tiedosto on lukittu.",
     "An internal server error occurred." : "Tapahtui palvelimen sisäinen virhe.",
+    "You can not write to a folder" : "Et voi kirjoittaa kansioon",
     "Cannot save file as it has been modified since opening" : "Tiedostoa ei voi tallentaa, koska sitä on muokattu avaamisen jälkeen",
     "Insufficient permissions" : "Oikeudet eivät riitä",
     "File path not supplied" : "TIedoston polkua ei annettu",
@@ -16,7 +18,10 @@ OC.L10N.register(
     "Saved" : "Tallennettu",
     "There was a problem saving your changes. Click to resume editing." : "Muutoksien tallentamisessa ilmeni ongelmia. Napsauta palataksesi muokkaamiseen.",
     "An error occurred!" : "Tapahtui virhe!",
-    "Text file" : "Tekstitiedosto",
-    "New text file.txt" : "Uusi tekstitiedosto.txt"
+    "Edit" : "Muokkaa",
+    "Preview" : "Esikatselu",
+    "New text file" : "Uusi tekstitiedosto",
+    "New text file.txt" : "Uusi tekstitiedosto.txt",
+    "Text editor" : "Tekstimuokkain"
 },
 "nplurals=2; plural=(n != 1);");
