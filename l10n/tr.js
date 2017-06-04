@@ -23,6 +23,7 @@ OC.L10N.register(
     "Preview" : "Önizleme",
     "New text file" : "Yeni metin dosyası",
     "New text file.txt" : "Yeni metin dosyası.txt",
-    "Text editor" : "Metin düzenleyici"
+    "Text editor" : "Metin düzenleyici",
+    "Text file" : "Metin dosyası"
 },
 "nplurals=2; plural=(n > 1);");

@@ -14,7 +14,7 @@ OC.L10N.register(
     "File mtime not supplied" : "Non forneceu o ficheiro mtime",
     "saving..." : "gardando...",
     "saved!" : "gardado!",
-    "failed!" : "produciuse un fallo!",
+    "failed!" : "produciuse unha falla!",
     "Saved" : "Gardado",
     "There was a problem saving your changes. Click to resume editing." : "Xurdiu un problema ao gardar os cambios. Prema para retomar a edición.",
     "An error occurred!" : "Produciuse un erro!",
@@ -23,6 +23,7 @@ OC.L10N.register(
     "Preview" : "Vista previa",
     "New text file" : "Novo ficheiro de texto",
     "New text file.txt" : "Novo ficheiro de texto.txt",
-    "Text editor" : "Editor de texto"
+    "Text editor" : "Editor de texto",
+    "Text file" : "Ficheiro de texto"
 },
 "nplurals=2; plural=(n != 1);");
