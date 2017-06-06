@@ -23,6 +23,7 @@ OC.L10N.register(
     "Preview" : "Preview",
     "New text file" : "New text file",
     "New text file.txt" : "New text file.txt",
-    "Text editor" : "Text editor"
+    "Text editor" : "Text editor",
+    "Text file" : "Text file"
 },
 "nplurals=2; plural=(n != 1);");
