@@ -22,7 +22,7 @@ OC.L10N.register(
     "Mixed" : "Misturado",
     "Preview" : "Visualizar",
     "New text file" : "Novo arquivo de texto",
-    "New text file.txt" : "Novo texto file.txt",
+    "New text file.txt" : "Novo arquivo de texto.txt",
     "Text editor" : "Editor de texto",
     "Text file" : "Arquivo texto"
 },
