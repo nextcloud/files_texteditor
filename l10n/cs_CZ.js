@@ -23,6 +23,7 @@ OC.L10N.register(
     "Preview" : "Náhled",
     "New text file" : "Nový textový soubor",
     "New text file.txt" : "Nový textový soubor.txt",
-    "Text editor" : "Textový editor"
+    "Text editor" : "Textový editor",
+    "Text file" : "Textový soubor"
 },
 "nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;");
