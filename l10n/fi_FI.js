@@ -19,9 +19,11 @@ OC.L10N.register(
     "There was a problem saving your changes. Click to resume editing." : "Muutoksien tallentamisessa ilmeni ongelmia. Napsauta palataksesi muokkaamiseen.",
     "An error occurred!" : "Tapahtui virhe!",
     "Edit" : "Muokkaa",
+    "Mixed" : "Sekoitettu",
     "Preview" : "Esikatselu",
     "New text file" : "Uusi tekstitiedosto",
     "New text file.txt" : "Uusi tekstitiedosto.txt",
-    "Text editor" : "Tekstimuokkain"
+    "Text editor" : "Tekstimuokkain",
+    "Text file" : "Tekstitiedosto"
 },
 "nplurals=2; plural=(n != 1);");
