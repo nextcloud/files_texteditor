@@ -23,6 +23,7 @@ OC.L10N.register(
     "Preview" : "预习",
     "New text file" : "新文本文件",
     "New text file.txt" : "创建文本文件 .txt",
-    "Text editor" : "文本编辑"
+    "Text editor" : "文本编辑",
+    "Text file" : "文本文件"
 },
 "nplurals=1; plural=0;");
