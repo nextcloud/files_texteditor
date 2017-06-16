@@ -11,7 +11,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Não é possível salvar este arquivo pois ele foi modificado desde sua abertura",
     "Insufficient permissions" : "Permissões insuficientes",
     "File path not supplied" : "Caminho do arquivo não fornecido",
-    "File mtime not supplied" : "Data de mudança mtime do arquivo não especificada",
+    "File mtime not supplied" : "arquivo mtime não fornecido",
     "saving..." : "salvando...",
     "saved!" : "salvo!",
     "failed!" : "falhou!",

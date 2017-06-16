@@ -23,6 +23,7 @@ OC.L10N.register(
     "Preview" : "Forskoðun",
     "New text file" : "Ný textaskrá",
     "New text file.txt" : "Ný textaskrá.txt",
-    "Text editor" : "Textaritill"
+    "Text editor" : "Textaritill",
+    "Text file" : "Textaskrá"
 },
 "nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);");
