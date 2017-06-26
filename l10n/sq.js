@@ -22,6 +22,8 @@ OC.L10N.register(
     "Mixed" : "Miksuar",
     "Preview" : "Parapamje ",
     "New text file" : "Skedar teksti i ri ",
-    "New text file.txt" : "Kartelë e re file.txt"
+    "New text file.txt" : "Kartelë e re file.txt",
+    "Text editor" : "Editor teksti",
+    "Text file" : "Skedar teksti"
 },
 "nplurals=2; plural=(n != 1);");
