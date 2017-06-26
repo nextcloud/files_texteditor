@@ -20,6 +20,8 @@
     "Mixed" : "Miksuar",
     "Preview" : "Parapamje ",
     "New text file" : "Skedar teksti i ri ",
-    "New text file.txt" : "Kartelë e re file.txt"
+    "New text file.txt" : "Kartelë e re file.txt",
+    "Text editor" : "Editor teksti",
+    "Text file" : "Skedar teksti"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
