@@ -18,6 +18,7 @@ OC.L10N.register(
     "An error occurred!" : "Įvyko klaida!",
     "New text file" : "Naujas tekstinis failas",
     "New text file.txt" : "Naujas tekstinis failas.txt",
-    "Text editor" : "Tekstų redaktorius"
+    "Text editor" : "Tekstų redaktorius",
+    "Text file" : "Tekstinis failas"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);");
