@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "You can not open a folder" : "Jūs negalite atverti aplanko",
     "This file is too big to be opened. Please download the file instead." : "Šis failas yra per didelis, kad būtų atvertas. Vietoj to, prašome jį atsisiųsti.",
     "Cannot read the file." : "Nepavyko perskaityti failo.",
     "Invalid file path supplied." : "Pateiktas neteisingas failo kelias.",
