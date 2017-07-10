@@ -7,6 +7,7 @@ OC.L10N.register(
     "Invalid file path supplied." : "Der blev angivet en ugyldig filsti.",
     "The file is locked." : "Filen er låst",
     "An internal server error occurred." : "Der er opstået en intern serverfejl.",
+    "You can not write to a folder" : "Du kan ikke skrive til en mappe",
     "Cannot save file as it has been modified since opening" : "Kan ikke gemme filen, da den er blevet ændret efter den blev åbnet",
     "Insufficient permissions" : "Utilstrækkeligt med rettigheder",
     "File path not supplied" : "Filstien er ikke angivet",
@@ -17,6 +18,12 @@ OC.L10N.register(
     "Saved" : "Gemt",
     "There was a problem saving your changes. Click to resume editing." : "Der opstod et problem ved lagringen af dine ændringer. Klik for at genoptage redigeringen.",
     "An error occurred!" : "Der opstod en fejl!",
-    "New text file.txt" : "Ny tekst file.txt"
+    "Edit" : "Redigér",
+    "Mixed" : "Mixed",
+    "Preview" : "Vis eksempel",
+    "New text file" : "Ny tekst fil",
+    "New text file.txt" : "Ny tekst file.txt",
+    "Text editor" : "Tekst editor",
+    "Text file" : "Tekstfil"
 },
 "nplurals=2; plural=(n != 1);");
