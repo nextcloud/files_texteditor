@@ -16,7 +16,7 @@ OC.L10N.register(
     "saved!" : "¡Guardado!",
     "failed!" : "¡Se presentó una falla!",
     "Saved" : "Guardado",
-    "There was a problem saving your changes. Click to resume editing." : "Se presentó un problema al guardar sus cambios. Favor de hacer click para continuar editando.",
+    "There was a problem saving your changes. Click to resume editing." : "Se presentó un problema al guardar sus cambios. Por favor has click para continuar editando.",
     "An error occurred!" : "¡Se presentó un error!",
     "Edit" : "Editar",
     "Mixed" : "Mixto",
