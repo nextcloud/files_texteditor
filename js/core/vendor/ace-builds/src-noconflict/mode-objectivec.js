@@ -173,11 +173,10 @@ var c_cppHighlightRules = function() {
         "comment" : [
             {
                 token : "comment", // closing comment
-                regex : ".*?\\*\\/",
+                regex : "\\*\\/",
                 next : "start"
             }, {
-                token : "comment", // comment spanning whole line
-                regex : ".+"
+                defaultToken : "comment"
             }
         ],
         "singleLineComment" : [
@@ -528,8 +527,7 @@ var ObjectiveCHighlightRules = function() {
             regex : ".*?\\*\\/",
             next : "start"
         }, {
-            token : "comment", // comment spanning whole line
-            regex : ".+"
+            defaultToken : "comment"
         }
     ],
     "methods" : [
@@ -713,6 +711,7 @@ var CStyleFoldMode = require("./folding/cstyle").FoldMode;
 var Mode = function() {
     this.HighlightRules = ObjectiveCHighlightRules;
     this.foldingRules = new CStyleFoldMode();
+    this.$behaviour = this.$defaultBehaviour;
 };
 oop.inherits(Mode, TextMode);
 
