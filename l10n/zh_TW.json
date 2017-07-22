@@ -5,6 +5,7 @@
     "Invalid file path supplied." : "提供了無效的檔案路徑。",
     "The file is locked." : "這個檔案被鎖住了。",
     "An internal server error occurred." : "發生伺服器內部錯誤",
+    "You can not write to a folder" : "你無法對資料夾做寫入",
     "Cannot save file as it has been modified since opening" : "無法將變更內容儲存至檔案，檔案正被開啟中",
     "Insufficient permissions" : "權限不足",
     "File path not supplied" : "沒有提供檔案路徑",
@@ -15,6 +16,12 @@
     "Saved" : "已儲存",
     "There was a problem saving your changes. Click to resume editing." : "在儲存您的變更時發生錯誤，點選以回復編輯狀態。",
     "An error occurred!" : "發生錯誤！",
-    "New text file.txt" : "新文字檔.txt"
+    "Edit" : "編輯",
+    "Mixed" : "混合",
+    "Preview" : "預覽",
+    "New text file" : "新文字檔",
+    "New text file.txt" : "新文字檔.txt",
+    "Text editor" : "文字編輯器",
+    "Text file" : "文字檔"
 },"pluralForm" :"nplurals=1; plural=0;"
 }
