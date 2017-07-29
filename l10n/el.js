@@ -19,9 +19,11 @@ OC.L10N.register(
     "There was a problem saving your changes. Click to resume editing." : "Προέκυψε πρόβλημα κατά την αποθήκευση των αλλαγών σας. Κάντε κλικ για να συνεχίσετε την επεξεργασία.",
     "An error occurred!" : "Παρουσιάστηκε σφάλμα!",
     "Edit" : "Επεξεργασία",
+    "Mixed" : "Μικτό",
     "Preview" : "Προεπισκόπηση",
     "New text file" : "Νέο αρχείο κειμένου",
     "New text file.txt" : "Νέο αρχείο κειμένου.txt",
-    "Text editor" : "Επεξεργαστής κειμένου"
+    "Text editor" : "Επεξεργαστής κειμένου",
+    "Text file" : "Αρχείο κειμένου"
 },
 "nplurals=2; plural=(n != 1);");
