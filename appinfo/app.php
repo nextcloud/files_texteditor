@@ -3,7 +3,7 @@
 $eventDispatcher = \OC::$server->getEventDispatcher();
 
 // only load text editor if the user is logged in
-if (\OCP\User::isLoggedIn()) {
+if (\OC::$server->getUserSession()->isLoggedIn()) {
 	$eventDispatcher->addListener('OCA\Files::loadAdditionalScripts', function() {
 		OCP\Util::addStyle('files_texteditor', 'merged');
 		OCP\Util::addScript('files_texteditor', 'merged');
