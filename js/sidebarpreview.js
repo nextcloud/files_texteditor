@@ -17,9 +17,7 @@
 			var mimes = OCA.Files_Texteditor.getSupportedMimetypes();
 			var handler = this.handlePreview.bind(this);
 			$.each(mimes, function (key, value) {
-				if (value !== 'text') { // let the regular text preview handle this
-					manager.addPreviewHandler(value, handler);
-				}
+				manager.addPreviewHandler(value, handler);
 			});
 		},
 
@@ -28,6 +26,7 @@
 			var previewHeight = previewWidth / (16 / 9);
 
 			this.getFileContent(model.getFullPath()).then(function (content) {
+				content = content.filecontents;
 				$thumbnailDiv.removeClass('icon-loading icon-32');
 				$thumbnailContainer.addClass('large');
 				$thumbnailContainer.addClass('text');
@@ -67,7 +66,20 @@
 		},
 
 		getFileContent: function (path) {
-			return $.get(OC.linkToRemoteBase('files' + path));
+			var parts = path.split('/');
+			var dir = parts.slice(0, -1).join('');
+			var file = parts.slice(-1).join('');
+
+			return $.ajax({
+				url: OC.generateUrl('/apps/files_texteditor/ajax/loadfile'),
+				data: {
+						filename: file,
+						dir: dir
+				},
+				headers: {
+					'Range': 'bytes=0-10240'
+				}
+			});
 		}
 	};
 
