@@ -17,6 +17,6 @@
     "tests"
   ],
   "dependencies": {
-    "ace-builds": "^1.2.5"
+    "ace-builds": "1.2.8"
   }
 }
