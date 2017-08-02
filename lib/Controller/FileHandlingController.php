@@ -20,7 +20,7 @@
  */
 
 
-namespace OCA\Files_Texteditor\Controller;
+namespace OCA\FilesTextEditor\Controller;
 
 
 use OC\HintException;

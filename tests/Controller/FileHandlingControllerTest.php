@@ -20,11 +20,11 @@
  */
 
 
-namespace OCA\Files_Texteditor\Tests\Controller;
+namespace OCA\FilesTextEditor\Tests\Controller;
 
 
 use OC\HintException;
-use OCA\Files_Texteditor\Controller\FileHandlingController;
+use OCA\FilesTextEditor\Controller\FileHandlingController;
 use OCP\Files\File;
 use OCP\Files\Folder;
 use OCP\Files\ForbiddenException;

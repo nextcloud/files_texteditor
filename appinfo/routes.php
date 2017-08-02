@@ -20,7 +20,7 @@
  */
 
 
-namespace OCA\Files_Texteditor\AppInfo;
+namespace OCA\FilesTextEditor\AppInfo;
 
 $app = new Application();
 
