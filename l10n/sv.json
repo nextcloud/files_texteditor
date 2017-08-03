@@ -1,15 +1,4 @@
 { "translations": {
-    "You can not open a folder" : "Du kan inte öppna en mapp",
-    "This file is too big to be opened. Please download the file instead." : "Denna fil är för stor för att öppnas. Var god ladda ner filen istället.",
-    "Cannot read the file." : "Kan inte läsa av fil.",
-    "Invalid file path supplied." : "Felaktig sökväg till fil angiven.",
-    "The file is locked." : "Denna filen är låst.",
-    "An internal server error occurred." : "Ett server-fel har inträffat.",
-    "You can not write to a folder" : "Du kan inte skriva till en mapp",
-    "Cannot save file as it has been modified since opening" : "Kan inte spara filen eftersom den har ändrats sedan den öppnats.",
-    "Insufficient permissions" : "Otillräcklig behörighet.",
-    "File path not supplied" : "Ingen sökväg till fil angiven.",
-    "File mtime not supplied" : "Inget mtime-attribut angivet för filen.",
     "saving..." : "sparar...",
     "saved!" : "sparad!",
     "failed!" : "misslyckades.",
@@ -21,6 +10,17 @@
     "Preview" : "Förhandsvisa",
     "New text file" : "Ny Textfil",
     "New text file.txt" : "nytextfil.txt",
+    "You can not open a folder" : "Du kan inte öppna en mapp",
+    "This file is too big to be opened. Please download the file instead." : "Denna fil är för stor för att öppnas. Var god ladda ner filen istället.",
+    "Cannot read the file." : "Kan inte läsa av fil.",
+    "Invalid file path supplied." : "Felaktig sökväg till fil angiven.",
+    "The file is locked." : "Denna filen är låst.",
+    "An internal server error occurred." : "Ett server-fel har inträffat.",
+    "You can not write to a folder" : "Du kan inte skriva till en mapp",
+    "Cannot save file as it has been modified since opening" : "Kan inte spara filen eftersom den har ändrats sedan den öppnats.",
+    "Insufficient permissions" : "Otillräcklig behörighet.",
+    "File path not supplied" : "Ingen sökväg till fil angiven.",
+    "File mtime not supplied" : "Inget mtime-attribut angivet för filen.",
     "Text editor" : "Textredigerare"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
