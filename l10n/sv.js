@@ -23,6 +23,7 @@ OC.L10N.register(
     "Insufficient permissions" : "Otillräcklig behörighet.",
     "File path not supplied" : "Ingen sökväg till fil angiven.",
     "File mtime not supplied" : "Inget mtime-attribut angivet för filen.",
-    "Text editor" : "Textredigerare"
+    "Text editor" : "Textredigerare",
+    "Text file" : "Textfil"
 },
 "nplurals=2; plural=(n != 1);");
