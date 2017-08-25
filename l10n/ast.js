@@ -7,7 +7,10 @@ OC.L10N.register(
     "Saved" : "Guardáu",
     "There was a problem saving your changes. Click to resume editing." : "Hebo un problema guardando tos cambéos. Calca pa reaniciar la edición.",
     "An error occurred!" : "Hebo un fallu!",
+    "Edit" : "Editar",
+    "New text file" : "Ficheru nuevu de testu",
     "New text file.txt" : "Nuevu testu ficheru.txt",
+    "You can not open a folder" : "Nun pues abrir una carpeta",
     "This file is too big to be opened. Please download the file instead." : "El ficheru ye demasiáu grande p'abrilo. Por favor, descarga'l ficheru nel so llugar.",
     "Cannot read the file." : "Nun ye a lleese'l ficheru",
     "Invalid file path supplied." : "Camín de ficheru inválidu.",
@@ -16,6 +19,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Nun pudo guardase'l ficheru por mor que ta modificáu dende que s'abrió",
     "Insufficient permissions" : "Permisos insuficientes",
     "File path not supplied" : "Camín de ficheru non soportáu",
-    "File mtime not supplied" : "Ficheru mtime non soportáu"
+    "File mtime not supplied" : "Ficheru mtime non soportáu",
+    "Text file" : "Ficheru de testu"
 },
 "nplurals=2; plural=(n != 1);");
