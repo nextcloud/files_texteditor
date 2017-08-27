@@ -67,6 +67,8 @@ var Files_Texteditor = {
 		this.previewPlugins[mimeType] = plugin;
 	},
 
+	previewPluginsLoaded: {},
+
 	/**
 	 * preview element
 	 */
@@ -232,9 +234,6 @@ var Files_Texteditor = {
 		this.$container = container;
 		this.registerFileActions();
 		this.oldTitle = document.title;
-		$.each(this.previewPlugins, function(mime, plugin) {
-			plugin.init();
-		});
 	},
 
 	getSupportedMimetypes: function() {
@@ -314,7 +313,11 @@ var Files_Texteditor = {
 					_self.preview.addClass(file.mime.replace('/','-'));
 					container.find('#editor_container').addClass('hasPreview');
 					container.find('#editor_overlay').addClass('hasPreview');
-					_self.previewPluginOnChange = _.debounce(_self.previewPlugins[file.mime].preview, 200);
+					_self.previewPluginOnChange = _.debounce(function(text, element) {
+						_self.loadPreviewPlugin(file.mime).then(function() {
+							_self.previewPlugins[file.mime].preview(text, element);
+						});
+					},200);
 					var text = window.aceEditor.getSession().getValue();
 					_self.previewPluginOnChange(text, _self.preview);
 					window.aceEditor.resize();
@@ -333,6 +336,15 @@ var Files_Texteditor = {
 				OC.dialogs.alert(message, t('files_texteditor', 'An error occurred!'));
 				_self.closeEditor();
 			});
+	},
+
+	loadPreviewPlugin: function(mime) {
+		if (this.previewPluginsLoaded[mime]) {
+			return $.Deferred().resolve().promise();
+		}
+		this.previewPluginsLoaded[mime] = true;
+		var plugin = this.previewPlugins[mime];
+		return $.when(plugin.init());
 	},
 
 	/**
