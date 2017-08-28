@@ -360,16 +360,19 @@ var Files_Texteditor = {
 		switch (mode) {
 			case 'mixed':
 				container.find('#editor_container').addClass('hasPreview');
+				container.find('#editor_container').removeClass('onlyPreview');
 				container.find('#editor').show();
 				container.find('#preview_wrap').css('width', '50%');
 				break;
 			case 'text':
 				container.find('#editor_container').removeClass('hasPreview');
+				container.find('#editor_container').removeClass('onlyPreview');
 				container.find('#editor').show();
 				container.find('#preview_wrap').css('width', '50%');
 				break;
 			case 'image':
 				container.find('#editor_container').addClass('hasPreview');
+				container.find('#editor_container').addClass('onlyPreview');
 				container.find('#editor').hide();
 				container.find('#preview_wrap').css('width', '100%');
 				break;
