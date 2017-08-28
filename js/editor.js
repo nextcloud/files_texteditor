@@ -312,7 +312,6 @@ var Files_Texteditor = {
 					_self.preview = container.find('#preview');
 					_self.preview.addClass(file.mime.replace('/','-'));
 					container.find('#editor_container').addClass('hasPreview');
-					container.find('#editor_overlay').addClass('hasPreview');
 					_self.previewPluginOnChange = _.debounce(function(text, element) {
 						_self.loadPreviewPlugin(file.mime).then(function() {
 							_self.previewPlugins[file.mime].preview(text, element);
@@ -373,20 +372,14 @@ var Files_Texteditor = {
 			case 'mixed':
 				container.find('#editor_container').addClass('hasPreview');
 				container.find('#editor_container').removeClass('onlyPreview');
-				container.find('#editor').show();
-				container.find('#preview_wrap').css('width', '50%');
 				break;
 			case 'text':
 				container.find('#editor_container').removeClass('hasPreview');
 				container.find('#editor_container').removeClass('onlyPreview');
-				container.find('#editor').show();
-				container.find('#preview_wrap').css('width', '50%');
 				break;
 			case 'image':
 				container.find('#editor_container').addClass('hasPreview');
 				container.find('#editor_container').addClass('onlyPreview');
-				container.find('#editor').hide();
-				container.find('#preview_wrap').css('width', '100%');
 				break;
 		}
 	},
