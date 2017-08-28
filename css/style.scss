@@ -122,12 +122,16 @@
 		padding-top: 91px; /** main navigation + controls */
 	}
 
-	#editor_container.hasPreview #preview {
+	#editor_container.hasPreview:not(.onlyPreview) #preview {
 		display: none;
 	}
 
 	#editor_container.hasPreview #editor {
 		width: 100%;
+	}
+
+	#preview_editor_controls button:nth-child(2) {
+		display: none;
 	}
 }
 
