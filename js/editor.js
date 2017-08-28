@@ -312,7 +312,6 @@ var Files_Texteditor = {
 					_self.preview = container.find('#preview');
 					_self.preview.addClass(file.mime.replace('/','-'));
 					container.find('#editor_container').addClass('hasPreview');
-					container.find('#editor_overlay').addClass('hasPreview');
 					_self.previewPluginOnChange = _.debounce(function(text, element) {
 						_self.loadPreviewPlugin(file.mime).then(function() {
 							_self.previewPlugins[file.mime].preview(text, element);
@@ -371,15 +370,15 @@ var Files_Texteditor = {
 		controlBar.find('button[data-type="' + mode + '"]').addClass('active');
 		switch (mode) {
 			case 'mixed':
-				container.find('#editor_container, #editor_overlay').addClass('hasPreview');
+				container.find('#editor_container').addClass('hasPreview');
 				container.find('#editor_container').removeClass('onlyPreview');
 				break;
 			case 'text':
-				container.find('#editor_container, #editor_overlay').removeClass('hasPreview');
+				container.find('#editor_container').removeClass('hasPreview');
 				container.find('#editor_container').removeClass('onlyPreview');
 				break;
 			case 'image':
-				container.find('#editor_container, #editor_overlay').addClass('hasPreview');
+				container.find('#editor_container').addClass('hasPreview');
 				container.find('#editor_container').addClass('onlyPreview');
 				break;
 		}

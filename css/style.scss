@@ -42,8 +42,7 @@
 }
 
 #editor_container {
-	// when hiding z-index delay
-	transition: width 0.5s, top 0.5s, height 0.5s, z-index 0s linear 0.5s, left 0.5s;
+	transition: width 0.5s, top 0.5s, height 0.5s, left 0.5s;
 	position: fixed;
 	top: 6%;
 	left: 15%;
@@ -63,11 +62,10 @@
 
 #editor_container.hasPreview {
 	// when showing no z-index delay
-	transition: width 0.5s, top 0.5s, height 0.5s, z-index 0s, left 0.5s;
-	z-index: 1750;
+	transition: width 0.5s, top 0.5s, height 0.5s, left 0.5s;
 	width: 100%;
-	height: 100%;
-	top: 0;
+	height: calc(100% - 45px);
+	top: 45px;
 	left: 0;
 	border: none;
 	border-radius: 0;
@@ -89,18 +87,8 @@
 	width: 100vw;
 }
 
-#editor_container.hasPreview #editor_controls {
-	top: 45px;
-}
-
 #editor_container.hasPreview #editor_wrap {
-	padding-top: 91px; /** main navigation + controls */
-}
-
-#editor_overlay.hasPreview {
-	margin-top: 45px; /** below main navigation */
-	z-index: 1500;
-	transition: margin-top 0.5s, z-index 0s;
+	padding-top: 46px; /** controls */
 }
 
 #preview_wrap {
@@ -111,14 +99,15 @@
 	right: 0;
 	position: absolute;
 	top: 0;
-	padding-top: 91px; /** main navigation + controls */
+	padding-top: 46px; /** controls */
 }
 
 #editor_container #preview {
+	transition: width 0.5s;
 	width: 50vw;
 	overflow: auto;
 	box-sizing: border-box;
-	padding: 15px;
+	padding: 0 15px 15px;
 	height: 100%;
 	color: #252525;
 	background-color: #f9f9f9;
@@ -127,19 +116,15 @@
 @media(max-width: 768px) {
 	#editor_container {
 		width: 100%;
-		height: 100%;
-		top: 0;
+		height: calc(100% - 45px);
+		top: 45px;
 		left: 0;
 		border: none;
 		border-radius: 0;
 	}
 
-	#editor_controls {
-		top: 45px;
-	}
-
 	#editor_wrap {
-		padding-top: 91px; /** main navigation + controls */
+		padding-top: 46px; /** controls */
 	}
 
 	#editor_container.hasPreview:not(.onlyPreview) #preview_wrap {
@@ -203,8 +188,7 @@
 	padding: 13px 0 0 17px;
 }
 
-#editor_overlay{
-	transition: margin-top 0.5s, z-index 0s linear 0.5s;
+#editor_overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
