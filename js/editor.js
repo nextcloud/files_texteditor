@@ -196,9 +196,7 @@ var Files_Texteditor = {
 			OCA.Files_Texteditor.$container,
 			OCA.Files_Texteditor.file
 		);
-		if(!$('html').hasClass('ie8')) {
-			history.pushState({file:filename, dir:context.dir}, 'Editor', '#editor');
-		}
+		history.pushState({file:filename, dir:context.dir}, 'Editor', '#editor');
 	},
 
 	/**
@@ -324,11 +322,6 @@ var Files_Texteditor = {
 				} else {
 					_self.previewPluginOnChange = null;
 				}
-
-				// IE8 support
-				if(!OC.Util.hasSVGSupport()){ //replace all svg images with png images for browser that dont support svg
-					OC.Util.replaceSVG();
-				}
 			},
 			function(message){
 				// Oh dear
@@ -433,14 +426,14 @@ var Files_Texteditor = {
 	 * Binds the control events on the control bar
 	 */
 	bindControlBar: function() {
-		var self = this;
 		$('#editor_close').on('click', _.bind(this._onCloseTrigger, this));
 		$(window).resize(OCA.Files_Texteditor.setFilenameMaxLength);
-		if(!$('html').hasClass('ie8')) {
-			window.onpopstate = function () {
-				self._onCloseTrigger();
+		window.onpopstate = function () {
+			var hash = location.hash.substr(1);
+			if (hash.substr(0, 6) !== 'editor') {
+				this._onCloseTrigger();
 			}
-		}
+		}.bind(this);
 	},
 
 	/**
