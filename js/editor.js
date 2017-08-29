@@ -645,7 +645,7 @@ var Files_Texteditor = {
 	 */
 	_onClickDocument: function(event) {
 		// Check if click was inside the editor or not.
-		if(!$(event.target).closest('#editor_container').length) {
+		if(!$(event.target).closest('#editor_container').length && !$(event.target).closest('.oc-dialog').length) {
 		   // Edit the editor
 		   OCA.Files_Texteditor._onCloseTrigger();
 	   }
@@ -655,14 +655,14 @@ var Files_Texteditor = {
 	 * Binds actions that need to happen whilst the editor is visible
 	 */
 	 bindVisibleActions: function() {
-		 $(document).bind('mouseup', this._onClickDocument);
+		 $(document).bind('click', this._onClickDocument);
 	 },
 
 	 /**
 	  * Unbinds actions that happen whilst the editor is visible
 	  */
 	 unBindVisibleActions: function() {
-		 $(document).unbind('mouseup', this._onClickDocument);
+		 $(document).unbind('click', this._onClickDocument);
 	 }
 
 };
