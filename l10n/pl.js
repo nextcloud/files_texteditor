@@ -8,7 +8,7 @@ OC.L10N.register(
     "There was a problem saving your changes. Click to resume editing." : "Pojawił się problem podczas zapisywania twoich zmian. Kliknij, aby powrócić do edycji.",
     "An error occurred!" : "Wystąpił błąd!",
     "Edit" : "Edytuj",
-    "Mixed" : "Mieszane",
+    "Mixed" : "Różne",
     "Preview" : "Podgląd",
     "New text file" : "Nowy plik tekstowy",
     "New text file.txt" : "Nowy plik tekstowy.txt",
