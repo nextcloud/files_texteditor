@@ -14,10 +14,12 @@
     "Invalid file path supplied." : "Camín de ficheru inválidu.",
     "The file is locked." : "El ficheru ta bloquiáu.",
     "An internal server error occurred." : "Hebo un fallu internu nel sirvidor.",
+    "You can not write to a folder" : "Nun pues escribir nuna carpeta",
     "Cannot save file as it has been modified since opening" : "Nun pudo guardase'l ficheru por mor que ta modificáu dende que s'abrió",
     "Insufficient permissions" : "Permisos insuficientes",
     "File path not supplied" : "Camín de ficheru non soportáu",
     "File mtime not supplied" : "Ficheru mtime non soportáu",
+    "Text editor" : "Editor de testos",
     "Text file" : "Ficheru de testu"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
