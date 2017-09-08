@@ -7,7 +7,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
 	devtool: 'source-map',
 	entry: {
-		editor: "./js/editor.js",
+		editor: "./js/index.js",
 		"public-share": "./js/public-share.js"
 	},
 	output: {

@@ -10,34 +10,31 @@
 
 import {getSyntaxMode} from "./SyntaxMode";
 
-export class SidebarPreview {
-	constructor () {
-	}
+/** @type array[] supportedMimeTypes */
+const supportedMimeTypes = require('./supported_mimetypes.json');
 
+export class SidebarPreview {
 	attach (manager) {
-		var mimes = OCA.Files_Texteditor.getSupportedMimetypes();
-		var handler = this.handlePreview.bind(this);
-		$.each(mimes, function (key, value) {
-			manager.addPreviewHandler(value, handler);
-		});
+		const handler = this.handlePreview.bind(this);
+		supportedMimeTypes.forEach(value => manager.addPreviewHandler(value, handler));
 	}
 
 	handlePreview (model, $thumbnailDiv, $thumbnailContainer, fallback) {
-		var previewWidth = $thumbnailContainer.parent().width() + 50;  // 50px for negative margins
-		var previewHeight = previewWidth / (16 / 9);
+		const previewWidth = $thumbnailContainer.parent().width() + 50;  // 50px for negative margins
+		const previewHeight = previewWidth / (16 / 9);
 
 		this.getFileContent(model.getFullPath()).then(function (content) {
 			content = content.filecontents;
 			$thumbnailDiv.removeClass('icon-loading icon-32');
 			$thumbnailContainer.addClass('large');
 			$thumbnailContainer.addClass('text');
-			var $editorDiv = $("<div id='sidebar_editor'/>");
+			const $editorDiv = $("<div id='sidebar_editor'/>");
 			$editorDiv.text(content);
 			$thumbnailDiv.children('.stretcher').remove();
 			$thumbnailDiv.append($editorDiv);
-			var editor = ace.edit('sidebar_editor');
+			const editor = ace.edit('sidebar_editor');
 			editor.setReadOnly(true);
-			var syntaxModePromise;
+			let syntaxModePromise;
 			if (model.get('mimetype') === 'text/html') {
 				syntaxModePromise = getSyntaxMode('html');
 			} else {
@@ -63,9 +60,9 @@ export class SidebarPreview {
 	}
 
 	getFileContent (path) {
-		var parts = path.split('/');
-		var dir = parts.slice(0, -1).join('');
-		var file = parts.slice(-1).join('');
+		const parts = path.split('/');
+		const dir = parts.slice(0, -1).join('');
+		const file = parts.slice(-1).join('');
 
 		return $.ajax({
 			url: OC.generateUrl('/apps/files_texteditor/ajax/loadfile'),
