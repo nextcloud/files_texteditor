@@ -13,7 +13,8 @@ module.exports = {
 	output: {
 		filename: "[name].js",
 		chunkFilename: '[name].bundle.js',
-		path: path.resolve(__dirname, "build")
+		path: path.resolve(__dirname, "build"),
+		jsonpFunction: 'webpackJsonpTexteditor'
 	},
 	resolve: {
 		extensions: [".ts", ".js"]
