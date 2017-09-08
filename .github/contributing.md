@@ -21,5 +21,10 @@ Help us to maximize the effort we can spend fixing issues and adding new feature
 [forum]: https://help.nextcloud.com/
 [irc]: https://webchat.freenode.net/?channels=nextcloud
 
+### Building
+
+Webpack is used as module bundler, the project can be build by running `make` (nodejs require),
+`make watch` can be used to automatically rebuild the project when the source is modified.
+
 ### Contribute Code and translations
 Please check [server's contribution guidelines](https://github.com/nextcloud/server/blob/master/CONTRIBUTING.md#contributing-to-source-code) for further information about contributing code and translations.
