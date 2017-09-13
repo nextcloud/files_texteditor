@@ -15,7 +15,8 @@ import {newFileMenuPlugin} from './newfileplugin';
 
 // convince webpack to load chunks
 __webpack_require__.p = OC.filePath('files_texteditor', 'js', '../build/');
-__webpack_require__.nc = $('script[nonce][src]')[0].getAttribute('nonce');
+const script = document.querySelector('[nonce]');
+__webpack_require__.nc = script['nonce'] || script.getAttribute('nonce');
 
 window.ace = ace;
 
