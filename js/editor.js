@@ -635,8 +635,8 @@ var Files_Texteditor = {
 	 * Configure the autosave timer
 	 */
 	setupAutosave: function() {
-		clearTimeout(this.saveTimer);
-		this.saveTimer = setTimeout(OCA.Files_Texteditor._onSaveTrigger, 3000);
+		clearTimeout(OCA.Files_Texteditor.saveTimer);
+		OCA.Files_Texteditor.saveTimer = setTimeout(OCA.Files_Texteditor._onSaveTrigger, 3000);
 	},
 
 	/**
