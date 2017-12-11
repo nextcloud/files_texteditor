@@ -5,7 +5,7 @@ OC.L10N.register(
     "saved!" : "opgeslagen!",
     "failed!" : "mislukt!",
     "Saved" : "Bewaard",
-    "There was a problem saving your changes. Click to resume editing." : "Probleem bij het opslaan van uw wijzigingen. Klik om door te gaan met bewerken.",
+    "There was a problem saving your changes. Click to resume editing." : "Probleem bij het opslaan van je wijzigingen. Klik om door te gaan met bewerken.",
     "An error occurred!" : "Er is iets fout gegaan!",
     "Edit" : "Bewerk",
     "Mixed" : "Gemengd",
