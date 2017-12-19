@@ -1,9 +1,9 @@
 { "translations": {
     "saving..." : "сохранение...",
-    "saved!" : "сохранен!",
+    "saved!" : "сохранено!",
     "failed!" : "ошибка!",
     "Saved" : "Сохранено",
-    "There was a problem saving your changes. Click to resume editing." : "Произошла ошибка во время сохранения изменений. Нажмите для продолжения редактирования.",
+    "There was a problem saving your changes. Click to resume editing." : "Во время сохранения изменений произошла ошибка . Нажмите для продолжения редактирования.",
     "An error occurred!" : "Произошла ошибка!",
     "Edit" : "Править",
     "Mixed" : "Смешанный",
