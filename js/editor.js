@@ -162,7 +162,7 @@ var Files_Texteditor = {
 				function() {
 					OC.Notification.showTemporary(t(
 						'files_texteditor',
-						'There was a problem saving your changes. Click to resume editing.'
+						'Could not save your changes. Click to resume editing.'
 					));
 					$('#notification').data('reopeneditor', true).on(
 						'click',
