@@ -1,5 +1,5 @@
 .preview {
-	max-width: 700px;
+	max-width: 810px;
 	padding: 0px 20px !important;
 	box-sizing: border-box;
 	font-size: 18px;
@@ -40,8 +40,11 @@
 .preview ul,
 .preview ol,
 .preview pre {
-	margin-bottom: 17.6px;
 	line-height: 1.45em;
+}
+.preview p,
+.preview pre {
+	margin-bottom: 17.6px;
 }
 .preview ul,
 .preview ol {
@@ -75,4 +78,10 @@
 .icon-loading .text-preview,
 .preview .text-preview {
 	display: none !important;
+}
+
+.preview code {
+	background-color: rgb(242, 242, 242);
+	border-radius: 3px;
+	padding: 0px 2px 2px 2px;
 }
