@@ -40,7 +40,7 @@ $(document).ready(function(){
 
 		previewElement
 			.addClass('icon-loading')
-			.children().detach();
+			.children().remove();
 
 		$.get(downloadUrl).success(function(content) {
 			previewElement
