@@ -440,6 +440,10 @@ var Files_Texteditor = {
 	 * Configure the ACE editor
 	 */
 	configureACE: function(file) {
+		ace.require('ace/config').set(
+			'basePath',
+			OC.filePath('files_texteditor', 'js', 'core/vendor/ace-builds/src-noconflict')
+		);
 		window.aceEditor = ace.edit(this.editor);
 		aceEditor.getSession().setNewLineMode("windows");
 		aceEditor.setShowPrintMargin(false);
