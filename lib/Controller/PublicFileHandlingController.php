@@ -96,6 +96,17 @@ class PublicFileHandlingController extends Controller{
 			return new DataResponse(['message' => $this->l->t('You can not open a folder')], Http::STATUS_BAD_REQUEST);
 		}
 
+		$range = $this->request->getHeader('Range');
+		if ($range !== '') {
+			$matches = [];
+			if (preg_match('/bytes=0-(\d+)$/', $range, $matches) === 0) {
+				return new DataResponse(['message' => $this->l->t('Invalid range request')], Http::STATUS_REQUEST_RANGE_NOT_SATISFIABLE);
+			}
+			$range = (int)$matches[1];
+		} else {
+			$range = -1;
+		}
+
 		// default of 4MB
 		$maxSize = 4194304;
 		if ($node->getSize() > $maxSize) {
@@ -110,6 +121,11 @@ class PublicFileHandlingController extends Controller{
 				$encoding = 'ISO-8859-15';
 			}
 			$fileContents = iconv($encoding, 'UTF-8', $fileContents);
+
+			if ($range !== -1) {
+				$fileContents = mb_substr($fileContents, 0, $range);
+			}
+
 			return new DataResponse(
 				[
 					'filecontents' => $fileContents,
