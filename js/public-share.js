@@ -45,7 +45,7 @@ $(document).ready(function(){
 		$.get(downloadUrl).success(function(content) {
 			previewElement
 				.removeClass('icon-loading')
-				.addClass('preview')
+				.addClass('preview formatted-text')
 				.html(DOMPurify.sanitize(
 					marked(content, {
 						renderer: renderer,
