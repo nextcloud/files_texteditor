@@ -1,8 +1,12 @@
 // FIXME: Hack for single public file view since it is not attached to the fileslist
 $(document).ready(function(){
-	if ($('#isPublic').val() &&
-		$('#mimetype').val() === 'text/markdown' &&
-		$('#filesize').val() < 524288) {
+	var isPublic = $('#isPublic').val();
+	var mimetype = $('#mimetype').val();
+	var filesize = $('#filesize').val();
+
+	if (isPublic &&
+		mimetype === 'text/markdown' &&
+		filesize < 524288) {
 
 		var sharingToken = $('#sharingToken').val();
 		var downloadUrl = OC.generateUrl('/s/{token}/download', {token: sharingToken});
@@ -63,6 +67,45 @@ $(document).ready(function(){
 		}).fail(function(result){
 			previewElement
 				.removeClass('icon-loading');
+		});
+	} else if (isPublic &&
+			   mimetype.substr(0, mimetype.indexOf('/')) === 'text') {
+		// Based on default text previews from "files_sharing/js/public.js", but
+		// using the public endpoint from files_texteditor for better character
+		// encoding support.
+		var previewElement = $('#imgframe');
+		previewElement
+			.addClass('icon-loading')
+			.children().remove();
+
+		var bottomMargin = 350;
+		var previewHeight = $(window).height() - bottomMargin;
+		previewHeight = Math.max(200, previewHeight);
+
+		var sharingToken = $('#sharingToken').val();
+		$.ajax({
+			url: OC.generateUrl('/apps/files_texteditor/public/{token}', { token: sharingToken }),
+			headers: {
+				'Range': 'bytes=0-1000'
+			}
+		}).success(function(content) {
+			var textDiv = $('<div/>').addClass('text-preview default-overridden');
+			textDiv.text(content.filecontents);
+
+			previewElement
+				.removeClass('icon-loading')
+				.addClass('preview')
+				.append(textDiv);
+
+			var divHeight = textDiv.height();
+			if (content.filecontents.length > 999) {
+				var ellipsis = $('<div/>').addClass('ellipsis');
+				ellipsis.html('(&#133;)');
+				ellipsis.appendTo('#imgframe');
+			}
+			if (divHeight > previewHeight) {
+				textDiv.height(previewHeight);
+			}
 		});
 	}
 });

@@ -82,6 +82,6 @@
 
 /* hide image preview during loading or if it renders fine */
 .icon-loading .text-preview,
-.preview .text-preview {
+.preview .text-preview:not(.default-overridden) {
 	display: none !important;
 }
