@@ -23,7 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "權限不足",
     "File path not supplied" : "沒有提供檔案路徑",
     "File mtime not supplied" : "沒有提供檔案修改時間",
-    "Text editor" : "文字編輯器",
-    "Text file" : "文字檔"
+    "Text editor" : "文字編輯器"
 },
 "nplurals=1; plural=0;");

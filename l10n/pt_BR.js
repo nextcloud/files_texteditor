@@ -23,7 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "Permissões insuficientes",
     "File path not supplied" : "Caminho do arquivo não fornecido",
     "File mtime not supplied" : "arquivo mtime não fornecido",
-    "Text editor" : "Editor de texto",
-    "Text file" : "Arquivo texto"
+    "Text editor" : "Editor de texto"
 },
 "nplurals=2; plural=(n > 1);");

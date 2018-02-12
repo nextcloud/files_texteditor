@@ -23,7 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "უფლებების უკმარისობა",
     "File path not supplied" : "ფაილის მისამართი არაა მოცემული",
     "File mtime not supplied" : "ფაილი mtime არაა მოცემული",
-    "Text editor" : "ტექსტ-ედიტორი",
-    "Text file" : "ტექსტ ფაილი"
+    "Text editor" : "ტექსტ-ედიტორი"
 },
 "nplurals=1; plural=0;");

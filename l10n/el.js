@@ -23,7 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "Μη επαρκή δικαιώματα",
     "File path not supplied" : "Η διαδρομή του αρχείου δεν παρέχεται.",
     "File mtime not supplied" : "Ο χρόνος τροποποίησης  του αρχείου δεν παρέχεται",
-    "Text editor" : "Επεξεργαστής κειμένου",
-    "Text file" : "Αρχείο κειμένου"
+    "Text editor" : "Επεξεργαστής κειμένου"
 },
 "nplurals=2; plural=(n != 1);");

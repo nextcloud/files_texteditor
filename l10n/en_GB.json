@@ -21,7 +21,6 @@
     "Insufficient permissions" : "Insufficient permissions",
     "File path not supplied" : "File path not supplied",
     "File mtime not supplied" : "File mtime not supplied",
-    "Text editor" : "Text editor",
-    "Text file" : "Text file"
+    "Text editor" : "Text editor"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

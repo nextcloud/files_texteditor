@@ -23,7 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "権限が不足しています",
     "File path not supplied" : "ファイルパスが足りません",
     "File mtime not supplied" : "ファイルのアクセス時刻がありません",
-    "Text editor" : "テキストエディター",
-    "Text file" : "テキストファイル"
+    "Text editor" : "テキストエディター"
 },
 "nplurals=1; plural=0;");
