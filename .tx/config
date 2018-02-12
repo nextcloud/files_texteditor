@@ -3,7 +3,7 @@ host = https://www.transifex.com
 lang_map = bg_BG: bg, cs_CZ: cs, fi_FI: fi, hu_HU: hu, nb_NO: nb, sk_SK: sk, th_TH: th, ja_JP: ja
 
 [nextcloud.files_texteditor]
-file_filter = <lang>/files_texteditor.po
+file_filter = translationfiles/<lang>/files_texteditor.po
 source_file = translationfiles/templates/files_texteditor.pot
 source_lang = en
 type = PO
