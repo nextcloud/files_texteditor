@@ -23,7 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "Baimen gutxiegi",
     "File path not supplied" : "Ez da fitxategiaren helbidea idatzi",
     "File mtime not supplied" : "Fitxategiaren mtime-a ez da ezarri",
-    "Text editor" : "Testu editorea",
-    "Text file" : "Testu fitxategia"
+    "Text editor" : "Testu editorea"
 },
 "nplurals=2; plural=(n != 1);");

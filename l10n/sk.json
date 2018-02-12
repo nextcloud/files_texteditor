@@ -21,7 +21,6 @@
     "Insufficient permissions" : "Nedostatočné oprávnenia",
     "File path not supplied" : "Nebola uvedená cesta k súboru",
     "File mtime not supplied" : "Nebol uvedený mtime súboru",
-    "Text editor" : "Textový editor",
-    "Text file" : "Textový súbor"
+    "Text editor" : "Textový editor"
 },"pluralForm" :"nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;"
 }

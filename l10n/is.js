@@ -23,7 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "Ekki næg réttindi",
     "File path not supplied" : "Skrá slóð fylgir ekki",
     "File mtime not supplied" : "mtime skrá fylgir ekki",
-    "Text editor" : "Textaritill",
-    "Text file" : "Textaskrá"
+    "Text editor" : "Textaritill"
 },
 "nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);");

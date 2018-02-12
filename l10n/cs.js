@@ -23,7 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "Nedostatečná oprávnění",
     "File path not supplied" : "Nebyla dodána cesta k souboru",
     "File mtime not supplied" : "Nebyl dodán čas změny souboru",
-    "Text editor" : "Textový editor",
-    "Text file" : "Textový soubor"
+    "Text editor" : "Textový editor"
 },
 "nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;");

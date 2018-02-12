@@ -23,7 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "Nincs jogosultsága hozzá",
     "File path not supplied" : "Fálj elérést nem adta meg",
     "File mtime not supplied" : "File módosítási idő nincs megadva",
-    "Text editor" : "Szövegszerkesztő",
-    "Text file" : "Szövegfájl"
+    "Text editor" : "Szövegszerkesztő"
 },
 "nplurals=2; plural=(n != 1);");
