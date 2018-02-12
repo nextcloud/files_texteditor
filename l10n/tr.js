@@ -23,7 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "İzinler yetersiz",
     "File path not supplied" : "Dosya yolu belirtilmemiş",
     "File mtime not supplied" : "Dosya mtime belirtilmemiş",
-    "Text editor" : "Metin düzenleyici",
-    "Text file" : "Metin dosyası"
+    "Text editor" : "Metin düzenleyici"
 },
 "nplurals=2; plural=(n > 1);");

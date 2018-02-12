@@ -23,7 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "Pole piisavalt õiguseid",
     "File path not supplied" : "Faili asukoht on määramata",
     "File mtime not supplied" : "Faili mtime puudub",
-    "Text editor" : "Teksti redigeerija",
-    "Text file" : "Tekstifail"
+    "Text editor" : "Teksti redigeerija"
 },
 "nplurals=2; plural=(n != 1);");

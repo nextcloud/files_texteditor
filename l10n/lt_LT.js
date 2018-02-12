@@ -23,7 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "Nepakanka leidimų",
     "File path not supplied" : "Nepateiktas failo kelias",
     "File mtime not supplied" : "Failo modifikavimo laikas nepateiktas",
-    "Text editor" : "Tekstų redaktorius",
-    "Text file" : "Tekstinis failas"
+    "Text editor" : "Tekstų redaktorius"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);");

@@ -21,7 +21,6 @@
     "Insufficient permissions" : "권한 부족",
     "File path not supplied" : "파일 경로가 지정되지 않았음",
     "File mtime not supplied" : "파일 수정 시간이 지정되지 않았음",
-    "Text editor" : "텍스트 편집기",
-    "Text file" : "텍스트 파일"
+    "Text editor" : "텍스트 편집기"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

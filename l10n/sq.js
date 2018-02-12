@@ -23,7 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "Leje të pamjaftueshme",
     "File path not supplied" : "S’u dha shteg kartele",
     "File mtime not supplied" : "S’u dha skedari mtime",
-    "Text editor" : "Editor teksti",
-    "Text file" : "Skedar teksti"
+    "Text editor" : "Editor teksti"
 },
 "nplurals=2; plural=(n != 1);");
