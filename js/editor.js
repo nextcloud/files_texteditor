@@ -191,7 +191,7 @@ var Files_Texteditor = {
 		this.currentContext = context;
 		this.file.name = filename;
 		this.file.dir = context.dir;
-		this.fileInfoModel = context.fileList.getModelForFile(filename);
+		this.fileList = context.fileList;
 		this.loadEditor(
 			OCA.Files_Texteditor.$container,
 			OCA.Files_Texteditor.file
@@ -616,10 +616,11 @@ var Files_Texteditor = {
 		this.$container.html('').show();
 		this.unloadControlBar();
 		this.unBindVisibleActions();
-		if (this.fileInfoModel) {
-			this.fileInfoModel.set({
+		var fileInfoModel = this.fileList.getModelForFile(this.file.name);
+		if (fileInfoModel) {
+			fileInfoModel.set({
 				// temp dummy, until we can do a PROPFIND
-				etag: this.fileInfoModel.get('id') + this.file.mtime,
+				etag: fileInfoModel.get('id') + this.file.mtime,
 				mtime: this.file.mtime * 1000,
 				size: this.file.size
 			});
