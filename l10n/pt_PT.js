@@ -7,15 +7,21 @@ OC.L10N.register(
     "Saved" : "Guardado",
     "There was a problem saving your changes. Click to resume editing." : "Ocorreu um problema ao guardar as suas alterações. Clique para retomar a edição.",
     "An error occurred!" : "Ocorreu um erro!",
+    "Edit" : "Editar",
+    "Preview" : "Pré-visualização",
+    "New text file" : "Novo ficheiro de texto",
     "New text file.txt" : "Novo ficheiro.txt",
+    "You can not open a folder" : "Não pode abrir a pasta",
     "This file is too big to be opened. Please download the file instead." : "Este ficheiro é demasiado grande para ser aberto. Em vez disso, por favor, transfira o ficheiro.",
     "Cannot read the file." : "Não é possível ler o ficheiro.",
     "Invalid file path supplied." : "O Caminho do ficheiro indicado é inválido.",
     "The file is locked." : "O ficheiro está bloqueado.",
     "An internal server error occurred." : "Ocorreu um erro interno no servidor.",
+    "You can not write to a folder" : "Não é possível escrever na pasta",
     "Cannot save file as it has been modified since opening" : "Não é possível guardar o ficheiro porque este foi modificado desde a abertura",
     "Insufficient permissions" : "Permissões insuficientes",
     "File path not supplied" : "Caminho do ficheiro não indicado",
-    "File mtime not supplied" : "O Ficheiro mtime não foi indicado"
+    "File mtime not supplied" : "O Ficheiro mtime não foi indicado",
+    "Text editor" : "Editor de texto"
 },
 "nplurals=2; plural=(n != 1);");

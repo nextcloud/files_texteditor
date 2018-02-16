@@ -1,11 +1,11 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "saugoma...",
-    "saved!" : "Išsaugota!",
+    "saving..." : "įrašoma...",
+    "saved!" : "įrašyta!",
     "failed!" : "nepavyko!",
     "Saved" : "Įrašyta",
-    "There was a problem saving your changes. Click to resume editing." : "Klaida išsaugant pakeitimus. Paspauskite redagavimo tęsimui.",
+    "There was a problem saving your changes. Click to resume editing." : "Klaida įrašant pakeitimus. Spustelėkite, norėdami tęsti redagavimą.",
     "An error occurred!" : "Įvyko klaida!",
     "Edit" : "Redaguoti",
     "Mixed" : "Įvairūs",
