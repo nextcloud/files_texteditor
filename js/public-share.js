@@ -86,11 +86,11 @@ $(document).ready(function(){
 		$.ajax({
 			url: OC.generateUrl('/apps/files_texteditor/public/{token}', { token: sharingToken }),
 			headers: {
-				'Range': 'bytes=0-1000'
+				'Range': 'bytes=0-524288'
 			}
 		}).success(function(content) {
 			var textDiv = $('<div/>').addClass('text-preview default-overridden');
-			textDiv.text(content.filecontents);
+			textDiv.text(content);
 
 			previewElement
 				.removeClass('icon-loading')
@@ -98,7 +98,7 @@ $(document).ready(function(){
 				.append(textDiv);
 
 			var divHeight = textDiv.height();
-			if (content.filecontents.length > 999) {
+			if (content.length > 50000) {
 				var ellipsis = $('<div/>').addClass('ellipsis');
 				ellipsis.html('(&#133;)');
 				ellipsis.appendTo('#imgframe');
