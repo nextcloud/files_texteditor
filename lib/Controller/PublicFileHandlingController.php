@@ -128,7 +128,8 @@ class PublicFileHandlingController extends Controller{
 
 			return new DataResponse(
 				$fileContents,
-				Http::STATUS_OK
+				Http::STATUS_OK,
+				['Content-Type' => 'text/plain; charset="utf-8"']
 			);
 		}
 
