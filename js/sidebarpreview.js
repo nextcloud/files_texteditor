@@ -53,7 +53,7 @@
 				// Set the theme
 				OC.addScript(
 					'files_texteditor',
-					'core/vendor/ace-builds/src-noconflict/theme-clouds',
+					'vendor/ace-builds/src-noconflict/theme-clouds',
 					function () {
 						editor.setTheme("ace/theme/clouds");
 					}

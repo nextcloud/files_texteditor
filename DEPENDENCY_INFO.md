@@ -1,7 +1,7 @@
 NextCloud Files Texteditor Dependency Info
 ==========================================
 
-JavaScript libs bundled in `js/core/vendor/`.
+JavaScript libs bundled in `js/vendor/`.
 See the `bower.json` file in this directory.
 
 | Library | Version | License           | Comment/Patch Info (if applicable)  |
