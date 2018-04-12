@@ -126,7 +126,7 @@ class PublicFileHandlingController extends Controller{
 				$fileContents = mb_substr($fileContents, 0, $range);
 			}
 
-			return new DataResponse(
+			return new Http\DataDisplayResponse(
 				$fileContents,
 				Http::STATUS_OK,
 				['Content-Type' => 'text/plain; charset="utf-8"']
