@@ -23,6 +23,9 @@ OC.L10N.register(
     "Insufficient permissions" : "Nicht ausreichende Berechtigungen",
     "File path not supplied" : "Dateipfad nicht angegeben",
     "File mtime not supplied" : "Dateiänderungsdatum nicht angegeben",
+    "Share not found" : "Freigabe nicht gefunden",
+    "You are not authorized to open this share" : "Sie sind nicht berechtigt, diese Freigabe zu öffnen",
+    "Invalid range request" : "Ungültige Bereichsanfrage",
     "Text editor" : "Text-Editor"
 },
 "nplurals=2; plural=(n != 1);");
