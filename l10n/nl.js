@@ -23,6 +23,9 @@ OC.L10N.register(
     "Insufficient permissions" : "Onvoldoende rechten",
     "File path not supplied" : "Bestandspad niet opgegeven",
     "File mtime not supplied" : "Tijdstempel bestand niet opgegeven",
+    "Share not found" : "Share niet gevonden",
+    "You are not authorized to open this share" : "Je bent niet bevoegd deze share te openen",
+    "Invalid range request" : "Ongeldige aanvraag",
     "Text editor" : "Tekstverwerker"
 },
 "nplurals=2; plural=(n != 1);");
