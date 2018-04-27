@@ -21,6 +21,9 @@
     "Insufficient permissions" : "İzinler yetersiz",
     "File path not supplied" : "Dosya yolu belirtilmemiş",
     "File mtime not supplied" : "Dosya mtime belirtilmemiş",
+    "Share not found" : "Paylaşım bulunamadı",
+    "You are not authorized to open this share" : "Bu paylaşımı açma izniniz yok",
+    "Invalid range request" : "Aralık isteği geçersiz",
     "Text editor" : "Metin düzenleyici"
 },"pluralForm" :"nplurals=2; plural=(n > 1);"
 }
