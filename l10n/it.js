@@ -23,6 +23,9 @@ OC.L10N.register(
     "Insufficient permissions" : "Permessi insufficienti",
     "File path not supplied" : "Percorso del file non fornito",
     "File mtime not supplied" : "mtime del file non fornito",
+    "Share not found" : "Condivisione non trovata",
+    "You are not authorized to open this share" : "Non sei autorizzato ad aprire questa condivisione",
+    "Invalid range request" : "Richiesta di intervallo non valida",
     "Text editor" : "Editor di testo"
 },
 "nplurals=2; plural=(n != 1);");

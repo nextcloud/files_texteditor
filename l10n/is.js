@@ -23,6 +23,9 @@ OC.L10N.register(
     "Insufficient permissions" : "Ekki næg réttindi",
     "File path not supplied" : "Skrá slóð fylgir ekki",
     "File mtime not supplied" : "mtime skrá fylgir ekki",
+    "Share not found" : "Sameign fannst ekki",
+    "You are not authorized to open this share" : "Þú hefur ekki heimild til að opna þessa sameign",
+    "Invalid range request" : "Ógild fyrirspurn um gagnasvið",
     "Text editor" : "Textaritill"
 },
 "nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);");

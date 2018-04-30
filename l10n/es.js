@@ -23,6 +23,9 @@ OC.L10N.register(
     "Insufficient permissions" : "Permisos insuficientes",
     "File path not supplied" : "No se ha proporcionado la ruta del archivo",
     "File mtime not supplied" : "No se ha proporcionado la hora de modificación del archivo (mtime)",
+    "Share not found" : "Recurso compartido no encontrado",
+    "You are not authorized to open this share" : "No estás autorizado a abrir este recurso compartido",
+    "Invalid range request" : "Petición de alcance inválido",
     "Text editor" : "Editor de texto"
 },
 "nplurals=2; plural=(n != 1);");
