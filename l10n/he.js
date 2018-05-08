@@ -23,6 +23,9 @@ OC.L10N.register(
     "Insufficient permissions" : "אין הרשאות מספקות",
     "File path not supplied" : "נתיב קובץ לא סופק",
     "File mtime not supplied" : "קובץ mtime לא סופק",
+    "Share not found" : "השיתוף לא נמצא",
+    "You are not authorized to open this share" : "אין לך הרשאה לפתוח את השיתוף הזה",
+    "Invalid range request" : "בקשת הטווח שגויה",
     "Text editor" : "עורך טקסט"
 },
 "nplurals=2; plural=(n != 1);");
