@@ -56,7 +56,6 @@ $(document).ready(function(){
 						gfm: false,
 						breaks: false,
 						pedantic: false,
-						sanitize: true,
 						smartLists: true,
 						smartypants: false
 					}),
