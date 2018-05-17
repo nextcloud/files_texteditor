@@ -12,5 +12,5 @@
     "Insufficient permissions" : "دسترسی کافی نیست",
     "File path not supplied" : "مسیر فایل داده نشده است",
     "File mtime not supplied" : "mtime فایل داده نشده است"
-},"pluralForm" :"nplurals=1; plural=0;"
+},"pluralForm" :"nplurals=2; plural=((n<=1 && n>= 0) ? 1);"
 }
