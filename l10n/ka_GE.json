@@ -22,5 +22,5 @@
     "File path not supplied" : "ფაილის მისამართი არაა მოცემული",
     "File mtime not supplied" : "ფაილი mtime არაა მოცემული",
     "Text editor" : "ტექსტ-ედიტორი"
-},"pluralForm" :"nplurals=1; plural=0;"
+},"pluralForm" :"nplurals=2; plural=(n==1);"
 }
