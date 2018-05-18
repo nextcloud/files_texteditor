@@ -25,4 +25,4 @@ OC.L10N.register(
     "File mtime not supplied" : "ფაილი mtime არაა მოცემული",
     "Text editor" : "ტექსტ-ედიტორი"
 },
-"nplurals=2; plural=(n==1);");
+"nplurals=2; plural=(n!=1);");
