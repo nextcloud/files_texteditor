@@ -15,4 +15,4 @@ OC.L10N.register(
     "File path not supplied" : "مسیر فایل داده نشده است",
     "File mtime not supplied" : "mtime فایل داده نشده است"
 },
-"nplurals=2; plural=((n<=1 && n>= 0) ? 1);");
+"nplurals=2; plural=(n > 1);");
