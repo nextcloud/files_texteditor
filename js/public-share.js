@@ -97,7 +97,7 @@ $(document).ready(function(){
 				.append(textDiv);
 
 			var divHeight = textDiv.height();
-			if (content.length > 50000) {
+			if (content.length > 524289) {
 				var ellipsis = $('<div/>').addClass('ellipsis');
 				ellipsis.html('(&#133;)');
 				ellipsis.appendTo('#imgframe');
