@@ -21,6 +21,8 @@
     "Insufficient permissions" : "Nedostatečná oprávnění",
     "File path not supplied" : "Nebyla dodána cesta k souboru",
     "File mtime not supplied" : "Nebyl dodán čas změny souboru",
+    "Share not found" : "Sdílení nenalezeno",
+    "You are not authorized to open this share" : "Nejste oprávněni otevírat toto sdílení",
     "Text editor" : "Textový editor"
 },"pluralForm" :"nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;"
 }
