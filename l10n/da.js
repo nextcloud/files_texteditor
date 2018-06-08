@@ -23,6 +23,8 @@ OC.L10N.register(
     "Insufficient permissions" : "Utilstrækkeligt med rettigheder",
     "File path not supplied" : "Filstien er ikke angivet",
     "File mtime not supplied" : "Filen mtime er ikke anvist",
+    "Share not found" : "Delt fil ikke fundet",
+    "You are not authorized to open this share" : "Du har ikke adgang til at åbne denne delte fil",
     "Text editor" : "Tekst editor"
 },
 "nplurals=2; plural=(n != 1);");
