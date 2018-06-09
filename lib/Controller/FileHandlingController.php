@@ -30,6 +30,7 @@ use OCP\AppFramework\Http\DataResponse;
 use OCP\Files\File;
 use OCP\Files\Folder;
 use OCP\Files\ForbiddenException;
+use OCP\Files\GenericFileException;
 use OCP\IL10N;
 use OCP\ILogger;
 use OCP\IRequest;
@@ -174,6 +175,8 @@ class FileHandlingController extends Controller{
 							return new DataResponse(['message' => $message], Http::STATUS_BAD_REQUEST);
 						} catch (ForbiddenException $e) {
 							return new DataResponse(['message' => $e->getMessage()], Http::STATUS_BAD_REQUEST);
+						} catch (GenericFileException $e) {
+							return new DataResponse(['message' => $this->l->t('Could not write to file.')], Http::STATUS_BAD_REQUEST);
 						}
 						// Clear statcache
 						clearstatcache();
