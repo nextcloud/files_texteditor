@@ -18,6 +18,7 @@
     "An internal server error occurred." : "Si è verificato un errore interno.",
     "You can not write to a folder" : "Non puoi scrivere in una cartella",
     "Cannot save file as it has been modified since opening" : "Impossibile salvare il file poiché è stato modificato dopo la sua apertura",
+    "Could not write to file." : "Impossibile scrivere su file.",
     "Insufficient permissions" : "Permessi insufficienti",
     "File path not supplied" : "Percorso del file non fornito",
     "File mtime not supplied" : "mtime del file non fornito",

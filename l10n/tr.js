@@ -20,6 +20,7 @@ OC.L10N.register(
     "An internal server error occurred." : "Sunucu içinde bir sorun çıktı.",
     "You can not write to a folder" : "Bir klasöre yazamazsınız",
     "Cannot save file as it has been modified since opening" : "Dosya açıldıktan sonra değiştirildiği için kaydedilemedi",
+    "Could not write to file." : "Dosyaya yazılamadı.",
     "Insufficient permissions" : "İzinler yetersiz",
     "File path not supplied" : "Dosya yolu belirtilmemiş",
     "File mtime not supplied" : "Dosya mtime belirtilmemiş",
