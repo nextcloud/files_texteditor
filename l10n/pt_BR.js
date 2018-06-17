@@ -11,7 +11,7 @@ OC.L10N.register(
     "Mixed" : "Misturado",
     "Preview" : "Visualizar",
     "New text file" : "Novo arquivo de texto",
-    "New text file.txt" : "Novo arquivo de texto.txt",
+    "New text file.txt" : "Novo arquiv file.txt",
     "You can not open a folder" : "Você não pode abrir uma pasta",
     "This file is too big to be opened. Please download the file instead." : "Este arquivo é muito grande para ser aberto. Por favor baixe o arquivo ao invés de abri-lo.",
     "Cannot read the file." : "Não é possível ler o arquivo.",
