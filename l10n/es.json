@@ -18,12 +18,14 @@
     "An internal server error occurred." : "Error interno del servidor",
     "You can not write to a folder" : "No puedes escribir en una carpeta",
     "Cannot save file as it has been modified since opening" : "No es posible guardar el archivo; pues ha sido modificado",
+    "Could not write to file." : "No se ha podido escribir en el archivo.",
     "Insufficient permissions" : "Permisos insuficientes",
     "File path not supplied" : "No se ha proporcionado la ruta del archivo",
     "File mtime not supplied" : "No se ha proporcionado la hora de modificación del archivo (mtime)",
     "Share not found" : "Recurso compartido no encontrado",
     "You are not authorized to open this share" : "No estás autorizado a abrir este recurso compartido",
     "Invalid range request" : "Petición de alcance inválido",
-    "Text editor" : "Editor de texto"
+    "Text editor" : "Editor de texto",
+    "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry in the New button at the top of the web browser the Text file entry appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Esta aplicación permite a los usuarios de Nextcloud abrir, guardar y editar archivos de texto en el navegador. Si está activa, aparece una entrada Archivo de texto en el botón Nuevo en la parte superior del navegador. Al pulsarla, aparece un nuevo archivo de texto en el navegador y el archivo se guarda en el directorio actual de Nextcloud. Además, cuando se pulsa un archivo de texto en el navegador, se abrirá y se podrá editar. Si los privilegios lo permiten, un usuario también puede editar archivos compartidos y guardar estos cambios en el navegador.\nMás información disponible en la documentación del editor de texto."
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
