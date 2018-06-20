@@ -2,9 +2,9 @@ OC.L10N.register(
     "files_texteditor",
     {
     "saving..." : "保存中...",
-    "saved!" : "保存されました！",
+    "saved!" : "保存しました！",
     "failed!" : " 失敗しました！",
-    "Saved" : "保存されました",
+    "Saved" : "保存しました",
     "There was a problem saving your changes. Click to resume editing." : "変更を保存する際に問題が発生しました．クリックして編集を再開する．",
     "An error occurred!" : "エラーが発生しました。",
     "Edit" : "編集",
