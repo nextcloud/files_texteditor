@@ -27,6 +27,7 @@ OC.L10N.register(
     "Share not found" : "Freigabe nicht gefunden",
     "You are not authorized to open this share" : "Du darfst diese Freigabe nicht öffnen",
     "Invalid range request" : "Ungültige Bereichsanfrage",
-    "Text editor" : "Text-Editor"
+    "Text editor" : "Text-Editor",
+    "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry in the New button at the top of the web browser the Text file entry appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Diese App ermöglicht es den Nextcloud-Nutzern, Textdateien im Browser zu öffnen, zu bearbeiten und zu speichern. Wenn aktiviert, wird oben im Dateimenü ein Erstellen-Button eingeblendet. Beim Klicken auf Erstellen wird eine neue Textdatei im Browser geöffnet, die bearbeitet und im aktuellen Nextcloud-Ordner gespeichert werden kann. Beim Klick auf eine Textdatei wird diese im Browser geöffnet. Sofern der Nutzer eine entsprechende Berechtigung hat, kann er die Datei auch bearbeiten und speichern.\nWeitere Informationen sind in der Text-Editor Dokumentation zu finden."
 },
 "nplurals=2; plural=(n != 1);");
