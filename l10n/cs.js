@@ -20,6 +20,7 @@ OC.L10N.register(
     "An internal server error occurred." : "Došlo k interní chybě serveru.",
     "You can not write to a folder" : "Do této složky nemůžete nahrávat ",
     "Cannot save file as it has been modified since opening" : "Soubor nelze uložit, protože byl od otevření upraven",
+    "Could not write to file." : "Do souboru se nedaří zapsat.",
     "Insufficient permissions" : "Nedostatečná oprávnění",
     "File path not supplied" : "Nebyla dodána cesta k souboru",
     "File mtime not supplied" : "Nebyl dodán čas změny souboru",
