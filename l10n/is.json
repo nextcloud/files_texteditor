@@ -18,6 +18,7 @@
     "An internal server error occurred." : "Innri villa kom upp.",
     "You can not write to a folder" : "Þú getur ekki skrifað í möppu",
     "Cannot save file as it has been modified since opening" : "Get ekki vistað skrána þar sem henni hefur verið breytt síðan hún var opnuð",
+    "Could not write to file." : "Ekki tókst að skrifa í skrá.",
     "Insufficient permissions" : "Ekki næg réttindi",
     "File path not supplied" : "Skrá slóð fylgir ekki",
     "File mtime not supplied" : "mtime skrá fylgir ekki",
