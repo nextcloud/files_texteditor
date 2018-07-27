@@ -26,6 +26,7 @@ OC.L10N.register(
     "File mtime not supplied" : "Nebyl dodán čas změny souboru",
     "Share not found" : "Sdílení nenalezeno",
     "You are not authorized to open this share" : "Nejste oprávněni otevírat toto sdílení",
+    "Invalid range request" : "Požadavek na neplatný rozsah",
     "Text editor" : "Textový editor"
 },
 "nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;");
