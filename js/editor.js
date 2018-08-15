@@ -283,7 +283,7 @@ var Files_Texteditor = {
 			+'<div id="editor_container" class="icon-loading">'
 			+'<div id="editor_wrap"><div id="editor"></div>'
 			+'<div id="preview_wrap"><div id="preview"></div></div></div></div>');
-		$('#app-content').append(container);
+		$('#content').append(container);
 
 
 		// Get the file data
