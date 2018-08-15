@@ -244,7 +244,7 @@ var Files_Texteditor = {
 			'application/x-empty',
 			'application/x-msdos-program',
 			'application/x-php',
-			'application/x-pearl',
+			'application/x-perl',
 			'application/x-text',
 			'application/yaml'
 		];
