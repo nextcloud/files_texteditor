@@ -317,7 +317,9 @@ var Files_Texteditor = {
 					},200);
 					var text = window.aceEditor.getSession().getValue();
 					_self.previewPluginOnChange(text, _self.preview);
-					window.aceEditor.resize();
+					setTimeout(function() {
+						window.aceEditor.resize();
+					}, 500);
 					_self.loadPreviewControlBar();
 				} else {
 					_self.previewPluginOnChange = null;
@@ -375,6 +377,9 @@ var Files_Texteditor = {
 				container.find('#editor_container').addClass('onlyPreview');
 				break;
 		}
+		setTimeout(function() {
+			window.aceEditor.resize();
+		}, 500);
 	},
 
 	loadPreviewControlBar: function() {
