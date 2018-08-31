@@ -18,9 +18,12 @@
     "An internal server error occurred." : "Ett server-fel har inträffat.",
     "You can not write to a folder" : "Du kan inte skriva till en mapp",
     "Cannot save file as it has been modified since opening" : "Kan inte spara filen eftersom den har ändrats sedan den öppnats.",
+    "Could not write to file." : "Kunde inte skriva till fil.",
     "Insufficient permissions" : "Otillräcklig behörighet.",
     "File path not supplied" : "Ingen sökväg till fil angiven.",
     "File mtime not supplied" : "Inget mtime-attribut angivet för filen.",
+    "Share not found" : "Delningen hittades inte",
+    "You are not authorized to open this share" : "Du har inte behörighet att öppna denna delning",
     "Text editor" : "Textredigerare"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
