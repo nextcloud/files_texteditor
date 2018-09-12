@@ -20,9 +20,11 @@ OC.L10N.register(
     "An internal server error occurred." : "Προέκυψε ένα εσωτερικό σφάλμα διακομιστή.",
     "You can not write to a folder" : "Δεν μπορείτε να γράψετε στον φάκελο",
     "Cannot save file as it has been modified since opening" : "Δεν είναι δυνατή η αποθήκευση του αρχείου, όπως έχει τροποποιηθεί από το άνοιγμα.",
+    "Could not write to file." : "Αδυναμία εγγραφής σε αρχείο.",
     "Insufficient permissions" : "Μη επαρκή δικαιώματα",
     "File path not supplied" : "Η διαδρομή του αρχείου δεν παρέχεται.",
     "File mtime not supplied" : "Ο χρόνος τροποποίησης  του αρχείου δεν παρέχεται",
+    "Share not found" : "Δεν βρέθηκε το κονόχρηστο",
     "Text editor" : "Επεξεργαστής κειμένου"
 },
 "nplurals=2; plural=(n != 1);");
