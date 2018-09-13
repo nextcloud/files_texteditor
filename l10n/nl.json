@@ -18,6 +18,7 @@
     "An internal server error occurred." : "Er heeft zich een interne serverfout voorgedaan.",
     "You can not write to a folder" : "Je kunt schrijven naar een map",
     "Cannot save file as it has been modified since opening" : "Kan het bestand niet opslaan omdat het is gewijzigd na het openen",
+    "Could not write to file." : "Kon niet schrijven naar bestand.",
     "Insufficient permissions" : "Onvoldoende rechten",
     "File path not supplied" : "Bestandspad niet opgegeven",
     "File mtime not supplied" : "Tijdstempel bestand niet opgegeven",
