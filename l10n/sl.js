@@ -7,6 +7,7 @@ OC.L10N.register(
     "Saved" : "Shranjeno",
     "There was a problem saving your changes. Click to resume editing." : "Prišlo je do napake med shranjevanjem sprememb. Kliknite za nadaljevanje urejanja.",
     "An error occurred!" : "Prišlo je do napake!",
+    "Edit" : "Uredi",
     "New text file.txt" : "Nova datoteka.txt",
     "You can not open a folder" : "Ne morete odpreti mape",
     "This file is too big to be opened. Please download the file instead." : "Datoteka je prevelika in je ni mogoče odpreti. Datoteko prejmite na disk in urejajte krajevno.",
