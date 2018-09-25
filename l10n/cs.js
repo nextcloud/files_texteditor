@@ -17,7 +17,7 @@ OC.L10N.register(
     "Cannot read the file." : "Soubor nelze přečíst.",
     "Invalid file path supplied." : "Zadána neplatná cesta k souboru.",
     "The file is locked." : "Soubor je uzamčený.",
-    "An internal server error occurred." : "Došlo k interní chybě serveru.",
+    "An internal server error occurred." : "Došlo k vnitřní chybě serveru.",
     "You can not write to a folder" : "Do této složky nemůžete nahrávat ",
     "Cannot save file as it has been modified since opening" : "Soubor nelze uložit, protože byl od otevření upraven",
     "Could not write to file." : "Do souboru se nedaří zapsat.",
