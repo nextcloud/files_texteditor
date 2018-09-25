@@ -9,9 +9,9 @@ OC.L10N.register(
     "An error occurred!" : "发生错误！",
     "Edit" : "编辑",
     "Mixed" : "混合",
-    "Preview" : "预习",
-    "New text file" : "新文本文件",
-    "New text file.txt" : "创建文本文件 .txt",
+    "Preview" : "预览",
+    "New text file" : "新建文本文件",
+    "New text file.txt" : "新建文本文件.txt",
     "You can not open a folder" : "您无法打开文件夹",
     "This file is too big to be opened. Please download the file instead." : "该文件太大无法在线预览，请下载后查看。",
     "Cannot read the file." : "不能读取文件",
@@ -20,9 +20,14 @@ OC.L10N.register(
     "An internal server error occurred." : "内部服务器错误",
     "You can not write to a folder" : "您无法写入文件夹",
     "Cannot save file as it has been modified since opening" : "由于打开之后已被修改，故无法保存文件。",
+    "Could not write to file." : "无法写入到文件",
     "Insufficient permissions" : "权限不足",
     "File path not supplied" : "未提供文件路径",
     "File mtime not supplied" : "未提供mtime",
-    "Text editor" : "文本编辑"
+    "Share not found" : "未找到分享",
+    "You are not authorized to open this share" : "您没有权限访问这个共享",
+    "Invalid range request" : "无效的范围强求",
+    "Text editor" : "文本编辑",
+    "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry in the New button at the top of the web browser the Text file entry appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "该应用能够让 Nextcloud 的用户在浏览器中打开, 保存并编辑文本文件. 如果启用, 在浏览器顶部的新建按钮中将出现文本文件一项. 当点击时, 一个新的文本文件将在浏览器中打开, 并在当前 Nextcloud 的文件夹中保存. 此外, 当在浏览器中点击一个文本文件时, 将会被打开并且可以编辑. 当权限允许时, 用户也可以编辑分享的文件并将修改保存回浏览器中.\n更多信息可以参考文本编辑器文档."
 },
 "nplurals=1; plural=0;");
