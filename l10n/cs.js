@@ -5,7 +5,7 @@ OC.L10N.register(
     "saved!" : "uloženo!",
     "failed!" : "nezdařilo se!",
     "Saved" : "Uloženo",
-    "There was a problem saving your changes. Click to resume editing." : "Došlo k chybě při ukládání změn. Klikněte pro pokračování v úpravách.",
+    "There was a problem saving your changes. Click to resume editing." : "Došlo k chybě při ukládání změn. Klikněte pro návrat zpět do úprav.",
     "An error occurred!" : "Nastala chyba!",
     "Edit" : "Upravit",
     "Mixed" : "Smíšené",
