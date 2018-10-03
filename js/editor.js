@@ -447,7 +447,7 @@ var Files_Texteditor = {
 	configureACE: function(file) {
 		ace.require('ace/config').set(
 			'basePath',
-			OC.filePath('files_texteditor', 'js', 'core/vendor/ace-builds/src-noconflict')
+			OC.filePath('files_texteditor', 'js', 'vendor/ace-builds/src-noconflict')
 		);
 		window.aceEditor = ace.edit(this.editor);
 		aceEditor.getSession().setNewLineMode("windows");
@@ -465,7 +465,7 @@ var Files_Texteditor = {
 		// Set the theme
 		OC.addScript(
 			'files_texteditor',
-			'core/vendor/ace-builds/src-noconflict/theme-clouds',
+			'vendor/ace-builds/src-noconflict/theme-clouds',
 			function () {
 				window.aceEditor.setTheme("ace/theme/clouds");
 			}
@@ -542,7 +542,7 @@ var Files_Texteditor = {
 			// Set the syntax mode
 			return OC.addScript(
 				'files_texteditor',
-				'core/vendor/ace-builds/src-noconflict/mode-' + filetype[extension]
+				'vendor/ace-builds/src-noconflict/mode-' + filetype[extension]
 			).then(function () {
 				return ace.require("ace/mode/" + filetype[extension]).Mode;
 			});
