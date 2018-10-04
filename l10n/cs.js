@@ -5,7 +5,7 @@ OC.L10N.register(
     "saved!" : "uloženo!",
     "failed!" : "nezdařilo se!",
     "Saved" : "Uloženo",
-    "There was a problem saving your changes. Click to resume editing." : "Došlo k chybě při ukládání změn. Klikněte pro pokračování v úpravách.",
+    "There was a problem saving your changes. Click to resume editing." : "Došlo k chybě při ukládání změn. Klikněte pro návrat zpět do úprav.",
     "An error occurred!" : "Nastala chyba!",
     "Edit" : "Upravit",
     "Mixed" : "Smíšené",
@@ -17,7 +17,7 @@ OC.L10N.register(
     "Cannot read the file." : "Soubor nelze přečíst.",
     "Invalid file path supplied." : "Zadána neplatná cesta k souboru.",
     "The file is locked." : "Soubor je uzamčený.",
-    "An internal server error occurred." : "Došlo k interní chybě serveru.",
+    "An internal server error occurred." : "Došlo k vnitřní chybě serveru.",
     "You can not write to a folder" : "Do této složky nemůžete nahrávat ",
     "Cannot save file as it has been modified since opening" : "Soubor nelze uložit, protože byl od otevření upraven",
     "Could not write to file." : "Do souboru se nedaří zapsat.",
@@ -27,6 +27,7 @@ OC.L10N.register(
     "Share not found" : "Sdílení nenalezeno",
     "You are not authorized to open this share" : "Nejste oprávněni otevírat toto sdílení",
     "Invalid range request" : "Požadavek na neplatný rozsah",
-    "Text editor" : "Textový editor"
+    "Text editor" : "Textový editor",
+    "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry in the New button at the top of the web browser the Text file entry appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Tato aplikace umožňuje uživatelům Nextcloud otevírat, ukládat a upravovat textové soubory ve webovém prohlížeči. Když je zapnutá, objeví se v nabídce Nový položka Textový soubor. Po kliknutí na ní se v prohlížeči otevře nový textový soubor a je možné ho uložit do stávající složky v Nextcloud. Dále, při kliknutí na textový soubor ve webovém prohlížeči, bude otevřen a upravovatelný. Pokud to oprávnění dovolí, uživatel může upravovat také sdílené soubory a ukládat změny ve webovém prohlížeči.\nDalší informace jsou k dispozici v dokumentaci k textovému editoru."
 },
 "nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;");
