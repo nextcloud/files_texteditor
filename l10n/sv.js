@@ -26,6 +26,7 @@ OC.L10N.register(
     "File mtime not supplied" : "Inget mtime-attribut angivet för filen.",
     "Share not found" : "Delningen hittades inte",
     "You are not authorized to open this share" : "Du har inte behörighet att öppna denna delning",
+    "Invalid range request" : "Ogiltigt område för begäran",
     "Text editor" : "Textredigerare"
 },
 "nplurals=2; plural=(n != 1);");
