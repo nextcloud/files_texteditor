@@ -18,6 +18,7 @@
     "An internal server error occurred." : "An internal server error occurred.",
     "You can not write to a folder" : "You cannot write to a folder",
     "Cannot save file as it has been modified since opening" : "Cannot save file as it has been modified since opening",
+    "Could not write to file." : "Could not write to file",
     "Insufficient permissions" : "Insufficient permissions",
     "File path not supplied" : "File path not supplied",
     "File mtime not supplied" : "File mtime not supplied",
