@@ -42,7 +42,7 @@
 		line-height: 1.45em;
 	}
 	p,
-	pre {
+	details {
 		margin-bottom: 17.6px;
 	}
 	ul,
@@ -76,7 +76,10 @@
 	code {
 		background-color: rgb(242, 242, 242);
 		border-radius: 3px;
-		padding: 0px 2px 2px 2px;
+		padding: 5px 12px;
+		display: block;
+		white-space: pre;
+		overflow: auto;
 	}
 }
 
