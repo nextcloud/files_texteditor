@@ -18,9 +18,13 @@
     "An internal server error occurred." : "Belső szerverhiba történt.",
     "You can not write to a folder" : "Nem írhatsz egy mappába",
     "Cannot save file as it has been modified since opening" : "Nem tudom a fáljt menteni, mert időközben a tartalma megváltozott.",
+    "Could not write to file." : "Nem lehet írni a fájlt.",
     "Insufficient permissions" : "Nincs jogosultsága hozzá",
     "File path not supplied" : "Fálj elérést nem adta meg",
     "File mtime not supplied" : "File módosítási idő nincs megadva",
+    "Share not found" : "Megosztás nem található.",
+    "You are not authorized to open this share" : "Nincs jogosultságod megnyitni a megosztást",
+    "Invalid range request" : "Érvénytelen tartomány kérés",
     "Text editor" : "Szövegszerkesztő"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
