@@ -20,9 +20,13 @@ OC.L10N.register(
     "An internal server error occurred." : "内部サーバーエラーが発生しました。",
     "You can not write to a folder" : "フォルダーに書き込みできません",
     "Cannot save file as it has been modified since opening" : "変更したファイルは使用中のため保存できません",
+    "Could not write to file." : "ファイルに書き込めませんでした。",
     "Insufficient permissions" : "権限が不足しています",
     "File path not supplied" : "ファイルパスが足りません",
     "File mtime not supplied" : "ファイルのアクセス時刻がありません",
+    "Share not found" : "共有が見つかりません",
+    "You are not authorized to open this share" : "あなたはこの共有を開く権限がありません",
+    "Invalid range request" : "無効な範囲リクエスト",
     "Text editor" : "テキストエディター"
 },
 "nplurals=1; plural=0;");
