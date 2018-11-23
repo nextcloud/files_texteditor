@@ -27,7 +27,6 @@ OC.L10N.register(
     "Share not found" : "未找到共享",
     "You are not authorized to open this share" : "您没有权限访问这个共享",
     "Invalid range request" : "无效的范围强求",
-    "Text editor" : "文本编辑",
-    "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry in the New button at the top of the web browser the Text file entry appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "该应用能够让 Nextcloud 的用户在浏览器中打开, 保存并编辑文本文件. 如果启用, 在浏览器顶部的新建按钮中将出现文本文件一项. 当点击时, 一个新的文本文件将在浏览器中打开, 并在当前 Nextcloud 的文件夹中保存. 此外, 当在浏览器中点击一个文本文件时, 将会被打开并且可以编辑. 当权限允许时, 用户也可以编辑共享的文件并将修改保存回浏览器中.\n更多信息可以参考文本编辑器文档."
+    "Text editor" : "文本编辑"
 },
 "nplurals=1; plural=0;");
