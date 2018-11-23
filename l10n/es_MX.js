@@ -26,7 +26,6 @@ OC.L10N.register(
     "Share not found" : "No se encontró el elemento compartido",
     "You are not authorized to open this share" : "No estas autorizado para abrir este elemento compartido",
     "Invalid range request" : "Rango de solicitud invalido",
-    "Text editor" : "Editor de texto",
-    "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry in the New button at the top of the web browser the Text file entry appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Esta aplicación le permite a los usuarios de Nextcloud abrir, guardar y editar archivos de texto en el navegador web. Si se habilita, aparece el elemento de Texto en el botón Nuevo en la parte superior del navegador web. Al presionarlo, un nuevo archivo de texto se abre en el nabegador y el archivo puede ser guardado en el directorio actual de Nextcloud. Adicionalmente, cuando se hace click en un archivo desde el navegador, se abrirá y podrá ser editado. Si los privilegios lo permiten, un usuario tambien puede editar archivos compartidos y guardar estos cambiso de vuelta en el navegador. \nHay más información disponible en la documentación del editor de texto."
+    "Text editor" : "Editor de texto"
 },
 "nplurals=2; plural=(n != 1);");
