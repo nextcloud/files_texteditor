@@ -18,6 +18,7 @@
     "An internal server error occurred." : "Barne errorea gertatu da.",
     "You can not write to a folder" : "Ezin duzu karpetan idatzi",
     "Cannot save file as it has been modified since opening" : "Ezin da fitxategia gorde ireki denetik aldatu delako",
+    "Could not write to file." : "Ezin izan da fitxategian idatzi.",
     "Insufficient permissions" : "Baimen gutxiegi",
     "File path not supplied" : "Ez da fitxategiaren helbidea idatzi",
     "File mtime not supplied" : "Fitxategiaren mtime-a ez da ezarri",
