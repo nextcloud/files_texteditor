@@ -21,7 +21,7 @@ OC.L10N.register(
     "Could not write to file." : "Ne povis skribi al dosiero.",
     "Insufficient permissions" : "Nesufiĉaj permesoj",
     "Share not found" : "Kunhavigo ne troviĝis",
-    "You are not authorized to open this share" : "Vi ne permesatas malfermi ĉi tion kunhavigon",
+    "You are not authorized to open this share" : "Vi ne permesatas malfermi ĉi tiun kunhavigon",
     "Text editor" : "Teksta redaktilo"
 },
 "nplurals=2; plural=(n != 1);");
