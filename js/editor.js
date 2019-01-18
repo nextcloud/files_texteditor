@@ -1,8 +1,10 @@
 import {getSyntaxMode} from './SyntaxMode';
+import importAce from './ImportAce';
 
 /** @type array[] supportedMimeTypes */
 const supportedMimeTypes = require('./supported_mimetypes.json');
 
+let ace;
 export const Texteditor = {
 
 	/**
@@ -187,14 +189,17 @@ export const Texteditor = {
 		this.file.name = filename;
 		this.file.dir = context.dir;
 		this.fileList = context.fileList;
-		this.loadEditor(
-			Texteditor.$container,
-			Texteditor.file
-		);
-		history.pushState({
-			file: filename,
-			dir: context.dir
-		}, 'Editor', '#editor');
+		importAce().then((_ace) => {
+			ace = _ace;
+			this.loadEditor(
+				Texteditor.$container,
+				Texteditor.file
+			);
+			history.pushState({
+				file: filename,
+				dir: context.dir
+			}, 'Editor', '#editor');
+		});
 	},
 
 	/**
@@ -264,7 +269,6 @@ export const Texteditor = {
 			+'<div id="editor_wrap"><div id="editor"></div>'
 			+'<div id="preview_wrap"><div id="preview"></div></div></div></div>');
 		$('#content').append(container);
-
 
 		// Get the file data
 		this.loadFile(

@@ -8,7 +8,6 @@
  * @copyright Tom Needham 2015
  */
 
-import * as ace from 'brace';
 import {SidebarPreview} from './sidebarpreview';
 import {Texteditor} from './editor';
 import {newFileMenuPlugin} from './newfileplugin';
@@ -17,8 +16,6 @@ import {newFileMenuPlugin} from './newfileplugin';
 __webpack_require__.p = OC.filePath('files_texteditor', 'js', '../build/');
 const script = document.querySelector('[nonce]');
 __webpack_require__.nc = script['nonce'] || script.getAttribute('nonce');
-
-window.ace = ace;
 
 OCA.Files_Texteditor = Texteditor;
 

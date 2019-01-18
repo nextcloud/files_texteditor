@@ -9,6 +9,7 @@
  */
 
 import {getSyntaxMode} from "./SyntaxMode";
+import importAce from './ImportAce';
 
 /** @type array[] supportedMimeTypes */
 const supportedMimeTypes = require('./supported_mimetypes.json');
@@ -32,28 +33,30 @@ export class SidebarPreview {
 			$editorDiv.text(content);
 			$thumbnailDiv.children('.stretcher').remove();
 			$thumbnailDiv.append($editorDiv);
-			const editor = ace.edit('sidebar_editor');
-			editor.setReadOnly(true);
-			let syntaxModePromise;
-			if (model.get('mimetype') === 'text/html') {
-				syntaxModePromise = getSyntaxMode('html');
-			} else {
-				// Set the syntax mode based on the file extension
-				syntaxModePromise = getSyntaxMode(
-					model.get('name').split('.')[model.get('name').split('.').length - 1]
-				);
-			}
-			syntaxModePromise.then(function (mode) {
-				if (mode) {
-					editor.getSession().setMode(`ace/mode/${mode}`);
+			importAce().then((imports) => {
+				const editor = imports.edit('sidebar_editor');
+				editor.setReadOnly(true);
+				let syntaxModePromise;
+				if (model.get('mimetype') === 'text/html') {
+					syntaxModePromise = getSyntaxMode('html');
+				} else {
+					// Set the syntax mode based on the file extension
+					syntaxModePromise = getSyntaxMode(
+						model.get('name').split('.')[model.get('name').split('.').length - 1]
+					);
 				}
+				syntaxModePromise.then(function (mode) {
+					if (mode) {
+						editor.getSession().setMode(`ace/mode/${mode}`);
+					}
+				});
+				// Set the theme
+				import('brace/theme/clouds').then(() => {
+					editor.setTheme("ace/theme/clouds");
+				});
+				$editorDiv.css("height", previewHeight);
+				$editorDiv.css("width", previewWidth);
 			});
-			// Set the theme
-			import('brace/theme/clouds').then(() => {
-				editor.setTheme("ace/theme/clouds");
-			});
-			$editorDiv.css("height", previewHeight);
-			$editorDiv.css("width", previewWidth);
 		}, function () {
 			fallback();
 		});
