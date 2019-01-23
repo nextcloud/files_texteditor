@@ -20,8 +20,8 @@ Simply copy the `files_texteditor` folder into the `apps` directory and enable t
 To use the editer, click on a [supported file](https://github.com/nextcloud/files_texteditor/blob/master/js/editor.js#L6) within the Files app and the file will be loaded into the editor. Saving is automatic, but can also be triggered manually with `Ctrl+S` or `Cmd+S`.
 
 ## Contributors
-Maintainer: [Tom Needham](http://github.com/tomneedham)
-Past contributors: [Thomas Müller](http://github.com/deepdiver1975) [Robin Appelman](http://github.com/icewind) [Jörn Friedrich Dreyer](http://github.com/butonic) [Vincent Petry](http://github.com/pvince)
+Maintainer: [Robin Appelman](http://github.com/icewind1991)
+Past contributors: [Thomas Müller](http://github.com/deepdiver1975) [Tom Needham](http://github.com/tomneedham) [Jörn Friedrich Dreyer](http://github.com/butonic) [Vincent Petry](http://github.com/pvince)
 
 
 Preview apps

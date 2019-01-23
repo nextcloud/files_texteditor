@@ -3,16 +3,4 @@
 # Tests - auto-generated files
 /tests/coverage*
 /tests/clover.xml
-# Remove unnecessary workers
-/js/vendor/ace/src-noconflict/worker-*
-# Only ship the build we use
-/js/core/vendor/ace-builds/*
-!/js/core/vendor/ace-builds/src-noconflict
-!/js/core/vendor/ace-builds/LICENSE
-# Remove unnecessary themes, but keep the one we use!
-/js/core/vendor/ace-builds/src-noconflict/theme-*
-!/js/core/vendor/ace-builds/src-noconflict/theme-clouds.js
-# Remove unnecessary extensions
-/js/core/vendor/ace-builds/src-noconflict/ext-*
-!/js/core/vendor/ace-builds/src-noconflict/ext-modelist.js
-!/js/core/vendor/ace-builds/src-noconflict/ext-searchbox.js
+node_modules
