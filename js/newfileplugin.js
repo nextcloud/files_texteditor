@@ -21,7 +21,7 @@ export const newFileMenuPlugin = {
 				fileList.createFile(name).then(function () {
 					// once the file got successfully created,
 					// open the editor
-					Files_Texteditor._onEditorTrigger(
+					OCA.Files_Texteditor._onEditorTrigger(
 						name,
 						{
 							fileList: fileList,
