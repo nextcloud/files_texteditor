@@ -10,7 +10,7 @@ if (\OC::$server->getUserSession()->isLoggedIn()) {
 
 		$cspManager = \OC::$server->getContentSecurityPolicyManager();
 		$csp = new \OCP\AppFramework\Http\ContentSecurityPolicy();
-		$csp->addAllowedChildSrcDomain("'self'");
+		$csp->addAllowedWorkerSrcDomain("'self'");
 		$csp->addAllowedScriptDomain('blob:');
 		$cspManager->addDefaultPolicy($csp);
 	});
