@@ -18,9 +18,11 @@
     "An internal server error occurred." : "Ocorreu um erro interno no servidor.",
     "You can not write to a folder" : "Não é possível escrever na pasta",
     "Cannot save file as it has been modified since opening" : "Não é possível guardar o ficheiro porque este foi modificado desde a abertura",
+    "Could not write to file." : "Não foi possível escrever no ficheiro.",
     "Insufficient permissions" : "Permissões insuficientes",
     "File path not supplied" : "Caminho do ficheiro não indicado",
     "File mtime not supplied" : "O Ficheiro mtime não foi indicado",
+    "Share not found" : "Partilha não encontrada",
     "Text editor" : "Editor de texto"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
