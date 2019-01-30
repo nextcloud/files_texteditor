@@ -11,7 +11,7 @@
     "New text file" : "Ny Textfil",
     "New text file.txt" : "nytextfil.txt",
     "You can not open a folder" : "Du kan inte öppna en mapp",
-    "This file is too big to be opened. Please download the file instead." : "Denna fil är för stor för att öppnas. Var god ladda ner filen istället.",
+    "This file is too big to be opened. Please download the file instead." : "Denna fil är för stor för att öppnas. Var god ladda ned filen istället.",
     "Cannot read the file." : "Kan inte läsa av fil.",
     "Invalid file path supplied." : "Felaktig sökväg till fil angiven.",
     "The file is locked." : "Denna filen är låst.",
