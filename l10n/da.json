@@ -18,6 +18,7 @@
     "An internal server error occurred." : "Der er opstået en intern serverfejl.",
     "You can not write to a folder" : "Du kan ikke skrive til en mappe",
     "Cannot save file as it has been modified since opening" : "Kan ikke gemme filen, da den er blevet ændret efter den blev åbnet",
+    "Could not write to file." : "Kunne ikke skrive til fil.",
     "Insufficient permissions" : "Utilstrækkeligt med rettigheder",
     "File path not supplied" : "Filstien er ikke angivet",
     "File mtime not supplied" : "Filen mtime er ikke anvist",
