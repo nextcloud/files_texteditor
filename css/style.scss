@@ -196,9 +196,9 @@
 	height: 100%;
 	background-color: black;
 	z-index: 3001;
-	-moz-opacity: 0.7;
-	opacity:.70;
-	filter: alpha(opacity=70);
+	-moz-opacity: .85;
+	opacity: .85;
+	filter: alpha(opacity=85);
 }
 
 small.unsaved-star {
