@@ -51,7 +51,7 @@
 	z-index: 9999;
 	overflow: hidden;
 	background-color: #fff;
-	border-radius: 3px;
+	border-radius: var(--border-radius-large);
 	box-sizing: border-box;
 }
 
