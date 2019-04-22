@@ -14,7 +14,7 @@
     "This file is too big to be opened. Please download the file instead." : "Aquest fitxer és massa gran per obrir-lo. Si us plau, descarregueu millor el fitxer.",
     "Cannot read the file." : "No es pot llegir el fitxer.",
     "Invalid file path supplied." : "S'ha proporcionat una ruta de fitxer no vàlida.",
-    "The file is locked." : "El fitxer està bloquejat.",
+    "The file is locked." : "El fitxer està blocat.",
     "An internal server error occurred." : "S'ha produït un error intern del servidor.",
     "You can not write to a folder" : "No podeu escriure a una carpeta",
     "Cannot save file as it has been modified since opening" : "No és possible desar el fitxer perquè ha estat modificat després de obrir-se",
