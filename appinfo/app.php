@@ -19,5 +19,5 @@ if (\OC::$server->getUserSession()->isLoggedIn()) {
 $eventDispatcher->addListener('OCA\Files_Sharing::loadAdditionalScripts', function () {
 	OC_Util::addVendorScript('core', 'marked/marked.min');
 	OCP\Util::addScript('files_texteditor', 'public-share');
-	OCP\Util::addStyle('files_texteditor', '../build/public-share');
+	OCP\Util::addStyle('files_texteditor', 'public-share');
 });
