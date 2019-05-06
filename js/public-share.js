@@ -53,11 +53,7 @@ $(document).ready(function(){
 				.html(DOMPurify.sanitize(
 					marked(content, {
 						renderer: renderer,
-						gfm: false,
-						breaks: false,
-						pedantic: false,
-						smartLists: true,
-						smartypants: false
+						smartLists: true
 					}),
 					{
 						SAFE_FOR_JQUERY: true
