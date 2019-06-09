@@ -9,7 +9,7 @@ OC.L10N.register(
     "An error occurred!" : "Bir sorun çıktı!",
     "Edit" : "Düzenle",
     "Mixed" : "Karışık",
-    "Preview" : "Önizleme",
+    "Preview" : "Ön izleme",
     "New text file" : "Yeni metin dosyası",
     "New text file.txt" : "Yeni metin dosyası.txt",
     "You can not open a folder" : "Bir klasör açamazsınız",
