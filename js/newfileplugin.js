@@ -3,6 +3,11 @@ export const newFileMenuPlugin = {
 	attach: function (menu) {
 		var fileList = menu.fileList;
 
+		// Make text app handle new file creation if enabled
+		if (typeof OCA.Text !== 'undefined') {
+			return;
+		}
+
 		// only attach to main file list, public view is not supported yet
 		if (fileList.id !== 'files') {
 			return;
