@@ -27,6 +27,7 @@ OC.L10N.register(
     "Share not found" : "Compartició no trobada",
     "You are not authorized to open this share" : "No esteu autoritzats per obrir aquest recurs",
     "Invalid range request" : "Sol·licitud d’interval no vàlida",
+    "Plain text editor" : "Editor de text pla",
     "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Aquesta aplicació permet als usuaris de Nextcloud obrir, desar i editar fitxers de text al navegador web. Si està activada, apareix una entrada anomenada \"Fitxer de text\" al menú \"Nou\" del botó a la part superior del navegador web. Quan hi feu clic, s'obrirà un fitxer de text nou al navegador i el fitxer es podrà desar al directori actual de Nextcloud. A més, quan es faci clic a un fitxer de text al navegador web, s’obrirà i es podrà editar. Si els privilegis ho permeten, un usuari també pot editar fitxers compartits i desar aquests canvis al navegador web.\nPodeu trobar més informació a la documentació de l’editor de text.",
     "Text editor" : "Editor de text"
 },
