@@ -25,6 +25,7 @@
     "Share not found" : "Delningen hittades inte",
     "You are not authorized to open this share" : "Du har inte behörighet att öppna denna delning",
     "Invalid range request" : "Ogiltigt område för begäran",
+    "Plain text editor" : "Enkel textredigerare",
     "Text editor" : "Textredigerare"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
