@@ -1,4 +1,12 @@
 {
+  "name": "files_texteditor",
+  "license": "agpl",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development webpack",
+    "watch": "NODE_ENV=development webpack --progress --watch",
+    "build": "NODE_ENV=production webpack --progress --hide-modules"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
