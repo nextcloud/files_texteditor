@@ -26,6 +26,7 @@ OC.L10N.register(
     "File mtime not supplied" : "Tiedoston mtime-arvoa ei ole annettu",
     "Share not found" : "Jakoa ei löytynyt",
     "You are not authorized to open this share" : "Sinulla ei ole valtuuksia avata tätä jakoa",
+    "Plain text editor" : "Raakatekstimuokkain",
     "Text editor" : "Tekstimuokkain"
 },
 "nplurals=2; plural=(n != 1);");
