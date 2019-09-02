@@ -245,15 +245,14 @@ export const Texteditor = {
 	registerFileActions: function () {
 		supportedMimeTypes.forEach((mime) => {
 			OCA.Files.fileActions.registerAction({
-				name: 'Edit in plain text editor',
+				name: 'edit_texteditor',
+				displayName: t('files_texteditor', 'Edit in plain text editor'),
 				mime: mime,
 				actionHandler: this._onEditorTrigger.bind(this),
 				permissions: OC.PERMISSION_READ,
-				icon: function () {
-					return OC.imagePath('core', 'actions/edit');
-				}
+				iconClass: 'icon-edit'
 			});
-			OCA.Files.fileActions.setDefault(mime, 'Edit in plain text editor');
+			OCA.Files.fileActions.setDefault(mime, 'edit_texteditor');
 		});
 	},
 
