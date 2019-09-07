@@ -6,6 +6,7 @@ OC.L10N.register(
     "failed!" : "misslyckades.",
     "Saved" : "Sparad",
     "There was a problem saving your changes. Click to resume editing." : "Det uppstod ett fel när vi försökte spara dina ändringar. Klicka för att fortsätta redigera.",
+    "Edit in plain text editor" : "Redigera i enkel textredigerare",
     "An error occurred!" : "Ett fel uppstod!",
     "Edit" : "Redigera",
     "Mixed" : "Blandad",
