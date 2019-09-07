@@ -6,6 +6,7 @@ OC.L10N.register(
     "failed!" : "kaydedilemedi!",
     "Saved" : "Kaydedildi",
     "There was a problem saving your changes. Click to resume editing." : "Değişiklikleriniz kaydedilirken bir sorun çıktı. Düzenlemeye geri dönmek için tıklayın.",
+    "Edit in plain text editor" : "Düz metin düzenleyicide düzenle",
     "An error occurred!" : "Bir sorun çıktı!",
     "Edit" : "Düzenle",
     "Mixed" : "Karışık",

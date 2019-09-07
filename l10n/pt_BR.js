@@ -6,6 +6,7 @@ OC.L10N.register(
     "failed!" : "falhou!",
     "Saved" : "Salvo",
     "There was a problem saving your changes. Click to resume editing." : "Houve um problema ao salvar suas alterações. Clique para retomar a edição.",
+    "Edit in plain text editor" : "Editar no editor de texto sem formatação",
     "An error occurred!" : "Ocorreu um erro!",
     "Edit" : "Editar",
     "Mixed" : "Misturado",
