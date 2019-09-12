@@ -6,6 +6,7 @@ OC.L10N.register(
     "failed!" : "mislukt!",
     "Saved" : "Bewaard",
     "There was a problem saving your changes. Click to resume editing." : "Probleem bij het opslaan van je wijzigingen. Klik om door te gaan met bewerken.",
+    "Edit in plain text editor" : "Bewerken in kaletekstverwerker",
     "An error occurred!" : "Er is iets fout gegaan!",
     "Edit" : "Bewerk",
     "Mixed" : "Gemengd",
