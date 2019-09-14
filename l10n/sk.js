@@ -6,6 +6,7 @@ OC.L10N.register(
     "failed!" : "neúspešné!",
     "Saved" : "Uložené",
     "There was a problem saving your changes. Click to resume editing." : "Vyskytol sa problém s ukladaním zmien. Kliknite pre pokračovanie v úpravách.",
+    "Edit in plain text editor" : "Upraviť v textovom editore",
     "An error occurred!" : "Vyskytla sa chyba!",
     "Edit" : "Upraviť",
     "Mixed" : "Zmiešaný",
