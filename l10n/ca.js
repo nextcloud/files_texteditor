@@ -6,6 +6,7 @@ OC.L10N.register(
     "failed!" : "ha fallat!",
     "Saved" : "S'ha desat",
     "There was a problem saving your changes. Click to resume editing." : "S'ha produït un problema en desar els canvis. Feu clic per reprendre l'edició.",
+    "Edit in plain text editor" : "Edita en un editor de text normal",
     "An error occurred!" : "S'ha produït un error!",
     "Edit" : "Editor",
     "Mixed" : "Vista mixta",
