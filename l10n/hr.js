@@ -6,6 +6,7 @@ OC.L10N.register(
     "failed!" : "neuspješno!",
     "Saved" : "Spremljeno",
     "There was a problem saving your changes. Click to resume editing." : "Došlo je do problema prilikom spremanja promjena. Kliknite za nastavak uređivanja.",
+    "Edit in plain text editor" : "Uredi u uređivaču običnog teksta",
     "An error occurred!" : "Došlo je do pogreške!",
     "Edit" : "Uredi",
     "Mixed" : "Mješovito",
