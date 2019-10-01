@@ -6,6 +6,7 @@ OC.L10N.register(
     "failed!" : "ошибка!",
     "Saved" : "Сохранено",
     "There was a problem saving your changes. Click to resume editing." : "Во время сохранения изменений произошла ошибка . Нажмите для продолжения редактирования.",
+    "Edit in plain text editor" : "Редактировать в редакторе простого текста",
     "An error occurred!" : "Произошла ошибка!",
     "Edit" : "Править",
     "Mixed" : "Смешанный",
