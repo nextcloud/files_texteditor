@@ -6,6 +6,7 @@ OC.L10N.register(
     "failed!" : "malsukcesis!",
     "Saved" : "Konservita",
     "There was a problem saving your changes. Click to resume editing." : "Problemo dum konservado de viaj ŝanĝoj. Alklaku por reaktivigi redakton.",
+    "Edit in plain text editor" : "Modifi en plenteksta redaktilo",
     "An error occurred!" : "Eraro okazis!",
     "Edit" : "Redakti",
     "Mixed" : "Hibrida",
