@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "konservante...",
+    "saving..." : "konservado...",
     "saved!" : "konservita!",
     "failed!" : "malsukcesis!",
     "Saved" : "Konservita",
