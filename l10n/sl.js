@@ -9,6 +9,7 @@ OC.L10N.register(
     "Edit in plain text editor" : "Uredi v enostavnem besedilnem urejevalniku",
     "An error occurred!" : "Prišlo je do napake!",
     "Edit" : "Uredi",
+    "Mixed" : "Mešano",
     "Preview" : "Predogled",
     "New text file" : "Nova besedilna datoteka",
     "New text file.txt" : "Nova datoteka.txt",
@@ -26,6 +27,7 @@ OC.L10N.register(
     "File mtime not supplied" : "Datoteka mtime ni podana",
     "Share not found" : "Mesta souporabe ni mogoče najti.",
     "You are not authorized to open this share" : "Za dostop do tega mesta souporabe ni ustreznih dovoljenj",
+    "Invalid range request" : "Neveljavna zahteva obsega",
     "Plain text editor" : "Enostavni besedilni urejevalnik",
     "Text editor" : "Besedilni urejevalnik"
 },
