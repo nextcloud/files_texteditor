@@ -61,9 +61,13 @@ loaders["coffee"] = () => import
 	/* webpackChunkName: "coffee-mode" */(
 	"brace/mode/coffee"
 	);
-loaders["cs"] = () => import(
+loaders["csharp"] = () => import(
 	/* webpackChunkName: "cs-mode" */
 	"brace/mode/csharp"
+	);
+loaders["clojure"] = () => import(
+	/* webpackChunkName: "clj-mode" */
+	"brace/mode/clojure"
 	);
 loaders["css"] = () => import(
 	/* webpackChunkName: "css-mode" */
