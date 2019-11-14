@@ -29,6 +29,7 @@ OC.L10N.register(
     "You are not authorized to open this share" : "Du har inte behörighet att öppna denna delning",
     "Invalid range request" : "Ogiltigt område för begäran",
     "Plain text editor" : "Enkel textredigerare",
+    "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Applikationen ger en Nextcloud-användare möjligheten att öppna, spara och redigera textfiler i webbläsaren. Om applikationen är aktiverat visas, i webbläsarens ovankant,  ett val benämnt \"Textfil\" i menyn för knappen Ny. Vid klick öppnas en ny textfil i webbläsaren. Filen kan sedan sparas i den aktiva Nextcloud-mappen. Om en befintlig textfil klickas kommer den att öppnas och redigeras. Om tillräcklig behörighet finns kan en användare också redigera delade filer och spara dem i webbläsaren.\nYtterligare information finns i editorns dokumentation.",
     "Text editor" : "Textredigerare"
 },
 "nplurals=2; plural=(n != 1);");
