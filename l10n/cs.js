@@ -7,7 +7,7 @@ OC.L10N.register(
     "Saved" : "Uloženo",
     "There was a problem saving your changes. Click to resume editing." : "Došlo k chybě při ukládání změn. Klikněte pro návrat zpět do úprav.",
     "Edit in plain text editor" : "Upravit v editoru neformátovaného textu",
-    "An error occurred!" : "Nastala chyba!",
+    "An error occurred!" : "Došlo k chybě!",
     "Edit" : "Upravit",
     "Mixed" : "Smíšené",
     "Preview" : "Náhled",
