@@ -6,6 +6,7 @@ OC.L10N.register(
     "failed!" : "mistókst!",
     "Saved" : "Vistað",
     "There was a problem saving your changes. Click to resume editing." : "Það kom upp vandamál við að vista breytingarnar þínar. Smelltu til að halda ritun áfram.",
+    "Edit in plain text editor" : "Breyta með hreinum textaritli",
     "An error occurred!" : "Villa kom upp!",
     "Edit" : "Breyta",
     "Mixed" : "Blandað",
