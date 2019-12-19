@@ -1,8 +1,6 @@
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
 	devtool: 'source-map',
@@ -20,16 +18,11 @@ module.exports = {
 		extensions: [".ts", ".js"]
 	},
 	plugins: [
-		new CleanWebpackPlugin(['build']),
+		new CleanWebpackPlugin(),
 		new webpack.NamedModulesPlugin(),
-		new ExtractTextPlugin({
-			filename: "styles.css",
-			allChunks: true
-		}),
-		new UglifyJSPlugin({sourceMap: true})
 	],
 	module: {
-		loaders: [
+		rules: [
 			{
 				test: /\.js$/,
 				include: [
@@ -41,10 +34,9 @@ module.exports = {
 			},
 			{
 				test: /\.css$/,
-				use: ExtractTextPlugin.extract({
-					fallback: "style-loader",
-					use: "css-loader"
-				})
+				use: [
+					'css-loader'
+				]
 			},
 			{
 				test: /\.(png|jpg|gif|svg|woff|woff2|ttf|eot)$/,
