@@ -1,8 +1,3 @@
-#editor_container div{
-	/* override core style.css font-size:100% that messes up the editor in IE8 */
-	font-size: 13px !important;
-}
-
 #editor_controls {
 	background-color: white;
 	height: 44px;
@@ -17,13 +12,13 @@
     background-color: #f8f8f8 !important;
 }
 
-#editor div.ace_gutter {
+#filestexteditor div.ace_gutter {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
 	opacity: .2;
  	background-color: transparent;
 }
 
-#editor {
+#filestexteditor {
 	display: block;
 	height: 100%;
 	width: 100%;
@@ -55,7 +50,7 @@
 	box-sizing: border-box;
 }
 
-#editor_container #editor,
+#editor_container #filestexteditor,
 #editor_container #preview_wrap {
 	transition: width 0.5s;
 }
@@ -75,10 +70,10 @@
 	width:50%;
 }
 
-#editor_container.hasPreview #editor {
+#editor_container.hasPreview #filestexteditor {
 	width: 50%;
 }
-#editor_container.hasPreview.onlyPreview #editor {
+#editor_container.hasPreview.onlyPreview #filestexteditor {
   width: 0;
 }
 
@@ -131,7 +126,7 @@
 		width: 0;
 	}
 
-	#editor_container.hasPreview #editor {
+	#editor_container.hasPreview #filestexteditor {
 		width: 100%;
 	}
 
