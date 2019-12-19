@@ -54,7 +54,7 @@ class FileHandlingControllerTest extends TestCase {
 	/** @var Folder|\PHPUnit_Framework_MockObject_MockObject */
 	private $userFolderMock;
 
-	public function setUp() {
+	protected function setUp(): void {
 		parent::setUp();
 		$this->appName = 'files_texteditor';
 		$this->requestMock = $this->createMock(IRequest::class);
