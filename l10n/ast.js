@@ -8,6 +8,7 @@ OC.L10N.register(
     "There was a problem saving your changes. Click to resume editing." : "Hebo un problema guardando tos cambéos. Calca pa reaniciar la edición.",
     "An error occurred!" : "Hebo un fallu!",
     "Edit" : "Editar",
+    "Preview" : "Previsualizar",
     "New text file" : "Ficheru nuevu de testu",
     "New text file.txt" : "Nuevu testu ficheru.txt",
     "You can not open a folder" : "Nun pues abrir una carpeta",

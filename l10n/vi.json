@@ -1,6 +1,7 @@
 { "translations": {
     "Saved" : "Đã lưu",
     "An error occurred!" : "Có một lỗi đã xảy ra!",
+    "Edit" : "Chỉnh sửa",
     "Insufficient permissions" : "Không đủ quyền"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

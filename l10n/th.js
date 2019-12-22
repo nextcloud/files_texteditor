@@ -7,6 +7,7 @@ OC.L10N.register(
     "Saved" : "บันทึกแล้ว",
     "There was a problem saving your changes. Click to resume editing." : "พบปัญหาการบันทึกการเปลี่ยนแปลงของคุณ คลิกที่นี่เพื่อกลับไปแก้ไข",
     "An error occurred!" : "เกิดข้อผิดพลาดบางประการ!",
+    "Edit" : "แก้ไข",
     "New text file.txt" : "ไฟล์ข้อความใหม่ .txt",
     "This file is too big to be opened. Please download the file instead." : "เปิดไฟล์นี้ไม่ได้ เพราะมีขนาดใหญ่เกินไป กรุณาดาวน์โหลดไฟล์แทน",
     "Cannot read the file." : "ไม่สามารถอ่านไฟล์",
