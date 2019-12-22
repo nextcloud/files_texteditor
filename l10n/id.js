@@ -7,6 +7,8 @@ OC.L10N.register(
     "Saved" : "Disimpan",
     "There was a problem saving your changes. Click to resume editing." : "Terdapat masalah saat menyimpan perubahan. Klik untuk melanjutkan penyuntingan.",
     "An error occurred!" : "Terjadi kesalahan!",
+    "Edit" : "Sunting",
+    "Preview" : "Pratinjau",
     "New text file.txt" : "Teks baru file.txt",
     "This file is too big to be opened. Please download the file instead." : "Berkas ini terlalu besar untuk dibuka. Sebagai gantinya, silakan unduh berkas ini.",
     "Cannot read the file." : "Tidak dapat membaca berkas.",

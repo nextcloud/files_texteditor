@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Saved" : "Saxlanıldı",
     "An error occurred!" : "Səhv baş verdi!",
+    "Edit" : "Dəyişiklik et",
     "New text file.txt" : "Yeni mətn file.txt",
     "Cannot save file as it has been modified since opening" : "Faylı saxlamaq mümkün deyil cünki, açılma müddətində dəyişdirilib",
     "Insufficient permissions" : "Qeyri kafi yetkilər",

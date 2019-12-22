@@ -7,6 +7,7 @@ OC.L10N.register(
     "Saved" : "Enregistrat",
     "There was a problem saving your changes. Click to resume editing." : "Un problèma s'es produsit al moment del salvament de vòstras modificacions. Clicatz per contunhar l'edicion.",
     "An error occurred!" : "Una error s'es produsida !",
+    "Edit" : "Modificar",
     "New text file.txt" : "Novèl fichièr tèxte .txt",
     "This file is too big to be opened. Please download the file instead." : "Aqueste fichièr es tròp voluminós per èsser dobèrt. Telecargatz-lo, puslèu.",
     "Cannot read the file." : "Impossible de legir lo fichièr.",
