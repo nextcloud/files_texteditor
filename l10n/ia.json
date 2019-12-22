@@ -1,5 +1,8 @@
 { "translations": {
     "Saved" : "Salveguardate",
-    "An error occurred!" : "Il occurreva un error!"
+    "An error occurred!" : "Il occurreva un error!",
+    "Edit" : "Modificar",
+    "Preview" : "Previsualisar",
+    "New text file.txt" : "Nove texto file.txt"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

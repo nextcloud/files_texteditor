@@ -5,6 +5,8 @@
     "Saved" : "ذخیره شد",
     "There was a problem saving your changes. Click to resume editing." : "مشکلی در زمان ذخیره‌سازی تغییرات شما وجود داشت. برای ادامه ویرایش کلیک کنید.",
     "An error occurred!" : "یک خطا رخ‌داده است!",
+    "Edit" : "ویرایش",
+    "New text file.txt" : "فایل متنی جدید .txt",
     "This file is too big to be opened. Please download the file instead." : "این فایل برای باز کردن بسیار بزرگ است. لطفا آنرا دانلود کنید.",
     "Cannot read the file." : "امکان خواندن فایل وجود ندارد",
     "Invalid file path supplied." : "مسیر فایل نامعتبر است.",
