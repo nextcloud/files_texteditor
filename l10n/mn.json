@@ -1,0 +1,8 @@
+{ "translations": {
+    "saving..." : "хадгалах...",
+    "Saved" : "Хадгалах",
+    "Edit" : "засварлах",
+    "Preview" : "шалгах",
+    "New text file.txt" : "шинэ текст file.txt"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}

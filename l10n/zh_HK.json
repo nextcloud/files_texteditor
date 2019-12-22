@@ -1,5 +1,6 @@
 { "translations": {
     "Saved" : "已儲存",
+    "Edit" : "編輯",
     "The file is locked." : "此檔案已被鎖定"
 },"pluralForm" :"nplurals=1; plural=0;"
 }
