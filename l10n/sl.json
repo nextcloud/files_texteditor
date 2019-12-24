@@ -27,6 +27,7 @@
     "You are not authorized to open this share" : "Za dostop do tega mesta souporabe ni ustreznih dovoljenj",
     "Invalid range request" : "Neveljavna zahteva obsega",
     "Plain text editor" : "Enostavni besedilni urejevalnik",
+    "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Program omogoča uporabnikom okolja Nextcloud odpiranje shranjevanje in urejanje besedilnih datotek neposredno v spletnem brskalniku. V meni »Novo« je dodan gumb »Besedilna datoteka«, ki ob kliku ustvari novo besedilno datoteko, ki jo je mogoče shraniti v poljubno mapo oblaka, s ponovnim klikom nanjo, pa jo je mogoče spet urejati. Ustrezna dovoljenja omogočajo urejanje tudi datotek v souporabi.\nVeč podrobnosti je na voljo v dokumentaciji urejevalnika besedila.",
     "Text editor" : "Besedilni urejevalnik"
 },"pluralForm" :"nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);"
 }
