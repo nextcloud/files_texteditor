@@ -4,3 +4,4 @@
 /tests/coverage*
 /tests/clover.xml
 node_modules
+build
