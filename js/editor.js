@@ -429,7 +429,7 @@ export const Texteditor = {
 	 */
 	configureACE: function (file) {
 		window.aceEditor = ace.edit(this.editor);
-		aceEditor.getSession().setNewLineMode("windows");
+		aceEditor.getSession().setNewLineMode("auto");
 		aceEditor.setShowPrintMargin(false);
 		aceEditor.getSession().setUseWrapMode(true);
 		if (!file.writeable) {
