@@ -4,6 +4,7 @@
     "failed!" : "נכשל!",
     "Saved" : "נשמר",
     "There was a problem saving your changes. Click to resume editing." : "אירעה בעייה בשמירת השינויים. יש ללחוץ לחידוש העריכה.",
+    "Edit in plain text editor" : "עריכה בעורך טקסט פשוט",
     "An error occurred!" : "אירעה תקלה!",
     "Edit" : "עריכה",
     "Mixed" : "מעורב",
@@ -18,12 +19,14 @@
     "An internal server error occurred." : "אירעה שגיאת שרת פנימית.",
     "You can not write to a folder" : "לא ניתן לכתוב לתיקייה",
     "Cannot save file as it has been modified since opening" : "לא ניתן לשמור את הקובץ כיוון שהקובץ שונה מאז פתיחתו",
+    "Could not write to file." : "לא ניתן לכתוב לקובץ.",
     "Insufficient permissions" : "אין הרשאות מספקות",
     "File path not supplied" : "נתיב קובץ לא סופק",
     "File mtime not supplied" : "קובץ mtime לא סופק",
     "Share not found" : "השיתוף לא נמצא",
     "You are not authorized to open this share" : "אין לך הרשאה לפתוח את השיתוף הזה",
     "Invalid range request" : "בקשת הטווח שגויה",
+    "Plain text editor" : "עורך טקסט פשוט",
     "Text editor" : "עורך טקסט"
 },"pluralForm" :"nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;"
 }
