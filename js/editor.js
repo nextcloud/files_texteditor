@@ -190,6 +190,7 @@ export const Texteditor = {
 		this.file.dir = context.dir;
 		this.fileList = context.fileList;
 		importAce().then((_ace) => {
+			require('brace/ext/searchbox');
 			ace = _ace;
 			this.loadEditor(
 				Texteditor.$container,
