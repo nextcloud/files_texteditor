@@ -6,6 +6,7 @@ OC.L10N.register(
     "failed!" : "epäonnistui!",
     "Saved" : "Tallennettu",
     "There was a problem saving your changes. Click to resume editing." : "Muutoksien tallentamisessa ilmeni ongelmia. Napsauta palataksesi muokkaamiseen.",
+    "Edit in plain text editor" : "Muokkaa raakatekstimuokkaimessa",
     "An error occurred!" : "Tapahtui virhe!",
     "Edit" : "Muokkaa",
     "Mixed" : "Sekoitettu",
