@@ -24,7 +24,7 @@ OC.L10N.register(
     "Could not write to file." : "Não foi possível escrever o arquivo.",
     "Insufficient permissions" : "Permissões insuficientes",
     "File path not supplied" : "Caminho do arquivo não fornecido",
-    "File mtime not supplied" : "arquivo mtime não fornecido",
+    "File mtime not supplied" : "Arquivo mtime não fornecido",
     "Share not found" : "Compartilhamento não encontrado",
     "You are not authorized to open this share" : "Sem autorização para abrir este compartilhamento",
     "Invalid range request" : "Requisição inválida de intervalo ",
