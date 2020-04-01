@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving…" : "Зачувува ...",
     "Saved" : "Снимено",
     "An error occurred!" : "Се случи грешка",
     "Edit" : "Уреди",

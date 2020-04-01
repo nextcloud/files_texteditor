@@ -1,5 +1,4 @@
 { "translations": {
-    "saving..." : "enregistrament...",
     "saved!" : "enregistrat !",
     "failed!" : "fracàs !",
     "Saved" : "Enregistrat",
@@ -15,6 +14,7 @@
     "Cannot save file as it has been modified since opening" : "Impossible de salvar lo fichièr, es estat modificat entre temps",
     "Insufficient permissions" : "Permissions insufisentas",
     "File path not supplied" : "Camin del fichièr pas provesit",
-    "File mtime not supplied" : "mtime del fichièr pas provesit"
+    "File mtime not supplied" : "mtime del fichièr pas provesit",
+    "saving..." : "enregistrament..."
 },"pluralForm" :"nplurals=2; plural=(n > 1);"
 }

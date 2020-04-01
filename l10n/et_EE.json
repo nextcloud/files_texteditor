@@ -1,5 +1,4 @@
 { "translations": {
-    "saving..." : "Salvestamine...",
     "saved!" : "Salvestatud!",
     "failed!" : "ebaõnnestus!",
     "Saved" : "Salvestatud",
@@ -21,6 +20,7 @@
     "Insufficient permissions" : "Pole piisavalt õiguseid",
     "File path not supplied" : "Faili asukoht on määramata",
     "File mtime not supplied" : "Faili mtime puudub",
+    "saving..." : "Salvestamine...",
     "Text editor" : "Teksti redigeerija"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
