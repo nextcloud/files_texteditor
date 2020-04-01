@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "po ruhet…",
     "saved!" : "u ruajt!",
     "failed!" : "dështoi!",
     "Saved" : "U ruajt",
@@ -23,6 +22,7 @@ OC.L10N.register(
     "Insufficient permissions" : "Leje të pamjaftueshme",
     "File path not supplied" : "S’u dha shteg kartele",
     "File mtime not supplied" : "S’u dha skedari mtime",
+    "saving..." : "po ruhet…",
     "Text editor" : "Editor teksti"
 },
 "nplurals=2; plural=(n != 1);");

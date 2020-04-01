@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "gemmer...",
     "saved!" : "gemt!",
     "failed!" : "mislykkedes!",
     "Saved" : "Gemt",
@@ -26,6 +25,7 @@ OC.L10N.register(
     "File mtime not supplied" : "Filen mtime er ikke anvist",
     "Share not found" : "Delt fil ikke fundet",
     "You are not authorized to open this share" : "Du har ikke adgang til at åbne denne delte fil",
+    "saving..." : "gemmer...",
     "Text editor" : "Tekst editor"
 },
 "nplurals=2; plural=(n != 1);");

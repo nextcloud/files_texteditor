@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "儲存中...",
     "saved!" : "已儲存!",
     "failed!" : "失敗!",
     "Saved" : "已儲存",
@@ -27,6 +26,7 @@ OC.L10N.register(
     "File mtime not supplied" : "沒有提供檔案修改時間",
     "You are not authorized to open this share" : "你沒有開啟這個分享連結的權限",
     "Plain text editor" : "純文字編輯器",
+    "saving..." : "儲存中...",
     "Text editor" : "文字編輯器"
 },
 "nplurals=1; plural=0;");

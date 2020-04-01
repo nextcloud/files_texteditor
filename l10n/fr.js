@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "enregistrement...",
     "saved!" : "enregistré!",
     "failed!" : "échec !",
     "Saved" : "Enregistré",
@@ -30,6 +29,7 @@ OC.L10N.register(
     "Invalid range request" : "Demande de plage non valide",
     "Plain text editor" : "Éditeur de texte brute",
     "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Cette application permet aux utilisateurs de Nextcloud d'ouvrir, enregistrer et éditer des fichiers texte dans le navigateur Web. Si activé, une entrée dans le bouton Nouveau en haut du navigateur Web l'entrée du fichier texte apparaît. Lorsque vous cliquez dessus, un nouveau fichier texte s'ouvre dans le navigateur et le fichier peut être enregistré dans le répertoire Nextcloud actuel. En outre, lorsqu'un fichier texte est cliqué dans le navigateur Web, il sera ouvert et modifiable. Si les privilèges le permettent, un utilisateur peut également modifier les fichiers partagés et enregistrer ces modifications dans le navigateur Web.\nPlus d'informations sont disponibles dans la documentation de l'éditeur de texte.",
+    "saving..." : "enregistrement...",
     "Text editor" : "Éditeur de texte"
 },
 "nplurals=2; plural=(n > 1);");
