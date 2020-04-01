@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "a guardar...",
+    "Saving…" : "A guardar...",
     "saved!" : "guardado!",
     "failed!" : "falhou!",
     "Saved" : "Guardado",
@@ -25,6 +25,7 @@ OC.L10N.register(
     "File path not supplied" : "Caminho do ficheiro não indicado",
     "File mtime not supplied" : "O Ficheiro mtime não foi indicado",
     "Share not found" : "Partilha não encontrada",
+    "saving..." : "a guardar...",
     "Text editor" : "Editor de texto"
 },
 "nplurals=2; plural=(n != 1);");

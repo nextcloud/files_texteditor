@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "įrašoma...",
     "saved!" : "įrašyta!",
     "failed!" : "nepavyko!",
     "Saved" : "Įrašyta",
@@ -27,6 +26,7 @@ OC.L10N.register(
     "Share not found" : "Viešinys nerastas",
     "You are not authorized to open this share" : "Jums nėra leidžiama atverti šio viešinio",
     "Plain text editor" : "Grynojo teksto redaktorius",
+    "saving..." : "įrašoma...",
     "Text editor" : "Tekstų redaktorius"
 },
 "nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);");

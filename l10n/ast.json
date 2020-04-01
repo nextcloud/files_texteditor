@@ -1,5 +1,4 @@
 { "translations": {
-    "saving..." : "guardando...",
     "saved!" : "¡guardáu!",
     "failed!" : "¡falló!",
     "Saved" : "Guardáu",
@@ -20,6 +19,7 @@
     "Insufficient permissions" : "Permisos insuficientes",
     "File path not supplied" : "Camín de ficheru non soportáu",
     "File mtime not supplied" : "Ficheru mtime non soportáu",
+    "saving..." : "guardando...",
     "Text editor" : "Editor de testos"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
