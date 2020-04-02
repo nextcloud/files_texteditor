@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving…" : "Enregistrement…",
     "saved!" : "enregistré!",
     "failed!" : "échec !",
     "Saved" : "Enregistré",

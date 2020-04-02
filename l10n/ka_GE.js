@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving…" : "მიმდინარეობს დამახსოვრება...",
     "saved!" : "შენახულია!",
     "failed!" : "ვერ მოხერხდა!",
     "Saved" : "შენახულ იქნა",

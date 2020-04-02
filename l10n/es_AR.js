@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving…" : "Guardando...",
     "saved!" : "¡Guardado!",
     "failed!" : "¡Se presentó una falla!",
     "Saved" : "Guardado",

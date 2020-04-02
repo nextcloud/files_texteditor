@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving…" : "מתבצעת שמירה…",
     "saved!" : "נשמר!",
     "failed!" : "נכשל!",
     "Saved" : "נשמר",
