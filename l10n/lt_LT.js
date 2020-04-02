@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving…" : "Įrašoma…",
     "saved!" : "įrašyta!",
     "failed!" : "nepavyko!",
     "Saved" : "Įrašyta",

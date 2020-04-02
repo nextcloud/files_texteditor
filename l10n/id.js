@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving…" : "Menyimpan...",
     "saved!" : "tersimpan!",
     "failed!" : "gagal!",
     "Saved" : "Disimpan",

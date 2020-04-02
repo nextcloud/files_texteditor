@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving…" : "Mentés…",
     "saved!" : "mentve!",
     "failed!" : "sikertelen!",
     "Saved" : "Elmentve",

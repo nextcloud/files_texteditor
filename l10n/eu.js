@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving…" : "Gordetzen…",
     "saved!" : "gordeta!",
     "failed!" : "errorea!",
     "Saved" : "Gordeta",
