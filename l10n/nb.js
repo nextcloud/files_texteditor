@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving…" : "Lagrer…",
     "saved!" : "lagret!",
     "failed!" : "mislyktes!",
     "Saved" : "Lagret",
