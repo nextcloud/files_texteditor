@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving…" : "Salvestamine...",
     "saved!" : "Salvestatud!",
     "failed!" : "ebaõnnestus!",
     "Saved" : "Salvestatud",

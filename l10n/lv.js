@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving…" : "Saglabā...",
     "Saved" : "Saglabāts",
     "An error occurred!" : "Gadījās kļūda!",
     "Edit" : "Rediģēt",

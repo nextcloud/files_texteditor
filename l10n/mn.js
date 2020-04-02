@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving…" : "хадгалж байна",
     "Saved" : "Хадгалах",
     "Edit" : "засварлах",
     "Preview" : "шалгах",

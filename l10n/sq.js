@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving…" : "Duke u ruajtur...",
     "saved!" : "u ruajt!",
     "failed!" : "dështoi!",
     "Saved" : "U ruajt",

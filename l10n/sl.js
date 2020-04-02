@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving…" : "Poteka shranjevanje ...",
     "saved!" : "shranjeno!",
     "failed!" : "spodletelo!",
     "Saved" : "Shranjeno",
