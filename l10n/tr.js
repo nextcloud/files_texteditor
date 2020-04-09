@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Kaydediliyor …",
+    "Saving…" : "Kaydediliyor…",
     "saved!" : "kaydedildi!",
     "failed!" : "kaydedilemedi!",
     "Saved" : "Kaydedildi",
