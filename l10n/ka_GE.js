@@ -23,7 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "უფლებების უკმარისობა",
     "File path not supplied" : "ფაილის მისამართი არაა მოცემული",
     "File mtime not supplied" : "ფაილი mtime არაა მოცემული",
-    "saving..." : "ინახება...",
-    "Text editor" : "ტექსტ-ედიტორი"
+    "saving..." : "ინახება..."
 },
 "nplurals=2; plural=(n!=1);");
