@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "чувам...",
+    "Saving…" : "Снимам…",
     "saved!" : "сачувано!",
     "failed!" : "неуспех!",
     "Saved" : "Сачувано",
@@ -30,6 +30,6 @@ OC.L10N.register(
     "Invalid range request" : "Неисправан захтев опсега",
     "Plain text editor" : "Уређивач обичног текста",
     "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Ова апликација омогућава корисницима Некстклауда да отварају, снимају и мењају текстуалне фајлове у веб читачу. Када се укључи, појављује се \"Текстуални фајл\" ставка у дугмету \"Нови\" на врху веб стране. Кликом на ову ставку се у веб читачу отвара нови текстуални фајл и фајл се може сачувати у тренутном Некстклауд директоријуму. Такође, кликом на овај фајл се он отвара у веб читачу и може да се даље уређује. Ако то привилегије дозвољавају, корисник такође може уређивати и дељене фајлове и снимати ове измене исто из веб читача.\nВише информација је доступно у докумнетацији уређивача текста.",
-    "Text editor" : "Уређивач текста"
+    "saving..." : "чувам..."
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);");

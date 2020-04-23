@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "mentés...",
+    "Saving…" : "Mentés…",
     "saved!" : "mentve!",
     "failed!" : "sikertelen!",
     "Saved" : "Elmentve",
@@ -27,6 +27,6 @@ OC.L10N.register(
     "Share not found" : "Megosztás nem található.",
     "You are not authorized to open this share" : "Nincs jogosultságod megnyitni a megosztást",
     "Invalid range request" : "Érvénytelen tartomány kérés",
-    "Text editor" : "Szövegszerkesztő"
+    "saving..." : "mentés..."
 },
 "nplurals=2; plural=(n != 1);");

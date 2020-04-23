@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "guardando...",
+    "Saving…" : "Guardando...",
     "saved!" : "¡guardáu!",
     "failed!" : "¡falló!",
     "Saved" : "Guardáu",
@@ -22,6 +22,6 @@ OC.L10N.register(
     "Insufficient permissions" : "Permisos insuficientes",
     "File path not supplied" : "Camín de ficheru non soportáu",
     "File mtime not supplied" : "Ficheru mtime non soportáu",
-    "Text editor" : "Editor de testos"
+    "saving..." : "guardando..."
 },
 "nplurals=2; plural=(n != 1);");

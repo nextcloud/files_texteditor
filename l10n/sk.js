@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "ukladám...",
+    "Saving…" : "Ukladanie...",
     "saved!" : "uložené!",
     "failed!" : "neúspešné!",
     "Saved" : "Uložené",
@@ -30,6 +30,6 @@ OC.L10N.register(
     "Invalid range request" : "Neplatná požiadavka rozsahu",
     "Plain text editor" : "Textový editor",
     "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Táto aplikácia umožňuje používateľom Nextcloud otvárať, ukladať a upravovať textové súbory vo webovom prehliadači. Keď je zapnutá, objaví sa v ponuka \"Nový\" položka \"Textový súbor\". Po kliknutí na ňu sa v prehliadači otvorí nový textový súbor a je možné ho následne uložiť do aktuálneho priečinka v Nextcloud. Navyše, po kliknutí na textový súbor vo webovom prehliadači bude tento otvorený a upravovateľný. Ak to oprávnenia umožnia, používateľ môže upravovať aj sprístupnené súbory a ukladať zmeny vo webovom prehliadači.\nViac informácií nájdete v dokumentácii k textovému editoru.",
-    "Text editor" : "Textový editor"
+    "saving..." : "ukladám..."
 },
 "nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);");

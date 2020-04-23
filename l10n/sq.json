@@ -1,5 +1,5 @@
 { "translations": {
-    "saving..." : "po ruhet…",
+    "Saving…" : "Duke u ruajtur...",
     "saved!" : "u ruajt!",
     "failed!" : "dështoi!",
     "Saved" : "U ruajt",
@@ -21,6 +21,6 @@
     "Insufficient permissions" : "Leje të pamjaftueshme",
     "File path not supplied" : "S’u dha shteg kartele",
     "File mtime not supplied" : "S’u dha skedari mtime",
-    "Text editor" : "Editor teksti"
+    "saving..." : "po ruhet…"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

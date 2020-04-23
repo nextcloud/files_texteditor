@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "записва...",
+    "Saving…" : "Запазване",
     "saved!" : "записан!",
     "failed!" : "неуспешно!",
     "Saved" : "Запазено",
@@ -23,6 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "Недостатъчни права",
     "File path not supplied" : "Не е предоставен път до файл",
     "File mtime not supplied" : "Не е предоставено време на модификация на файла - mtime",
-    "Text editor" : "Текстов редактор"
+    "saving..." : "записва..."
 },
 "nplurals=2; plural=(n != 1);");

@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "saving...",
+    "Saving…" : "Saving…",
     "saved!" : "saved!",
     "failed!" : "failed!",
     "Saved" : "Saved",
@@ -27,6 +27,6 @@ OC.L10N.register(
     "Share not found" : "Share not found",
     "You are not authorized to open this share" : "You are not authorised to open this share",
     "Invalid range request" : "Invalid range request",
-    "Text editor" : "Text editor"
+    "saving..." : "saving..."
 },
 "nplurals=2; plural=(n != 1);");

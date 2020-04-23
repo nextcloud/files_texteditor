@@ -1,11 +1,12 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "tallennetaan...",
+    "Saving…" : "Tallennetaan…",
     "saved!" : "tallennettu!",
     "failed!" : "epäonnistui!",
     "Saved" : "Tallennettu",
     "There was a problem saving your changes. Click to resume editing." : "Muutoksien tallentamisessa ilmeni ongelmia. Napsauta palataksesi muokkaamiseen.",
+    "Edit in plain text editor" : "Muokkaa raakatekstimuokkaimessa",
     "An error occurred!" : "Tapahtui virhe!",
     "Edit" : "Muokkaa",
     "Mixed" : "Sekoitettu",
@@ -27,6 +28,6 @@ OC.L10N.register(
     "Share not found" : "Jakoa ei löytynyt",
     "You are not authorized to open this share" : "Sinulla ei ole valtuuksia avata tätä jakoa",
     "Plain text editor" : "Raakatekstimuokkain",
-    "Text editor" : "Tekstimuokkain"
+    "saving..." : "tallennetaan..."
 },
 "nplurals=2; plural=(n != 1);");

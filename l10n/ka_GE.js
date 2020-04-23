@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "ინახება...",
+    "Saving…" : "მიმდინარეობს დამახსოვრება...",
     "saved!" : "შენახულია!",
     "failed!" : "ვერ მოხერხდა!",
     "Saved" : "შენახულ იქნა",
@@ -23,6 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "უფლებების უკმარისობა",
     "File path not supplied" : "ფაილის მისამართი არაა მოცემული",
     "File mtime not supplied" : "ფაილი mtime არაა მოცემული",
-    "Text editor" : "ტექსტ-ედიტორი"
+    "saving..." : "ინახება..."
 },
 "nplurals=2; plural=(n!=1);");

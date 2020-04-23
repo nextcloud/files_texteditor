@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "กำลังบันทึก...",
     "saved!" : "บันทึกแล้ว!",
     "failed!" : "ล้มเหลว!",
     "Saved" : "บันทึกแล้ว",
@@ -17,6 +16,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "ไม่สามารถบันทึกไฟล์ในขณะที่มันถูกเปิดและแก้ไขอยู่",
     "Insufficient permissions" : "สิทธิ์ไม่เพียงพอ",
     "File path not supplied" : "ไม่ได้ระบุเส้นทางของไฟล์",
-    "File mtime not supplied" : "ไม่ได้ให้ไฟล์ mtime มาด้วย"
+    "File mtime not supplied" : "ไม่ได้ให้ไฟล์ mtime มาด้วย",
+    "saving..." : "กำลังบันทึก..."
 },
 "nplurals=1; plural=0;");

@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "сохранение…",
+    "Saving…" : "Сохранение…",
     "saved!" : "сохранено!",
     "failed!" : "ошибка!",
     "Saved" : "Сохранено",
@@ -30,6 +30,6 @@ OC.L10N.register(
     "Invalid range request" : "Неправильный запрос на диапазон",
     "Plain text editor" : "Редактор простого текста",
     "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Это приложение позволяет пользователям Nextcloud открывать, сохранять и редактировать текстовые файлы в браузере. Если приложение включено, в меню, доступном после нажатия  кнопки «Создать», расположенной в верхней части веб-браузера, будет добавлен пункт создания файла в текстовом файле. При выборе этого пункта будет создан текстовый файл, который может быть сохранён в текущей папке. Кроме того, если нажать в браузере на текстовый файл, он будет открыт в режиме редактирования. Если у пользователя достаточно прав, то он может также редактировать общие файлы и сохранять внесённые изменения. Дополнительная информация доступна в документации текстового редактора.",
-    "Text editor" : "Редактор текста"
+    "saving..." : "сохранение…"
 },
 "nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);");

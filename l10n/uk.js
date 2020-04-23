@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "збереження...",
+    "Saving…" : "Збереження...",
     "saved!" : "збережено!",
     "failed!" : "не вдалося!",
     "Saved" : "Збережено",
@@ -17,6 +17,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Неможливо зберегти файл оскільки він був змінений після відкриття",
     "Insufficient permissions" : "Недостатньо прав доступу",
     "File path not supplied" : "Невідомий шлях файлу",
-    "File mtime not supplied" : "Невідомий час модифікації файлу"
+    "File mtime not supplied" : "Невідомий час модифікації файлу",
+    "saving..." : "збереження..."
 },
 "nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);");

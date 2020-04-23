@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "Salvestamine...",
+    "Saving…" : "Salvestamine...",
     "saved!" : "Salvestatud!",
     "failed!" : "ebaõnnestus!",
     "Saved" : "Salvestatud",
@@ -23,6 +23,6 @@ OC.L10N.register(
     "Insufficient permissions" : "Pole piisavalt õiguseid",
     "File path not supplied" : "Faili asukoht on määramata",
     "File mtime not supplied" : "Faili mtime puudub",
-    "Text editor" : "Teksti redigeerija"
+    "saving..." : "Salvestamine..."
 },
 "nplurals=2; plural=(n != 1);");

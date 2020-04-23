@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "menyimpan...",
+    "Saving…" : "Menyimpan...",
     "saved!" : "tersimpan!",
     "failed!" : "gagal!",
     "Saved" : "Disimpan",
@@ -17,6 +17,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Tidak dapat menyimpan berkas karena sudah diubah sejak dibuka",
     "Insufficient permissions" : "Izin tidak cukup",
     "File path not supplied" : "Lokasi berkas belum diberikan",
-    "File mtime not supplied" : "Berkas mtime belum diberikan"
+    "File mtime not supplied" : "Berkas mtime belum diberikan",
+    "saving..." : "menyimpan..."
 },
 "nplurals=1; plural=0;");

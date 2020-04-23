@@ -1,11 +1,12 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saving..." : "gordetzen...",
+    "Saving…" : "Gordetzen…",
     "saved!" : "gordeta!",
     "failed!" : "errorea!",
     "Saved" : "Gordeta",
     "There was a problem saving your changes. Click to resume editing." : "Aldaketak gordetzean errorea egon da. Klik egin edizioarekin jarraitzeko",
+    "Edit in plain text editor" : "Testu hutseko editorean editatu",
     "An error occurred!" : "Errore bat gertatu da!",
     "Edit" : "Editatu",
     "Mixed" : "Nahastua",
@@ -24,7 +25,10 @@ OC.L10N.register(
     "Insufficient permissions" : "Baimen gutxiegi",
     "File path not supplied" : "Ez da fitxategiaren helbidea idatzi",
     "File mtime not supplied" : "Fitxategiaren mtime-a ez da ezarri",
+    "Share not found" : "Partekatzea ez da aurkitu",
+    "You are not authorized to open this share" : "Ez duzu partekatze hau irekitzeko baimenik",
+    "Invalid range request" : "Eskaera baliogabea",
     "Plain text editor" : "Formaturik gabeko testu editorea",
-    "Text editor" : "Testu editorea"
+    "saving..." : "gordetzen..."
 },
 "nplurals=2; plural=(n != 1);");
