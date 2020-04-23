@@ -22,7 +22,6 @@ OC.L10N.register(
     "Insufficient permissions" : "Permisos insuficientes",
     "File path not supplied" : "Camín de ficheru non soportáu",
     "File mtime not supplied" : "Ficheru mtime non soportáu",
-    "saving..." : "guardando...",
-    "Text editor" : "Editor de testos"
+    "saving..." : "guardando..."
 },
 "nplurals=2; plural=(n != 1);");
