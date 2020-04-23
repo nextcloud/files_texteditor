@@ -25,7 +25,6 @@ OC.L10N.register(
     "File path not supplied" : "Caminho do ficheiro não indicado",
     "File mtime not supplied" : "O Ficheiro mtime não foi indicado",
     "Share not found" : "Partilha não encontrada",
-    "saving..." : "a guardar...",
-    "Text editor" : "Editor de texto"
+    "saving..." : "a guardar..."
 },
 "nplurals=2; plural=(n != 1);");

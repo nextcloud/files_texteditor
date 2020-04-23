@@ -21,7 +21,6 @@
     "Insufficient permissions" : "უფლებების უკმარისობა",
     "File path not supplied" : "ფაილის მისამართი არაა მოცემული",
     "File mtime not supplied" : "ფაილი mtime არაა მოცემული",
-    "saving..." : "ინახება...",
-    "Text editor" : "ტექსტ-ედიტორი"
+    "saving..." : "ინახება..."
 },"pluralForm" :"nplurals=2; plural=(n!=1);"
 }

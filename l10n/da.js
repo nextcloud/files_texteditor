@@ -26,7 +26,6 @@ OC.L10N.register(
     "File mtime not supplied" : "Filen mtime er ikke anvist",
     "Share not found" : "Delt fil ikke fundet",
     "You are not authorized to open this share" : "Du har ikke adgang til at åbne denne delte fil",
-    "saving..." : "gemmer...",
-    "Text editor" : "Tekst editor"
+    "saving..." : "gemmer..."
 },
 "nplurals=2; plural=(n != 1);");

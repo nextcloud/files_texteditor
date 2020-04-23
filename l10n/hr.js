@@ -30,7 +30,6 @@ OC.L10N.register(
     "Invalid range request" : "Nevažeći zahtjev za rasponom",
     "Plain text editor" : "Uređivač običnog teksta",
     "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Ova aplikacija omogućuje Nextcloudovim korisnicima otvaranje, spremanje i uređivanje tekstnih datoteka u web pregledniku. Ako je omogućena, prikazuje se unos pod nazivom „Tekstna datoteka” u izborniku gumba „Novo” pri vrhu web preglednika. Kada korisnik klikne na tu mogućnost u pregledniku se otvori nova tekstna datoteka koja se zatim može spremiti u trenutni Nextcloudov direktorij. Nadalje, kad se u web pregledniku klikne na tekstnu datoteku, ista će se otvoriti i moći uređivati. Ako korisnik ima dovoljne ovlasti, također može uređivati dijeljene datoteke i spremiti promjene natrag u web preglednik.\nViše informacija dostupno je u dokumentaciji uređivača teksta.",
-    "saving..." : "spremanje...",
-    "Text editor" : "Uređivač teksta"
+    "saving..." : "spremanje..."
 },
 "nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;");

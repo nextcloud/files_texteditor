@@ -29,7 +29,6 @@ OC.L10N.register(
     "You are not authorized to open this share" : "Þú hefur ekki heimild til að opna þessa sameign",
     "Invalid range request" : "Ógild fyrirspurn um gagnasvið",
     "Plain text editor" : "Ritill fyrir hreinan texta",
-    "saving..." : "er að vista ...",
-    "Text editor" : "Textaritill"
+    "saving..." : "er að vista ..."
 },
 "nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);");
