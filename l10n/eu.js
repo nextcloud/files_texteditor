@@ -29,6 +29,7 @@ OC.L10N.register(
     "You are not authorized to open this share" : "Ez duzu partekatze hau irekitzeko baimenik",
     "Invalid range request" : "Eskaera baliogabea",
     "Plain text editor" : "Formaturik gabeko testu editorea",
+    "Open, save and edit text files" : "Ireki, gorde eta editatu testu fitxategiak",
     "saving..." : "gordetzen..."
 },
 "nplurals=2; plural=(n != 1);");
