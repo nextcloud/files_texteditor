@@ -1,5 +1,6 @@
 import {getSyntaxMode} from './SyntaxMode';
 import importAce from './ImportAce';
+import escapeHTML from 'escape-html'
 
 /** @type array[] supportedMimeTypes */
 const supportedMimeTypes = require('./supported_mimetypes.json');
