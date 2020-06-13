@@ -8,6 +8,7 @@ OC.L10N.register(
     "There was a problem saving your changes. Click to resume editing." : "Трапилася проблема при збереженні змін. Натисніть, щоб продовжити редагування.",
     "An error occurred!" : "Сталася помилка!",
     "Edit" : "Редашувати",
+    "Preview" : "Перегляд",
     "New text file.txt" : "Новий текстовий файл file.txt",
     "This file is too big to be opened. Please download the file instead." : "Файл занадто великий для відкриття. Будь ласка, завантажте файл замість цього.",
     "Cannot read the file." : "Не можливо прочитати файл.",
