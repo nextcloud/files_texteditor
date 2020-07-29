@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saved" : "Enrolet",
+    "Saved" : "Enrollet",
     "Edit" : "Cheñch",
     "New text file.txt" : "Restr nevez testenn.txt"
 },
