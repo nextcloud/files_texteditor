@@ -6,6 +6,7 @@ OC.L10N.register(
     "failed!" : "sikertelen!",
     "Saved" : "Elmentve",
     "There was a problem saving your changes. Click to resume editing." : "Hiba történt a módosítások mentésekor. Szerkesztés folytatásához kattints ide.",
+    "Edit in plain text editor" : "Szerkesztés jegyzettömbben",
     "An error occurred!" : "Hiba történt!",
     "Edit" : "Szerkesztés",
     "Mixed" : "Kevert",
@@ -27,6 +28,9 @@ OC.L10N.register(
     "Share not found" : "Megosztás nem található.",
     "You are not authorized to open this share" : "Nincs jogosultságod megnyitni a megosztást",
     "Invalid range request" : "Érvénytelen tartomány kérés",
+    "Plain text editor" : "Jegyzettőmb",
+    "Open, save and edit text files" : "Nyiss meg, ments el és szerkessz szövegfájlokat.",
+    "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Ez az alkalmazás lehetővé teszi, hogy a Nextcloud szövegfájlokat nyisson meg, szerkesszen és mentsen a böngészőben. Ha be van kapcsolva, akkor egy „Szöveges fájl” pont jelenik meg az „Új” gomb lehetőségei között, ami az oldal tetején jelenik meg. Rákattintva egy új szövegfájl nyílik meg a böngészőben, amit az aktuális Nextcloud mappába lehet menteni. Ezen kívül a böngészőben szövegfájlra kattintva az megnyílik, és szerkeszthető lesz. Ha a jogosultságok lehetővé teszik, a felhasználó megosztott fájlokat is szerkeszthet, és elmentheti a változásokat a böngészőben.\nTovábbi információ érhető el a jegyzettömb  dokumentációjában.",
     "saving..." : "mentés..."
 },
 "nplurals=2; plural=(n != 1);");
