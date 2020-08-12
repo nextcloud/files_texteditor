@@ -28,6 +28,7 @@ OC.L10N.register(
     "Share not found" : "Jakoa ei löytynyt",
     "You are not authorized to open this share" : "Sinulla ei ole valtuuksia avata tätä jakoa",
     "Plain text editor" : "Raakatekstimuokkain",
+    "Open, save and edit text files" : "Avaa, tallenna ja muokkaa tekstitiedostoja",
     "saving..." : "tallennetaan..."
 },
 "nplurals=2; plural=(n != 1);");
