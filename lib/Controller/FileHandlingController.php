@@ -85,7 +85,7 @@ class FileHandlingController extends Controller{
 				$file = $this->userFolder->get($path);
 
 				if ($file instanceof Folder) {
-					return new DataResponse(['message' => $this->l->t('You can not open a folder')], Http::STATUS_BAD_REQUEST);
+					return new DataResponse(['message' => $this->l->t('You can not open a folder.')], Http::STATUS_BAD_REQUEST);
 				}
 
 				// default of 4MB
@@ -152,7 +152,7 @@ class FileHandlingController extends Controller{
 				$file = $this->userFolder->get($path);
 
 				if ($file instanceof Folder) {
-					return new DataResponse(['message' => $this->l->t('You can not write to a folder')], Http::STATUS_BAD_REQUEST);
+					return new DataResponse(['message' => $this->l->t('You can not write to a folder.')], Http::STATUS_BAD_REQUEST);
 				}
 
 				// Get file mtime
@@ -162,7 +162,7 @@ class FileHandlingController extends Controller{
 					$this->logger->error('File: ' . $path . ' modified since opening.',
 						['app' => 'files_texteditor']);
 					return new DataResponse(
-						['message' => $this->l->t('Cannot save file as it has been modified since opening')],
+						['message' => $this->l->t('Cannot save file as it has been modified since opening.')],
 						Http::STATUS_BAD_REQUEST);
 				} else {
 					// File same as when opened, save file
@@ -188,16 +188,16 @@ class FileHandlingController extends Controller{
 						// Not writeable!
 						$this->logger->error('User does not have permission to write to file: ' . $path,
 							['app' => 'files_texteditor']);
-						return new DataResponse([ 'message' => $this->l->t('Insufficient permissions')],
+						return new DataResponse([ 'message' => $this->l->t('Insufficient permissions.')],
 							Http::STATUS_BAD_REQUEST);
 					}
 				}
 			} else if ($path === '') {
 				$this->logger->error('No file path supplied');
-				return new DataResponse(['message' => $this->l->t('File path not supplied')], Http::STATUS_BAD_REQUEST);
+				return new DataResponse(['message' => $this->l->t('File path not supplied.')], Http::STATUS_BAD_REQUEST);
 			} else {
 				$this->logger->error('No file mtime supplied', ['app' => 'files_texteditor']);
-				return new DataResponse(['message' => $this->l->t('File mtime not supplied')], Http::STATUS_BAD_REQUEST);
+				return new DataResponse(['message' => $this->l->t('File mtime not supplied.')], Http::STATUS_BAD_REQUEST);
 			}
 
 		} catch (HintException $e) {
