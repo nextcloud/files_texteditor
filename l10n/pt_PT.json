@@ -10,19 +10,19 @@
     "Preview" : "Pré-visualização",
     "New text file" : "Novo ficheiro de texto",
     "New text file.txt" : "Novo ficheiro.txt",
-    "You can not open a folder" : "Não pode abrir a pasta",
     "This file is too big to be opened. Please download the file instead." : "Este ficheiro é demasiado grande para ser aberto. Em vez disso, por favor, transfira o ficheiro.",
     "Cannot read the file." : "Não é possível ler o ficheiro.",
     "Invalid file path supplied." : "O Caminho do ficheiro indicado é inválido.",
     "The file is locked." : "O ficheiro está bloqueado.",
     "An internal server error occurred." : "Ocorreu um erro interno no servidor.",
+    "Could not write to file." : "Não foi possível escrever no ficheiro.",
+    "Share not found" : "Partilha não encontrada",
+    "You can not open a folder" : "Não pode abrir a pasta",
+    "saving..." : "a guardar...",
     "You can not write to a folder" : "Não é possível escrever na pasta",
     "Cannot save file as it has been modified since opening" : "Não é possível guardar o ficheiro porque este foi modificado desde a abertura",
-    "Could not write to file." : "Não foi possível escrever no ficheiro.",
     "Insufficient permissions" : "Permissões insuficientes",
     "File path not supplied" : "Caminho do ficheiro não indicado",
-    "File mtime not supplied" : "O Ficheiro mtime não foi indicado",
-    "Share not found" : "Partilha não encontrada",
-    "saving..." : "a guardar..."
+    "File mtime not supplied" : "O Ficheiro mtime não foi indicado"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
