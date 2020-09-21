@@ -40,5 +40,5 @@ script:
 matrix:
   include:
     - php: 7.2
-      env: CORE_BRANCH=stable18
+      env: CORE_BRANCH=stable18;DB=sqlite
   fast_finish: true
