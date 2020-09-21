@@ -1,8 +1,7 @@
 language: php
 php:
-  - 7.2
   - 7.3
-  - 7.4snapshot
+  - 7.4
 
 env:
   global:
@@ -37,5 +36,9 @@ script:
   - wget https://scrutinizer-ci.com/ocular.phar
   - php ocular.phar code-coverage:upload --format=php-clover clover.xml
 
+
 matrix:
+  include:
+    - php: 7.2
+      env: CORE_BRANCH=stable18;DB=sqlite
   fast_finish: true
