@@ -1,6 +1,6 @@
 all: build/editor.js
 
-sources=$(wildcard js/*.js) $(wildcard js/*/*.js) .babelrc webpack.config.js
+sources=$(wildcard js/*.js) $(wildcard js/*/*.js) babel.config.js webpack.config.js
 
 .PHONY: watch
 watch: node_modules

@@ -1,6 +1,7 @@
 import {getSyntaxMode} from './SyntaxMode';
 import importAce from './ImportAce';
 import escapeHTML from 'escape-html'
+import {generateUrl} from '@nextcloud/router';
 
 /** @type array[] supportedMimeTypes */
 const supportedMimeTypes = require('./supported_mimetypes.json');
@@ -266,9 +267,9 @@ export const Texteditor = {
 		// Insert the editor into the container
 		container.html(
 			'<div id="editor_overlay"></div>'
-			+'<div id="editor_container" class="icon-loading">'
-			+'<div id="editor_wrap"><div id="filestexteditor"></div>'
-			+'<div id="preview_wrap"><div id="preview"></div></div></div></div>');
+			+ '<div id="editor_container" class="icon-loading">'
+			+ '<div id="editor_wrap"><div id="filestexteditor"></div>'
+			+ '<div id="preview_wrap"><div id="preview"></div></div></div></div>');
 		$('#content').append(container);
 
 		// Get the file data
@@ -305,7 +306,7 @@ export const Texteditor = {
 					}, 200);
 					var text = window.aceEditor.getSession().getValue();
 					_self.previewPluginOnChange(text, _self.preview);
-					setTimeout(function() {
+					setTimeout(function () {
 						window.aceEditor.resize();
 					}, 500);
 					_self.loadPreviewControlBar();
@@ -365,7 +366,7 @@ export const Texteditor = {
 				container.find('#editor_container').addClass('onlyPreview');
 				break;
 		}
-		setTimeout(function() {
+		setTimeout(function () {
 			window.aceEditor.resize();
 		}, 500);
 	},
@@ -485,85 +486,90 @@ export const Texteditor = {
 	 * Loads the data through AJAX
 	 */
 	loadFile: function (dir, filename, success, failure) {
-		$.get(
-			OC.generateUrl('/apps/files_texteditor/ajax/loadfile'),
-			{
-				filename: filename,
-				dir: dir
+		fetch(generateUrl('/apps/files_texteditor/ajax/loadfile?' + new URLSearchParams({
+			filename: filename,
+			dir: dir
+		})), {
+			'headers': {
+				requesttoken: OC.requestToken
 			}
-		).done(function (data) {
-			// Call success callback
-			Texteditor.file.writeable = data.writeable;
-			Texteditor.file.mime = data.mime;
-			Texteditor.file.mtime = data.mtime;
-			success(Texteditor.file, data.filecontents);
-		}).fail(function (jqXHR) {
-			failure(JSON.parse(jqXHR.responseText).message);
-		});
+		})
+			.then(response => response.json())
+			.then(data => {
+				if (data.message) {
+					failure(data.message);
+					return;
+				}
+				// Call success callback
+				Texteditor.file.writeable = data.writeable;
+				Texteditor.file.mime = data.mime;
+				Texteditor.file.mtime = data.mtime;
+				success(Texteditor.file, data.filecontents);
+			});
 	},
 
-/**
- * Send the new file data back to the server
- */
-saveFile: function (data, file, success, failure) {
-	// Send the post request
-	var path = file.dir + file.name;
-	if (file.dir !== '/') {
-		path = file.dir + '/' + file.name;
-	}
-	$.ajax({
-		type: 'PUT',
-		url: OC.generateUrl('/apps/files_texteditor/ajax/savefile'),
-		data: {
-			filecontents: data,
-			path: path,
-			mtime: file.mtime
+	/**
+	 * Send the new file data back to the server
+	 */
+	saveFile: function (data, file, success, failure) {
+		// Send the post request
+		var path = file.dir + file.name;
+		if (file.dir !== '/') {
+			path = file.dir + '/' + file.name;
 		}
-	})
-		.done(success)
-		.fail(function (jqXHR) {
-			var message;
+		fetch(generateUrl('/apps/files_texteditor/ajax/savefile'), {
+			method: 'PUT',
+			headers: {
+				'Content-Type': 'application/json',
+				requesttoken: OC.requestToken
+			},
+			body: JSON.stringify({
+				filecontents: data,
+				path: path,
+				mtime: file.mtime
+			})
+		})
+			.then(response => response.json())
+			.then(data => {
+				if (data.message) {
+					failure(data.message);
+				} else {
+					success(data);
+				}
+			});
+	},
 
-			try {
-				message = JSON.parse(jqXHR.responseText).message;
-			} catch (e) {
-			}
+	/**
+	 * Close the editor for good
+	 */
+	closeEditor: function () {
+		this.$container.html('').show();
+		this.unloadControlBar();
+		this.unBindVisibleActions();
+		var fileInfoModel = this.fileList.getModelForFile(this.file.name);
+		if (fileInfoModel) {
+			fileInfoModel.set({
+				// temp dummy, until we can do a PROPFIND
+				etag: fileInfoModel.get('id') + this.file.mtime,
+				mtime: this.file.mtime * 1000,
+				size: this.file.size
+			});
+		}
+		document.title = this.oldTitle;
+	},
 
-			failure(message);
-		});
-},
+	/**
+	 * Hide the editor (unsaved changes)
+	 */
+	hideEditor: function () {
+		this.$container.hide();
+		document.title = this.oldTitle;
+		this.unBindVisibleActions();
+	},
 
-/**
- * Close the editor for good
- */
-closeEditor: function () {
-	this.$container.html('').show();
-	this.unloadControlBar();
-	this.unBindVisibleActions();
-	var fileInfoModel = this.fileList.getModelForFile(this.file.name);
-	if (fileInfoModel) {
-		fileInfoModel.set({
-			// temp dummy, until we can do a PROPFIND
-			etag: fileInfoModel.get('id') + this.file.mtime,
-			mtime: this.file.mtime * 1000,
-			size: this.file.size
-		});
-	}
-	document.title = this.oldTitle;
-},
-
-/**
- * Hide the editor (unsaved changes)
- */
-hideEditor: function () {
-	this.$container.hide();
-	document.title = this.oldTitle;
-	this.unBindVisibleActions();
-},
-
-/**
- * Configure the autosave timer
- */
+	/**
+	 * Configure the autosave timer
+	 */
 	setupAutosave: function () {
 		clearTimeout(this.saveTimer);
 		this.saveTimer = setTimeout(Texteditor._onSaveTrigger, 3000);
