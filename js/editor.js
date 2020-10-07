@@ -294,6 +294,9 @@ export const Texteditor = {
 				if (_self.previewPlugins[file.mime]) {
 					_self.preview = container.find('#preview');
 					_self.preview.addClass(file.mime.replace('/', '-'));
+					if (window.aceEditor.getReadOnly()){
+						container.find('#editor_container').addClass('onlyPreview');
+					}
 					container.find('#editor_container').addClass('hasPreview');
 					_self.previewPluginOnChange = _.debounce(function (text, element) {
 						_self.loadPreviewPlugin(file.mime).then(function () {
@@ -384,10 +387,11 @@ export const Texteditor = {
 			return button.css('background-image', 'url("' + OC.imagePath('files_texteditor', type) + '")');
 		}.bind(this);
 
+		var readonly = window.aceEditor.getReadOnly();
 		var controls = $('<span/>').attr('id', 'preview_editor_controls');
 		controls.append(makeButton('text', t('files_texteditor', 'Edit')));
-		controls.append(makeButton('mixed', t('files_texteditor', 'Mixed'), true));
-		controls.append(makeButton('image', t('files_texteditor', 'Preview')));
+		controls.append(makeButton('mixed', t('files_texteditor', 'Mixed'), !readonly));
+		controls.append(makeButton('image', t('files_texteditor', 'Preview'), readonly));
 		$('#editor_close').after(controls);
 	},
 
