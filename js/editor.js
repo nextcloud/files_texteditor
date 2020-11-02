@@ -96,7 +96,7 @@ export const Texteditor = {
 
 		// Set the saving status
 		var $message = $('#editor_controls').find('small.saving-message');
-		$message.text(t('files_texteditor', 'Saving…'))
+		$message.text(t('files_texteditor', 'Saving …'))
 			.show();
 		// Send to server
 		Texteditor.saveFile(
