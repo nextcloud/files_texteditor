@@ -22,7 +22,7 @@
     "file-loader": "^6.2.0",
     "promise-loader": "^1.0.0",
     "style-loader": "^2.0.0",
-    "webpack": "^4.44.2",
+    "webpack": "^5.3.2",
     "webpack-cli": "^4.0.0",
     "webpack-merge": "^5.2.0"
   },
