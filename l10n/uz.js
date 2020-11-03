@@ -1,9 +1,9 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Saqlanmoqda...",
     "saved!" : "saqlangan!",
     "Saved" : "Saqlangan",
-    "saving..." : "saqlanmoqda..."
+    "saving..." : "saqlanmoqda...",
+    "Saving…" : "Saqlanmoqda..."
 },
 "nplurals=1; plural=0;");

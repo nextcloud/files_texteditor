@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Poteka shranjevanje ...",
     "saved!" : "shranjeno!",
     "failed!" : "spodletelo!",
     "Saved" : "Shranjeno",
@@ -36,6 +35,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Ni mogoče shraniti datoteke, ker je bila v času trenutne seje že spremenjena.",
     "Insufficient permissions" : "Neustrezna dovoljenja",
     "File path not supplied" : "Pot do datoteke ni podana",
-    "File mtime not supplied" : "Datoteka mtime ni podana"
+    "File mtime not supplied" : "Datoteka mtime ni podana",
+    "Saving…" : "Poteka shranjevanje ..."
 },
 "nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);");

@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Įrašoma…",
     "saved!" : "įrašyta!",
     "failed!" : "nepavyko!",
     "Saved" : "Įrašyta",
@@ -31,6 +30,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Negalima išsaugoti failo, nes jis pakeistas po atidarymo",
     "Insufficient permissions" : "Nepakanka leidimų",
     "File path not supplied" : "Nepateiktas failo kelias",
-    "File mtime not supplied" : "Failo modifikavimo laikas nepateiktas"
+    "File mtime not supplied" : "Failo modifikavimo laikas nepateiktas",
+    "Saving…" : "Įrašoma…"
 },
 "nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);");

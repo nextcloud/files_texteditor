@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "S'està desant…",
     "saved!" : "s’ha desat!",
     "failed!" : "ha fallat!",
     "Saved" : "S'ha desat",
@@ -37,6 +36,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "No és possible desar el fitxer perquè ha estat modificat després de obrir-se",
     "Insufficient permissions" : "Permisos insuficients",
     "File path not supplied" : "No s'ha proporcionat la ruta del fitxer",
-    "File mtime not supplied" : "No s'ha proporcionat l'hora de modificació del fitxer"
+    "File mtime not supplied" : "No s'ha proporcionat l'hora de modificació del fitxer",
+    "Saving…" : "S'està desant…"
 },
 "nplurals=2; plural=(n != 1);");

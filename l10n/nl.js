@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Opslaan...",
     "saved!" : "opgeslagen!",
     "failed!" : "mislukt!",
     "Saved" : "Bewaard",
@@ -37,6 +36,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Kan het bestand niet opslaan omdat het is gewijzigd na het openen",
     "Insufficient permissions" : "Onvoldoende rechten",
     "File path not supplied" : "Bestandspad niet opgegeven",
-    "File mtime not supplied" : "Tijdstempel bestand niet opgegeven"
+    "File mtime not supplied" : "Tijdstempel bestand niet opgegeven",
+    "Saving…" : "Opslaan..."
 },
 "nplurals=2; plural=(n != 1);");

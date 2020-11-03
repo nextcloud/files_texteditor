@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Снимам…",
     "saved!" : "сачувано!",
     "failed!" : "неуспех!",
     "Saved" : "Сачувано",
@@ -31,6 +30,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Не могу да сачувам фајл јер је измењен откако је отворен",
     "Insufficient permissions" : "Недовољне дозволе",
     "File path not supplied" : "Није добијена путања фајла",
-    "File mtime not supplied" : "Није добијено време измене фајла"
+    "File mtime not supplied" : "Није добијено време измене фајла",
+    "Saving…" : "Снимам…"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);");

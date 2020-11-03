@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Guardando...",
     "saved!" : "¡guardáu!",
     "failed!" : "¡falló!",
     "Saved" : "Guardáu",
@@ -22,6 +21,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Nun pudo guardase'l ficheru por mor que ta modificáu dende que s'abrió",
     "Insufficient permissions" : "Permisos insuficientes",
     "File path not supplied" : "Camín de ficheru non soportáu",
-    "File mtime not supplied" : "Ficheru mtime non soportáu"
+    "File mtime not supplied" : "Ficheru mtime non soportáu",
+    "Saving…" : "Guardando..."
 },
 "nplurals=2; plural=(n != 1);");

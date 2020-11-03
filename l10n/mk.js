@@ -1,12 +1,12 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Зачувува ...",
     "Saved" : "Снимено",
     "An error occurred!" : "Се случи грешка",
     "Edit" : "Уреди",
     "Preview" : "Преглед",
     "New text file" : "Нова текстуална датотека",
-    "New text file.txt" : "Нова текстуална датотека file.txt"
+    "New text file.txt" : "Нова текстуална датотека file.txt",
+    "Saving…" : "Зачувува ..."
 },
 "nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;");
