@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "正在保存…",
     "saved!" : "已保存",
     "failed!" : "失败！",
     "Saved" : "已保存",
@@ -37,6 +36,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "由于打开之后已被修改，故无法保存文件。",
     "Insufficient permissions" : "权限不足",
     "File path not supplied" : "未提供文件路径",
-    "File mtime not supplied" : "未提供 mtime"
+    "File mtime not supplied" : "未提供 mtime",
+    "Saving…" : "正在保存…"
 },
 "nplurals=1; plural=0;");

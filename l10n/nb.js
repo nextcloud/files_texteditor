@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Lagrer…",
     "saved!" : "lagret!",
     "failed!" : "mislyktes!",
     "Saved" : "Lagret",
@@ -26,6 +25,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Kan ikke lagre filen siden den har blitt endret.",
     "Insufficient permissions" : "Ikke rettigheter",
     "File path not supplied" : "Filbane ikke angitt",
-    "File mtime not supplied" : "Filens mtime ikke angitt"
+    "File mtime not supplied" : "Filens mtime ikke angitt",
+    "Saving…" : "Lagrer…"
 },
 "nplurals=2; plural=(n != 1);");

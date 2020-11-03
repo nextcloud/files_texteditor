@@ -1,5 +1,4 @@
 { "translations": {
-    "Saving…" : "მიმდინარეობს დამახსოვრება...",
     "saved!" : "შენახულია!",
     "failed!" : "ვერ მოხერხდა!",
     "Saved" : "შენახულ იქნა",
@@ -21,6 +20,7 @@
     "Cannot save file as it has been modified since opening" : "ფაილის შენახვა არ ხერხდება, ის გახსნის შემდეგ შეიცვალა",
     "Insufficient permissions" : "უფლებების უკმარისობა",
     "File path not supplied" : "ფაილის მისამართი არაა მოცემული",
-    "File mtime not supplied" : "ფაილი mtime არაა მოცემული"
+    "File mtime not supplied" : "ფაილი mtime არაა მოცემული",
+    "Saving…" : "მიმდინარეობს დამახსოვრება..."
 },"pluralForm" :"nplurals=2; plural=(n!=1);"
 }

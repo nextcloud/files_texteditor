@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Tallennetaan…",
     "saved!" : "tallennettu!",
     "failed!" : "epäonnistui!",
     "Saved" : "Tallennettu",
@@ -31,6 +30,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Tiedostoa ei voi tallentaa, koska sitä on muokattu avaamisen jälkeen",
     "Insufficient permissions" : "Oikeudet eivät riitä",
     "File path not supplied" : "TIedoston polkua ei annettu",
-    "File mtime not supplied" : "Tiedoston mtime-arvoa ei ole annettu"
+    "File mtime not supplied" : "Tiedoston mtime-arvoa ei ole annettu",
+    "Saving…" : "Tallennetaan…"
 },
 "nplurals=2; plural=(n != 1);");

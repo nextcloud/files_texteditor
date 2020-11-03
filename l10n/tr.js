@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Kaydediliyor…",
     "saved!" : "kaydedildi!",
     "failed!" : "kaydedilemedi!",
     "Saved" : "Kaydedildi",
@@ -37,6 +36,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Dosya açıldıktan sonra değiştirildiği için kaydedilemedi",
     "Insufficient permissions" : "İzinler yetersiz",
     "File path not supplied" : "Dosya yolu belirtilmemiş",
-    "File mtime not supplied" : "Dosya mtime belirtilmemiş"
+    "File mtime not supplied" : "Dosya mtime belirtilmemiş",
+    "Saving…" : "Kaydediliyor…"
 },
 "nplurals=2; plural=(n > 1);");

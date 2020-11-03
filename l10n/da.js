@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Gemmer...",
     "saved!" : "gemt!",
     "failed!" : "mislykkedes!",
     "Saved" : "Gemt",
@@ -26,6 +25,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Kan ikke gemme filen, da den er blevet ændret efter den blev åbnet",
     "Insufficient permissions" : "Utilstrækkeligt med rettigheder",
     "File path not supplied" : "Filstien er ikke angivet",
-    "File mtime not supplied" : "Filen mtime er ikke anvist"
+    "File mtime not supplied" : "Filen mtime er ikke anvist",
+    "Saving…" : "Gemmer..."
 },
 "nplurals=2; plural=(n != 1);");

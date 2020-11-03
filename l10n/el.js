@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Αποθηκεύεται.....",
     "saved!" : "αποθηκεύτηκε!",
     "failed!" : "απέτυχε!",
     "Saved" : "Αποθηκεύτηκαν",
@@ -31,6 +30,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Δεν είναι δυνατή η αποθήκευση του αρχείου, όπως έχει τροποποιηθεί από το άνοιγμα.",
     "Insufficient permissions" : "Μη επαρκή δικαιώματα",
     "File path not supplied" : "Η διαδρομή του αρχείου δεν παρέχεται.",
-    "File mtime not supplied" : "Ο χρόνος τροποποίησης  του αρχείου δεν παρέχεται"
+    "File mtime not supplied" : "Ο χρόνος τροποποίησης  του αρχείου δεν παρέχεται",
+    "Saving…" : "Αποθηκεύεται....."
 },
 "nplurals=2; plural=(n != 1);");

@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "מתבצעת שמירה…",
     "saved!" : "נשמר!",
     "failed!" : "נכשל!",
     "Saved" : "נשמר",
@@ -30,6 +29,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "לא ניתן לשמור את הקובץ כיוון שהקובץ שונה מאז פתיחתו",
     "Insufficient permissions" : "אין הרשאות מספקות",
     "File path not supplied" : "נתיב קובץ לא סופק",
-    "File mtime not supplied" : "קובץ mtime לא סופק"
+    "File mtime not supplied" : "קובץ mtime לא סופק",
+    "Saving…" : "מתבצעת שמירה…"
 },
 "nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;");

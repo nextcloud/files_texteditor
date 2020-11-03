@@ -1,10 +1,10 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Đang lưu...",
     "Saved" : "Đã lưu",
     "An error occurred!" : "Có một lỗi đã xảy ra!",
     "Edit" : "Chỉnh sửa",
-    "Insufficient permissions" : "Không đủ quyền"
+    "Insufficient permissions" : "Không đủ quyền",
+    "Saving…" : "Đang lưu..."
 },
 "nplurals=1; plural=0;");

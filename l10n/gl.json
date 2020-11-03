@@ -1,5 +1,4 @@
 { "translations": {
-    "Saving…" : "Gardando…",
     "saved!" : "gardado!",
     "failed!" : "produciuse un fallo!",
     "Saved" : "Gardado",
@@ -35,6 +34,7 @@
     "Cannot save file as it has been modified since opening" : "Non é posíbel gardar o ficheiro, xa que foi modificado trala súa apertura",
     "Insufficient permissions" : "Non ten permisos abondo",
     "File path not supplied" : "Non forneceu unha ruta de ficheiro",
-    "File mtime not supplied" : "Non forneceu o ficheiro mtime"
+    "File mtime not supplied" : "Non forneceu o ficheiro mtime",
+    "Saving…" : "Gardando…"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
