@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Sparar ...",
     "saved!" : "sparad!",
     "failed!" : "misslyckades.",
     "Saved" : "Sparad",
@@ -31,6 +30,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Kan inte spara filen eftersom den har ändrats sedan den öppnats.",
     "Insufficient permissions" : "Otillräcklig behörighet.",
     "File path not supplied" : "Ingen sökväg till fil angiven.",
-    "File mtime not supplied" : "Inget mtime-attribut angivet för filen."
+    "File mtime not supplied" : "Inget mtime-attribut angivet för filen.",
+    "Saving…" : "Sparar ..."
 },
 "nplurals=2; plural=(n != 1);");

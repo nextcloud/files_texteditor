@@ -1,5 +1,4 @@
 { "translations": {
-    "Saving…" : "저장 중…",
     "saved!" : "저장했습니다!",
     "failed!" : "실패했습니다!",
     "Saved" : "저장됨",
@@ -26,6 +25,7 @@
     "Cannot save file as it has been modified since opening" : "파일을 연 후 수정했기 때문에 저장할 수 없음",
     "Insufficient permissions" : "권한 부족",
     "File path not supplied" : "파일 경로가 지정되지 않았음",
-    "File mtime not supplied" : "파일 수정 시간이 지정되지 않았음"
+    "File mtime not supplied" : "파일 수정 시간이 지정되지 않았음",
+    "Saving…" : "저장 중…"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

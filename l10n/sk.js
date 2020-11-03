@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Ukladanie...",
     "saved!" : "uložené!",
     "failed!" : "neúspešné!",
     "Saved" : "Uložené",
@@ -31,6 +30,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Nie je možné uložiť súbor, pretože bol od otvorenia zmenený",
     "Insufficient permissions" : "Nedostatočné oprávnenia",
     "File path not supplied" : "Nebola uvedená cesta k súboru",
-    "File mtime not supplied" : "Nebol uvedený mtime súboru"
+    "File mtime not supplied" : "Nebol uvedený mtime súboru",
+    "Saving…" : "Ukladanie..."
 },
 "nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);");

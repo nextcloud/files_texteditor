@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Запазване",
     "saved!" : "записан!",
     "failed!" : "неуспешно!",
     "Saved" : "Запазено",
@@ -23,6 +22,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Файлът не може да бъде запаметен, защото е бил модифициран след отварянето му",
     "Insufficient permissions" : "Недостатъчни права",
     "File path not supplied" : "Не е предоставен път до файл",
-    "File mtime not supplied" : "Не е предоставено време на модификация на файла - mtime"
+    "File mtime not supplied" : "Не е предоставено време на модификация на файла - mtime",
+    "Saving…" : "Запазване"
 },
 "nplurals=2; plural=(n != 1);");

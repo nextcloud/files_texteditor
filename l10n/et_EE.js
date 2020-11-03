@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Salvestamine...",
     "saved!" : "Salvestatud!",
     "failed!" : "ebaõnnestus!",
     "Saved" : "Salvestatud",
@@ -23,6 +22,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Faili ei saa salvestada, kune seda on pärast avamist muudetud",
     "Insufficient permissions" : "Pole piisavalt õiguseid",
     "File path not supplied" : "Faili asukoht on määramata",
-    "File mtime not supplied" : "Faili mtime puudub"
+    "File mtime not supplied" : "Faili mtime puudub",
+    "Saving…" : "Salvestamine..."
 },
 "nplurals=2; plural=(n != 1);");

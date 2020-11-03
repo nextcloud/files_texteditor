@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Konservado...",
     "saved!" : "konservita!",
     "failed!" : "malsukcesis!",
     "Saved" : "Konservita",
@@ -30,6 +29,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Ne konserveblas la dosiero ĉar ĝi modifiĝis post malfermo",
     "Insufficient permissions" : "Nesufiĉaj permesoj",
     "File path not supplied" : "Dosiervojo ne provizita.",
-    "File mtime not supplied" : "Ŝanĝotempo (mtime) de la dosiero ne provizita"
+    "File mtime not supplied" : "Ŝanĝotempo (mtime) de la dosiero ne provizita",
+    "Saving…" : "Konservado..."
 },
 "nplurals=2; plural=(n != 1);");

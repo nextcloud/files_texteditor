@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "儲存中…",
     "saved!" : "已儲存!",
     "failed!" : "失敗!",
     "Saved" : "已儲存",
@@ -27,6 +26,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "無法將變更內容儲存至檔案，檔案正被開啟中",
     "Insufficient permissions" : "權限不足",
     "File path not supplied" : "沒有提供檔案路徑",
-    "File mtime not supplied" : "沒有提供檔案修改時間"
+    "File mtime not supplied" : "沒有提供檔案修改時間",
+    "Saving…" : "儲存中…"
 },
 "nplurals=1; plural=0;");

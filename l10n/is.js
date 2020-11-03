@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Vista…",
     "saved!" : "vistað!",
     "failed!" : "mistókst!",
     "Saved" : "Vistað",
@@ -30,6 +29,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Get ekki vistað skrána þar sem henni hefur verið breytt síðan hún var opnuð",
     "Insufficient permissions" : "Ekki næg réttindi",
     "File path not supplied" : "Skrá slóð fylgir ekki",
-    "File mtime not supplied" : "mtime skrá fylgir ekki"
+    "File mtime not supplied" : "mtime skrá fylgir ekki",
+    "Saving…" : "Vista…"
 },
 "nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);");

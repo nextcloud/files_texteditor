@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "保存中...",
     "saved!" : "保存しました！",
     "failed!" : " 失敗しました！",
     "Saved" : "保存しました",
@@ -37,6 +36,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "変更したファイルは使用中のため保存できません",
     "Insufficient permissions" : "権限が不足しています",
     "File path not supplied" : "ファイルパスが足りません",
-    "File mtime not supplied" : "ファイルのアクセス時刻がありません"
+    "File mtime not supplied" : "ファイルのアクセス時刻がありません",
+    "Saving…" : "保存中..."
 },
 "nplurals=1; plural=0;");

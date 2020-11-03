@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Se salvează...",
     "saved!" : "salvat!",
     "failed!" : "eșuat!",
     "Saved" : "Salvat",
@@ -18,6 +17,7 @@ OC.L10N.register(
     "saving..." : "se salvează...",
     "Cannot save file as it has been modified since opening" : "Nu se poate salva fișierul, a fost modificat de la deschidere.",
     "Insufficient permissions" : "Permisiuni insuficiente",
-    "File path not supplied" : "Calea fișierului nu este oferită"
+    "File path not supplied" : "Calea fișierului nu este oferită",
+    "Saving…" : "Se salvează..."
 },
 "nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));");

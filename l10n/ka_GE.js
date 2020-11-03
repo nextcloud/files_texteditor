@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "მიმდინარეობს დამახსოვრება...",
     "saved!" : "შენახულია!",
     "failed!" : "ვერ მოხერხდა!",
     "Saved" : "შენახულ იქნა",
@@ -23,6 +22,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "ფაილის შენახვა არ ხერხდება, ის გახსნის შემდეგ შეიცვალა",
     "Insufficient permissions" : "უფლებების უკმარისობა",
     "File path not supplied" : "ფაილის მისამართი არაა მოცემული",
-    "File mtime not supplied" : "ფაილი mtime არაა მოცემული"
+    "File mtime not supplied" : "ფაილი mtime არაა მოცემული",
+    "Saving…" : "მიმდინარეობს დამახსოვრება..."
 },
 "nplurals=2; plural=(n!=1);");
