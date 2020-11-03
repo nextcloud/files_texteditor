@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Mentés…",
     "saved!" : "mentve!",
     "failed!" : "sikertelen!",
     "Saved" : "Elmentve",
@@ -31,6 +30,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Nem tudom a fáljt menteni, mert időközben a tartalma megváltozott.",
     "Insufficient permissions" : "Nincs jogosultsága hozzá",
     "File path not supplied" : "Fálj elérést nem adta meg",
-    "File mtime not supplied" : "File módosítási idő nincs megadva"
+    "File mtime not supplied" : "File módosítási idő nincs megadva",
+    "Saving…" : "Mentés…"
 },
 "nplurals=2; plural=(n != 1);");

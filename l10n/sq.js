@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Duke u ruajtur...",
     "saved!" : "u ruajt!",
     "failed!" : "dështoi!",
     "Saved" : "U ruajt",
@@ -23,6 +22,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "S’ruhet dot kartela, ngaqë është ndryshuar që prej hapjes",
     "Insufficient permissions" : "Leje të pamjaftueshme",
     "File path not supplied" : "S’u dha shteg kartele",
-    "File mtime not supplied" : "S’u dha skedari mtime"
+    "File mtime not supplied" : "S’u dha skedari mtime",
+    "Saving…" : "Duke u ruajtur..."
 },
 "nplurals=2; plural=(n != 1);");

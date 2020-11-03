@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Speichere…",
     "saved!" : "Gespeichert!",
     "failed!" : "Fehlgeschlagen!",
     "Saved" : "Gespeichert",
@@ -37,6 +36,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Die Datei konnte nicht gespeichert werden, weil sie seit dem Öffnen verändert worden ist",
     "Insufficient permissions" : "Nicht ausreichende Berechtigungen",
     "File path not supplied" : "Dateipfad nicht angegeben",
-    "File mtime not supplied" : "Dateiänderungsdatum nicht angegeben"
+    "File mtime not supplied" : "Dateiänderungsdatum nicht angegeben",
+    "Saving…" : "Speichere…"
 },
 "nplurals=2; plural=(n != 1);");

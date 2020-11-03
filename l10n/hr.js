@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Spremanje...",
     "saved!" : "spremljeno!",
     "failed!" : "neuspješno!",
     "Saved" : "Spremljeno",
@@ -31,6 +30,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Nije moguće spremiti datoteku jer je promijenjena nakon otvaranja",
     "Insufficient permissions" : "Nedovoljna dopuštenja",
     "File path not supplied" : "Nije isporučen put datoteke",
-    "File mtime not supplied" : "Nije isporučen mtime datoteke"
+    "File mtime not supplied" : "Nije isporučen mtime datoteke",
+    "Saving…" : "Spremanje..."
 },
 "nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;");

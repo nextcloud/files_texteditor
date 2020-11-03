@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "در حال ذخیره",
     "saved!" : "ذخیره شد",
     "failed!" : "ناموفق!",
     "Saved" : "ذخیره شد",
@@ -30,6 +29,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "با توجه به تغییرات رخ داده بر روی فایل از زمان باز شدن آن، امکان ذخیره‌سازی وجود ندارد.",
     "Insufficient permissions" : "دسترسی کافی نیست",
     "File path not supplied" : "مسیر فایل داده نشده است",
-    "File mtime not supplied" : "mtime فایل داده نشده است"
+    "File mtime not supplied" : "mtime فایل داده نشده است",
+    "Saving…" : "در حال ذخیره"
 },
 "nplurals=2; plural=(n > 1);");

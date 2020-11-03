@@ -1,5 +1,4 @@
 { "translations": {
-    "Saving…" : "Saving…",
     "saved!" : "saved!",
     "failed!" : "failed!",
     "Saved" : "Saved",
@@ -25,6 +24,7 @@
     "Cannot save file as it has been modified since opening" : "Cannot save file as it has been modified since opening",
     "Insufficient permissions" : "Insufficient permissions",
     "File path not supplied" : "File path not supplied",
-    "File mtime not supplied" : "File mtime not supplied"
+    "File mtime not supplied" : "File mtime not supplied",
+    "Saving…" : "Saving…"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

@@ -1,7 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving…" : "Gordetzen…",
     "saved!" : "gordeta!",
     "failed!" : "errorea!",
     "Saved" : "Gordeta",
@@ -31,6 +30,7 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Ezin da fitxategia gorde ireki denetik aldatu delako",
     "Insufficient permissions" : "Baimen gutxiegi",
     "File path not supplied" : "Ez da fitxategiaren biderik eman",
-    "File mtime not supplied" : "Fitxategiaren mtime-a ez da eman"
+    "File mtime not supplied" : "Fitxategiaren mtime-a ez da eman",
+    "Saving…" : "Gordetzen…"
 },
 "nplurals=2; plural=(n != 1);");
