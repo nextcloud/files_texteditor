@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving …" : "Ukládání…",
     "saved!" : "uloženo!",
     "failed!" : "nezdařilo se!",
     "Saved" : "Uloženo",
