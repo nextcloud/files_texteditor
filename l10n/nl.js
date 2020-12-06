@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving …" : "Opslaan ...",
     "saved!" : "opgeslagen!",
     "failed!" : "mislukt!",
     "Saved" : "Bewaard",
