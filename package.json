@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "NODE_ENV=development webpack",
     "watch": "NODE_ENV=development webpack --progress --watch",
-    "build": "NODE_ENV=production webpack --progress --hide-modules"
+    "build": "NODE_ENV=production webpack --progress"
   },
   "browserslist": [
     "extends @nextcloud/browserslist-config"
