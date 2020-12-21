@@ -12,14 +12,13 @@ module.exports = {
 		filename: "[name].js",
 		chunkFilename: '[name].bundle.js',
 		path: path.resolve(__dirname, "build"),
-		jsonpFunction: 'webpackJsonpTexteditor'
+		uniqueName: 'files_texteditor',
 	},
 	resolve: {
 		extensions: [".ts", ".js"]
 	},
 	plugins: [
 		new CleanWebpackPlugin(),
-		new webpack.NamedModulesPlugin(),
 	],
 	module: {
 		rules: [
@@ -49,7 +48,4 @@ module.exports = {
 			}
 		]
 	},
-	node: {
-		fs: 'empty'
-	}
 };
