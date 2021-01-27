@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving …" : "Spremanje...",
     "saved!" : "spremljeno!",
     "failed!" : "neuspješno!",
     "Saved" : "Spremljeno",
