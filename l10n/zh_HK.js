@@ -5,7 +5,7 @@ OC.L10N.register(
     "saved!" : "已儲存!",
     "failed!" : "失敗!",
     "Saved" : "已儲存",
-    "There was a problem saving your changes. Click to resume editing." : "在儲存您的變更時發生錯誤，點選以回復編輯狀態。",
+    "There was a problem saving your changes. Click to resume editing." : "在儲存您的更新時出現問題，請點選以回復編輯狀態。",
     "Edit in plain text editor" : "在純文字編輯器中編輯",
     "An error occurred!" : "發生錯誤！",
     "Edit" : "編輯",
