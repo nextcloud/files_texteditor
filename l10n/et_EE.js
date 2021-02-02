@@ -17,12 +17,11 @@ OC.L10N.register(
     "The file is locked." : "Fail on lukus.",
     "An internal server error occurred." : "Tekkis sisemine serveri tõrge.",
     "You can not open a folder" : "Sa ei saa avada kausta",
-    "saving..." : "Salvestamine...",
+    "Saving…" : "Salvestamine...",
     "You can not write to a folder" : "Sa ei saa kirjutada kausta",
     "Cannot save file as it has been modified since opening" : "Faili ei saa salvestada, kune seda on pärast avamist muudetud",
     "Insufficient permissions" : "Pole piisavalt õiguseid",
     "File path not supplied" : "Faili asukoht on määramata",
-    "File mtime not supplied" : "Faili mtime puudub",
-    "Saving…" : "Salvestamine..."
+    "File mtime not supplied" : "Faili mtime puudub"
 },
 "nplurals=2; plural=(n != 1);");

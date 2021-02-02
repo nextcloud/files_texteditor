@@ -23,12 +23,11 @@ OC.L10N.register(
     "Share not found" : "Delt fil ikke funnet",
     "You are not authorized to open this share" : "Du har ikke tilgang til å åpne denne delte filen",
     "You can not open a folder" : "Du kan ikke åpne en mappe",
-    "saving..." : "lagrer …",
+    "Saving…" : "Lagrer…",
     "You can not write to a folder" : "Du kan ikke skrive til ei mappe",
     "Cannot save file as it has been modified since opening" : "Kan ikke lagre filen siden den har blitt endret.",
     "Insufficient permissions" : "Ikke rettigheter",
     "File path not supplied" : "Filbane ikke angitt",
-    "File mtime not supplied" : "Filens mtime ikke angitt",
-    "Saving…" : "Lagrer…"
+    "File mtime not supplied" : "Filens mtime ikke angitt"
 },
 "nplurals=2; plural=(n != 1);");

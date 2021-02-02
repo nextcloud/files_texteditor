@@ -30,12 +30,11 @@ OC.L10N.register(
     "Invalid range request" : "Neteisinga rėžio užklausa",
     "Plain text editor" : "Grynojo teksto redaktorius",
     "Open, save and edit text files" : "Atverti, įrašyti ir taisyti tekstinius failus",
-    "saving..." : "įrašoma...",
+    "Saving…" : "Įrašoma…",
     "You can not write to a folder" : "Negalima rašyti į aplanką",
     "Cannot save file as it has been modified since opening" : "Negalima išsaugoti failo, nes jis pakeistas po atidarymo",
     "Insufficient permissions" : "Nepakanka leidimų",
     "File path not supplied" : "Nepateiktas failo kelias",
-    "File mtime not supplied" : "Failo modifikavimo laikas nepateiktas",
-    "Saving…" : "Įrašoma…"
+    "File mtime not supplied" : "Failo modifikavimo laikas nepateiktas"
 },
 "nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);");

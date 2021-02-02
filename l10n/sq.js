@@ -17,12 +17,11 @@ OC.L10N.register(
     "The file is locked." : "Kartela është e kyçur.",
     "An internal server error occurred." : "Ndodhi një gabim i brendshëm shërbyesi.",
     "You can not open a folder" : "Ju nuk mund të hapni një dosje",
-    "saving..." : "po ruhet…",
+    "Saving…" : "Duke u ruajtur...",
     "You can not write to a folder" : "Ju s'mund të shkruani tek një dosje ",
     "Cannot save file as it has been modified since opening" : "S’ruhet dot kartela, ngaqë është ndryshuar që prej hapjes",
     "Insufficient permissions" : "Leje të pamjaftueshme",
     "File path not supplied" : "S’u dha shteg kartele",
-    "File mtime not supplied" : "S’u dha skedari mtime",
-    "Saving…" : "Duke u ruajtur..."
+    "File mtime not supplied" : "S’u dha skedari mtime"
 },
 "nplurals=2; plural=(n != 1);");
