@@ -15,12 +15,11 @@
     "The file is locked." : "ფაილი ჩაკეტილია.",
     "An internal server error occurred." : "გამოჩნდა შიდა სერვერის შეცდომა.",
     "You can not open a folder" : "დირექტორიას ვერ გახსნით",
-    "saving..." : "ინახება...",
+    "Saving…" : "მიმდინარეობს დამახსოვრება...",
     "You can not write to a folder" : "ამ დირექტორიაში ვერ ჩაწერთ",
     "Cannot save file as it has been modified since opening" : "ფაილის შენახვა არ ხერხდება, ის გახსნის შემდეგ შეიცვალა",
     "Insufficient permissions" : "უფლებების უკმარისობა",
     "File path not supplied" : "ფაილის მისამართი არაა მოცემული",
-    "File mtime not supplied" : "ფაილი mtime არაა მოცემული",
-    "Saving…" : "მიმდინარეობს დამახსოვრება..."
+    "File mtime not supplied" : "ფაილი mtime არაა მოცემული"
 },"pluralForm" :"nplurals=2; plural=(n!=1);"
 }

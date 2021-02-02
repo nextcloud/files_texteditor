@@ -24,12 +24,11 @@ OC.L10N.register(
     "Invalid range request" : "Ógild fyrirspurn um gagnasvið",
     "Plain text editor" : "Ritill fyrir hreinan texta",
     "Open, save and edit text files" : "Opna, vista og breyta textaskrám",
-    "saving..." : "er að vista ...",
+    "Saving…" : "Vista…",
     "You can not write to a folder" : "Þú getur ekki skrifað í möppu",
     "Cannot save file as it has been modified since opening" : "Get ekki vistað skrána þar sem henni hefur verið breytt síðan hún var opnuð",
     "Insufficient permissions" : "Ekki næg réttindi",
     "File path not supplied" : "Skrá slóð fylgir ekki",
-    "File mtime not supplied" : "mtime skrá fylgir ekki",
-    "Saving…" : "Vista…"
+    "File mtime not supplied" : "mtime skrá fylgir ekki"
 },
 "nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);");

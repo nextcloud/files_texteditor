@@ -20,12 +20,11 @@ OC.L10N.register(
     "You are not authorized to open this share" : "No estas autorizado para abrir este elemento compartido",
     "You can not open a folder" : "No puedes abrir la carpeta",
     "Invalid range request" : "Rango de solicitud invalido",
-    "saving..." : "guardando...",
+    "Saving…" : "Guardando...",
     "You can not write to a folder" : "No puedes escribir a la carpeta",
     "Cannot save file as it has been modified since opening" : "No es posible guardar el archivo ya que ha sido modificado desde que fue abierto",
     "Insufficient permissions" : "Permisos insuficientes",
     "File path not supplied" : "La ruta del archivo no fue proporcionada",
-    "File mtime not supplied" : "El archivo mtime no fue proporcionado",
-    "Saving…" : "Guardando..."
+    "File mtime not supplied" : "El archivo mtime no fue proporcionado"
 },
 "nplurals=2; plural=(n != 1);");

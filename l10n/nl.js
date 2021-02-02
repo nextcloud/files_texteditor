@@ -32,12 +32,11 @@ OC.L10N.register(
     "Plain text editor" : "Kaletekstverwerker",
     "Open, save and edit text files" : "Open, bewaar en bewerk tekstbestanden",
     "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Met deze applicatie kunnen Nextcloud-gebruikers tekstbestanden in de webbrowser openen, opslaan en bewerken. Indien ingeschakeld, verschijnt een vermelding \"Tekstbestand\" in de knop \"Nieuw\" bovenin de webbrowser. Wanneer erop wordt geklikt, wordt een nieuw tekstbestand geopend in de browser en kan het bestand worden opgeslagen in de huidige Nextcloud-map. En wanneer op een tekstbestand op de webbrowser wordt geklikt, wordt het geopend en is het bewerkbaar. Als de rechten dit toestaan, kan een gebruiker ook gedeelde bestanden bewerken en deze wijzigingen opslaan in de webbrowser.\nMeer informatie is beschikbaar in de documentatie van de Tekstverwerket.",
-    "saving..." : "opslaan...",
+    "Saving…" : "Opslaan...",
     "You can not write to a folder" : "Je kunt schrijven naar een map",
     "Cannot save file as it has been modified since opening" : "Kan het bestand niet opslaan omdat het is gewijzigd na het openen",
     "Insufficient permissions" : "Onvoldoende rechten",
     "File path not supplied" : "Bestandspad niet opgegeven",
-    "File mtime not supplied" : "Tijdstempel bestand niet opgegeven",
-    "Saving…" : "Opslaan..."
+    "File mtime not supplied" : "Tijdstempel bestand niet opgegeven"
 },
 "nplurals=2; plural=(n != 1);");

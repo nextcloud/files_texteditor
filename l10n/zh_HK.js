@@ -32,12 +32,11 @@ OC.L10N.register(
     "Plain text editor" : "純文字編輯器",
     "Open, save and edit text files" : "開啟、儲存與編輯文字檔案",
     "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "此應用程式讓 Nextcloud 使用者可以在網路瀏覽器中開啟、儲存與編輯文字檔案。若啟用，將在瀏覽器頂部顯示的「新增」按鈕選單中顯示「文字檔案」的項目。按下後，瀏覽器就會開啟一個新的文字檔案，然後此檔案就可以儲存到目前的 Nextcloud 目錄中。此外，當在瀏覽器中點擊文字檔案時，其就會變成可開啟且可編輯。如果權限允許，使用者還可以編輯分享的檔案並將這些變更存回瀏覽器中。\n文字編輯器文件中提供了更多詳細資訊。",
-    "saving..." : "儲存中...",
+    "Saving…" : "儲存中…",
     "You can not write to a folder" : "你無法對資料夾做寫入",
     "Cannot save file as it has been modified since opening" : "無法將變更內容儲存至檔案，檔案正被開啟中",
     "Insufficient permissions" : "權限不足",
     "File path not supplied" : "沒有提供檔案路徑",
-    "File mtime not supplied" : "沒有提供檔案修改時間",
-    "Saving…" : "儲存中…"
+    "File mtime not supplied" : "沒有提供檔案修改時間"
 },
 "nplurals=1; plural=0;");

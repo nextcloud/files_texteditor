@@ -32,12 +32,11 @@ OC.L10N.register(
     "Plain text editor" : "Απλός επεξεργαστής κειμένου",
     "Open, save and edit text files" : "Ανοίξτε, αποθηκεύστε και επεξεργαστείτε αρχεία κειμένου",
     "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Η εφαρμογή επιτρέπει στους χρήστες του Nextcloud να ανοίγουν, να αποθηκεύουν και να επεξεργάζονται αρχεία κειμένου στο πρόγραμμα περιήγησης ιστού. Εάν είναι ενεργοποιημένη, εμφανίζεται μια καταχώρηση που ονομάζεται \"Αρχείο κειμένου\" στο μενού \"Νέο\" κουμπί στο επάνω μέρος του προγράμματος περιήγησης. Όταν κάνετε κλικ, ανοίγει ένα νέο αρχείο κειμένου στο πρόγραμμα περιήγησης και το αρχείο μπορεί να αποθηκευτεί στον τρέχοντα κατάλογο Nextcloud. Επιπλέον, όταν κάνετε κλικ σε ένα αρχείο κειμένου στο πρόγραμμα περιήγησης ιστού, θα ανοίξει προς επεξεργασία. Εάν επιτρέπεται, ο χρήστης μπορεί επίσης να επεξεργαστεί τα κοινόχρηστα αρχεία και να αποθηκεύσει αυτές τις αλλαγές ξανά στο πρόγραμμα περιήγησης ιστού.\nΠερισσότερες πληροφορίες είναι διαθέσιμες στην τεκμηρίωση του κειμένου επεξεργασίας.",
-    "saving..." : "γίνεται αποθήκευση...",
+    "Saving…" : "Αποθηκεύεται.....",
     "You can not write to a folder" : "Δεν μπορείτε να γράψετε στον φάκελο",
     "Cannot save file as it has been modified since opening" : "Δεν είναι δυνατή η αποθήκευση του αρχείου, όπως έχει τροποποιηθεί από το άνοιγμα.",
     "Insufficient permissions" : "Μη επαρκή δικαιώματα",
     "File path not supplied" : "Η διαδρομή του αρχείου δεν παρέχεται.",
-    "File mtime not supplied" : "Ο χρόνος τροποποίησης  του αρχείου δεν παρέχεται",
-    "Saving…" : "Αποθηκεύεται....."
+    "File mtime not supplied" : "Ο χρόνος τροποποίησης  του αρχείου δεν παρέχεται"
 },
 "nplurals=2; plural=(n != 1);");
