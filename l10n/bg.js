@@ -17,12 +17,11 @@ OC.L10N.register(
     "The file is locked." : "Файлът е заключен.",
     "An internal server error occurred." : "Възникна вътрешно сървърна грешка.",
     "You can not open a folder" : "Не можете да отворите папката",
-    "saving..." : "записва...",
+    "Saving…" : "Запазване",
     "You can not write to a folder" : "Не можете да записвате в папката",
     "Cannot save file as it has been modified since opening" : "Файлът не може да бъде запаметен, защото е бил модифициран след отварянето му",
     "Insufficient permissions" : "Недостатъчни права",
     "File path not supplied" : "Не е предоставен път до файл",
-    "File mtime not supplied" : "Не е предоставено време на модификация на файла - mtime",
-    "Saving…" : "Запазване"
+    "File mtime not supplied" : "Не е предоставено време на модификация на файла - mtime"
 },
 "nplurals=2; plural=(n != 1);");

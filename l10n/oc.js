@@ -13,7 +13,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "Camin de fichièr provesit invalid.",
     "The file is locked." : "Lo fichièr es verrolhat.",
     "An internal server error occurred." : "Una error intèrna del servidor s'es produsida.",
-    "saving..." : "enregistrament...",
     "Cannot save file as it has been modified since opening" : "Impossible de salvar lo fichièr, es estat modificat entre temps",
     "Insufficient permissions" : "Permissions insufisentas",
     "File path not supplied" : "Camin del fichièr pas provesit",

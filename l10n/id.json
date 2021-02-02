@@ -16,12 +16,11 @@
     "Could not write to file." : "Tidak dapat menulis pada berkas.",
     "You can not open a folder" : "Anda tidak dapat membuka folder",
     "Open, save and edit text files" : "Buka, simpan dan edit berkas teks",
-    "saving..." : "menyimpan...",
+    "Saving…" : "Menyimpan...",
     "You can not write to a folder" : "Anda tidak dapat menulis pada folder",
     "Cannot save file as it has been modified since opening" : "Tidak dapat menyimpan berkas karena sudah diubah sejak dibuka",
     "Insufficient permissions" : "Izin tidak cukup",
     "File path not supplied" : "Lokasi berkas belum diberikan",
-    "File mtime not supplied" : "Berkas mtime belum diberikan",
-    "Saving…" : "Menyimpan..."
+    "File mtime not supplied" : "Berkas mtime belum diberikan"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

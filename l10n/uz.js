@@ -3,7 +3,6 @@ OC.L10N.register(
     {
     "saved!" : "saqlangan!",
     "Saved" : "Saqlangan",
-    "saving..." : "saqlanmoqda...",
     "Saving…" : "Saqlanmoqda..."
 },
 "nplurals=1; plural=0;");
