@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving …" : "儲存中 ...",
+    "Saving …" : "儲存中 。。。",
     "saved!" : "已儲存!",
     "failed!" : "失敗!",
     "Saved" : "已儲存",
@@ -12,7 +12,7 @@ OC.L10N.register(
     "Mixed" : "混合",
     "Preview" : "預覽",
     "New text file" : "新文字檔",
-    "New text file.txt" : "新文字檔.txt",
+    "New text file.txt" : "新文字檔。txt",
     "You can not open a folder." : "您無法開啟資料夾。",
     "This file is too big to be opened. Please download the file instead." : "這個檔案太大以致於無法開啟，請您下載此檔案代替線上開啟。",
     "Cannot read the file." : "無法讀取檔案。",
