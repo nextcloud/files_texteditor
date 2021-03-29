@@ -33,7 +33,7 @@ use OCP\ISession;
 use OCP\Share\Exceptions\ShareNotFound;
 use OCP\Share\IManager as ShareManager;
 
-class PublicFileHandlingController extends Controller{
+class PublicFileHandlingController extends Controller {
 
 	/** @var IL10N */
 	private $l;
