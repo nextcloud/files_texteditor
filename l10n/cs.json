@@ -11,7 +11,7 @@
     "Preview" : "Náhled",
     "New text file" : "Nový textový soubor",
     "New text file.txt" : "Nový textový soubor.txt",
-    "You can not open a folder." : "Tuto složku nemůžete otevřít.",
+    "You can not open a folder." : "Není možné otevírat složku.",
     "This file is too big to be opened. Please download the file instead." : "Soubor je pro otevření příliš veliký. Namísto otevření ho stáhněte.",
     "Cannot read the file." : "Soubor nelze přečíst.",
     "Invalid file path supplied." : "Zadán neplatný popis umístění souboru.",
