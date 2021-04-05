@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving …" : "儲存中 。。。",
+    "Saving …" : "儲存中 ...",
     "saved!" : "已儲存!",
     "failed!" : "失敗!",
     "Saved" : "已儲存",
