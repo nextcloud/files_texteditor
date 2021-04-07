@@ -93,7 +93,7 @@ class PublicFileHandlingController extends Controller {
 		}
 
 		if ($node instanceof Folder) {
-			return new DataResponse(['message' => $this->l->t('You can not open a folder')], Http::STATUS_BAD_REQUEST);
+			return new DataResponse(['message' => $this->l->t('You cannot open a folder')], Http::STATUS_BAD_REQUEST);
 		}
 
 		$range = $this->request->getHeader('Range');
