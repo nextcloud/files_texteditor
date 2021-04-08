@@ -13,7 +13,6 @@ OC.L10N.register(
     "Preview" : "תצוגה מקדימה",
     "New text file" : "קובץ טקסט חדש",
     "New text file.txt" : "קובץ טקסט חדש.txt",
-    "You can not open a folder." : "לא ניתן לפתוח תיקייה.",
     "This file is too big to be opened. Please download the file instead." : "קובץ זה גדול מדי לפתיחה. יש להוריד את הקובץ במקום",
     "Cannot read the file." : "לא ניתן לקרוא את הקובץ.",
     "Invalid file path supplied." : "סופק נתיב קובץ לא חוקי.",
@@ -27,15 +26,16 @@ OC.L10N.register(
     "File mtime not supplied." : "מועד השינוי של הקובץ לא סופק.",
     "Share not found" : "השיתוף לא נמצא",
     "You are not authorized to open this share" : "אין לך הרשאה לפתוח את השיתוף הזה",
-    "You can not open a folder" : "לא ניתן לפתוח תיקייה",
     "Invalid range request" : "בקשת הטווח שגויה",
     "Plain text editor" : "עורך טקסט פשוט",
     "Open, save and edit text files" : "פתיחה, שמירה ועריכה של קובצי טקסט",
     "Saving…" : "מתבצעת שמירה…",
+    "You can not open a folder" : "לא ניתן לפתוח תיקייה",
     "You can not write to a folder" : "לא ניתן לכתוב לתיקייה",
     "Cannot save file as it has been modified since opening" : "לא ניתן לשמור את הקובץ כיוון שהקובץ שונה מאז פתיחתו",
     "Insufficient permissions" : "אין הרשאות מספקות",
     "File path not supplied" : "נתיב קובץ לא סופק",
-    "File mtime not supplied" : "קובץ mtime לא סופק"
+    "File mtime not supplied" : "קובץ mtime לא סופק",
+    "You can not open a folder." : "לא ניתן לפתוח תיקייה."
 },
 "nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;");
