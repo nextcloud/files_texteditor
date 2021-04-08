@@ -13,7 +13,6 @@ OC.L10N.register(
     "Preview" : "Peržiūra",
     "New text file" : "Naujas tekstinis failas",
     "New text file.txt" : "Naujas tekstinis failas.txt",
-    "You can not open a folder." : "Negalite atverti aplanko.",
     "This file is too big to be opened. Please download the file instead." : "Šis failas yra per didelis, kad būtų atvertas. Vietoj to, prašome jį atsisiųsti.",
     "Cannot read the file." : "Nepavyko perskaityti failo.",
     "Invalid file path supplied." : "Pateiktas neteisingas failo kelias.",
@@ -26,15 +25,16 @@ OC.L10N.register(
     "File path not supplied." : "Nepateiktas failo kelias.",
     "Share not found" : "Viešinys nerastas",
     "You are not authorized to open this share" : "Jums nėra leidžiama atverti šio viešinio",
-    "You can not open a folder" : "Jūs negalite atverti aplanko",
     "Invalid range request" : "Neteisinga rėžio užklausa",
     "Plain text editor" : "Grynojo teksto redaktorius",
     "Open, save and edit text files" : "Atverti, įrašyti ir taisyti tekstinius failus",
     "Saving…" : "Įrašoma…",
+    "You can not open a folder" : "Jūs negalite atverti aplanko",
     "You can not write to a folder" : "Negalima rašyti į aplanką",
     "Cannot save file as it has been modified since opening" : "Negalima išsaugoti failo, nes jis pakeistas po atidarymo",
     "Insufficient permissions" : "Nepakanka leidimų",
     "File path not supplied" : "Nepateiktas failo kelias",
-    "File mtime not supplied" : "Failo modifikavimo laikas nepateiktas"
+    "File mtime not supplied" : "Failo modifikavimo laikas nepateiktas",
+    "You can not open a folder." : "Negalite atverti aplanko."
 },
 "nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);");
