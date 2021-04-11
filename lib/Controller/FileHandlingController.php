@@ -84,7 +84,7 @@ class FileHandlingController extends Controller {
 				$file = $this->userFolder->get($path);
 
 				if ($file instanceof Folder) {
-					return new DataResponse(['message' => $this->l->t('You cannot open a folder.')], Http::STATUS_BAD_REQUEST);
+					return new DataResponse(['message' => $this->l->t('You cannot open a folder')], Http::STATUS_BAD_REQUEST);
 				}
 
 				// default of 4MB
