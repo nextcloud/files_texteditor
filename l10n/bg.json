@@ -16,7 +16,6 @@
     "Invalid file path supplied." : "Предоставен е невалиден път до файл.",
     "The file is locked." : "Файлът е заключен.",
     "An internal server error occurred." : "Възникна вътрешно сървърна грешка.",
-    "You can not write to a folder." : "Не можете да записвате в папка",
     "Cannot save file as it has been modified since opening." : "Файлът не може да бъде записан, защото е бил модифициран след отварянето му",
     "Could not write to file." : "Невъзможност да се запише във файла. ",
     "Insufficient permissions." : "Недостатъчни права.",
@@ -35,6 +34,7 @@
     "Insufficient permissions" : "Недостатъчни права",
     "File path not supplied" : "Не е предоставен път до файл",
     "File mtime not supplied" : "Не е предоставено време на модификация на файла - mtime",
-    "You can not open a folder." : "Не можете да отворите папка"
+    "You can not open a folder." : "Не можете да отворите папка",
+    "You can not write to a folder." : "Не можете да записвате в папка"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

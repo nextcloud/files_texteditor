@@ -17,7 +17,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "無効なファイルパスが提供されました。",
     "The file is locked." : "ファイルがロックされています。",
     "An internal server error occurred." : "内部サーバーエラーが発生しました。",
-    "You can not write to a folder." : "フォルダーに書き込みできません",
     "Cannot save file as it has been modified since opening." : "開いてから変更されているため、ファイルを保存できません",
     "Could not write to file." : "ファイルに書き込めませんでした。",
     "Insufficient permissions." : "権限が不足しています",
@@ -36,6 +35,7 @@ OC.L10N.register(
     "Insufficient permissions" : "権限が不足しています",
     "File path not supplied" : "ファイルパスが足りません",
     "File mtime not supplied" : "ファイルのアクセス時刻がありません",
-    "You can not open a folder." : "フォルダーを開けません"
+    "You can not open a folder." : "フォルダーを開けません",
+    "You can not write to a folder." : "フォルダーに書き込みできません"
 },
 "nplurals=1; plural=0;");

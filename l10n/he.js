@@ -18,7 +18,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "סופק נתיב קובץ לא חוקי.",
     "The file is locked." : "הקובץ נעול.",
     "An internal server error occurred." : "אירעה שגיאת שרת פנימית.",
-    "You can not write to a folder." : "לא ניתן לכתוב לתיקייה.",
     "Cannot save file as it has been modified since opening." : "לא ניתן לשמור קובץ כיוון שנערך מאז שנפתח.",
     "Could not write to file." : "לא ניתן לכתוב לקובץ.",
     "Insufficient permissions." : "אין מספיק הרשאות.",
@@ -36,6 +35,7 @@ OC.L10N.register(
     "Insufficient permissions" : "אין הרשאות מספקות",
     "File path not supplied" : "נתיב קובץ לא סופק",
     "File mtime not supplied" : "קובץ mtime לא סופק",
-    "You can not open a folder." : "לא ניתן לפתוח תיקייה."
+    "You can not open a folder." : "לא ניתן לפתוח תיקייה.",
+    "You can not write to a folder." : "לא ניתן לכתוב לתיקייה."
 },
 "nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;");

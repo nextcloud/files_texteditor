@@ -19,7 +19,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "Ongeldig pad opgegeven.",
     "The file is locked." : "Het bestand is besloten.",
     "An internal server error occurred." : "Er heeft zich een interne serverfout voorgedaan.",
-    "You can not write to a folder." : "Je kunt niet schrijven naar een map",
     "Cannot save file as it has been modified since opening." : "Kan het bestand niet opslaan, omdat het is gewijzigd na het openen",
     "Could not write to file." : "Kon niet schrijven naar bestand.",
     "Insufficient permissions." : "Onvoldoende rechten",
@@ -38,6 +37,7 @@ OC.L10N.register(
     "Insufficient permissions" : "Onvoldoende rechten",
     "File path not supplied" : "Bestandspad niet opgegeven",
     "File mtime not supplied" : "Tijdstempel bestand niet opgegeven",
-    "You can not open a folder." : "Je kunt geen map openen"
+    "You can not open a folder." : "Je kunt geen map openen",
+    "You can not write to a folder." : "Je kunt niet schrijven naar een map"
 },
 "nplurals=2; plural=(n != 1);");

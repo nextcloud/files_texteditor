@@ -18,7 +18,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "Su caminu de s'archìviu frunidu no est vàlidu.",
     "The file is locked." : "S'archìviu est blocadu.",
     "An internal server error occurred." : "Ddoe at àpidu un'errore internu de su serbidore.",
-    "You can not write to a folder." : "Non podes iscrìere in una cartella.",
     "Cannot save file as it has been modified since opening." : "Impossìbile a sarvare s'archìviu ca s'est modificadu dae s'abertura.",
     "Could not write to file." : "No at fatu a iscrìere in s'archìviu.",
     "Insufficient permissions." : "Permissos non sufitzientes.",
@@ -37,6 +36,7 @@ OC.L10N.register(
     "Insufficient permissions" : "Permissos non sufitzientes",
     "File path not supplied" : "Caminu de s'archìviu non frunidu",
     "File mtime not supplied" : "mtime de s'archìviu non frunidu",
-    "You can not open a folder." : "Non podes abèrrere una cartella."
+    "You can not open a folder." : "Non podes abèrrere una cartella.",
+    "You can not write to a folder." : "Non podes iscrìere in una cartella."
 },
 "nplurals=2; plural=(n != 1);");
