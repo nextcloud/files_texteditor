@@ -19,7 +19,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "提供了无效的文件路径。",
     "The file is locked." : "文件已被锁定",
     "An internal server error occurred." : "内部服务器错误",
-    "You can not write to a folder." : "您无法写入文件夹。",
     "Cannot save file as it has been modified since opening." : "由于打开之后已被修改，故无法保存文件。",
     "Could not write to file." : "无法写入到文件",
     "Insufficient permissions." : "权限不足。",
@@ -38,6 +37,7 @@ OC.L10N.register(
     "Insufficient permissions" : "权限不足",
     "File path not supplied" : "未提供文件路径",
     "File mtime not supplied" : "未提供 mtime",
-    "You can not open a folder." : "您无法打开文件夹。"
+    "You can not open a folder." : "您无法打开文件夹。",
+    "You can not write to a folder." : "您无法写入文件夹。"
 },
 "nplurals=1; plural=0;");

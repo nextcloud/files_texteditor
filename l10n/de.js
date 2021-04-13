@@ -18,7 +18,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "Ungültiger Dateipfad angegeben.",
     "The file is locked." : "Die Datei ist gesperrt.",
     "An internal server error occurred." : "Es ist ein interner Fehler aufgetreten.",
-    "You can not write to a folder." : "Du kannst nicht in einen Ordner schreiben.",
     "Cannot save file as it has been modified since opening." : "Die Datei konnte nicht gespeichert werden, weil sie seit dem Öffnen verändert worden ist.",
     "Could not write to file." : "Konnte Datei nicht schreiben.",
     "Insufficient permissions." : "Nicht ausreichende Berechtigungen.",
@@ -37,6 +36,7 @@ OC.L10N.register(
     "Insufficient permissions" : "Nicht ausreichende Berechtigungen",
     "File path not supplied" : "Dateipfad nicht angegeben",
     "File mtime not supplied" : "Dateiänderungsdatum nicht angegeben",
-    "You can not open a folder." : "Du kannst keinen Ordner öffnen."
+    "You can not open a folder." : "Du kannst keinen Ordner öffnen.",
+    "You can not write to a folder." : "Du kannst nicht in einen Ordner schreiben."
 },
 "nplurals=2; plural=(n != 1);");

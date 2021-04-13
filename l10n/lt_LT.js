@@ -18,7 +18,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "Pateiktas neteisingas failo kelias.",
     "The file is locked." : "Failas užrakintas.",
     "An internal server error occurred." : "Įvyko vidinė serverio klaida.",
-    "You can not write to a folder." : "Negalite rašyti į aplanką.",
     "Cannot save file as it has been modified since opening." : "Nepavyksta įrašyti failo, nes jis nuo atvėrimo buvo modifikuotas.",
     "Could not write to file." : "Nepavyko rašyti į failą.",
     "Insufficient permissions." : "Nepakanka leidimų.",
@@ -35,6 +34,7 @@ OC.L10N.register(
     "Insufficient permissions" : "Nepakanka leidimų",
     "File path not supplied" : "Nepateiktas failo kelias",
     "File mtime not supplied" : "Failo modifikavimo laikas nepateiktas",
-    "You can not open a folder." : "Negalite atverti aplanko."
+    "You can not open a folder." : "Negalite atverti aplanko.",
+    "You can not write to a folder." : "Negalite rašyti į aplanką."
 },
 "nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);");

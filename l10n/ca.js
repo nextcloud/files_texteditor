@@ -18,7 +18,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "S'ha proporcionat una ruta de fitxer no vàlida.",
     "The file is locked." : "El fitxer està blocat.",
     "An internal server error occurred." : "S'ha produït un error intern del servidor.",
-    "You can not write to a folder." : "No podeu escriure a una carpeta.",
     "Cannot save file as it has been modified since opening." : "No podeu desar el fitxer, atès que s'ha modificat d'ençà que el vau obrir.",
     "Could not write to file." : "No s’ha pogut escriure al fitxer.",
     "Insufficient permissions." : "Permisos insuficients.",
@@ -37,6 +36,7 @@ OC.L10N.register(
     "Insufficient permissions" : "Permisos insuficients",
     "File path not supplied" : "No s'ha proporcionat la ruta del fitxer",
     "File mtime not supplied" : "No s'ha proporcionat l'hora de modificació del fitxer",
-    "You can not open a folder." : "No podeu obrir una carpeta."
+    "You can not open a folder." : "No podeu obrir una carpeta.",
+    "You can not write to a folder." : "No podeu escriure a una carpeta."
 },
 "nplurals=2; plural=(n != 1);");

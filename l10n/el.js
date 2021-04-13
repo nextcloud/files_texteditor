@@ -18,7 +18,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "Έχει δοθεί άκυρη διαδρομή για το αρχείο.",
     "The file is locked." : "Το αρχείο είναι κλειδωμένο.",
     "An internal server error occurred." : "Προέκυψε ένα εσωτερικό σφάλμα διακομιστή.",
-    "You can not write to a folder." : "Δεν μπορείτε να γράψετε σε ένα φάκελο.",
     "Cannot save file as it has been modified since opening." : "Δεν είναι δυνατή η αποθήκευση του αρχείου καθώς έχει τροποποιηθεί από όταν ανοίχθηκε.",
     "Could not write to file." : "Αδυναμία εγγραφής σε αρχείο.",
     "Insufficient permissions." : "Ανεπαρκή δικαιώματα.",
@@ -37,6 +36,7 @@ OC.L10N.register(
     "Insufficient permissions" : "Μη επαρκή δικαιώματα",
     "File path not supplied" : "Η διαδρομή του αρχείου δεν παρέχεται.",
     "File mtime not supplied" : "Ο χρόνος τροποποίησης  του αρχείου δεν παρέχεται",
-    "You can not open a folder." : "Δεν μπορείτε να ανοίξετε ένα φάκελο."
+    "You can not open a folder." : "Δεν μπορείτε να ανοίξετε ένα φάκελο.",
+    "You can not write to a folder." : "Δεν μπορείτε να γράψετε σε ένα φάκελο."
 },
 "nplurals=2; plural=(n != 1);");
