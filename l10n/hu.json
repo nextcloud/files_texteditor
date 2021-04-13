@@ -16,7 +16,6 @@
     "Invalid file path supplied." : "Helytelen elérési utat adott meg.",
     "The file is locked." : "A fájl zárolva van.",
     "An internal server error occurred." : "Belső szerverhiba történt.",
-    "You can not write to a folder." : "Mappába nem lehet írni.",
     "Cannot save file as it has been modified since opening." : "Nem lehet a fájlt elmenteni, mert a tartalma időközben megváltozott.",
     "Could not write to file." : "Nem lehet írni a fájlt.",
     "Insufficient permissions." : "Nincs elegendő jogosultság.",
@@ -35,6 +34,7 @@
     "Insufficient permissions" : "Nincs jogosultsága hozzá",
     "File path not supplied" : "Fálj elérést nem adta meg",
     "File mtime not supplied" : "File módosítási idő nincs megadva",
-    "You can not open a folder." : "Ezt a mappát nem lehet megnyitni."
+    "You can not open a folder." : "Ezt a mappát nem lehet megnyitni.",
+    "You can not write to a folder." : "Mappába nem lehet írni."
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
