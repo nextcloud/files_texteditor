@@ -19,7 +19,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "Belirtilen dosya yolu geçersiz.",
     "The file is locked." : "Dosya kilitli.",
     "An internal server error occurred." : "Sunucu içinde bir sorun çıktı.",
-    "You can not write to a folder." : "Bir klasöre yazamazsınız.",
     "Cannot save file as it has been modified since opening." : "Dosya açıldıktan sonra değiştirildiği için kaydedilemez.",
     "Could not write to file." : "Dosyaya yazılamadı.",
     "Insufficient permissions." : "İzinler yetersiz.",
@@ -38,6 +37,7 @@ OC.L10N.register(
     "Insufficient permissions" : "İzinler yetersiz",
     "File path not supplied" : "Dosya yolu belirtilmemiş",
     "File mtime not supplied" : "Dosya mtime belirtilmemiş",
-    "You can not open a folder." : "Bir klasör açamazsınız."
+    "You can not open a folder." : "Bir klasör açamazsınız.",
+    "You can not write to a folder." : "Bir klasöre yazamazsınız."
 },
 "nplurals=2; plural=(n > 1);");

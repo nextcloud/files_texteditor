@@ -18,7 +18,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "Forneceu unha ruta incorrecta.",
     "The file is locked." : "O ficheiro está bloqueado.",
     "An internal server error occurred." : "Produciuse un erro interno no servidor.",
-    "You can not write to a folder." : "Vostede non pode escribir no cartafol.",
     "Cannot save file as it has been modified since opening." : "Non é posíbel gardar o ficheiro, xa que foi modificado trala súa apertura.",
     "Could not write to file." : "Non foi posíbel escribir no ficheiro",
     "Insufficient permissions." : "Non ten permisos abondo.",
@@ -37,6 +36,7 @@ OC.L10N.register(
     "Insufficient permissions" : "Non ten permisos abondo",
     "File path not supplied" : "Non forneceu unha ruta de ficheiro",
     "File mtime not supplied" : "Non forneceu o ficheiro mtime",
-    "You can not open a folder." : "Vostede non pode abrir o cartafol."
+    "You can not open a folder." : "Vostede non pode abrir o cartafol.",
+    "You can not write to a folder." : "Vostede non pode escribir no cartafol."
 },
 "nplurals=2; plural=(n != 1);");

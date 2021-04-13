@@ -19,7 +19,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "O caminho do arquivo que foi fornecido é inválido.",
     "The file is locked." : "O arquivo está bloqueado.",
     "An internal server error occurred." : "Ocorreu um erro interno do servidor.",
-    "You can not write to a folder." : "Você não pode escrever em uma pasta.",
     "Cannot save file as it has been modified since opening." : "Não é possível salvar este arquivo pois ele foi modificado desde sua abertura.",
     "Could not write to file." : "Não foi possível escrever o arquivo.",
     "Insufficient permissions." : "Permissões insuficientes.",
@@ -38,6 +37,7 @@ OC.L10N.register(
     "Insufficient permissions" : "Permissões insuficientes",
     "File path not supplied" : "Caminho do arquivo não fornecido",
     "File mtime not supplied" : "Arquivo mtime não fornecido",
-    "You can not open a folder." : "Você não pode abrir uma pasta."
+    "You can not open a folder." : "Você não pode abrir uma pasta.",
+    "You can not write to a folder." : "Você não pode escrever em uma pasta."
 },
 "nplurals=2; plural=(n > 1);");

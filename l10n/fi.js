@@ -18,7 +18,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "Virheellinen tiedostopolku.",
     "The file is locked." : "Tiedosto on lukittu.",
     "An internal server error occurred." : "Tapahtui palvelimen sisäinen virhe.",
-    "You can not write to a folder." : "Et voi kirjoittaa kansioon.",
     "Cannot save file as it has been modified since opening." : "Tiedostoa ei voi tallentaa, koska sitä on muokattu avaamisen jälkeen.",
     "Could not write to file." : "Tiedostoon ei voitu kirjoittaa.",
     "Insufficient permissions." : "Oikeudet eivät riitä.",
@@ -36,6 +35,7 @@ OC.L10N.register(
     "Insufficient permissions" : "Oikeudet eivät riitä",
     "File path not supplied" : "TIedoston polkua ei annettu",
     "File mtime not supplied" : "Tiedoston mtime-arvoa ei ole annettu",
-    "You can not open a folder." : "Et voi avata kansiota."
+    "You can not open a folder." : "Et voi avata kansiota.",
+    "You can not write to a folder." : "Et voi kirjoittaa kansioon."
 },
 "nplurals=2; plural=(n != 1);");
