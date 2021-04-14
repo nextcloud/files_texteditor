@@ -19,6 +19,7 @@ OC.L10N.register(
     "Invalid file path supplied." : "提供了無效的檔案路徑。",
     "The file is locked." : "這個檔案被鎖住了。",
     "An internal server error occurred." : "發生伺服器內部錯誤",
+    "You cannot write to a folder." : "您無法寫入資料夾。",
     "Cannot save file as it has been modified since opening." : "開啟後，檔案已被修改，因此無法儲存。",
     "Could not write to file." : "無法寫入檔案",
     "Insufficient permissions." : "權限不足。",

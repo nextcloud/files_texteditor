@@ -19,6 +19,7 @@ OC.L10N.register(
     "Invalid file path supplied." : "提供了无效的文件路径。",
     "The file is locked." : "文件已被锁定",
     "An internal server error occurred." : "内部服务器错误",
+    "You cannot write to a folder." : "你无法写入一个文件夹",
     "Cannot save file as it has been modified since opening." : "由于打开之后已被修改，故无法保存文件。",
     "Could not write to file." : "无法写入到文件",
     "Insufficient permissions." : "权限不足。",
