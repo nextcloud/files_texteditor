@@ -19,6 +19,7 @@ OC.L10N.register(
     "Invalid file path supplied." : "Błędnie podana ścieżka do pliku.",
     "The file is locked." : "Plik jest zablokowany.",
     "An internal server error occurred." : "Wystąpił wewnętrzny błąd serwera.",
+    "You cannot write to a folder." : "Nie możesz zapisać do katalogu.",
     "Cannot save file as it has been modified since opening." : "Nie można zapisać pliku, ponieważ został zmodyfikowany od otwarcia.",
     "Could not write to file." : "Nie można zapisać pliku.",
     "Insufficient permissions." : "Niewystarczające uprawnienia.",
