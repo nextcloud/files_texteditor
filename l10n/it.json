@@ -17,6 +17,7 @@
     "Invalid file path supplied." : "Fornito un percorso del file non valido.",
     "The file is locked." : "il file è bloccato.",
     "An internal server error occurred." : "Si è verificato un errore interno.",
+    "You cannot write to a folder." : "Non puoi scrivere in una cartella.",
     "Cannot save file as it has been modified since opening." : "Impossibile salvare il file poiché è stato modificato dall'apertura.",
     "Could not write to file." : "Impossibile scrivere su file.",
     "Insufficient permissions." : "Permessi insufficienti.",
