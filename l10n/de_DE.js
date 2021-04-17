@@ -19,7 +19,7 @@ OC.L10N.register(
     "Invalid file path supplied." : "Ungültiger Dateipfad angegeben.",
     "The file is locked." : "Die Datei ist gesperrt.",
     "An internal server error occurred." : "Es ist ein interner Fehler aufgetreten.",
-    "You cannot write to a folder." : "Sie können nicht in einen Ordner schreiben.",
+    "You cannot write to a folder." : "Sie dürfen nicht in einen Ordner schreiben.",
     "Cannot save file as it has been modified since opening." : "Die Datei konnte nicht gespeichert werden, weil sie seit dem Öffnen verändert worden ist.",
     "Could not write to file." : "Konnte Datei nicht schreiben.",
     "Insufficient permissions." : "Nicht ausreichende Berechtigungen.",
