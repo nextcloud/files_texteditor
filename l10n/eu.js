@@ -18,6 +18,7 @@ OC.L10N.register(
     "Invalid file path supplied." : "Fitxategiaren bide baliogabea eman da.",
     "The file is locked." : "Fitxategia blokeatuta dago.",
     "An internal server error occurred." : "Zerbitzariaren barne-errore bat gertatu da.",
+    "You cannot write to a folder." : "Ezin duzu karpetetan idatzi.",
     "Cannot save file as it has been modified since opening." : "Ezin da fitxategia gorde, aldatu egin baita ireki denetik.",
     "Could not write to file." : "Ezin izan da fitxategian idatzi.",
     "Insufficient permissions." : "Ez duzu nahikoa baimenik.",
