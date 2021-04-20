@@ -13,6 +13,7 @@ OC.L10N.register(
     "Preview" : "Aurrebista",
     "New text file" : "Testu-fitxategi berria",
     "New text file.txt" : "Testu-fitxategi berria.txt",
+    "You cannot open a folder" : "Ezin duzu karpeta bat ireki",
     "This file is too big to be opened. Please download the file instead." : "Fitxategia handiegia da irekitzeko. Deskargatu fitxategia.",
     "Cannot read the file." : "Ezin da fitxategia irakurri.",
     "Invalid file path supplied." : "Fitxategiaren bide baliogabea eman da.",

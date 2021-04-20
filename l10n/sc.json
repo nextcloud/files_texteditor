@@ -13,7 +13,7 @@
     "New text file.txt" : "Archìviu de testu txt nou",
     "This file is too big to be opened. Please download the file instead." : "Custu archìviu est tropu mannu pro dd'abèrrere. Mancari iscàrriga s'archìviu.",
     "Cannot read the file." : "Impossìbile a lèghere s'archìviu.",
-    "Invalid file path supplied." : "Su caminu de s'archìviu frunidu no est vàlidu.",
+    "Invalid file path supplied." : "Su percursu de s'archìviu frunidu no est vàlidu.",
     "The file is locked." : "S'archìviu est blocadu.",
     "An internal server error occurred." : "Ddoe at àpidu un'errore internu de su serbidore.",
     "Cannot save file as it has been modified since opening." : "Impossìbile a sarvare s'archìviu ca s'est modificadu dae s'abertura.",
