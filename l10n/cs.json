@@ -17,6 +17,7 @@
     "Invalid file path supplied." : "Zadán neplatný popis umístění souboru.",
     "The file is locked." : "Soubor je uzamčený.",
     "An internal server error occurred." : "Došlo k vnitřní chybě serveru.",
+    "You cannot write to a folder." : "Do této složky nemůžete zapisovat.",
     "Cannot save file as it has been modified since opening." : "Soubor nelze uložit, protože byl mezitím upraven něčím jiným.",
     "Could not write to file." : "Do souboru se nedaří zapsat.",
     "Insufficient permissions." : "Nedostatečná oprávnění.",
