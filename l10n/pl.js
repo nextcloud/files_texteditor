@@ -16,7 +16,7 @@ OC.L10N.register(
     "You cannot open a folder" : "Nie możesz otworzyć katalogu",
     "This file is too big to be opened. Please download the file instead." : "Plik jest zbyt duży, aby go otworzyć. Proszę pobrać plik.",
     "Cannot read the file." : "Nie można odczytać pliku.",
-    "Invalid file path supplied." : "Błędnie podana ścieżka do pliku.",
+    "Invalid file path supplied." : "Podano błędną ścieżkę do pliku.",
     "The file is locked." : "Plik jest zablokowany.",
     "An internal server error occurred." : "Wystąpił wewnętrzny błąd serwera.",
     "You cannot write to a folder." : "Nie możesz zapisać do katalogu.",
