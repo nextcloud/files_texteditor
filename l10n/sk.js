@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving …" : "Ukladá sa...",
     "saved!" : "uložené!",
     "failed!" : "neúspešné!",
     "Saved" : "Uložené",
@@ -18,6 +19,7 @@ OC.L10N.register(
     "The file is locked." : "Súbor je zamknutý.",
     "An internal server error occurred." : "Vyskytla sa vnútorná chyba na serveri.",
     "Could not write to file." : "Do súboru sa nepodarilo zapísať",
+    "Insufficient permissions." : "Nedostatočné oprávnenia",
     "Share not found" : "Sprístupnenie sa nenašlo",
     "You are not authorized to open this share" : "Nemáte oprávnenie otvoriť toto sprístupnenie",
     "Invalid range request" : "Neplatná požiadavka rozsahu",
