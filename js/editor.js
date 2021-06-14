@@ -111,7 +111,7 @@ export const Texteditor = {
 				Texteditor.file.mtime = data.mtime;
 				Texteditor.file.size = data.size;
 
-				$message.text(t('files_texteditor', 'saved!'));
+				$message.text(t('files_texteditor', 'Saved!'));
 				Texteditor.saveMessageTimeout = setTimeout(function () {
 					$('small.saving-message').fadeOut(200);
 				}, 2000);
@@ -119,7 +119,7 @@ export const Texteditor = {
 			function (message) {
 				// Boo
 				if (typeof message == 'undefined') {
-					$('small.saving-message').text(t('files_texteditor', 'failed!'));
+					$('small.saving-message').text(t('files_texteditor', 'Failed!'));
 				} else {
 					$('small.saving-message').text(message);
 				}
