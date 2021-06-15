@@ -1,8 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saved!" : "u ruajt!",
-    "failed!" : "dështoi!",
     "Saved" : "U ruajt",
     "There was a problem saving your changes. Click to resume editing." : "Pati një problem në ruajtjen e ndryshimeve tuaja.  Klikoni që të rimerret përpunimi.",
     "An error occurred!" : "Ndodhi një gabim!",
@@ -17,6 +15,8 @@ OC.L10N.register(
     "The file is locked." : "Kartela është e kyçur.",
     "An internal server error occurred." : "Ndodhi një gabim i brendshëm shërbyesi.",
     "Saving…" : "Duke u ruajtur...",
+    "saved!" : "u ruajt!",
+    "failed!" : "dështoi!",
     "You can not open a folder" : "Ju nuk mund të hapni një dosje",
     "You can not write to a folder" : "Ju s'mund të shkruani tek një dosje ",
     "Cannot save file as it has been modified since opening" : "S’ruhet dot kartela, ngaqë është ndryshuar që prej hapjes",

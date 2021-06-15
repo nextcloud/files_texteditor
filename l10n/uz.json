@@ -1,6 +1,6 @@
 { "translations": {
-    "saved!" : "saqlangan!",
     "Saved" : "Saqlangan",
-    "Saving…" : "Saqlanmoqda..."
+    "Saving…" : "Saqlanmoqda...",
+    "saved!" : "saqlangan!"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

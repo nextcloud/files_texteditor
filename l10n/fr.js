@@ -2,8 +2,6 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Enregistrement …",
-    "saved!" : "enregistré!",
-    "failed!" : "échec !",
     "Saved" : "Enregistré",
     "There was a problem saving your changes. Click to resume editing." : "Un problème est survenu lors de la sauvegarde de vos modifications. Cliquez pour continuer l'édition.",
     "Edit in plain text editor" : "Modifier dans l'éditeur de texte brute",
@@ -30,6 +28,8 @@ OC.L10N.register(
     "Open, save and edit text files" : "Ouvrir, enregistrer et éditer des fichiers texte.",
     "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Cette application permet aux utilisateurs de Nextcloud d'ouvrir, enregistrer et éditer des fichiers texte dans le navigateur Web. Si activé, une entrée dans le bouton Nouveau en haut du navigateur Web l'entrée du fichier texte apparaît. Lorsque vous cliquez dessus, un nouveau fichier texte s'ouvre dans le navigateur et le fichier peut être enregistré dans le répertoire Nextcloud actuel. En outre, lorsqu'un fichier texte est cliqué dans le navigateur Web, il sera ouvert et modifiable. Si les privilèges le permettent, un utilisateur peut également modifier les fichiers partagés et enregistrer ces modifications dans le navigateur Web.\nPlus d'informations sont disponibles dans la documentation de l'éditeur de texte.",
     "Saving…" : "Enregistrement…",
+    "saved!" : "enregistré!",
+    "failed!" : "échec !",
     "You can not open a folder" : "Vous ne pouvez pas ouvrir ce dossier",
     "You can not write to a folder" : "Vous ne pouvez pas écrire dans ce dossier",
     "Cannot save file as it has been modified since opening" : "Impossible d'enregistrer le fichier car il a été modifié depuis son ouverture.",

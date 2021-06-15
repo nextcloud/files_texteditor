@@ -1,6 +1,4 @@
 { "translations": {
-    "saved!" : "Salvestatud!",
-    "failed!" : "ebaõnnestus!",
     "Saved" : "Salvestatud",
     "There was a problem saving your changes. Click to resume editing." : "Sinu muudatuste salvestamisega tekkis viga. Kliki muutmise jätkamiseks.",
     "An error occurred!" : "Tekis tõrge!",
@@ -15,6 +13,8 @@
     "The file is locked." : "Fail on lukus.",
     "An internal server error occurred." : "Tekkis sisemine serveri tõrge.",
     "Saving…" : "Salvestamine...",
+    "saved!" : "Salvestatud!",
+    "failed!" : "ebaõnnestus!",
     "You can not open a folder" : "Sa ei saa avada kausta",
     "You can not write to a folder" : "Sa ei saa kirjutada kausta",
     "Cannot save file as it has been modified since opening" : "Faili ei saa salvestada, kune seda on pärast avamist muudetud",

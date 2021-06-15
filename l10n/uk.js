@@ -1,8 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saved!" : "збережено!",
-    "failed!" : "не вдалося!",
     "Saved" : "Збережено",
     "There was a problem saving your changes. Click to resume editing." : "Трапилася проблема при збереженні змін. Натисніть, щоб продовжити редагування.",
     "An error occurred!" : "Сталася помилка!",
@@ -15,6 +13,8 @@ OC.L10N.register(
     "The file is locked." : "Файл заблоковано.",
     "An internal server error occurred." : "Виникла внутрішня помилка серверу.",
     "Saving…" : "Збереження...",
+    "saved!" : "збережено!",
+    "failed!" : "не вдалося!",
     "Cannot save file as it has been modified since opening" : "Неможливо зберегти файл оскільки він був змінений після відкриття",
     "Insufficient permissions" : "Недостатньо прав доступу",
     "File path not supplied" : "Невідомий шлях файлу",
