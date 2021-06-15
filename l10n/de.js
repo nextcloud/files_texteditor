@@ -2,8 +2,6 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Speichere …",
-    "saved!" : "Gespeichert!",
-    "failed!" : "Fehlgeschlagen!",
     "Saved" : "Gespeichert",
     "There was a problem saving your changes. Click to resume editing." : "Es gab ein Problem beim Speichern Deiner Änderungen. Klicken um zur Bearbeitung zurückzukehren.",
     "Edit in plain text editor" : "Bearbeiten im Nur-Text-Editor",
@@ -32,6 +30,8 @@ OC.L10N.register(
     "Open, save and edit text files" : "Öffnen, Speichern und Bearbeiten von Textdateien",
     "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Diese App ermöglicht es den Nextcloud-Nutzern, Textdateien im Browser zu öffnen, zu bearbeiten und zu speichern. Wenn aktiviert, wird oben im \"Hinzufügen-Menü\" ein Button \"Neue Textdatei\" eingeblendet. Beim Klicken hierauf wird eine neue Textdatei im Browser geöffnet, die bearbeitet und im aktuellen Nextcloud-Ordner gespeichert werden kann. Darüber hinaus wird beim Klick auf eine Textdatei diese im Browser geöfnet.. Sofern der Nutzer eine entsprechende Berechtigung hat, kann er die Datei auch bearbeiten und speichern.\nWeitere Informationen sind in der Text-Editor Dokumentation zu finden.",
     "Saving…" : "Speichere…",
+    "saved!" : "Gespeichert!",
+    "failed!" : "Fehlgeschlagen!",
     "You can not open a folder" : "Du kannst keinen Ordner öffnen",
     "You can not write to a folder" : "Du kannst nicht in einen Ordner schreiben",
     "Cannot save file as it has been modified since opening" : "Die Datei konnte nicht gespeichert werden, weil sie seit dem Öffnen verändert worden ist",

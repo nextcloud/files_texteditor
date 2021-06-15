@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "failed!" : "අසාර්ථකයි!",
-    "Edit" : "සංස්කරණය"
+    "Edit" : "සංස්කරණය",
+    "failed!" : "අසාර්ථකයි!"
 },
 "nplurals=2; plural=(n != 1);");

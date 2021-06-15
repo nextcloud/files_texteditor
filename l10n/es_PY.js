@@ -1,8 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saved!" : "¡Guardado!",
-    "failed!" : "¡Se presentó una falla!",
     "Saved" : "Guardado",
     "There was a problem saving your changes. Click to resume editing." : "Se presentó un problema al guardar sus cambios. Por favor haz click para continuar editando.",
     "An error occurred!" : "¡Se presentó un error!",
@@ -17,6 +15,8 @@ OC.L10N.register(
     "The file is locked." : "El archivo está bloqueado.",
     "An internal server error occurred." : "Se presentó un error interno en el servidor. ",
     "Saving…" : "Guardando...",
+    "saved!" : "¡Guardado!",
+    "failed!" : "¡Se presentó una falla!",
     "You can not open a folder" : "No puedes abrir la carpeta",
     "You can not write to a folder" : "No puedes escribir a la carpeta",
     "Cannot save file as it has been modified since opening" : "No es posible guardar el archivo ya que ha sido modificado desde que fue abierto",

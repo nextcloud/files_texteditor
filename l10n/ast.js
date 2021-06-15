@@ -1,8 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saved!" : "¡guardáu!",
-    "failed!" : "¡falló!",
     "Saved" : "Guardáu",
     "There was a problem saving your changes. Click to resume editing." : "Hebo un problema guardando tos cambéos. Calca pa reaniciar la edición.",
     "An error occurred!" : "Hebo un fallu!",
@@ -16,6 +14,8 @@ OC.L10N.register(
     "The file is locked." : "El ficheru ta bloquiáu.",
     "An internal server error occurred." : "Hebo un fallu internu nel sirvidor.",
     "Saving…" : "Guardando...",
+    "saved!" : "¡guardáu!",
+    "failed!" : "¡falló!",
     "You can not open a folder" : "Nun pues abrir una carpeta",
     "You can not write to a folder" : "Nun pues escribir nuna carpeta",
     "Cannot save file as it has been modified since opening" : "Nun pudo guardase'l ficheru por mor que ta modificáu dende que s'abrió",

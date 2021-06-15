@@ -2,8 +2,6 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "保存中...",
-    "saved!" : "保存しました！",
-    "failed!" : " 失敗しました！",
     "Saved" : "保存しました",
     "There was a problem saving your changes. Click to resume editing." : "変更を保存する際に問題が発生しました．クリックして編集を再開する．",
     "Edit in plain text editor" : "テキストエディターで編集",
@@ -32,6 +30,8 @@ OC.L10N.register(
     "Open, save and edit text files" : "テキストファイルを開く、保存する、編集する",
     "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "このアプリでは、Nextcloudユーザーはブラウザー上でテキストファイルを開いたり、保存したり、編集することができます。有効にすると、ブラウザー上部の\"新規\"ボタンメニューに\"テキストファイル\"というエントリが表示されます。クリックすると、ブラウザーに新しいテキストファイルが開き、そのファイルをNextcloudに保存できます。許可すれば、他のユーザーと共有ファイルを編集して変更をブラウザーに保存することもできます。\n詳細情報はテキストエディターのドキュメントにあります。",
     "Saving…" : "保存中...",
+    "saved!" : "保存しました！",
+    "failed!" : " 失敗しました！",
     "You can not open a folder" : "フォルダーを開けません",
     "You can not write to a folder" : "フォルダーに書き込みできません",
     "Cannot save file as it has been modified since opening" : "変更したファイルは使用中のため保存できません",
