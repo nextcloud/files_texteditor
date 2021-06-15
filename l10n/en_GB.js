@@ -1,8 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saved!" : "saved!",
-    "failed!" : "failed!",
     "Saved" : "Saved",
     "There was a problem saving your changes. Click to resume editing." : "There was a problem saving your changes. Click to resume editing.",
     "An error occurred!" : "An error occurred!",
@@ -21,6 +19,8 @@ OC.L10N.register(
     "You are not authorized to open this share" : "You are not authorised to open this share",
     "Invalid range request" : "Invalid range request",
     "Saving…" : "Saving…",
+    "saved!" : "saved!",
+    "failed!" : "failed!",
     "You can not open a folder" : "You cannot open a folder",
     "You can not write to a folder" : "You cannot write to a folder",
     "Cannot save file as it has been modified since opening" : "Cannot save file as it has been modified since opening",

@@ -2,8 +2,6 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Сохраняется ...",
-    "saved!" : "сохранено!",
-    "failed!" : "ошибка!",
     "Saved" : "Сохранено",
     "There was a problem saving your changes. Click to resume editing." : "Во время сохранения изменений произошла ошибка . Нажмите для продолжения редактирования.",
     "Edit in plain text editor" : "Открыть в текстовом редакторе",
@@ -32,6 +30,8 @@ OC.L10N.register(
     "Open, save and edit text files" : "Просмотр, редактирование и сохранение текстовых файлов",
     "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Это приложение позволяет пользователям Nextcloud открывать, сохранять и редактировать текстовые файлы в браузере. Если приложение включено, в меню, доступном после нажатия  кнопки «Создать», расположенной в верхней части веб-браузера, будет добавлен пункт создания файла в текстовом файле. При выборе этого пункта будет создан текстовый файл, который может быть сохранён в текущей папке. Кроме того, если нажать в браузере на текстовый файл, он будет открыт в режиме редактирования. Если у пользователя достаточно прав, то он может также редактировать общие файлы и сохранять внесённые изменения. Дополнительная информация доступна в документации текстового редактора.",
     "Saving…" : "Сохраняется…",
+    "saved!" : "сохранено!",
+    "failed!" : "ошибка!",
     "You can not open a folder" : "Вы не можете открыть каталог",
     "You can not write to a folder" : "Вы не можете записать в каталог",
     "Cannot save file as it has been modified since opening" : "Невозможно сохранить файл, поскольку он был изменён после открытия ",

@@ -2,8 +2,6 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Įrašoma…",
-    "saved!" : "įrašyta!",
-    "failed!" : "nepavyko!",
     "Saved" : "Įrašyta",
     "There was a problem saving your changes. Click to resume editing." : "Klaida įrašant pakeitimus. Spustelėkite, norėdami tęsti redagavimą.",
     "Edit in plain text editor" : "Taisyti grynojo teksto redaktoriuje",
@@ -28,6 +26,8 @@ OC.L10N.register(
     "Plain text editor" : "Grynojo teksto redaktorius",
     "Open, save and edit text files" : "Atverti, įrašyti ir taisyti tekstinius failus",
     "Saving…" : "Įrašoma…",
+    "saved!" : "įrašyta!",
+    "failed!" : "nepavyko!",
     "You can not open a folder" : "Jūs negalite atverti aplanko",
     "You can not write to a folder" : "Negalima rašyti į aplanką",
     "Cannot save file as it has been modified since opening" : "Negalima išsaugoti failo, nes jis pakeistas po atidarymo",

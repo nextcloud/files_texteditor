@@ -1,7 +1,5 @@
 { "translations": {
     "Saving …" : "Poteka shranjevanje ...",
-    "saved!" : "shranjeno!",
-    "failed!" : "spodletelo!",
     "Saved" : "Shranjeno",
     "There was a problem saving your changes. Click to resume editing." : "Prišlo je do napake med shranjevanjem sprememb. Kliknite za nadaljevanje urejanja.",
     "Edit in plain text editor" : "Uredi v enostavnem besedilnem urejevalniku",
@@ -30,6 +28,8 @@
     "Open, save and edit text files" : "Odpiranje, shranjevanje in urejanje besedilnih datotek",
     "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Program omogoča uporabnikom okolja Nextcloud odpiranje shranjevanje in urejanje besedilnih datotek neposredno v spletnem brskalniku. V meni »Novo« je dodan gumb »Besedilna datoteka«, ki ob kliku ustvari novo besedilno datoteko, ki jo je mogoče shraniti v poljubno mapo oblaka, s ponovnim klikom nanjo, pa jo je mogoče spet urejati. Ustrezna dovoljenja omogočajo urejanje tudi datotek v souporabi.\nVeč podrobnosti je na voljo v dokumentaciji urejevalnika besedila.",
     "Saving…" : "Poteka shranjevanje ...",
+    "saved!" : "shranjeno!",
+    "failed!" : "spodletelo!",
     "You can not open a folder" : "Mape ni mogoče odpreti",
     "You can not write to a folder" : "V mapo ni mogoče pisati",
     "Cannot save file as it has been modified since opening" : "Ni mogoče shraniti datoteke, ker je bila v času trenutne seje že spremenjena.",

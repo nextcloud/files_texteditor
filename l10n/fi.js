@@ -2,8 +2,6 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Tallennetaan ...",
-    "saved!" : "tallennettu!",
-    "failed!" : "epäonnistui!",
     "Saved" : "Tallennettu",
     "There was a problem saving your changes. Click to resume editing." : "Muutoksien tallentamisessa ilmeni ongelmia. Napsauta palataksesi muokkaamiseen.",
     "Edit in plain text editor" : "Muokkaa raakatekstimuokkaimessa",
@@ -29,6 +27,8 @@ OC.L10N.register(
     "Open, save and edit text files" : "Avaa, tallenna ja muokkaa tekstitiedostoja",
     "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Tämä sovellus mahdollistaa Nextcloud-käyttäjien avata, tallentaa ja muokata tekstitiedostoja nettiselaimessa. Käyttöön otettaessa valinta \"Tekstitiedosto\" lisätään \"Uusi\" valikkoon nettiselaimen yläreunassa. Napautettaessa uusi tekstitiedosto aukeaa selaimessa ja tiedosto voidaan tallentaa nykyiseen Nextcloud-hakemistoon. Lisäksi tekstitiedostoa napautetaessa se avataan muokattavaksi. Jos käyttäoikeudet riittävät, käyttäjä voi myös muokata jaettuja tiedostoja ja tallentaa muutokset selaimeen.\nLisää tietoa on saatavilla tekstimuokkaimen dokumentaatiossa.",
     "Saving…" : "Tallennetaan…",
+    "saved!" : "tallennettu!",
+    "failed!" : "epäonnistui!",
     "You can not open a folder" : "Et voi avata kansiota",
     "You can not write to a folder" : "Et voi kirjoittaa kansioon",
     "Cannot save file as it has been modified since opening" : "Tiedostoa ei voi tallentaa, koska sitä on muokattu avaamisen jälkeen",
