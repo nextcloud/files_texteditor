@@ -1,8 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saved!" : "vistað!",
-    "failed!" : "mistókst!",
     "Saved" : "Vistað",
     "There was a problem saving your changes. Click to resume editing." : "Það kom upp vandamál við að vista breytingarnar þínar. Smelltu til að halda ritun áfram.",
     "Edit in plain text editor" : "Breyta með hreinum textaritli",
@@ -24,6 +22,8 @@ OC.L10N.register(
     "Plain text editor" : "Ritill fyrir hreinan texta",
     "Open, save and edit text files" : "Opna, vista og breyta textaskrám",
     "Saving…" : "Vista…",
+    "saved!" : "vistað!",
+    "failed!" : "mistókst!",
     "You can not open a folder" : "Þú getur ekki opnað möppu",
     "You can not write to a folder" : "Þú getur ekki skrifað í möppu",
     "Cannot save file as it has been modified since opening" : "Get ekki vistað skrána þar sem henni hefur verið breytt síðan hún var opnuð",

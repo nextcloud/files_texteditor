@@ -1,6 +1,4 @@
 { "translations": {
-    "saved!" : "salvat!",
-    "failed!" : "eșuat!",
     "Saved" : "Salvat",
     "There was a problem saving your changes. Click to resume editing." : "A apărut o problemă la salvarea modificărilor făcute de tine. Click pentru a relua editarea.",
     "An error occurred!" : "A apărut o eroare!",
@@ -13,6 +11,8 @@
     "The file is locked." : "Fișierul este blocat.",
     "An internal server error occurred." : "A apărut o eroare internp a serverului.",
     "Saving…" : "Se salvează...",
+    "saved!" : "salvat!",
+    "failed!" : "eșuat!",
     "Cannot save file as it has been modified since opening" : "Nu se poate salva fișierul, a fost modificat de la deschidere.",
     "Insufficient permissions" : "Permisiuni insuficiente",
     "File path not supplied" : "Calea fișierului nu este oferită"

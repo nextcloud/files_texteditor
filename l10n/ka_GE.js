@@ -1,8 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saved!" : "შენახულია!",
-    "failed!" : "ვერ მოხერხდა!",
     "Saved" : "შენახულ იქნა",
     "There was a problem saving your changes. Click to resume editing." : "ცვლილებების შენახვისას წარმოიქმნა შეცდომა. ცვლილების გასაგრძელებლად დააწკაპუნეთ.",
     "An error occurred!" : "დაფიქსირდა შეცდომა!",
@@ -17,6 +15,8 @@ OC.L10N.register(
     "The file is locked." : "ფაილი ჩაკეტილია.",
     "An internal server error occurred." : "გამოჩნდა შიდა სერვერის შეცდომა.",
     "Saving…" : "მიმდინარეობს დამახსოვრება...",
+    "saved!" : "შენახულია!",
+    "failed!" : "ვერ მოხერხდა!",
     "You can not open a folder" : "დირექტორიას ვერ გახსნით",
     "You can not write to a folder" : "ამ დირექტორიაში ვერ ჩაწერთ",
     "Cannot save file as it has been modified since opening" : "ფაილის შენახვა არ ხერხდება, ის გახსნის შემდეგ შეიცვალა",

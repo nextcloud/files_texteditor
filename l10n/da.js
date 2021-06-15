@@ -1,8 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saved!" : "gemt!",
-    "failed!" : "mislykkedes!",
     "Saved" : "Gemt",
     "There was a problem saving your changes. Click to resume editing." : "Der opstod et problem ved lagringen af dine ændringer. Klik for at genoptage redigeringen.",
     "An error occurred!" : "Der opstod en fejl!",
@@ -20,6 +18,8 @@ OC.L10N.register(
     "Share not found" : "Delt fil ikke fundet",
     "You are not authorized to open this share" : "Du har ikke adgang til at åbne denne delte fil",
     "Saving…" : "Gemmer...",
+    "saved!" : "gemt!",
+    "failed!" : "mislykkedes!",
     "You can not open a folder" : "Du kan ikke åbne en mappe",
     "You can not write to a folder" : "Du kan ikke skrive til en mappe",
     "Cannot save file as it has been modified since opening" : "Kan ikke gemme filen, da den er blevet ændret efter den blev åbnet",

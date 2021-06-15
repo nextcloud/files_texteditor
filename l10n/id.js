@@ -1,8 +1,6 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "saved!" : "tersimpan!",
-    "failed!" : "gagal!",
     "Saved" : "Disimpan",
     "There was a problem saving your changes. Click to resume editing." : "Terdapat masalah saat menyimpan perubahan. Klik untuk melanjutkan penyuntingan.",
     "An error occurred!" : "Terjadi kesalahan!",
@@ -18,6 +16,8 @@ OC.L10N.register(
     "Could not write to file." : "Tidak dapat menulis pada berkas.",
     "Open, save and edit text files" : "Buka, simpan dan edit berkas teks",
     "Saving…" : "Menyimpan...",
+    "saved!" : "tersimpan!",
+    "failed!" : "gagal!",
     "You can not open a folder" : "Anda tidak dapat membuka folder",
     "You can not write to a folder" : "Anda tidak dapat menulis pada folder",
     "Cannot save file as it has been modified since opening" : "Tidak dapat menyimpan berkas karena sudah diubah sejak dibuka",
