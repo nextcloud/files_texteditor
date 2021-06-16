@@ -2,6 +2,8 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Kaydediliyor …",
+    "Saved!" : "Kaydedildi!",
+    "Failed!" : "Kaydedilemedi!",
     "Saved" : "Kaydedildi",
     "There was a problem saving your changes. Click to resume editing." : "Değişiklikleriniz kaydedilirken bir sorun çıktı. Düzenlemeye geri dönmek için tıklayın.",
     "Edit in plain text editor" : "Düz metin düzenleyicide düzenle",

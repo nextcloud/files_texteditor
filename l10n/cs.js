@@ -2,6 +2,8 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Ukládání…",
+    "Saved!" : "Uloženo!",
+    "Failed!" : "Nezdařilo se!",
     "Saved" : "Uloženo",
     "There was a problem saving your changes. Click to resume editing." : "Došlo k chybě při ukládání změn. Klikněte pro návrat zpět do úprav.",
     "Edit in plain text editor" : "Upravit v editoru neformátovaného textu",

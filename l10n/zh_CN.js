@@ -2,6 +2,8 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "保存中...",
+    "Saved!" : "已保存！",
+    "Failed!" : "失败了！",
     "Saved" : "已保存",
     "There was a problem saving your changes. Click to resume editing." : "在保存时出现了一些问题。点击以恢复编辑。",
     "Edit in plain text editor" : "在纯文本编辑器中编辑",
