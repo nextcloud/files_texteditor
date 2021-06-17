@@ -2,6 +2,8 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Salvando...",
+    "Saved!" : "Salva!",
+    "Failed!" : "Falhou!",
     "Saved" : "Salvo",
     "There was a problem saving your changes. Click to resume editing." : "Houve um problema ao salvar suas alterações. Clique para retomar a edição.",
     "Edit in plain text editor" : "Editar no editor de texto sem formatação",
