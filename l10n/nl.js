@@ -2,6 +2,8 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Opslaan ...",
+    "Saved!" : "Opgeslagen!",
+    "Failed!" : "Mislukt!",
     "Saved" : "Bewaard",
     "There was a problem saving your changes. Click to resume editing." : "Probleem bij het opslaan van je wijzigingen. Klik om door te gaan met bewerken.",
     "Edit in plain text editor" : "Bewerken in kaletekstverwerker",

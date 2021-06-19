@@ -24,7 +24,7 @@ OC.L10N.register(
     "Could not write to file." : "Do souboru se nedaří zapsat.",
     "Insufficient permissions." : "Nedostatečná oprávnění.",
     "File path not supplied." : "Nezadán popis umístění souboru.",
-    "File mtime not supplied." : "Nezadán okamžik změny souboru.",
+    "File mtime not supplied." : "Nedodán okamžik změny souboru.",
     "Share not found" : "Sdílení nenalezeno",
     "You are not authorized to open this share" : "Nejste oprávněni otevírat toto sdílení",
     "Invalid range request" : "Požadavek na neplatný rozsah",
