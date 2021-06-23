@@ -2,6 +2,7 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Gordetzen ...",
+    "Saved!" : "Gordeta!",
     "Saved" : "Gordeta",
     "There was a problem saving your changes. Click to resume editing." : "Aldaketak gordetzean arazo bat izan da. Egin klik edizioarekin jarraitzeko",
     "Edit in plain text editor" : "Editatu testu hutseko editorean",
