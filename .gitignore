@@ -5,3 +5,5 @@
 /tests/clover.xml
 node_modules
 build
+
+/vendor/
