@@ -18,3 +18,5 @@
 /run-eslint.sh
 /webpack.*
 /img/screenshots
+/vendor
+/.github
