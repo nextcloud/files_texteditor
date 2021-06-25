@@ -28,7 +28,7 @@
     "style-loader": "^2.0.0",
     "webpack": "^5.39.1",
     "webpack-cli": "^4.7.0",
-    "webpack-merge": "^5.7.3"
+    "webpack-merge": "^5.8.0"
   },
   "dependencies": {
     "@nextcloud/router": "^1.2.0",
