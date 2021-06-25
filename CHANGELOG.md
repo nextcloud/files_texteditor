@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.14.0
+
+- Compatibility with Nextcloud 22
+
+## 2.13.0
+
+- Compatibility with Nextcloud 21
+
 ## 2.12.0
 
 - Compatibility with Nextcloud 19 and 20
