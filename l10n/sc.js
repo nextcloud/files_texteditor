@@ -2,6 +2,8 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Sarvende …",
+    "Saved!" : "Sarvadu!",
+    "Failed!" : "Faddidu!",
     "Saved" : "Sarvadu",
     "There was a problem saving your changes. Click to resume editing." : "Ddoe at àpidu un'errore sarvende is modìficas. Incarca pro sighire a modificare.",
     "Edit in plain text editor" : "Modìfica in un'editore de testos simpre",
