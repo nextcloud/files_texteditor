@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Saving …" : "Gordetzen ...",
     "Saved!" : "Gordeta!",
+    "Failed!" : "Huts egin du!",
     "Saved" : "Gordeta",
     "There was a problem saving your changes. Click to resume editing." : "Aldaketak gordetzean arazo bat izan da. Egin klik edizioarekin jarraitzeko",
     "Edit in plain text editor" : "Editatu testu hutseko editorean",
