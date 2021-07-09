@@ -2,6 +2,8 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Ukladá sa...",
+    "Saved!" : "Uložené!",
+    "Failed!" : "Zlyhalo!",
     "Saved" : "Uložené",
     "There was a problem saving your changes. Click to resume editing." : "Vyskytol sa problém s ukladaním zmien. Kliknite pre pokračovanie v úpravách.",
     "Edit in plain text editor" : "Upraviť v textovom editore",
@@ -11,13 +13,18 @@ OC.L10N.register(
     "Preview" : "Náhľad",
     "New text file" : "Nový textový súbor",
     "New text file.txt" : "Nový text file.txt",
+    "You cannot open a folder" : "Tento priečinok nemôžete otvoriť",
     "This file is too big to be opened. Please download the file instead." : "Tento súbor je príliš veľký na to, aby ho bolo možné otvoriť. Prosím, namiesto toho si ho stiahnite.",
     "Cannot read the file." : "Nemožno čítať súbor.",
     "Invalid file path supplied." : "Neplatná cesta k súboru.",
     "The file is locked." : "Súbor je zamknutý.",
     "An internal server error occurred." : "Vyskytla sa vnútorná chyba na serveri.",
+    "You cannot write to a folder." : "Do tohto priečinka nemôžete zapisovať.",
+    "Cannot save file as it has been modified since opening." : "Nie je možné uložiť súbor, pretože bol od otvorenia zmenený",
     "Could not write to file." : "Do súboru sa nepodarilo zapísať",
     "Insufficient permissions." : "Nedostatočné oprávnenia",
+    "File path not supplied." : "Nebola uvedená cesta k súboru.",
+    "File mtime not supplied." : "Nebol uvedený mtime súboru.",
     "Share not found" : "Sprístupnenie sa nenašlo",
     "You are not authorized to open this share" : "Nemáte oprávnenie otvoriť toto sprístupnenie",
     "Invalid range request" : "Neplatná požiadavka rozsahu",
@@ -32,6 +39,8 @@ OC.L10N.register(
     "Cannot save file as it has been modified since opening" : "Nie je možné uložiť súbor, pretože bol od otvorenia zmenený",
     "Insufficient permissions" : "Nedostatočné oprávnenia",
     "File path not supplied" : "Nebola uvedená cesta k súboru",
-    "File mtime not supplied" : "Nebol uvedený mtime súboru"
+    "File mtime not supplied" : "Nebol uvedený mtime súboru",
+    "You can not open a folder." : "Tento priečinok nemôžete otvoriť.",
+    "You can not write to a folder." : "Do tohto priečinka nemôžete zapisovať."
 },
 "nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);");
