@@ -30,13 +30,8 @@ OC.L10N.register(
     "Saving…" : "Αποθηκεύεται.....",
     "saved!" : "αποθηκεύτηκε!",
     "failed!" : "απέτυχε!",
-    "You can not open a folder" : "Δεν μπορείτε να ανοίξετε ένα φάκελο",
-    "You can not write to a folder" : "Δεν μπορείτε να γράψετε στον φάκελο",
-    "Cannot save file as it has been modified since opening" : "Δεν είναι δυνατή η αποθήκευση του αρχείου, όπως έχει τροποποιηθεί από το άνοιγμα.",
-    "Insufficient permissions" : "Μη επαρκή δικαιώματα",
-    "File path not supplied" : "Η διαδρομή του αρχείου δεν παρέχεται.",
-    "File mtime not supplied" : "Ο χρόνος τροποποίησης  του αρχείου δεν παρέχεται",
     "You can not open a folder." : "Δεν μπορείτε να ανοίξετε ένα φάκελο.",
-    "You can not write to a folder." : "Δεν μπορείτε να γράψετε σε ένα φάκελο."
+    "You can not write to a folder." : "Δεν μπορείτε να γράψετε σε ένα φάκελο.",
+    "You can not open a folder" : "Δεν μπορείτε να ανοίξετε ένα φάκελο"
 },
 "nplurals=2; plural=(n != 1);");

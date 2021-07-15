@@ -19,11 +19,6 @@ OC.L10N.register(
     "Saving…" : "A guardar...",
     "saved!" : "guardado!",
     "failed!" : "falhou!",
-    "You can not open a folder" : "Não pode abrir a pasta",
-    "You can not write to a folder" : "Não é possível escrever na pasta",
-    "Cannot save file as it has been modified since opening" : "Não é possível guardar o ficheiro porque este foi modificado desde a abertura",
-    "Insufficient permissions" : "Permissões insuficientes",
-    "File path not supplied" : "Caminho do ficheiro não indicado",
-    "File mtime not supplied" : "O Ficheiro mtime não foi indicado"
+    "You can not open a folder" : "Não pode abrir a pasta"
 },
 "nplurals=2; plural=(n != 1);");

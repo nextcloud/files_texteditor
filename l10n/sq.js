@@ -17,11 +17,6 @@ OC.L10N.register(
     "Saving…" : "Duke u ruajtur...",
     "saved!" : "u ruajt!",
     "failed!" : "dështoi!",
-    "You can not open a folder" : "Ju nuk mund të hapni një dosje",
-    "You can not write to a folder" : "Ju s'mund të shkruani tek një dosje ",
-    "Cannot save file as it has been modified since opening" : "S’ruhet dot kartela, ngaqë është ndryshuar që prej hapjes",
-    "Insufficient permissions" : "Leje të pamjaftueshme",
-    "File path not supplied" : "S’u dha shteg kartele",
-    "File mtime not supplied" : "S’u dha skedari mtime"
+    "You can not open a folder" : "Ju nuk mund të hapni një dosje"
 },
 "nplurals=2; plural=(n != 1);");

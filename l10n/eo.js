@@ -24,11 +24,6 @@ OC.L10N.register(
     "Saving…" : "Konservado...",
     "saved!" : "konservita!",
     "failed!" : "malsukcesis!",
-    "You can not open a folder" : "Ne povas malfermi dosierujo",
-    "You can not write to a folder" : "Ne povas skribi al dosierujo",
-    "Cannot save file as it has been modified since opening" : "Ne konserveblas la dosiero ĉar ĝi modifiĝis post malfermo",
-    "Insufficient permissions" : "Nesufiĉaj permesoj",
-    "File path not supplied" : "Dosiervojo ne provizita.",
-    "File mtime not supplied" : "Ŝanĝotempo (mtime) de la dosiero ne provizita"
+    "You can not open a folder" : "Ne povas malfermi dosierujo"
 },
 "nplurals=2; plural=(n != 1);");

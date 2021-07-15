@@ -1,5 +1,7 @@
 { "translations": {
     "Saving …" : "保存中...",
+    "Saved!" : "保存しました！",
+    "Failed!" : " 失敗しました!",
     "Saved" : "保存しました",
     "There was a problem saving your changes. Click to resume editing." : "変更を保存する際に問題が発生しました．クリックして編集を再開する．",
     "Edit in plain text editor" : "テキストエディターで編集",
@@ -30,13 +32,8 @@
     "Saving…" : "保存中...",
     "saved!" : "保存しました",
     "failed!" : " 失敗しました",
-    "You can not open a folder" : "フォルダーを開けません",
-    "You can not write to a folder" : "フォルダーに書き込みできません",
-    "Cannot save file as it has been modified since opening" : "変更したファイルは使用中のため保存できません",
-    "Insufficient permissions" : "権限が不足しています",
-    "File path not supplied" : "ファイルパスが足りません",
-    "File mtime not supplied" : "ファイルのアクセス時刻がありません",
     "You can not open a folder." : "フォルダーを開けません",
-    "You can not write to a folder." : "フォルダーに書き込みできません"
+    "You can not write to a folder." : "フォルダーに書き込みできません",
+    "You can not open a folder" : "フォルダーを開けません"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

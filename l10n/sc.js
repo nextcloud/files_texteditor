@@ -2,6 +2,8 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Sarvende …",
+    "Saved!" : "Sarvadu!",
+    "Failed!" : "Faddidu!",
     "Saved" : "Sarvadu",
     "There was a problem saving your changes. Click to resume editing." : "Ddoe at àpidu un'errore sarvende is modìficas. Incarca pro sighire a modificare.",
     "Edit in plain text editor" : "Modìfica in un'editore de testos simpre",
@@ -32,13 +34,8 @@ OC.L10N.register(
     "Saving…" : "Sarvende…",
     "saved!" : "sarvadu!",
     "failed!" : "faddidu!",
-    "You can not open a folder" : "Non podes abèrrere una cartella",
-    "You can not write to a folder" : "Non podes iscrìere in una cartella",
-    "Cannot save file as it has been modified since opening" : "Impossìbile a sarvare s'archìviu ca s'est modificadu dae s'abertura",
-    "Insufficient permissions" : "Permissos non sufitzientes",
-    "File path not supplied" : "Caminu de s'archìviu non frunidu",
-    "File mtime not supplied" : "mtime de s'archìviu non frunidu",
     "You can not open a folder." : "Non podes abèrrere una cartella.",
-    "You can not write to a folder." : "Non podes iscrìere in una cartella."
+    "You can not write to a folder." : "Non podes iscrìere in una cartella.",
+    "You can not open a folder" : "Non podes abèrrere una cartella"
 },
 "nplurals=2; plural=(n != 1);");

@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Saving …" : "Gordetzen ...",
     "Saved!" : "Gordeta!",
+    "Failed!" : "Huts egin du!",
     "Saved" : "Gordeta",
     "There was a problem saving your changes. Click to resume editing." : "Aldaketak gordetzean arazo bat izan da. Egin klik edizioarekin jarraitzeko",
     "Edit in plain text editor" : "Editatu testu hutseko editorean",
@@ -33,13 +34,8 @@ OC.L10N.register(
     "Saving…" : "Gordetzen…",
     "saved!" : "gordeta!",
     "failed!" : "errorea!",
-    "You can not open a folder" : "Ezin duzu karpeta bat ireki",
-    "You can not write to a folder" : "Ezin duzu karpeta batean idatzi",
-    "Cannot save file as it has been modified since opening" : "Ezin da fitxategia gorde ireki denetik aldatu delako",
-    "Insufficient permissions" : "Baimen gutxiegi",
-    "File path not supplied" : "Ez da fitxategiaren biderik eman",
-    "File mtime not supplied" : "Fitxategiaren mtime-a ez da eman",
     "You can not open a folder." : "Ezin duzu karpetarik ireki",
-    "You can not write to a folder." : "Ezin duzu karpetetan idatzi"
+    "You can not write to a folder." : "Ezin duzu karpetetan idatzi",
+    "You can not open a folder" : "Ezin duzu karpeta bat ireki"
 },
 "nplurals=2; plural=(n != 1);");

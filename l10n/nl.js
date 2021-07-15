@@ -34,13 +34,8 @@ OC.L10N.register(
     "Saving…" : "Opslaan...",
     "saved!" : "opgeslagen!",
     "failed!" : "mislukt!",
-    "You can not open a folder" : "Je kunt geen map openen",
-    "You can not write to a folder" : "Je kunt schrijven naar een map",
-    "Cannot save file as it has been modified since opening" : "Kan het bestand niet opslaan omdat het is gewijzigd na het openen",
-    "Insufficient permissions" : "Onvoldoende rechten",
-    "File path not supplied" : "Bestandspad niet opgegeven",
-    "File mtime not supplied" : "Tijdstempel bestand niet opgegeven",
     "You can not open a folder." : "Je kunt geen map openen",
-    "You can not write to a folder." : "Je kunt niet schrijven naar een map"
+    "You can not write to a folder." : "Je kunt niet schrijven naar een map",
+    "You can not open a folder" : "Je kunt geen map openen"
 },
 "nplurals=2; plural=(n != 1);");
