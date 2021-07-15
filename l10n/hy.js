@@ -12,9 +12,6 @@ OC.L10N.register(
     "The file is locked." : "Ֆայլը կողպած է։",
     "An internal server error occurred." : "Սերվերի ներքին սխալ։",
     "saved!" : "պահվե՛ց",
-    "failed!" : "ձախողվե՛ց",
-    "Cannot save file as it has been modified since opening" : "Չեմ կարող պահել ֆայլը, քանի որ այն բացելուց հետո փոփոխվել է",
-    "File path not supplied" : "Ֆայլի հասցեն տրամադրված չէ",
-    "File mtime not supplied" : "Ֆայլի mtimeը տրամադրված չէ"
+    "failed!" : "ձախողվե՛ց"
 },
 "nplurals=2; plural=(n != 1);");

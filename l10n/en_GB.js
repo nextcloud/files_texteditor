@@ -21,11 +21,6 @@ OC.L10N.register(
     "Saving…" : "Saving…",
     "saved!" : "saved!",
     "failed!" : "failed!",
-    "You can not open a folder" : "You cannot open a folder",
-    "You can not write to a folder" : "You cannot write to a folder",
-    "Cannot save file as it has been modified since opening" : "Cannot save file as it has been modified since opening",
-    "Insufficient permissions" : "Insufficient permissions",
-    "File path not supplied" : "File path not supplied",
-    "File mtime not supplied" : "File mtime not supplied"
+    "You can not open a folder" : "You cannot open a folder"
 },
 "nplurals=2; plural=(n != 1);");

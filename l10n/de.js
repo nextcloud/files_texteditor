@@ -34,13 +34,8 @@ OC.L10N.register(
     "Saving…" : "Speichere…",
     "saved!" : "Gespeichert!",
     "failed!" : "Fehlgeschlagen!",
-    "You can not open a folder" : "Du kannst keinen Ordner öffnen",
-    "You can not write to a folder" : "Du kannst nicht in einen Ordner schreiben",
-    "Cannot save file as it has been modified since opening" : "Die Datei konnte nicht gespeichert werden, weil sie seit dem Öffnen verändert worden ist",
-    "Insufficient permissions" : "Nicht ausreichende Berechtigungen",
-    "File path not supplied" : "Dateipfad nicht angegeben",
-    "File mtime not supplied" : "Dateiänderungsdatum nicht angegeben",
     "You can not open a folder." : "Du kannst keinen Ordner öffnen.",
-    "You can not write to a folder." : "Du kannst nicht in einen Ordner schreiben."
+    "You can not write to a folder." : "Du kannst nicht in einen Ordner schreiben.",
+    "You can not open a folder" : "Du kannst keinen Ordner öffnen"
 },
 "nplurals=2; plural=(n != 1);");
