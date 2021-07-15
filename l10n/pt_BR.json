@@ -32,13 +32,8 @@
     "Saving…" : "Salvando...",
     "saved!" : "salvo!",
     "failed!" : "falhou!",
-    "You can not open a folder" : "Você não pode abrir uma pasta",
-    "You can not write to a folder" : "Você não pode escrever em uma pasta",
-    "Cannot save file as it has been modified since opening" : "Não é possível salvar este arquivo pois ele foi modificado desde sua abertura",
-    "Insufficient permissions" : "Permissões insuficientes",
-    "File path not supplied" : "Caminho do arquivo não fornecido",
-    "File mtime not supplied" : "Arquivo mtime não fornecido",
     "You can not open a folder." : "Você não pode abrir uma pasta.",
-    "You can not write to a folder." : "Você não pode escrever em uma pasta."
+    "You can not write to a folder." : "Você não pode escrever em uma pasta.",
+    "You can not open a folder" : "Você não pode abrir uma pasta"
 },"pluralForm" :"nplurals=2; plural=(n > 1);"
 }

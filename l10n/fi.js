@@ -29,13 +29,8 @@ OC.L10N.register(
     "Saving…" : "Tallennetaan…",
     "saved!" : "tallennettu!",
     "failed!" : "epäonnistui!",
-    "You can not open a folder" : "Et voi avata kansiota",
-    "You can not write to a folder" : "Et voi kirjoittaa kansioon",
-    "Cannot save file as it has been modified since opening" : "Tiedostoa ei voi tallentaa, koska sitä on muokattu avaamisen jälkeen",
-    "Insufficient permissions" : "Oikeudet eivät riitä",
-    "File path not supplied" : "TIedoston polkua ei annettu",
-    "File mtime not supplied" : "Tiedoston mtime-arvoa ei ole annettu",
     "You can not open a folder." : "Et voi avata kansiota.",
-    "You can not write to a folder." : "Et voi kirjoittaa kansioon."
+    "You can not write to a folder." : "Et voi kirjoittaa kansioon.",
+    "You can not open a folder" : "Et voi avata kansiota"
 },
 "nplurals=2; plural=(n != 1);");

@@ -16,11 +16,6 @@ OC.L10N.register(
     "Saving…" : "Guardando...",
     "saved!" : "¡guardáu!",
     "failed!" : "¡falló!",
-    "You can not open a folder" : "Nun pues abrir una carpeta",
-    "You can not write to a folder" : "Nun pues escribir nuna carpeta",
-    "Cannot save file as it has been modified since opening" : "Nun pudo guardase'l ficheru por mor que ta modificáu dende que s'abrió",
-    "Insufficient permissions" : "Permisos insuficientes",
-    "File path not supplied" : "Camín de ficheru non soportáu",
-    "File mtime not supplied" : "Ficheru mtime non soportáu"
+    "You can not open a folder" : "Nun pues abrir una carpeta"
 },
 "nplurals=2; plural=(n != 1);");

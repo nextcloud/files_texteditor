@@ -20,11 +20,6 @@ OC.L10N.register(
     "Saving…" : "Gemmer...",
     "saved!" : "gemt!",
     "failed!" : "mislykkedes!",
-    "You can not open a folder" : "Du kan ikke åbne en mappe",
-    "You can not write to a folder" : "Du kan ikke skrive til en mappe",
-    "Cannot save file as it has been modified since opening" : "Kan ikke gemme filen, da den er blevet ændret efter den blev åbnet",
-    "Insufficient permissions" : "Utilstrækkeligt med rettigheder",
-    "File path not supplied" : "Filstien er ikke angivet",
-    "File mtime not supplied" : "Filen mtime er ikke anvist"
+    "You can not open a folder" : "Du kan ikke åbne en mappe"
 },
 "nplurals=2; plural=(n != 1);");

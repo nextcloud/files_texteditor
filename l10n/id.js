@@ -18,11 +18,6 @@ OC.L10N.register(
     "Saving…" : "Menyimpan...",
     "saved!" : "tersimpan!",
     "failed!" : "gagal!",
-    "You can not open a folder" : "Anda tidak dapat membuka folder",
-    "You can not write to a folder" : "Anda tidak dapat menulis pada folder",
-    "Cannot save file as it has been modified since opening" : "Tidak dapat menyimpan berkas karena sudah diubah sejak dibuka",
-    "Insufficient permissions" : "Izin tidak cukup",
-    "File path not supplied" : "Lokasi berkas belum diberikan",
-    "File mtime not supplied" : "Berkas mtime belum diberikan"
+    "You can not open a folder" : "Anda tidak dapat membuka folder"
 },
 "nplurals=1; plural=0;");

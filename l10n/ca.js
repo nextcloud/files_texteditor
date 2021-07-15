@@ -30,13 +30,8 @@ OC.L10N.register(
     "Saving…" : "S'està desant…",
     "saved!" : "s’ha desat!",
     "failed!" : "ha fallat!",
-    "You can not open a folder" : "No podeu obrir una carpeta",
-    "You can not write to a folder" : "No podeu escriure a una carpeta",
-    "Cannot save file as it has been modified since opening" : "No és possible desar el fitxer perquè ha estat modificat després de obrir-se",
-    "Insufficient permissions" : "Permisos insuficients",
-    "File path not supplied" : "No s'ha proporcionat la ruta del fitxer",
-    "File mtime not supplied" : "No s'ha proporcionat l'hora de modificació del fitxer",
     "You can not open a folder." : "No podeu obrir una carpeta.",
-    "You can not write to a folder." : "No podeu escriure a una carpeta."
+    "You can not write to a folder." : "No podeu escriure a una carpeta.",
+    "You can not open a folder" : "No podeu obrir una carpeta"
 },
 "nplurals=2; plural=(n != 1);");
