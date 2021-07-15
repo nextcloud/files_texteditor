@@ -32,13 +32,8 @@ OC.L10N.register(
     "Saving…" : "Poteka shranjevanje ...",
     "saved!" : "shranjeno!",
     "failed!" : "spodletelo!",
-    "You can not open a folder" : "Mape ni mogoče odpreti",
-    "You can not write to a folder" : "V mapo ni mogoče pisati",
-    "Cannot save file as it has been modified since opening" : "Ni mogoče shraniti datoteke, ker je bila v času trenutne seje že spremenjena.",
-    "Insufficient permissions" : "Neustrezna dovoljenja",
-    "File path not supplied" : "Pot do datoteke ni podana",
-    "File mtime not supplied" : "Datoteka mtime ni podana",
     "You can not open a folder." : "Mape ni mogoče odpreti.",
-    "You can not write to a folder." : "V mapo ni mogoče pisati."
+    "You can not write to a folder." : "V mapo ni mogoče pisati.",
+    "You can not open a folder" : "Mape ni mogoče odpreti"
 },
 "nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);");

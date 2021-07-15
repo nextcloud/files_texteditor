@@ -30,13 +30,8 @@ OC.L10N.register(
     "Saving…" : "Enregistrement…",
     "saved!" : "enregistré!",
     "failed!" : "échec !",
-    "You can not open a folder" : "Vous ne pouvez pas ouvrir ce dossier",
-    "You can not write to a folder" : "Vous ne pouvez pas écrire dans ce dossier",
-    "Cannot save file as it has been modified since opening" : "Impossible d'enregistrer le fichier car il a été modifié depuis son ouverture.",
-    "Insufficient permissions" : "Droits insuffisants",
-    "File path not supplied" : "Chemin du fichier non fourni",
-    "File mtime not supplied" : "mtime du fichier non fourni",
     "You can not open a folder." : "Vous ne pouvez pas ouvrir un dossier.",
-    "You can not write to a folder." : "Vous ne pouvez pas écrire dans un dossier."
+    "You can not write to a folder." : "Vous ne pouvez pas écrire dans un dossier.",
+    "You can not open a folder" : "Vous ne pouvez pas ouvrir ce dossier"
 },
 "nplurals=2; plural=(n > 1);");

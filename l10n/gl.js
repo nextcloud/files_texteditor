@@ -32,13 +32,8 @@ OC.L10N.register(
     "Saving…" : "Gardando…",
     "saved!" : "gardado!",
     "failed!" : "produciuse un fallo!",
-    "You can not open a folder" : "Vostede non pode abrir un cartafol",
-    "You can not write to a folder" : "Vostede non pode escribir nun cartafol",
-    "Cannot save file as it has been modified since opening" : "Non é posíbel gardar o ficheiro, xa que foi modificado trala súa apertura",
-    "Insufficient permissions" : "Non ten permisos abondo",
-    "File path not supplied" : "Non forneceu unha ruta de ficheiro",
-    "File mtime not supplied" : "Non forneceu o ficheiro mtime",
     "You can not open a folder." : "Vostede non pode abrir un cartafol",
-    "You can not write to a folder." : "Vostede non pode escribir no cartafol."
+    "You can not write to a folder." : "Vostede non pode escribir no cartafol.",
+    "You can not open a folder" : "Vostede non pode abrir un cartafol"
 },
 "nplurals=2; plural=(n != 1);");

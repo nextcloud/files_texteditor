@@ -34,13 +34,8 @@ OC.L10N.register(
     "Saving…" : "儲存中…",
     "saved!" : "已儲存!",
     "failed!" : "失敗!",
-    "You can not open a folder" : "你無法打開文件夾",
-    "You can not write to a folder" : "您無法寫入資料夾",
-    "Cannot save file as it has been modified since opening" : "無法將變更內容儲存至檔案，檔案正被開啟中",
-    "Insufficient permissions" : "權限不足",
-    "File path not supplied" : "沒有提供檔案路徑",
-    "File mtime not supplied" : "沒有提供檔案修改時間",
     "You can not open a folder." : "您無法開啟資料夾。",
-    "You can not write to a folder." : "您無法寫入資料夾。"
+    "You can not write to a folder." : "您無法寫入資料夾。",
+    "You can not open a folder" : "你無法打開文件夾"
 },
 "nplurals=1; plural=0;");
