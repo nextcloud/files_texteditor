@@ -1,5 +1,7 @@
 { "translations": {
     "Saving …" : "保存中...",
+    "Saved!" : "保存しました！",
+    "Failed!" : " 失敗しました!",
     "Saved" : "保存しました",
     "There was a problem saving your changes. Click to resume editing." : "変更を保存する際に問題が発生しました．クリックして編集を再開する．",
     "Edit in plain text editor" : "テキストエディターで編集",
