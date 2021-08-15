@@ -2,6 +2,8 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Mentés…",
+    "Saved!" : "Mentve!",
+    "Failed!" : "Sikertelen!",
     "Saved" : "Mentve",
     "There was a problem saving your changes. Click to resume editing." : "Hiba történt a módosítások mentésekor. Kattintson a szerkesztés folytatásához.",
     "Edit in plain text editor" : "Szerkesztés egyszerű szövegszerkesztőben",
