@@ -2,6 +2,8 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Poteka shranjevanje ...",
+    "Saved!" : "Podatki so shranjeni!",
+    "Failed!" : "Opravilo je spodletelo!",
     "Saved" : "Shranjeno",
     "There was a problem saving your changes. Click to resume editing." : "Prišlo je do napake med shranjevanjem sprememb. Kliknite za nadaljevanje urejanja.",
     "Edit in plain text editor" : "Uredi v enostavnem besedilnem urejevalniku",
