@@ -1,5 +1,7 @@
 { "translations": {
     "Saving …" : "Enregistrement …",
+    "Saved!" : "Enregistré !",
+    "Failed!" : "Échoué !",
     "Saved" : "Enregistré",
     "There was a problem saving your changes. Click to resume editing." : "Un problème est survenu lors de la sauvegarde de vos modifications. Cliquez pour continuer l'édition.",
     "Edit in plain text editor" : "Modifier dans l'éditeur de texte brute",
