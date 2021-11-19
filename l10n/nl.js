@@ -22,7 +22,7 @@ OC.L10N.register(
     "You cannot write to a folder." : "Je kunt niet schrijven naar een map.",
     "Cannot save file as it has been modified since opening." : "Kan het bestand niet opslaan, omdat het is gewijzigd na het openen",
     "Could not write to file." : "Kon niet schrijven naar bestand.",
-    "Insufficient permissions." : "Onvoldoende rechten",
+    "Insufficient permissions." : "Onvoldoende machtigingen",
     "File path not supplied." : "Bestandspad niet opgegeven",
     "File mtime not supplied." : "Datum van wijzigen van het bestand is niet opgegeven",
     "Share not found" : "Gedeelde map niet gevonden",
