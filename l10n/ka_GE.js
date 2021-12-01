@@ -17,11 +17,6 @@ OC.L10N.register(
     "Saving…" : "მიმდინარეობს დამახსოვრება...",
     "saved!" : "შენახულია!",
     "failed!" : "ვერ მოხერხდა!",
-    "You can not open a folder" : "დირექტორიას ვერ გახსნით",
-    "You can not write to a folder" : "ამ დირექტორიაში ვერ ჩაწერთ",
-    "Cannot save file as it has been modified since opening" : "ფაილის შენახვა არ ხერხდება, ის გახსნის შემდეგ შეიცვალა",
-    "Insufficient permissions" : "უფლებების უკმარისობა",
-    "File path not supplied" : "ფაილის მისამართი არაა მოცემული",
-    "File mtime not supplied" : "ფაილი mtime არაა მოცემული"
+    "You can not open a folder" : "დირექტორიას ვერ გახსნით"
 },
 "nplurals=2; plural=(n!=1);");

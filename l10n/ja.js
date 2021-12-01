@@ -35,11 +35,6 @@ OC.L10N.register(
     "saved!" : "保存しました",
     "failed!" : " 失敗しました",
     "You can not open a folder" : "フォルダーを開けません",
-    "You can not write to a folder" : "フォルダーに書き込みできません",
-    "Cannot save file as it has been modified since opening" : "変更したファイルは使用中のため保存できません",
-    "Insufficient permissions" : "権限が不足しています",
-    "File path not supplied" : "ファイルパスが足りません",
-    "File mtime not supplied" : "ファイルのアクセス時刻がありません",
     "You can not open a folder." : "フォルダーを開けません",
     "You can not write to a folder." : "フォルダーに書き込みできません"
 },

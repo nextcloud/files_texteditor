@@ -2,6 +2,8 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Guardando …",
+    "Saved!" : "¡Guardado!",
+    "Failed!" : "¡Falló!",
     "Saved" : "Guardado",
     "There was a problem saving your changes. Click to resume editing." : "Ha habido un problema al guardar los cambios. Haga clic para reanudar la edición.",
     "Edit in plain text editor" : "Edite en un editor de texto simple",
@@ -33,11 +35,6 @@ OC.L10N.register(
     "saved!" : "¡guardado!",
     "failed!" : "¡falló!",
     "You can not open a folder" : "No puedes abrir una carpeta",
-    "You can not write to a folder" : "No puedes escribir en una carpeta",
-    "Cannot save file as it has been modified since opening" : "No es posible guardar el archivo; pues ha sido modificado",
-    "Insufficient permissions" : "Permisos insuficientes",
-    "File path not supplied" : "No se ha proporcionado la ruta del archivo",
-    "File mtime not supplied" : "No se ha proporcionado la hora de modificación del archivo (mtime)",
     "You can not open a folder." : "No puedes abrir una carpeta.",
     "You can not write to a folder." : "No puedes escribir a una carpeta."
 },

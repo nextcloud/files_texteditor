@@ -35,11 +35,6 @@ OC.L10N.register(
     "saved!" : "sparad!",
     "failed!" : "misslyckades.",
     "You can not open a folder" : "Du kan inte öppna en mapp",
-    "You can not write to a folder" : "Du kan inte skriva till en mapp",
-    "Cannot save file as it has been modified since opening" : "Kan inte spara filen eftersom den har ändrats sedan den öppnats.",
-    "Insufficient permissions" : "Otillräcklig behörighet.",
-    "File path not supplied" : "Ingen sökväg till fil angiven.",
-    "File mtime not supplied" : "Inget mtime-attribut angivet för filen.",
     "You can not open a folder." : "Du kan inte öppna en mapp.",
     "You can not write to a folder." : "Du kan inte skriva till en mapp."
 },

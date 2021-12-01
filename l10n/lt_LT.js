@@ -29,11 +29,6 @@ OC.L10N.register(
     "saved!" : "įrašyta!",
     "failed!" : "nepavyko!",
     "You can not open a folder" : "Jūs negalite atverti aplanko",
-    "You can not write to a folder" : "Negalima rašyti į aplanką",
-    "Cannot save file as it has been modified since opening" : "Negalima išsaugoti failo, nes jis pakeistas po atidarymo",
-    "Insufficient permissions" : "Nepakanka leidimų",
-    "File path not supplied" : "Nepateiktas failo kelias",
-    "File mtime not supplied" : "Failo modifikavimo laikas nepateiktas",
     "You can not open a folder." : "Negalite atverti aplanko.",
     "You can not write to a folder." : "Negalite rašyti į aplanką."
 },

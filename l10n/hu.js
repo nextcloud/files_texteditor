@@ -2,6 +2,8 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Mentés…",
+    "Saved!" : "Mentve!",
+    "Failed!" : "Sikertelen!",
     "Saved" : "Mentve",
     "There was a problem saving your changes. Click to resume editing." : "Hiba történt a módosítások mentésekor. Kattintson a szerkesztés folytatásához.",
     "Edit in plain text editor" : "Szerkesztés egyszerű szövegszerkesztőben",
@@ -33,11 +35,6 @@ OC.L10N.register(
     "saved!" : "mentve!",
     "failed!" : "sikertelen!",
     "You can not open a folder" : "Nem nyithat meg egy mappát",
-    "You can not write to a folder" : "Nem írhat egy mappába",
-    "Cannot save file as it has been modified since opening" : "Nem lehet a fájlt elmenteni, mert a tartalma időközben megváltozott",
-    "Insufficient permissions" : "Nincs jogosultsága hozzá",
-    "File path not supplied" : "Nincs megadva a fájl elérési útja",
-    "File mtime not supplied" : "Nincs megadva a fájl módosítási ideje",
     "You can not open a folder." : "Egy mappát nem lehet megnyitni.",
     "You can not write to a folder." : "Egy mappába nem lehet írni."
 },

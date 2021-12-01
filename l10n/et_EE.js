@@ -17,11 +17,6 @@ OC.L10N.register(
     "Saving…" : "Salvestamine...",
     "saved!" : "Salvestatud!",
     "failed!" : "ebaõnnestus!",
-    "You can not open a folder" : "Sa ei saa avada kausta",
-    "You can not write to a folder" : "Sa ei saa kirjutada kausta",
-    "Cannot save file as it has been modified since opening" : "Faili ei saa salvestada, kune seda on pärast avamist muudetud",
-    "Insufficient permissions" : "Pole piisavalt õiguseid",
-    "File path not supplied" : "Faili asukoht on määramata",
-    "File mtime not supplied" : "Faili mtime puudub"
+    "You can not open a folder" : "Sa ei saa avada kausta"
 },
 "nplurals=2; plural=(n != 1);");

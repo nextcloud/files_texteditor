@@ -35,11 +35,6 @@ OC.L10N.register(
     "saved!" : "kaydedildi!",
     "failed!" : "kaydedilemedi!",
     "You can not open a folder" : "Bir klasör açamazsınız",
-    "You can not write to a folder" : "Bir klasöre yazamazsınız",
-    "Cannot save file as it has been modified since opening" : "Dosya açıldıktan sonra değiştirildiği için kaydedilemedi",
-    "Insufficient permissions" : "İzinler yetersiz",
-    "File path not supplied" : "Dosya yolu belirtilmemiş",
-    "File mtime not supplied" : "Dosya mtime belirtilmemiş",
     "You can not open a folder." : "Bir klasör açamazsınız.",
     "You can not write to a folder." : "Bir klasöre yazamazsınız."
 },

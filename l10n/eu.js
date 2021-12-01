@@ -35,11 +35,6 @@ OC.L10N.register(
     "saved!" : "gordeta!",
     "failed!" : "errorea!",
     "You can not open a folder" : "Ezin duzu karpeta bat ireki",
-    "You can not write to a folder" : "Ezin duzu karpeta batean idatzi",
-    "Cannot save file as it has been modified since opening" : "Ezin da fitxategia gorde ireki denetik aldatu delako",
-    "Insufficient permissions" : "Baimen gutxiegi",
-    "File path not supplied" : "Ez da fitxategiaren biderik eman",
-    "File mtime not supplied" : "Fitxategiaren mtime-a ez da eman",
     "You can not open a folder." : "Ezin duzu karpetarik ireki",
     "You can not write to a folder." : "Ezin duzu karpetetan idatzi"
 },

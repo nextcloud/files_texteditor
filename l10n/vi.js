@@ -4,7 +4,6 @@ OC.L10N.register(
     "Saved" : "Đã lưu",
     "An error occurred!" : "Có một lỗi đã xảy ra!",
     "Edit" : "Chỉnh sửa",
-    "Saving…" : "Đang lưu...",
-    "Insufficient permissions" : "Không đủ quyền"
+    "Saving…" : "Đang lưu..."
 },
 "nplurals=1; plural=0;");

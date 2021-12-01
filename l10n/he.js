@@ -30,11 +30,6 @@ OC.L10N.register(
     "saved!" : "נשמר!",
     "failed!" : "נכשל!",
     "You can not open a folder" : "לא ניתן לפתוח תיקייה",
-    "You can not write to a folder" : "לא ניתן לכתוב לתיקייה",
-    "Cannot save file as it has been modified since opening" : "לא ניתן לשמור את הקובץ כיוון שהקובץ שונה מאז פתיחתו",
-    "Insufficient permissions" : "אין הרשאות מספקות",
-    "File path not supplied" : "נתיב קובץ לא סופק",
-    "File mtime not supplied" : "קובץ mtime לא סופק",
     "You can not open a folder." : "לא ניתן לפתוח תיקייה.",
     "You can not write to a folder." : "לא ניתן לכתוב לתיקייה."
 },

@@ -35,11 +35,6 @@ OC.L10N.register(
     "saved!" : "uloženo!",
     "failed!" : "nezdařilo se!",
     "You can not open a folder" : "Tuto složku nemůžete otevřít",
-    "You can not write to a folder" : "Do této složky nemůžete nahrávat ",
-    "Cannot save file as it has been modified since opening" : "Soubor nelze uložit, protože byl od otevření upraven",
-    "Insufficient permissions" : "Nedostatečná oprávnění",
-    "File path not supplied" : "Nezadán popis umístění souboru",
-    "File mtime not supplied" : "Nebyl dodán čas změny souboru",
     "You can not open a folder." : "Není možné otevírat složku.",
     "You can not write to a folder." : "Do této složky nemůžete zapisovat."
 },

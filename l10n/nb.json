@@ -21,11 +21,6 @@
     "saved!" : "lagret!",
     "failed!" : "mislyktes!",
     "You can not open a folder" : "Du kan ikke åpne en mappe",
-    "You can not write to a folder" : "Du kan ikke skrive til ei mappe",
-    "Cannot save file as it has been modified since opening" : "Kan ikke lagre filen siden den har blitt endret.",
-    "Insufficient permissions" : "Ikke rettigheter",
-    "File path not supplied" : "Filbane ikke angitt",
-    "File mtime not supplied" : "Filens mtime ikke angitt",
     "You can not open a folder." : "Du kan ikke åpne en mappe."
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

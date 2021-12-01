@@ -33,11 +33,6 @@ OC.L10N.register(
     "saved!" : "сохранено!",
     "failed!" : "ошибка!",
     "You can not open a folder" : "Вы не можете открыть каталог",
-    "You can not write to a folder" : "Вы не можете записать в каталог",
-    "Cannot save file as it has been modified since opening" : "Невозможно сохранить файл, поскольку он был изменён после открытия ",
-    "Insufficient permissions" : "Недостаточно прав доступа",
-    "File path not supplied" : "Неизвестен путь файла",
-    "File mtime not supplied" : "Неизвестно время модификации файла",
     "You can not open a folder." : "Вы не можете открыть каталог.",
     "You can not write to a folder." : "Вы не можете записать в каталог."
 },

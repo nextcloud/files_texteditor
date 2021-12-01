@@ -35,11 +35,6 @@ OC.L10N.register(
     "saved!" : "zapisano!",
     "failed!" : "nie powiodło się!",
     "You can not open a folder" : "Nie możesz otworzyć katalogu",
-    "You can not write to a folder" : "Nie możesz zapisać do katalogu",
-    "Cannot save file as it has been modified since opening" : "Nie można zapisać pliku, ponieważ został zmodyfikowany od otwarcia",
-    "Insufficient permissions" : "Niewystarczające uprawnienia",
-    "File path not supplied" : "Nie została podana ścieżka do pliku",
-    "File mtime not supplied" : "Plik mtime nie został podany",
     "You can not open a folder." : "Nie możesz otworzyć katalogu.",
     "You can not write to a folder." : "Nie możesz zapisać do katalogu."
 },

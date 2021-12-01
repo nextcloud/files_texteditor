@@ -35,11 +35,6 @@ OC.L10N.register(
     "saved!" : "sarvadu!",
     "failed!" : "faddidu!",
     "You can not open a folder" : "Non podes abèrrere una cartella",
-    "You can not write to a folder" : "Non podes iscrìere in una cartella",
-    "Cannot save file as it has been modified since opening" : "Impossìbile a sarvare s'archìviu ca s'est modificadu dae s'abertura",
-    "Insufficient permissions" : "Permissos non sufitzientes",
-    "File path not supplied" : "Caminu de s'archìviu non frunidu",
-    "File mtime not supplied" : "mtime de s'archìviu non frunidu",
     "You can not open a folder." : "Non podes abèrrere una cartella.",
     "You can not write to a folder." : "Non podes iscrìere in una cartella."
 },
