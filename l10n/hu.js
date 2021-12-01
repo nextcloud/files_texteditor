@@ -34,8 +34,8 @@ OC.L10N.register(
     "Saving…" : "Mentés…",
     "saved!" : "mentve!",
     "failed!" : "sikertelen!",
+    "You can not open a folder" : "Nem nyithat meg egy mappát",
     "You can not open a folder." : "Egy mappát nem lehet megnyitni.",
-    "You can not write to a folder." : "Egy mappába nem lehet írni.",
-    "You can not open a folder" : "Nem nyithat meg egy mappát"
+    "You can not write to a folder." : "Egy mappába nem lehet írni."
 },
 "nplurals=2; plural=(n != 1);");
