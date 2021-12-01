@@ -20,7 +20,7 @@
     "Saving…" : "Lagrer…",
     "saved!" : "lagret!",
     "failed!" : "mislyktes!",
-    "You can not open a folder." : "Du kan ikke åpne en mappe.",
-    "You can not open a folder" : "Du kan ikke åpne en mappe"
+    "You can not open a folder" : "Du kan ikke åpne en mappe",
+    "You can not open a folder." : "Du kan ikke åpne en mappe."
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
