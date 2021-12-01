@@ -28,8 +28,8 @@ OC.L10N.register(
     "Saving…" : "Įrašoma…",
     "saved!" : "įrašyta!",
     "failed!" : "nepavyko!",
+    "You can not open a folder" : "Jūs negalite atverti aplanko",
     "You can not open a folder." : "Negalite atverti aplanko.",
-    "You can not write to a folder." : "Negalite rašyti į aplanką.",
-    "You can not open a folder" : "Jūs negalite atverti aplanko"
+    "You can not write to a folder." : "Negalite rašyti į aplanką."
 },
 "nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);");
