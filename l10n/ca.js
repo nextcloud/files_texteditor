@@ -30,8 +30,8 @@ OC.L10N.register(
     "Saving…" : "S'està desant…",
     "saved!" : "s’ha desat!",
     "failed!" : "ha fallat!",
-    "You can not open a folder" : "No podeu obrir una carpeta",
     "You can not open a folder." : "No podeu obrir una carpeta.",
-    "You can not write to a folder." : "No podeu escriure a una carpeta."
+    "You can not write to a folder." : "No podeu escriure a una carpeta.",
+    "You can not open a folder" : "No podeu obrir una carpeta"
 },
 "nplurals=2; plural=(n != 1);");

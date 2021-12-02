@@ -29,8 +29,8 @@ OC.L10N.register(
     "Saving…" : "מתבצעת שמירה…",
     "saved!" : "נשמר!",
     "failed!" : "נכשל!",
-    "You can not open a folder" : "לא ניתן לפתוח תיקייה",
     "You can not open a folder." : "לא ניתן לפתוח תיקייה.",
-    "You can not write to a folder." : "לא ניתן לכתוב לתיקייה."
+    "You can not write to a folder." : "לא ניתן לכתוב לתיקייה.",
+    "You can not open a folder" : "לא ניתן לפתוח תיקייה"
 },
 "nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;");
