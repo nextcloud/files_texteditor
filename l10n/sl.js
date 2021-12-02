@@ -34,8 +34,8 @@ OC.L10N.register(
     "Saving…" : "Poteka shranjevanje ...",
     "saved!" : "shranjeno!",
     "failed!" : "spodletelo!",
-    "You can not open a folder" : "Mape ni mogoče odpreti",
     "You can not open a folder." : "Mape ni mogoče odpreti.",
-    "You can not write to a folder." : "V mapo ni mogoče pisati."
+    "You can not write to a folder." : "V mapo ni mogoče pisati.",
+    "You can not open a folder" : "Mape ni mogoče odpreti"
 },
 "nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);");

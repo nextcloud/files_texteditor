@@ -34,8 +34,8 @@ OC.L10N.register(
     "Saving…" : "保存中...",
     "saved!" : "保存しました",
     "failed!" : " 失敗しました",
-    "You can not open a folder" : "フォルダーを開けません",
     "You can not open a folder." : "フォルダーを開けません",
-    "You can not write to a folder." : "フォルダーに書き込みできません"
+    "You can not write to a folder." : "フォルダーに書き込みできません",
+    "You can not open a folder" : "フォルダーを開けません"
 },
 "nplurals=1; plural=0;");

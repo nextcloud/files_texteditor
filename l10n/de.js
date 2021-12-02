@@ -34,8 +34,8 @@ OC.L10N.register(
     "Saving…" : "Speichere…",
     "saved!" : "Gespeichert!",
     "failed!" : "Fehlgeschlagen!",
-    "You can not open a folder" : "Du kannst keinen Ordner öffnen",
     "You can not open a folder." : "Du kannst keinen Ordner öffnen.",
-    "You can not write to a folder." : "Du kannst nicht in einen Ordner schreiben."
+    "You can not write to a folder." : "Du kannst nicht in einen Ordner schreiben.",
+    "You can not open a folder" : "Du kannst keinen Ordner öffnen"
 },
 "nplurals=2; plural=(n != 1);");
