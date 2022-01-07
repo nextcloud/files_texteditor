@@ -34,8 +34,8 @@ OC.L10N.register(
     "Saving…" : "Salvando...",
     "saved!" : "salvo!",
     "failed!" : "falhou!",
+    "You can not open a folder" : "Você não pode abrir uma pasta",
     "You can not open a folder." : "Você não pode abrir uma pasta.",
-    "You can not write to a folder." : "Você não pode escrever em uma pasta.",
-    "You can not open a folder" : "Você não pode abrir uma pasta"
+    "You can not write to a folder." : "Você não pode escrever em uma pasta."
 },
 "nplurals=2; plural=(n > 1);");

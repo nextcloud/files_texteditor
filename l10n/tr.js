@@ -34,8 +34,8 @@ OC.L10N.register(
     "Saving…" : "Kaydediliyor…",
     "saved!" : "kaydedildi!",
     "failed!" : "kaydedilemedi!",
+    "You can not open a folder" : "Bir klasör açamazsınız",
     "You can not open a folder." : "Bir klasör açamazsınız.",
-    "You can not write to a folder." : "Bir klasöre yazamazsınız.",
-    "You can not open a folder" : "Bir klasör açamazsınız"
+    "You can not write to a folder." : "Bir klasöre yazamazsınız."
 },
 "nplurals=2; plural=(n > 1);");
