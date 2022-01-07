@@ -1,6 +1,9 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving …" : "Gemmer ...",
+    "Saved!" : "Gemt!",
+    "Failed!" : "Mislykkedes!",
     "Saved" : "Gemt",
     "There was a problem saving your changes. Click to resume editing." : "Der opstod et problem ved lagringen af dine ændringer. Klik for at genoptage redigeringen.",
     "An error occurred!" : "Der opstod en fejl!",
@@ -9,17 +12,21 @@ OC.L10N.register(
     "Preview" : "Vis eksempel",
     "New text file" : "Ny tekst fil",
     "New text file.txt" : "Ny tekst file.txt",
+    "You cannot open a folder" : "Du kan ikke åbne en mappe",
     "This file is too big to be opened. Please download the file instead." : "FIlen er for stor til at kunne åbnes direkte. Vær venlig at downloade filen i stedet",
     "Cannot read the file." : "Kan ikke læse filen.",
     "Invalid file path supplied." : "Der blev angivet en ugyldig filsti.",
     "The file is locked." : "Filen er låst",
     "An internal server error occurred." : "Der er opstået en intern serverfejl.",
+    "You cannot write to a folder." : "Du kan ikke skrive til en mappe",
     "Could not write to file." : "Kunne ikke skrive til fil.",
     "Share not found" : "Delt fil ikke fundet",
     "You are not authorized to open this share" : "Du har ikke adgang til at åbne denne delte fil",
     "Saving…" : "Gemmer...",
     "saved!" : "gemt!",
     "failed!" : "mislykkedes!",
-    "You can not open a folder" : "Du kan ikke åbne en mappe"
+    "You can not open a folder" : "Du kan ikke åbne en mappe",
+    "You can not open a folder." : "Du kan ikke åbne en mappe.",
+    "You can not write to a folder." : "Du kan ikke skrive til en mappe."
 },
 "nplurals=2; plural=(n != 1);");
