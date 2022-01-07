@@ -33,8 +33,8 @@ OC.L10N.register(
     "Saving…" : "Tallennetaan…",
     "saved!" : "tallennettu!",
     "failed!" : "epäonnistui!",
+    "You can not open a folder" : "Et voi avata kansiota",
     "You can not open a folder." : "Et voi avata kansiota.",
-    "You can not write to a folder." : "Et voi kirjoittaa kansioon.",
-    "You can not open a folder" : "Et voi avata kansiota"
+    "You can not write to a folder." : "Et voi kirjoittaa kansioon."
 },
 "nplurals=2; plural=(n != 1);");

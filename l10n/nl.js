@@ -34,8 +34,8 @@ OC.L10N.register(
     "Saving…" : "Opslaan...",
     "saved!" : "opgeslagen!",
     "failed!" : "mislukt!",
+    "You can not open a folder" : "Je kunt geen map openen",
     "You can not open a folder." : "Je kunt geen map openen",
-    "You can not write to a folder." : "Je kunt niet schrijven naar een map",
-    "You can not open a folder" : "Je kunt geen map openen"
+    "You can not write to a folder." : "Je kunt niet schrijven naar een map"
 },
 "nplurals=2; plural=(n != 1);");

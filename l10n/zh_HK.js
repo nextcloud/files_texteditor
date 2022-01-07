@@ -34,8 +34,8 @@ OC.L10N.register(
     "Saving…" : "儲存中…",
     "saved!" : "已儲存!",
     "failed!" : "失敗!",
+    "You can not open a folder" : "你無法打開文件夾",
     "You can not open a folder." : "您無法開啟資料夾。",
-    "You can not write to a folder." : "您無法寫入資料夾。",
-    "You can not open a folder" : "你無法打開文件夾"
+    "You can not write to a folder." : "您無法寫入資料夾。"
 },
 "nplurals=1; plural=0;");
