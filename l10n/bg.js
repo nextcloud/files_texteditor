@@ -34,8 +34,8 @@ OC.L10N.register(
     "Saving…" : "Запазване",
     "saved!" : "записан!",
     "failed!" : "неуспешно!",
-    "You can not open a folder" : "Не можете да отворите папката",
     "You can not open a folder." : "Не можете да отворите папка",
-    "You can not write to a folder." : "Не можете да записвате в папка"
+    "You can not write to a folder." : "Не можете да записвате в папка",
+    "You can not open a folder" : "Не можете да отворите папката"
 },
 "nplurals=2; plural=(n != 1);");

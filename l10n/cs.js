@@ -34,8 +34,8 @@ OC.L10N.register(
     "Saving…" : "Ukládání…",
     "saved!" : "uloženo!",
     "failed!" : "nezdařilo se!",
-    "You can not open a folder" : "Tuto složku nemůžete otevřít",
     "You can not open a folder." : "Není možné otevírat složku.",
-    "You can not write to a folder." : "Do této složky nemůžete zapisovat."
+    "You can not write to a folder." : "Do této složky nemůžete zapisovat.",
+    "You can not open a folder" : "Tuto složku nemůžete otevřít"
 },
 "nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;");
