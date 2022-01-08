@@ -34,8 +34,8 @@ OC.L10N.register(
     "Saving…" : "Ukladanie...",
     "saved!" : "uložené!",
     "failed!" : "neúspešné!",
-    "You can not open a folder" : "Tento priečinok nemôžete otvoriť",
     "You can not open a folder." : "Tento priečinok nemôžete otvoriť.",
-    "You can not write to a folder." : "Do tohto priečinka nemôžete zapisovať."
+    "You can not write to a folder." : "Do tohto priečinka nemôžete zapisovať.",
+    "You can not open a folder" : "Tento priečinok nemôžete otvoriť"
 },
 "nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);");

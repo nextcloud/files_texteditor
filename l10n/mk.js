@@ -15,8 +15,8 @@ OC.L10N.register(
     "Saving…" : "Зачувува ...",
     "saved!" : "зачувано!",
     "failed!" : "неуспешно!",
-    "You can not open a folder" : "Не можете да отворите папка",
     "You can not open a folder." : "Неможете да отворите папка.",
-    "You can not write to a folder." : "Не можете да се запишете во папка."
+    "You can not write to a folder." : "Не можете да се запишете во папка.",
+    "You can not open a folder" : "Не можете да отворите папка"
 },
 "nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;");

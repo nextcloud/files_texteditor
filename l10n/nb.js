@@ -22,7 +22,7 @@ OC.L10N.register(
     "Saving…" : "Lagrer…",
     "saved!" : "lagret!",
     "failed!" : "mislyktes!",
-    "You can not open a folder" : "Du kan ikke åpne en mappe",
-    "You can not open a folder." : "Du kan ikke åpne en mappe."
+    "You can not open a folder." : "Du kan ikke åpne en mappe.",
+    "You can not open a folder" : "Du kan ikke åpne en mappe"
 },
 "nplurals=2; plural=(n != 1);");

@@ -34,8 +34,8 @@ OC.L10N.register(
     "Saving…" : "Sparar ...",
     "saved!" : "sparad!",
     "failed!" : "misslyckades.",
-    "You can not open a folder" : "Du kan inte öppna en mapp",
     "You can not open a folder." : "Du kan inte öppna en mapp.",
-    "You can not write to a folder." : "Du kan inte skriva till en mapp."
+    "You can not write to a folder." : "Du kan inte skriva till en mapp.",
+    "You can not open a folder" : "Du kan inte öppna en mapp"
 },
 "nplurals=2; plural=(n != 1);");

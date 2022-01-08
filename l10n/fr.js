@@ -34,8 +34,8 @@ OC.L10N.register(
     "Saving…" : "Enregistrement…",
     "saved!" : "enregistré!",
     "failed!" : "échec !",
-    "You can not open a folder" : "Vous ne pouvez pas ouvrir ce dossier",
     "You can not open a folder." : "Vous ne pouvez pas ouvrir un dossier.",
-    "You can not write to a folder." : "Vous ne pouvez pas écrire dans un dossier."
+    "You can not write to a folder." : "Vous ne pouvez pas écrire dans un dossier.",
+    "You can not open a folder" : "Vous ne pouvez pas ouvrir ce dossier"
 },
 "nplurals=2; plural=(n > 1);");
