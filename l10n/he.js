@@ -26,7 +26,6 @@ OC.L10N.register(
     "Invalid range request" : "בקשת הטווח שגויה",
     "Plain text editor" : "עורך טקסט פשוט",
     "Open, save and edit text files" : "פתיחה, שמירה ועריכה של קובצי טקסט",
-    "Saving…" : "מתבצעת שמירה…",
     "saved!" : "נשמר!",
     "failed!" : "נכשל!",
     "You can not open a folder." : "לא ניתן לפתוח תיקייה.",

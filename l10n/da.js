@@ -22,7 +22,6 @@ OC.L10N.register(
     "Could not write to file." : "Kunne ikke skrive til fil.",
     "Share not found" : "Delt fil ikke fundet",
     "You are not authorized to open this share" : "Du har ikke adgang til at åbne denne delte fil",
-    "Saving…" : "Gemmer...",
     "saved!" : "gemt!",
     "failed!" : "mislykkedes!",
     "You can not open a folder." : "Du kan ikke åbne en mappe.",
