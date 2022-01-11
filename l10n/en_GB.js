@@ -18,7 +18,6 @@ OC.L10N.register(
     "Share not found" : "Share not found",
     "You are not authorized to open this share" : "You are not authorised to open this share",
     "Invalid range request" : "Invalid range request",
-    "Saving…" : "Saving…",
     "saved!" : "saved!",
     "failed!" : "failed!",
     "You can not open a folder" : "You cannot open a folder"

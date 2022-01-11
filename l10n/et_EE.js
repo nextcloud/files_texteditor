@@ -14,7 +14,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "Faili asukoht on vigane.",
     "The file is locked." : "Fail on lukus.",
     "An internal server error occurred." : "Tekkis sisemine serveri tõrge.",
-    "Saving…" : "Salvestamine...",
     "saved!" : "Salvestatud!",
     "failed!" : "ebaõnnestus!",
     "You can not open a folder" : "Sa ei saa avada kausta"

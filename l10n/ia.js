@@ -5,7 +5,6 @@ OC.L10N.register(
     "An error occurred!" : "Il occurreva un error!",
     "Edit" : "Modificar",
     "Preview" : "Previsualisar",
-    "New text file.txt" : "Nove texto file.txt",
-    "Saving…" : "Salveguardante..."
+    "New text file.txt" : "Nove texto file.txt"
 },
 "nplurals=2; plural=(n != 1);");

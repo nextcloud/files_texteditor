@@ -31,7 +31,6 @@ OC.L10N.register(
     "Plain text editor" : "Testu arrunteko editorea",
     "Open, save and edit text files" : "Ireki, gorde eta editatu testu-fitxategiak",
     "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Aplikazio honek aukera ematen dio Nextcloudi web nabigatzailean testu-fitxategiak ireki, gorde eta editatzeko. Gaituz gero, \"Testu fitxategia\" izeneko sarrera berri bat agertuko da web nabigatzaileko goiko menuko \"Berria\" botoian. Klik egitean, testu-fitxategi berri bat irekiko da nabigatzailean. Fitxategi hori Nextcloudeko uneko direktorioan gorde daiteke. Horretaz gain, web nabigatzailean testu-fitxategi batean klik egitean, ireki eta editatzeko aukera ematen du. Baimena badu, erabiltzaile batek partekatutako fitxategiak ere editatu ditzake web nabigatzailean eta egindako aldaketak gorde.\nInformazio gehiago aurkitu daiteke testu-editorearen dokumentazioan.",
-    "Saving…" : "Gordetzen…",
     "saved!" : "gordeta!",
     "failed!" : "errorea!",
     "You can not open a folder." : "Ezin duzu karpetarik ireki",

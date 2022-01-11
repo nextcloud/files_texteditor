@@ -14,7 +14,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "La ruta del archivo proporcionada es inválida.",
     "The file is locked." : "El archivo está bloqueado.",
     "An internal server error occurred." : "Se presentó un error interno en el servidor. ",
-    "Saving…" : "Guardando...",
     "saved!" : "¡Guardado!",
     "failed!" : "¡Se presentó una falla!",
     "You can not open a folder" : "No puedes abrir la carpeta"

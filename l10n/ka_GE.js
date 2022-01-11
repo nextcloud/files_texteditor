@@ -14,7 +14,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "მოცემულია ფაილის არასწორი მისამართი.",
     "The file is locked." : "ფაილი ჩაკეტილია.",
     "An internal server error occurred." : "გამოჩნდა შიდა სერვერის შეცდომა.",
-    "Saving…" : "მიმდინარეობს დამახსოვრება...",
     "saved!" : "შენახულია!",
     "failed!" : "ვერ მოხერხდა!",
     "You can not open a folder" : "დირექტორიას ვერ გახსნით"

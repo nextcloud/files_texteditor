@@ -4,7 +4,6 @@ OC.L10N.register(
     "Saved" : "Хадгалах",
     "Edit" : "засварлах",
     "Preview" : "шалгах",
-    "New text file.txt" : "шинэ текст file.txt",
-    "Saving…" : "хадгалж байна"
+    "New text file.txt" : "шинэ текст file.txt"
 },
 "nplurals=2; plural=(n != 1);");

@@ -16,7 +16,6 @@ OC.L10N.register(
     "An internal server error occurred." : "Ocorreu um erro interno no servidor.",
     "Could not write to file." : "Não foi possível escrever no ficheiro.",
     "Share not found" : "Partilha não encontrada",
-    "Saving…" : "A guardar...",
     "saved!" : "guardado!",
     "failed!" : "falhou!",
     "You can not open a folder" : "Não pode abrir a pasta"
