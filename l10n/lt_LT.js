@@ -30,7 +30,6 @@ OC.L10N.register(
     "Invalid range request" : "Neteisinga rėžio užklausa",
     "Plain text editor" : "Grynojo teksto redaktorius",
     "Open, save and edit text files" : "Atverti, įrašyti ir taisyti tekstinius failus",
-    "Saving…" : "Įrašoma…",
     "saved!" : "įrašyta!",
     "failed!" : "nepavyko!",
     "You can not open a folder." : "Negalite atverti aplanko.",

@@ -3,7 +3,6 @@ OC.L10N.register(
     {
     "Saved" : "Bewaar",
     "Edit" : "Wysig",
-    "New text file.txt" : "Nuwe tekslêer.txt",
-    "Saving…" : "Bewaar…"
+    "New text file.txt" : "Nuwe tekslêer.txt"
 },
 "nplurals=2; plural=(n != 1);");

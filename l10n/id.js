@@ -15,7 +15,6 @@ OC.L10N.register(
     "An internal server error occurred." : "Terjadi kesalahan server internal.",
     "Could not write to file." : "Tidak dapat menulis pada berkas.",
     "Open, save and edit text files" : "Buka, simpan dan edit berkas teks",
-    "Saving…" : "Menyimpan...",
     "saved!" : "tersimpan!",
     "failed!" : "gagal!",
     "You can not open a folder" : "Anda tidak dapat membuka folder"

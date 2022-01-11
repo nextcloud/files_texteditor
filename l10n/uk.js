@@ -12,7 +12,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "Помилковий шлях до файлу.",
     "The file is locked." : "Файл заблоковано.",
     "An internal server error occurred." : "Виникла внутрішня помилка серверу.",
-    "Saving…" : "Збереження...",
     "saved!" : "збережено!",
     "failed!" : "не вдалося!"
 },

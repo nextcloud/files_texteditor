@@ -12,7 +12,6 @@ OC.L10N.register(
     "New text file.txt" : "Нова текстуална датотека file.txt",
     "Could not write to file." : "Не може да се запише во датотеката",
     "Insufficient permissions." : "Недоволни дозволи.",
-    "Saving…" : "Зачувува ...",
     "saved!" : "зачувано!",
     "failed!" : "неуспешно!",
     "You can not open a folder." : "Неможете да отворите папка.",

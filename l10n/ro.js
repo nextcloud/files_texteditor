@@ -12,7 +12,6 @@ OC.L10N.register(
     "Invalid file path supplied." : "A fost furnizată o cale invalidă.",
     "The file is locked." : "Fișierul este blocat.",
     "An internal server error occurred." : "A apărut o eroare internp a serverului.",
-    "Saving…" : "Se salvează...",
     "saved!" : "salvat!",
     "failed!" : "eșuat!"
 },
