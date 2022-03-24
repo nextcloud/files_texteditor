@@ -66,7 +66,7 @@ $(document).ready(function(){
 				.removeClass('icon-loading');
 		});
 	} else if (isPublic &&
-			   mimetype.substr(0, mimetype.indexOf('/')) === 'text') {
+			   mimetype.substring(0, mimetype.indexOf('/')) === 'text') {
 		// Based on default text previews from "files_sharing/js/public.js", but
 		// using the public endpoint from files_texteditor for better character
 		// encoding support.

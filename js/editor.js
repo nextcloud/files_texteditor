@@ -424,8 +424,8 @@ export const Texteditor = {
 		$('#editor_close').on('click', _.bind(this._onCloseTrigger, this));
 		$(window).resize(Texteditor.setFilenameMaxLength);
 		window.onpopstate = function () {
-			var hash = location.hash.substr(1);
-			if (hash.substr(0, 6) !== 'editor') {
+			var hash = location.hash.slice(1);
+			if (hash.slice(0, 6) !== 'editor') {
 				this._onCloseTrigger();
 			}
 		}.bind(this);
