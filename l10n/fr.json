@@ -34,5 +34,5 @@
     "You can not open a folder." : "Vous ne pouvez pas ouvrir un dossier.",
     "You can not write to a folder." : "Vous ne pouvez pas écrire dans un dossier.",
     "You can not open a folder" : "Vous ne pouvez pas ouvrir ce dossier"
-},"pluralForm" :"nplurals=3; plural=(n==0 || n==1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;"
+},"pluralForm" :"nplurals=2; plural=(n > 1);"
 }
