@@ -1,6 +1,8 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving …" : "Se salvează",
+    "Saved!" : "Salvat!",
     "Saved" : "Salvat",
     "There was a problem saving your changes. Click to resume editing." : "A apărut o problemă la salvarea modificărilor făcute de tine. Click pentru a relua editarea.",
     "An error occurred!" : "A apărut o eroare!",

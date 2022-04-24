@@ -1,6 +1,8 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving …" : "Orc'h enrolliñ",
+    "Saved!" : "Enrollet !",
     "Saved" : "Enrollet",
     "Edit" : "Cheñch",
     "Preview" : "Ragwell",
