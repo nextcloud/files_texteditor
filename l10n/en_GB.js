@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saved!" : "Saved!",
     "Saved" : "Saved",
     "There was a problem saving your changes. Click to resume editing." : "There was a problem saving your changes. Click to resume editing.",
     "An error occurred!" : "An error occurred!",

@@ -1,5 +1,6 @@
 { "translations": {
     "Edit" : "සංස්කරණය",
+    "Preview" : "පෙරදසුන",
     "failed!" : "අසාර්ථකයි!"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

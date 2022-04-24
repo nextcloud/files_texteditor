@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving …" : "Menyimpan ...",
     "Saved" : "Disimpan",
     "There was a problem saving your changes. Click to resume editing." : "Terdapat masalah saat menyimpan perubahan. Klik untuk melanjutkan penyuntingan.",
     "An error occurred!" : "Terjadi kesalahan!",
