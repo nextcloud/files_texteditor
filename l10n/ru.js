@@ -2,6 +2,7 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Сохраняется ...",
+    "Saved!" : "Сохранено!",
     "Saved" : "Сохранено",
     "There was a problem saving your changes. Click to resume editing." : "Во время сохранения изменений произошла ошибка . Нажмите для продолжения редактирования.",
     "Edit in plain text editor" : "Открыть в текстовом редакторе",

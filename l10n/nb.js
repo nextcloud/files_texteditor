@@ -2,6 +2,7 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Lagrer ...",
+    "Saved!" : "Lagret!",
     "Saved" : "Lagret",
     "There was a problem saving your changes. Click to resume editing." : "Det oppstod et problem ved lagring av endringene dine. Klikk for å fortsette redigering.",
     "Edit in plain text editor" : "Rediger i rentekst-editor",

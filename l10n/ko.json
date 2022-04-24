@@ -1,5 +1,6 @@
 { "translations": {
     "Saving …" : "저장중 …",
+    "Saved!" : "저장했습니다!",
     "Saved" : "저장됨",
     "There was a problem saving your changes. Click to resume editing." : "변경 사항을 저장할 수 없습니다. 편집을 계속하려면 누르십시오.",
     "An error occurred!" : "오류가 발생했습니다!",

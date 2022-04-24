@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saved!" : "Salvestatud!",
     "Saved" : "Salvestatud",
     "There was a problem saving your changes. Click to resume editing." : "Sinu muudatuste salvestamisega tekkis viga. Kliki muutmise jätkamiseks.",
     "An error occurred!" : "Tekis tõrge!",

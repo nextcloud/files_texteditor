@@ -1,6 +1,8 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving …" : "Vista …",
+    "Saved!" : "Vistað!",
     "Saved" : "Vistað",
     "There was a problem saving your changes. Click to resume editing." : "Það kom upp vandamál við að vista breytingarnar þínar. Smelltu til að halda ritun áfram.",
     "Edit in plain text editor" : "Breyta með hreinum textaritli",

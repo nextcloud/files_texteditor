@@ -16,6 +16,7 @@ OC.L10N.register(
     "Invalid file path supplied." : "Camin de fichièr provesit invalid.",
     "The file is locked." : "Lo fichièr es verrolhat.",
     "An internal server error occurred." : "Una error intèrna del servidor s'es produsida.",
+    "Share not found" : "Partiment pas trobat",
     "saved!" : "enregistrat !",
     "failed!" : "fracàs !"
 },

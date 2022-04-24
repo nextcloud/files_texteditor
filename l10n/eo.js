@@ -1,6 +1,8 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving …" : "Konservado...",
+    "Saved!" : "Konservita!",
     "Saved" : "Konservita",
     "There was a problem saving your changes. Click to resume editing." : "Problemo dum konservado de viaj ŝanĝoj. Alklaku por reaktivigi redakton.",
     "Edit in plain text editor" : "Modifi en plenteksta redaktilo",

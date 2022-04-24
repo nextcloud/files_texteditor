@@ -2,6 +2,7 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "جاري الحفظ ...",
+    "Saved!" : "تم الحفظ!",
     "Saved" : "تم الحفظ",
     "An error occurred!" : "حدث خطأ!",
     "Edit" : "تعديل",
