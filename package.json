@@ -20,7 +20,7 @@
 		"@babel/preset-env": "^7.16.7",
 		"@nextcloud/browserslist-config": "^2.2.0",
 		"babel-loader": "^8.2.3",
-		"clean-webpack-plugin": "^3.0.0",
+		"clean-webpack-plugin": "^4.0.0",
 		"css-loader": "^5.2.6",
 		"escape-html": "^1.0.3",
 		"file-loader": "^6.2.0",
