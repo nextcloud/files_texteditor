@@ -12,9 +12,6 @@
     "Cannot read the file." : "S’lexohet dot kartela.",
     "Invalid file path supplied." : "U dha shteg i pavlefshëm.",
     "The file is locked." : "Kartela është e kyçur.",
-    "An internal server error occurred." : "Ndodhi një gabim i brendshëm shërbyesi.",
-    "saved!" : "u ruajt!",
-    "failed!" : "dështoi!",
-    "You can not open a folder" : "Ju nuk mund të hapni një dosje"
+    "An internal server error occurred." : "Ndodhi një gabim i brendshëm shërbyesi."
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

@@ -15,9 +15,6 @@ OC.L10N.register(
     "The file is locked." : "Berkas terkunci",
     "An internal server error occurred." : "Terjadi kesalahan server internal.",
     "Could not write to file." : "Tidak dapat menulis pada berkas.",
-    "Open, save and edit text files" : "Buka, simpan dan edit berkas teks",
-    "saved!" : "tersimpan!",
-    "failed!" : "gagal!",
-    "You can not open a folder" : "Anda tidak dapat membuka folder"
+    "Open, save and edit text files" : "Buka, simpan dan edit berkas teks"
 },
 "nplurals=1; plural=0;");

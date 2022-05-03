@@ -21,11 +21,6 @@ OC.L10N.register(
     "You cannot write to a folder." : "Du kan ikke skrive til en mappe",
     "Could not write to file." : "Kunne ikke skrive til fil.",
     "Share not found" : "Delt fil ikke fundet",
-    "You are not authorized to open this share" : "Du har ikke adgang til at åbne denne delte fil",
-    "saved!" : "gemt!",
-    "failed!" : "mislykkedes!",
-    "You can not open a folder." : "Du kan ikke åbne en mappe.",
-    "You can not write to a folder." : "Du kan ikke skrive til en mappe.",
-    "You can not open a folder" : "Du kan ikke åbne en mappe"
+    "You are not authorized to open this share" : "Du har ikke adgang til at åbne denne delte fil"
 },
 "nplurals=2; plural=(n != 1);");

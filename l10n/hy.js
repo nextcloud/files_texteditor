@@ -10,8 +10,6 @@ OC.L10N.register(
     "Cannot read the file." : "Չկարողացա կարդալ ֆայլը։",
     "Invalid file path supplied." : "Անվավեր ֆայլի հասցե է տրամադրված։",
     "The file is locked." : "Ֆայլը կողպած է։",
-    "An internal server error occurred." : "Սերվերի ներքին սխալ։",
-    "saved!" : "պահվե՛ց",
-    "failed!" : "ձախողվե՛ց"
+    "An internal server error occurred." : "Սերվերի ներքին սխալ։"
 },
 "nplurals=2; plural=(n != 1);");

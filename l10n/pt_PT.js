@@ -17,9 +17,6 @@ OC.L10N.register(
     "The file is locked." : "O ficheiro está bloqueado.",
     "An internal server error occurred." : "Ocorreu um erro interno no servidor.",
     "Could not write to file." : "Não foi possível escrever no ficheiro.",
-    "Share not found" : "Partilha não encontrada",
-    "saved!" : "guardado!",
-    "failed!" : "falhou!",
-    "You can not open a folder" : "Não pode abrir a pasta"
+    "Share not found" : "Partilha não encontrada"
 },
 "nplurals=2; plural=(n != 1);");
