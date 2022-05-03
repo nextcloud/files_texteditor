@@ -14,9 +14,6 @@ OC.L10N.register(
     "Cannot read the file." : "Faili lugemine ebaõnnestus.",
     "Invalid file path supplied." : "Faili asukoht on vigane.",
     "The file is locked." : "Fail on lukus.",
-    "An internal server error occurred." : "Tekkis sisemine serveri tõrge.",
-    "saved!" : "Salvestatud!",
-    "failed!" : "ebaõnnestus!",
-    "You can not open a folder" : "Sa ei saa avada kausta"
+    "An internal server error occurred." : "Tekkis sisemine serveri tõrge."
 },
 "nplurals=2; plural=(n != 1);");

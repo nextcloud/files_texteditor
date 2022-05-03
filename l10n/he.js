@@ -26,11 +26,6 @@ OC.L10N.register(
     "You are not authorized to open this share" : "אין לך הרשאה לפתוח את השיתוף הזה",
     "Invalid range request" : "בקשת הטווח שגויה",
     "Plain text editor" : "עורך טקסט פשוט",
-    "Open, save and edit text files" : "פתיחה, שמירה ועריכה של קובצי טקסט",
-    "saved!" : "נשמר!",
-    "failed!" : "נכשל!",
-    "You can not open a folder." : "לא ניתן לפתוח תיקייה.",
-    "You can not write to a folder." : "לא ניתן לכתוב לתיקייה.",
-    "You can not open a folder" : "לא ניתן לפתוח תיקייה"
+    "Open, save and edit text files" : "פתיחה, שמירה ועריכה של קובצי טקסט"
 },
 "nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;");

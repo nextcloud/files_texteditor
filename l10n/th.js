@@ -12,8 +12,6 @@ OC.L10N.register(
     "Cannot read the file." : "ไม่สามารถอ่านไฟล์",
     "Invalid file path supplied." : "เส้นทางของไฟล์ที่ให้มาไม่ถูกต้อง",
     "The file is locked." : "ไฟล์ถูกล็อค",
-    "An internal server error occurred." : "มีข้อผิดพลาดเกิดขึ้นภายในเซิร์ฟเวอร์",
-    "saved!" : "บันทึกแล้ว!",
-    "failed!" : "ล้มเหลว!"
+    "An internal server error occurred." : "มีข้อผิดพลาดเกิดขึ้นภายในเซิร์ฟเวอร์"
 },
 "nplurals=1; plural=0;");

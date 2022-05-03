@@ -13,8 +13,6 @@ OC.L10N.register(
     "Cannot read the file." : "Fișierul nu poate fi citit.",
     "Invalid file path supplied." : "A fost furnizată o cale invalidă.",
     "The file is locked." : "Fișierul este blocat.",
-    "An internal server error occurred." : "A apărut o eroare internp a serverului.",
-    "saved!" : "salvat!",
-    "failed!" : "eșuat!"
+    "An internal server error occurred." : "A apărut o eroare internp a serverului."
 },
 "nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));");

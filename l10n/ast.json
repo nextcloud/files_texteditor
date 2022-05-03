@@ -12,9 +12,6 @@
     "Cannot read the file." : "Nun ye a lleese'l ficheru",
     "Invalid file path supplied." : "Camín de ficheru inválidu.",
     "The file is locked." : "El ficheru ta bloquiáu.",
-    "An internal server error occurred." : "Hebo un fallu internu nel sirvidor.",
-    "saved!" : "¡guardáu!",
-    "failed!" : "¡falló!",
-    "You can not open a folder" : "Nun pues abrir una carpeta"
+    "An internal server error occurred." : "Hebo un fallu internu nel sirvidor."
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

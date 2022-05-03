@@ -15,9 +15,6 @@
     "An internal server error occurred." : "Se presentó un error interno en el servidor. ",
     "Share not found" : "No se encontró el elemento compartido",
     "You are not authorized to open this share" : "No estas autorizado para abrir este elemento compartido",
-    "Invalid range request" : "Rango de solicitud invalido",
-    "saved!" : "¡Guardado!",
-    "failed!" : "¡Se presentó una falla!",
-    "You can not open a folder" : "No puedes abrir la carpeta"
+    "Invalid range request" : "Rango de solicitud invalido"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

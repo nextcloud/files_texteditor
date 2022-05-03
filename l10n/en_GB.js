@@ -18,9 +18,6 @@ OC.L10N.register(
     "Could not write to file." : "Could not write to file",
     "Share not found" : "Share not found",
     "You are not authorized to open this share" : "You are not authorised to open this share",
-    "Invalid range request" : "Invalid range request",
-    "saved!" : "saved!",
-    "failed!" : "failed!",
-    "You can not open a folder" : "You cannot open a folder"
+    "Invalid range request" : "Invalid range request"
 },
 "nplurals=2; plural=(n != 1);");

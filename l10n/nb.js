@@ -19,10 +19,6 @@ OC.L10N.register(
     "An internal server error occurred." : "En intern serverfeil oppstod.",
     "Could not write to file." : "Kunne ikke skrive til fil.",
     "Share not found" : "Delt fil ikke funnet",
-    "You are not authorized to open this share" : "Du har ikke tilgang til å åpne denne delte filen",
-    "saved!" : "lagret!",
-    "failed!" : "mislyktes!",
-    "You can not open a folder." : "Du kan ikke åpne en mappe.",
-    "You can not open a folder" : "Du kan ikke åpne en mappe"
+    "You are not authorized to open this share" : "Du har ikke tilgang til å åpne denne delte filen"
 },
 "nplurals=2; plural=(n != 1);");
