@@ -19,4 +19,4 @@ OC.L10N.register(
     "You are not authorized to open this share" : "No estas autorizado para abrir este elemento compartido",
     "Invalid range request" : "Rango de solicitud invalido"
 },
-"nplurals=2; plural=(n != 1);");
+"nplurals=2; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");

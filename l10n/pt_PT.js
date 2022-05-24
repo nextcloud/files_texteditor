@@ -19,4 +19,4 @@ OC.L10N.register(
     "Could not write to file." : "Não foi possível escrever no ficheiro.",
     "Share not found" : "Partilha não encontrada"
 },
-"nplurals=2; plural=(n != 1);");
+"nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");
