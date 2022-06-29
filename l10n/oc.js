@@ -6,7 +6,7 @@ OC.L10N.register(
     "Failed!" : "Fracàs !",
     "Saved" : "Enregistrat",
     "There was a problem saving your changes. Click to resume editing." : "Un problèma s'es produsit al moment del salvament de vòstras modificacions. Clicatz per contunhar l'edicion.",
-    "Edit in plain text editor" : "Modificacion den tèxt brut",
+    "Edit in plain text editor" : "Modificar dins l’editor de tèxt brut",
     "An error occurred!" : "Una error s'es produsida !",
     "Edit" : "Modificar",
     "Preview" : "Apercebut",
@@ -16,6 +16,7 @@ OC.L10N.register(
     "Invalid file path supplied." : "Camin de fichièr provesit invalid.",
     "The file is locked." : "Lo fichièr es verrolhat.",
     "An internal server error occurred." : "Una error intèrna del servidor s'es produsida.",
-    "Share not found" : "Partiment pas trobat"
+    "Share not found" : "Partiment pas trobat",
+    "Plain text editor" : "Editor de tèxt brut"
 },
 "nplurals=2; plural=(n > 1);");
