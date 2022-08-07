@@ -1,38 +1,38 @@
 {
-	"name": "files_texteditor",
-	"license": "agpl",
-	"private": true,
-	"scripts": {
-		"dev": "NODE_ENV=development webpack",
-		"watch": "NODE_ENV=development webpack --progress --watch",
-		"build": "NODE_ENV=production webpack --progress"
-	},
-	"browserslist": [
-		"extends @nextcloud/browserslist-config"
-	],
-	"engines": {
-		"node": "^14.0.0",
-		"npm": "^7.0.0"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.16.7",
-		"@babel/plugin-syntax-dynamic-import": "^7.8.3",
-		"@babel/preset-env": "^7.16.7",
-		"@nextcloud/browserslist-config": "^2.2.0",
-		"babel-loader": "^8.2.3",
-		"clean-webpack-plugin": "^4.0.0",
-		"css-loader": "^5.2.6",
-		"escape-html": "^1.0.3",
-		"file-loader": "^6.2.0",
-		"promise-loader": "^1.0.0",
-		"style-loader": "^3.3.1",
-		"webpack": "^5.65.0",
-		"webpack-cli": "^4.9.2",
-		"webpack-merge": "^5.8.0"
-	},
-	"dependencies": {
-		"@nextcloud/router": "^2.0.0",
-		"brace": "^0.11.1",
-		"marked": "^2.1.3"
-	}
+  "name": "files_texteditor",
+  "license": "agpl",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development webpack",
+    "watch": "NODE_ENV=development webpack --progress --watch",
+    "build": "NODE_ENV=production webpack --progress"
+  },
+  "browserslist": [
+    "extends @nextcloud/browserslist-config"
+  ],
+  "engines": {
+    "node": "^16.0.0",
+    "npm": "^7.0.0 || ^8.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.16.7",
+    "@nextcloud/browserslist-config": "^2.2.0",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^5.2.6",
+    "escape-html": "^1.0.3",
+    "file-loader": "^6.2.0",
+    "promise-loader": "^1.0.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@nextcloud/router": "^2.0.0",
+    "brace": "^0.11.1",
+    "marked": "^2.1.3"
+  }
 }
