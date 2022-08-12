@@ -10,6 +10,8 @@ OC.L10N.register(
     "Preview" : "Преглед",
     "New text file" : "Нова текстуална датотека",
     "New text file.txt" : "Нова текстуална датотека file.txt",
+    "You cannot open a folder" : "Не можете да отворите папка",
+    "Cannot read the file." : "Неможе да се прочита датотеката.",
     "Could not write to file." : "Не може да се запише во датотеката",
     "Insufficient permissions." : "Недоволни дозволи."
 },
