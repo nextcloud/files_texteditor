@@ -6,6 +6,7 @@ OC.L10N.register(
     "Failed!" : "Mislykkedes!",
     "Saved" : "Gemt",
     "There was a problem saving your changes. Click to resume editing." : "Der opstod et problem ved lagringen af dine ændringer. Klik for at genoptage redigeringen.",
+    "Edit in plain text editor" : "Rediger i almindelig tekst editor",
     "An error occurred!" : "Der opstod en fejl!",
     "Edit" : "Redigér",
     "Mixed" : "Mixed",
@@ -19,8 +20,16 @@ OC.L10N.register(
     "The file is locked." : "Filen er låst",
     "An internal server error occurred." : "Der er opstået en intern serverfejl.",
     "You cannot write to a folder." : "Du kan ikke skrive til en mappe",
+    "Cannot save file as it has been modified since opening." : "Kan ikke gemme filen, da den er blevet ændret siden åbning.",
     "Could not write to file." : "Kunne ikke skrive til fil.",
+    "Insufficient permissions." : "Utilstrækkelige tilladelser.",
+    "File path not supplied." : "Filstien er ikke angivet.",
+    "File mtime not supplied." : "Fil mtime ikke angivet.",
     "Share not found" : "Delt fil ikke fundet",
-    "You are not authorized to open this share" : "Du har ikke adgang til at åbne denne delte fil"
+    "You are not authorized to open this share" : "Du har ikke adgang til at åbne denne delte fil",
+    "Invalid range request" : "Ugyldig områdeanmodning",
+    "Plain text editor" : "Almindelig tekst editor",
+    "Open, save and edit text files" : "Åbn, gem og rediger tekstfiler",
+    "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Denne applikation gør det muligt for Nextcloud-brugere at åbne, gemme og redigere tekstfiler i webbrowseren. Hvis det er aktiveret, vises en post kaldet \"Tekstfil\" i knappen \"Ny\" øverst i webbrowseren. Når der klikkes, åbnes en ny tekstfil i browseren, og filen kan gemmes i det aktuelle Nextcloud-bibliotek. Yderligere, når en tekstfil klikkes i webbrowseren, vil den blive åbnet og redigerbar. Hvis rettighederne tillader det, kan en bruger også redigere delte filer og gemme disse ændringer tilbage i webbrowseren.\nMere information er tilgængelig i tekstredigeringsdokumentationen."
 },
 "nplurals=2; plural=(n != 1);");
