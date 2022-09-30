@@ -24,25 +24,24 @@ namespace OCA\FilesTextEditor\Tests;
 
 use Test\TestCase;
 
-class SyntaxModeTest extends TestCase
-{
-    protected function setUp(): void {
-        parent::setUp();
-    }
+class SyntaxModeTest extends TestCase {
+	protected function setUp(): void {
+		parent::setUp();
+	}
 
-    public function testJsSyntax() {
-        /*
-        *   Make sure that the SyntaxMode.js file
-        *   has a loader for every defined filetype.
-        *   filetype["bat"] = "batchfile"; -> loaders["batchfile"] = ...
-        */
-        $jsContent = file_get_contents('../js/SyntaxMode.js');
-        preg_match_all('/^(?!\/\/.*$)filetype\[.*?\].*?=.*?"(.*?)"/m', $jsContent, $matches);
+	public function testJsSyntax() {
+		/*
+		*   Make sure that the SyntaxMode.js file
+		*   has a loader for every defined filetype.
+		*   filetype["bat"] = "batchfile"; -> loaders["batchfile"] = ...
+		*/
+		$jsContent = file_get_contents('../js/SyntaxMode.js');
+		preg_match_all('/^(?!\/\/.*$)filetype\[.*?\].*?=.*?"(.*?)"/m', $jsContent, $matches);
 
-        $fileTypes = $matches[1];
-        foreach ($fileTypes as $fileType) {
-            $loaderDefined = preg_match('/loaders\["' . $fileType . '"\]/', $jsContent);
-            $this->assertSame($loaderDefined, 1);
-        }
-    }
+		$fileTypes = $matches[1];
+		foreach ($fileTypes as $fileType) {
+			$loaderDefined = preg_match('/loaders\["' . $fileType . '"\]/', $jsContent);
+			$this->assertSame($loaderDefined, 1);
+		}
+	}
 }
