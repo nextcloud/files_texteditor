@@ -22,7 +22,6 @@
 
 namespace OCA\FilesTextEditor\Tests\Controller;
 
-
 use OC\HintException;
 use OCA\FilesTextEditor\Controller\FileHandlingController;
 use OCP\Files\File;
@@ -35,7 +34,6 @@ use OCP\Lock\LockedException;
 use Test\TestCase;
 
 class FileHandlingControllerTest extends TestCase {
-
 	/** @var FileHandlingController */
 	protected $controller;
 
@@ -63,7 +61,7 @@ class FileHandlingControllerTest extends TestCase {
 		$this->userFolderMock = $this->createMock(Folder::class);
 
 		$this->l10nMock->expects($this->any())->method('t')->willReturnCallback(
-			function($message) {
+			function ($message) {
 				return $message;
 			}
 		);
@@ -211,7 +209,6 @@ class FileHandlingControllerTest extends TestCase {
 			$this->assertArrayHasKey('message', $data);
 			$this->assertSame($expectedMessage, $data['message']);
 		}
-
 	}
 
 	public function testFileTooBig() {
@@ -230,7 +227,7 @@ class FileHandlingControllerTest extends TestCase {
 	}
 
 	public function dataTestSave() {
-		return array (
+		return array(
 			array('/test.txt', 'file content', 65638643, 65638643, true, 200, ''),
 			array('', 'file content', 65638643, 65638643, true, 400, 'File path not supplied'),
 			array('/test.txt', 'file content', '', 65638643, true, 400, 'File mtime not supplied'),
@@ -239,5 +236,4 @@ class FileHandlingControllerTest extends TestCase {
 			array('/test.txt', 'file content', 65638643, 65638643, false, 400, 'Insufficient permissions'),
 		);
 	}
-
 }

@@ -36,7 +36,6 @@ use OCP\IRequest;
 use OCP\Lock\LockedException;
 
 class FileHandlingController extends Controller {
-
 	/** @var IL10N */
 	private $l;
 
@@ -145,7 +144,6 @@ class FileHandlingController extends Controller {
 	public function save($path, $filecontents, $mtime) {
 		try {
 			if ($path !== '' && (is_int($mtime) && $mtime > 0)) {
-
 				/** @var File $file */
 				$file = $this->userFolder->get($path);
 

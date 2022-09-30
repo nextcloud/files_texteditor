@@ -7,3 +7,5 @@ node_modules
 build
 
 /vendor/
+
+.php-cs-fixer.cache
