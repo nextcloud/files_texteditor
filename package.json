@@ -5,7 +5,9 @@
 	"scripts": {
 		"dev": "NODE_ENV=development webpack",
 		"watch": "NODE_ENV=development webpack --progress --watch",
-		"build": "NODE_ENV=production webpack --progress"
+		"build": "NODE_ENV=production webpack --progress",
+		"sass": "sass --load-path css css/",
+		"sass:watch": "sass --watch --load-path css css/"
 	},
 	"browserslist": [
 		"extends @nextcloud/browserslist-config"
@@ -25,6 +27,7 @@
 		"escape-html": "^1.0.3",
 		"file-loader": "^6.2.0",
 		"promise-loader": "^1.0.0",
+		"sass": "^1.55.0",
 		"style-loader": "^3.3.1",
 		"webpack": "^5.74.0",
 		"webpack-cli": "^4.10.0",

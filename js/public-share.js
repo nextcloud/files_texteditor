@@ -1,4 +1,5 @@
-import marked from 'marked'
+import { marked } from 'marked';
+
 
 // FIXME: Hack for single public file view since it is not attached to the fileslist
 $(document).ready(function(){

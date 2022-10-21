@@ -1,0 +1,241 @@
+#editor_controls {
+  background-color: white;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3000; /* because the top navigation is 2000 */
+  transition: top 0.5s;
+}
+
+.ace-clouds .ace_marker-layer .ace_active-line {
+  background-color: #f8f8f8 !important;
+}
+
+#filestexteditor div.ace_gutter {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  opacity: 0.2;
+  background-color: transparent;
+}
+
+#filestexteditor {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#editor_wrap {
+  box-sizing: border-box;
+  padding-top: 46px;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transition: padding-top 0.5s;
+}
+
+#editor_container {
+  transition: width 0.5s, top 0.5s, height 0.5s, left 0.5s;
+  position: fixed;
+  top: 6%;
+  left: 15%;
+  width: 70%;
+  height: 88%;
+  z-index: 9999;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: var(--border-radius-large);
+  box-sizing: border-box;
+}
+
+#editor_container #filestexteditor,
+#editor_container #preview_wrap {
+  transition: width 0.5s;
+}
+
+#editor_container.hasPreview {
+  transition: width 0.5s, top 0.5s, height 0.5s, left 0.5s;
+  width: 100%;
+  height: calc(100% - 45px);
+  top: 45px;
+  left: 0;
+  border: none;
+  border-radius: 0;
+}
+
+#editor_container.hasPreview #preview_wrap {
+  width: 50%;
+}
+
+#editor_container.hasPreview #filestexteditor {
+  width: 50%;
+}
+
+#editor_container.hasPreview.onlyPreview #filestexteditor {
+  width: 0;
+}
+
+#editor_container.hasPreview.onlyPreview #preview_wrap,
+#editor_container.hasPreview.onlyPreview #preview {
+  width: 100vw;
+}
+
+#editor_container.hasPreview #editor_wrap {
+  padding-top: 46px; /** controls */
+}
+
+#preview_wrap {
+  box-sizing: border-box;
+  overflow: auto;
+  height: 100%;
+  width: 0;
+  right: 0;
+  position: absolute;
+  top: 0;
+  padding-top: 46px; /** controls */
+}
+
+#editor_container #preview {
+  transition: width 0.5s;
+  width: 50vw;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 0 15px 15px;
+  height: 100%;
+  color: #252525;
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  #editor_container {
+    width: 100%;
+    height: calc(100% - 45px);
+    top: 45px;
+    left: 0;
+    border: none;
+    border-radius: 0;
+  }
+  #editor_wrap {
+    padding-top: 46px; /** controls */
+  }
+  #editor_container.hasPreview:not(.onlyPreview) #preview_wrap {
+    width: 0;
+  }
+  #editor_container.hasPreview #filestexteditor {
+    width: 100%;
+  }
+  #preview_editor_controls button:nth-child(2) {
+    display: none;
+  }
+  #editor_container #preview {
+    width: 100vw;
+  }
+}
+#editor_close {
+  float: right;
+  width: 34px;
+  border: none;
+  background-color: transparent;
+  padding: 22px !important;
+  margin: 0 !important;
+  border-radius: 0;
+  right: 0;
+  opacity: 0.3;
+}
+
+#editor_close:hover {
+  background-color: #ddd;
+}
+
+#editorcontrols > button {
+  height: 30px !important;
+  margin-top: 7px;
+}
+
+#editor_controls small.filename {
+  float: left;
+  color: #555;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: bolder;
+  text-overflow: ellipsis;
+  padding: 12px 0 0 14px;
+  max-width: 218px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#editor_controls small.saving-message {
+  color: #ccc;
+  font-family: inherit;
+  font-size: 90%;
+  padding: 13px 0 13px 17px;
+  overflow: hidden;
+  display: inline-block;
+  padding: 13px 0 0 17px;
+}
+
+#editor_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 3001;
+  -moz-opacity: 0.85;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+
+small.unsaved-star {
+  position: absolute;
+  padding: 9px 0 0 4px;
+  display: inline-block;
+  float: left;
+}
+
+#sidebar_editor .ace_gutter {
+  display: none;
+}
+
+#sidebar_editor .ace_scrollbar.ace_scrollbar-h {
+  display: none;
+}
+
+#preview_editor_controls {
+  float: right;
+}
+
+#preview_editor_controls button {
+  height: 42px;
+  width: 42px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  margin: 0;
+  margin-top: 2px;
+  border-radius: 0;
+  border-left-width: 0;
+}
+
+#preview_editor_controls button:hover,
+#preview_editor_controls button.active {
+  background-color: #eee;
+  border-left-width: 1px;
+}
+
+#preview_editor_controls button:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-left-width: 1px;
+}
+
+#preview_editor_controls button:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/*# sourceMappingURL=style.css.map */

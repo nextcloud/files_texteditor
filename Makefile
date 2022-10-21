@@ -1,6 +1,9 @@
-all: build/editor.js
+all: sass build/editor.js
 
 sources=$(wildcard js/*.js) $(wildcard js/*/*.js) babel.config.js webpack.config.js
+
+sass:
+	npm run sass
 
 .PHONY: watch
 watch: node_modules

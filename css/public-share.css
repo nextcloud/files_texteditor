@@ -1,0 +1,82 @@
+.preview.formatted-text {
+  max-width: 810px;
+  padding: 0px 20px !important;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 1.6em;
+  min-height: 440px;
+  color: #333;
+  text-align: left;
+  margin-bottom: 170px !important;
+}
+.preview.formatted-text h1,
+.preview.formatted-text h2,
+.preview.formatted-text h3 {
+  margin-top: 1em;
+  word-wrap: break-word;
+}
+.preview.formatted-text h1 {
+  line-height: 1.1em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 3em;
+}
+.preview.formatted-text h2 {
+  line-height: 1.1em;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+.preview.formatted-text h3 {
+  line-height: 1.1em;
+  margin-bottom: 0.6em;
+  font-size: 1.4em;
+}
+.preview.formatted-text p,
+.preview.formatted-text ul,
+.preview.formatted-text ol,
+.preview.formatted-text pre {
+  line-height: 1.45em;
+}
+.preview.formatted-text p,
+.preview.formatted-text details {
+  margin-bottom: 17.6px;
+}
+.preview.formatted-text ul,
+.preview.formatted-text ol {
+  padding-left: 25px;
+}
+.preview.formatted-text ul {
+  list-style-type: disc;
+}
+.preview.formatted-text ul ul {
+  list-style-type: circle;
+}
+.preview.formatted-text a {
+  color: #448ac9;
+  text-decoration: none;
+}
+.preview.formatted-text a:hover,
+.preview.formatted-text a:focus,
+.preview.formatted-text a:active {
+  text-decoration: underline;
+}
+.preview.formatted-text em {
+  opacity: 1;
+  font-style: italic;
+}
+.preview.formatted-text code {
+  background-color: rgb(242, 242, 242);
+  border-radius: 3px;
+  padding: 5px 12px;
+  display: block;
+  white-space: pre;
+  overflow: auto;
+}
+
+/* hide image preview during loading or if it renders fine */
+.icon-loading .text-preview,
+.preview .text-preview:not(.default-overridden) {
+  display: none !important;
+}
+
+/*# sourceMappingURL=public-share.css.map */
