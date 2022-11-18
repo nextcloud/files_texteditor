@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.15.0
+
+- Compatibility with Nextcloud 24/25
+- Dependency updates
+
 ## 2.14.0
 
 - Compatibility with Nextcloud 22
