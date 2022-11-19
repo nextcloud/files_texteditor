@@ -23,7 +23,7 @@
 		"@nextcloud/browserslist-config": "^2.3.0",
 		"babel-loader": "^8.2.5",
 		"clean-webpack-plugin": "^4.0.0",
-		"css-loader": "^6.7.1",
+		"css-loader": "^6.7.2",
 		"escape-html": "^1.0.3",
 		"file-loader": "^6.2.0",
 		"promise-loader": "^1.0.0",
