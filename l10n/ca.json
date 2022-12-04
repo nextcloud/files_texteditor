@@ -4,9 +4,9 @@
     "Failed!" : "S'ha produït un error!",
     "Saved" : "S'ha desat",
     "There was a problem saving your changes. Click to resume editing." : "Hi ha hagut un problema en desar els canvis. Feu clic per a reprendre l'edició.",
-    "Edit in plain text editor" : "Edita amb l'editor de text sense format",
+    "Edit in plain text editor" : "Edició amb l'editor de text sense format",
     "An error occurred!" : "S'ha produït un error!",
-    "Edit" : "Editor",
+    "Edit" : "Edició",
     "Mixed" : "Visualització mixta",
     "Preview" : "Previsualització",
     "New text file" : "Fitxer de text nou",
@@ -27,7 +27,7 @@
     "You are not authorized to open this share" : "No teniu autorització per a obrir aquest element compartit",
     "Invalid range request" : "La sol·licitud d’interval no és vàlida",
     "Plain text editor" : "Editor de text sense format",
-    "Open, save and edit text files" : "Obriu, modifiqueu i deseu fitxers de text",
-    "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Aquesta aplicació permet als usuaris de Nextcloud obrir, desar i editar fitxers de text al navegador web. Si està activada, apareix una entrada anomenada \"Fitxer de text\" al menú \"Nou\" del botó a la part superior del navegador web. Quan hi feu clic, s'obrirà un fitxer de text nou al navegador i el fitxer es podrà desar al directori actual de Nextcloud. A més, quan es faci clic a un fitxer de text al navegador web, s’obrirà i es podrà editar. Si els privilegis ho permeten, un usuari també pot editar fitxers compartits i desar aquests canvis al navegador web.\nPodeu trobar més informació a la documentació de l’editor de text."
+    "Open, save and edit text files" : "Obriu, deseu i editeu fitxers de text",
+    "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Aquesta aplicació habilita als usuaris de Nextcloud obrir, desar i editar fitxers de text al navegador web. Si està activada, apareix una entrada anomenada \"Fitxer de text\" al menú \"Nou\" del botó a la part superior del navegador web. Quan hi feu clic, s'obrirà un fitxer de text nou al navegador i el fitxer es podrà desar al directori actual de Nextcloud. A més, quan es faci clic a un fitxer de text al navegador web, s’obrirà i es podrà editar. Si els privilegis ho permeten, un usuari també pot editar fitxers compartits i desar aquests canvis al navegador web.\nPodeu trobar més informació a la documentació de l’editor de text."
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
