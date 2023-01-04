@@ -5,7 +5,7 @@ OC.L10N.register(
     "Saved!" : "Gespeichert!",
     "Failed!" : "Fehlgeschlagen!",
     "Saved" : "Gespeichert",
-    "There was a problem saving your changes. Click to resume editing." : "Es gab ein Problem beim Speichern deiner Änderungen. Klicken um zur Bearbeitung zurückzukehren.",
+    "There was a problem saving your changes. Click to resume editing." : "Es gab ein Problem beim Speichern deiner Änderungen. Klicken, um zur Bearbeitung zurückzukehren.",
     "Edit in plain text editor" : "Bearbeiten im Nur-Text-Editor",
     "An error occurred!" : "Es ist ein Fehler aufgetreten!",
     "Edit" : "Bearbeiten",
