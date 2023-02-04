@@ -27,7 +27,7 @@
 		"escape-html": "^1.0.3",
 		"file-loader": "^6.2.0",
 		"promise-loader": "^1.0.0",
-		"sass": "^1.57.1",
+		"sass": "^1.58.0",
 		"style-loader": "^3.3.1",
 		"webpack": "^5.75.0",
 		"webpack-cli": "^4.10.0",
