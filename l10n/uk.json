@@ -23,7 +23,7 @@
     "Insufficient permissions." : "Недостатньо прав.",
     "File path not supplied." : "Шлях до файлу не зазначено.",
     "File mtime not supplied." : "Не зазначено час зміни файлу",
-    "Share not found" : "Частку не знайдено",
+    "Share not found" : "Спільний ресурс не знайдено",
     "You are not authorized to open this share" : "Недостатньо прав для доступу до спільного ресурсу",
     "Invalid range request" : "Недійсний діапазон запиту",
     "Plain text editor" : "Редактор текстів без форматування",
