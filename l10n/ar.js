@@ -22,7 +22,7 @@ OC.L10N.register(
     "You cannot write to a folder." : "لا يمكنك الكتابة إلى المجلد.",
     "Cannot save file as it has been modified since opening." : "لا يمكن حفظ الملف لأنه تم تعديله منذ فتحه.",
     "Could not write to file." : "لا يمكن الكتابة إلى الملف.",
-    "Insufficient permissions." : "أذونات غير كافية.",
+    "Insufficient permissions." : "الصلاحيات غير كافية.",
     "File path not supplied." : "مسار الملف غير مزود.",
     "File mtime not supplied." : "ملف mtime غير مزود.",
     "Share not found" : "مشاركة غير موجودة",
