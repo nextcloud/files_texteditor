@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving …" : "S'està desant...",
+    "Saving …" : "S'està desant…",
     "Saved!" : "S'ha desat!",
     "Failed!" : "S'ha produït un error!",
     "Saved" : "S'ha desat",
