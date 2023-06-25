@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Saving …" : "Gardando…",
     "Saved!" : "Gardado!",
+    "Failed!" : "Fallou!",
     "Saved" : "Gardado",
     "There was a problem saving your changes. Click to resume editing." : "Xurdiu un problema ao gardar os cambios. Prema para retomar a edición.",
     "Edit in plain text editor" : "Editar nun editor de texto simple",
