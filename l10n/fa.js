@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving …" : "ذخیره کردن …",
     "Saved!" : "ذخیره!",
     "Saved" : "ذخیره شد",
     "There was a problem saving your changes. Click to resume editing." : "مشکلی در زمان ذخیره‌سازی تغییرات شما وجود داشت. برای ادامه ویرایش کلیک کنید.",
