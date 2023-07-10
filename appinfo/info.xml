@@ -16,6 +16,6 @@ More information is available in the text editor documentation.
 	<bugs>https://github.com/nextcloud/files_texteditor/issues</bugs>
 	<repository type="git">https://github.com/nextcloud/files_texteditor.git</repository>
 	<dependencies>
-		<nextcloud min-version="20" max-version="26" />
+		<nextcloud min-version="20" max-version="27" />
 	</dependencies>
 </info>
