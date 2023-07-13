@@ -1,7 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
-    "Saving …" : "保存中...",
+    "Saving …" : "保存中……",
     "Saved!" : "已保存！",
     "Failed!" : "失败了！",
     "Saved" : "已保存",
@@ -24,7 +24,7 @@ OC.L10N.register(
     "Could not write to file." : "无法写入到文件。",
     "Insufficient permissions." : "权限不足。",
     "File path not supplied." : "未提供文件路径。",
-    "File mtime not supplied." : "未提供文件 mtime。",
+    "File mtime not supplied." : "未提供文件mtime。",
     "Share not found" : "未找到共享",
     "You are not authorized to open this share" : "您没有权限访问这个共享",
     "Invalid range request" : "无效的范围请求",
