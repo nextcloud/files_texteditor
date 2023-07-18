@@ -55,10 +55,11 @@ class FileHandlingController extends Controller {
 	 * @param Folder $userFolder
 	 */
 	public function __construct($AppName,
-								IRequest $request,
-								IL10N $l10n,
-								ILogger $logger,
-								Folder $userFolder) {
+		IRequest $request,
+		IL10N $l10n,
+		ILogger $logger,
+		Folder $userFolder
+	) {
 		parent::__construct($AppName, $request);
 		$this->l = $l10n;
 		$this->logger = $logger;
