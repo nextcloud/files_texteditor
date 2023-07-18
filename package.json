@@ -34,7 +34,7 @@
     "webpack-merge": "^5.9.0"
   },
   "dependencies": {
-    "@nextcloud/router": "^2.0.1",
+    "@nextcloud/router": "^2.1.2",
     "brace": "^0.11.1",
     "marked": "^4.2.12"
   }
