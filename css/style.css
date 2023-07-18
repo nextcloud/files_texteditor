@@ -145,6 +145,11 @@
   opacity: 0.3;
 }
 
+/* since the editor itself doesn't have dark mode atm, always use the light mode icon */
+#editor_close.icon-close {
+  background-image: var(--icon-close-white);
+}
+
 #editor_close:hover {
   background-color: #ddd;
 }
