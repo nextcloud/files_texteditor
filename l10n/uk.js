@@ -8,7 +8,7 @@ OC.L10N.register(
     "There was a problem saving your changes. Click to resume editing." : "Трапилася проблема при збереженні змін. Натисніть, щоб продовжити редагування.",
     "Edit in plain text editor" : "Редагувати у текстовому редакторі без форматування",
     "An error occurred!" : "Сталася помилка!",
-    "Edit" : "Редашувати",
+    "Edit" : "Редагувати",
     "Mixed" : "Змішаний",
     "Preview" : "Перегляд",
     "New text file" : "Новий текстовий файл",
