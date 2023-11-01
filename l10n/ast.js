@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Saving …" : "Guardando…",
     "An error occurred!" : "¡Prodúxose un error!",
+    "Edit" : "Editar",
     "The file is locked." : "El ficheru ta bloquiáu.",
     "An internal server error occurred." : "Prodúxose un error internu del sirvidor."
 },
