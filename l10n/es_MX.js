@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving …" : "Guardando ...",
     "Saved!" : "¡Guardado!",
     "Saved" : "Guardado",
     "There was a problem saving your changes. Click to resume editing." : "Se presentó un problema al guardar sus cambios. Por favor haz click para continuar editando.",
