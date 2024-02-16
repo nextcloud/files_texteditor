@@ -18,6 +18,7 @@ OC.L10N.register(
     "An internal server error occurred." : "Se presentó un error interno en el servidor. ",
     "Share not found" : "No se encontró el elemento compartido",
     "You are not authorized to open this share" : "No estas autorizado para abrir este elemento compartido",
-    "Invalid range request" : "Rango de solicitud invalido"
+    "Invalid range request" : "Rango de solicitud invalido",
+    "Open, save and edit text files" : "Abrir, guardar y editar archivos de texto"
 },
 "nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");
