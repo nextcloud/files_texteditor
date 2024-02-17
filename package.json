@@ -29,7 +29,7 @@
     "promise-loader": "^1.0.0",
     "sass": "^1.70.0",
     "style-loader": "^3.3.4",
-    "webpack": "^5.90.1",
+    "webpack": "^5.90.2",
     "webpack-cli": "^5.1.4",
     "webpack-merge": "^5.10.0"
   },
