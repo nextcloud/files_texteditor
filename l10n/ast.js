@@ -5,6 +5,7 @@ OC.L10N.register(
     "Saved" : "Guardóse",
     "An error occurred!" : "¡Prodúxose un error!",
     "Edit" : "Editar",
+    "New text file.txt" : "ficheru_nuevu.txt",
     "The file is locked." : "El ficheru ta bloquiáu.",
     "An internal server error occurred." : "Prodúxose un error internu del sirvidor."
 },
