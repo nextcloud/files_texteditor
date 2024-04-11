@@ -29,7 +29,6 @@ use OCP\Util;
 
 class LoadFilesScriptsListener implements IEventListener {
 	public function handle(Event $event): void {
-		Util::addStyle('files_texteditor', 'merged');
-		Util::addScript('files_texteditor', '../build/editor');
+		Util::addScript('files_texteditor', 'files_texteditor-main');
 	}
 }
