@@ -1,6 +1,7 @@
 OC.L10N.register(
     "files_texteditor",
     {
+    "Saving …" : "Shábháil …",
     "Saved" : "Shábháil",
     "Edit" : "Cuir in eagar"
 },
