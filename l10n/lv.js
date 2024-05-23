@@ -5,7 +5,7 @@ OC.L10N.register(
     "Saved!" : "Saglabāts!",
     "Saved" : "Saglabāts",
     "An error occurred!" : "Gadījās kļūda!",
-    "Edit" : "Rediģēt",
+    "Edit" : "Labot",
     "Preview" : "Priekšskatīt",
     "New text file.txt" : "Jauna teksta datne.txt"
 },
