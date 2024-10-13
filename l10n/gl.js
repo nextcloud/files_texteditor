@@ -14,7 +14,7 @@ OC.L10N.register(
     "New text file" : "Novo ficheiro de texto",
     "New text file.txt" : "Novo ficheiro de texto ficheiro.txt",
     "You cannot open a folder" : "Vde. non pode abrir un cartafol",
-    "This file is too big to be opened. Please download the file instead." : "O ficheiro é grande de máis para ser aberto. Descargue o ficheiro no canto de abrilo.",
+    "This file is too big to be opened. Please download the file instead." : "O ficheiro é grande de máis para ser aberto. Descargue o ficheiro en troques de abrilo.",
     "Cannot read the file." : "Non é posíbel ler o ficheiro.",
     "Invalid file path supplied." : "Forneceuse unha ruta de ficheiro non válida.",
     "The file is locked." : "O ficheiro está bloqueado.",
