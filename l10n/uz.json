@@ -1,5 +1,7 @@
 { "translations": {
     "Saved!" : "Saved!",
-    "Saved" : "Saved"
+    "Saved" : "Saved",
+    "Edit" : "Tahrirlash",
+    "Preview" : "Ko‘rib chiqish"
 },"pluralForm" :"nplurals=1; plural=0;"
 }
