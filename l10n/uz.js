@@ -2,8 +2,8 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Saqlanmoqda...",
-    "Saved!" : "Saved!",
-    "Saved" : "Saved",
+    "Saved!" : "Saqlandi!",
+    "Saved" : "Saqlandi",
     "Edit" : "Tahrirlash",
     "Preview" : "Ko‘rib chiqish"
 },
