@@ -21,7 +21,7 @@ OC.L10N.register(
     "An internal server error occurred." : "Es ist ein interner Fehler aufgetreten.",
     "You cannot write to a folder." : "Du hast keine Berechtigung zum Schreiben in einen Ordner. ",
     "Cannot save file as it has been modified since opening." : "Die Datei konnte nicht gespeichert werden, weil sie seit dem Öffnen verändert worden ist.",
-    "Could not write to file." : "Konnte Datei nicht schreiben.",
+    "Could not write to file." : "In die Datei konnte nicht geschrieben werden.",
     "Insufficient permissions." : "Nicht ausreichende Berechtigungen.",
     "File path not supplied." : "Dateipfad nicht angegeben.",
     "File mtime not supplied." : "Dateiänderungsdatum nicht angegeben.",
