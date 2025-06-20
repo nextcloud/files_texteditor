@@ -1,5 +1,7 @@
 { "translations": {
+    "Saving …" : "Inahifadhi...",
     "Edit" : "Hariri",
-    "Preview" : "Mwonekano wa awali"
+    "Preview" : "Mwonekano wa awali",
+    "New text file.txt" : "Faili mpya ya maandishi.txt"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
