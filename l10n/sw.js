@@ -2,6 +2,7 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Inahifadhi...",
+    "Saved" : "Imehifadhiwa",
     "Edit" : "Hariri",
     "Preview" : "Mwonekano wa awali",
     "New text file.txt" : "Faili mpya ya maandishi.txt"
