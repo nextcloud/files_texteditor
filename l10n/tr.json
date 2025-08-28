@@ -4,13 +4,13 @@
     "Failed!" : "Kaydedilemedi!",
     "Saved" : "Kaydedildi",
     "There was a problem saving your changes. Click to resume editing." : "Değişiklikleriniz kaydedilirken bir sorun çıktı. Düzenlemeye geri dönmek için tıklayın.",
-    "Edit in plain text editor" : "Düz metin düzenleyicide düzenle",
+    "Edit in plain text editor" : "Düz yazı düzenleyicide düzenle",
     "An error occurred!" : "Bir sorun çıktı!",
     "Edit" : "Düzenle",
     "Mixed" : "Karışık",
     "Preview" : "Ön izleme",
-    "New text file" : "Yeni metin dosyası",
-    "New text file.txt" : "Yeni metin dosyası.txt",
+    "New text file" : "Yeni yazı dosyası",
+    "New text file.txt" : "Yeni yazı dosyası.txt",
     "You cannot open a folder" : "Bir klasör açamazsınız",
     "This file is too big to be opened. Please download the file instead." : "Bu dosya açmak için çok büyük. Bunun yerine lütfen dosyayı indirin.",
     "Cannot read the file." : "Dosya okunamadı.",
@@ -26,8 +26,8 @@
     "Share not found" : "Paylaşım bulunamadı",
     "You are not authorized to open this share" : "Bu paylaşımı açma izniniz yok",
     "Invalid range request" : "Aralık isteği geçersiz",
-    "Plain text editor" : "Düz metin düzenleyici",
-    "Open, save and edit text files" : "Metin dosyalarını açar, kaydeder ve düzenler",
-    "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Bu uygulama, Nextcloud kullanıcılarının metin dosyalarını tarayıcı üzerinde açıp düzenleyebilmesini ve kaydetmesini sağlar. Kullanıma alındığında, tarayıcının üst bölümündeki \"Yeni\" düğmesinde \"Metin dosyası\" seçeneği görüntülenir. Bu seçeneğe tıklandığında tarayıcı içinde yeni bir metin dosyası açılır ve bu dosya geçerli Nextcloud klasörüne kaydedilebilir. Ayrıca tarayıcı içinde bir metin dosyasına tıklandığında dosya açılarak düzenlenebilir. Yeterli izinleri olan bir kullanıcı paylaşılmış dosyaları da tarayıcı üzerinde düzenleyip kaydedebilir.\nAyrıntılı bilgi almak için metin düzenleyici uygulamasının belgelerine bakabilirsiniz."
+    "Plain text editor" : "Düz yazı düzenleyici",
+    "Open, save and edit text files" : "Yazı dosyalarını açar, kaydeder ve düzenler",
+    "This application enables Nextcloud users to open, save and edit text files in the web browser. If enabled, an entry called \"Text file\" in the \"New\" button menu at the top of the web browser appears. When clicked, a new text file opens in the browser and the file can be saved into the current Nextcloud directory. Further, when a text file is clicked in the web browser, it will be opened and editable. If the privileges allow, a user can also edit shared files and save these changes back into the web browser.\nMore information is available in the text editor documentation." : "Bu uygulama, Nextcloud kullanıcılarının yazı dosyalarını tarayıcı üzerinde açıp düzenleyebilmesini ve kaydetmesini sağlar. Kullanıma alındığında, tarayıcının üst bölümündeki \"Yeni\" düğmesinde \"Yazı dosyası\" seçeneği görüntülenir. Bu seçeneğe tıklandığında tarayıcı içinde yeni bir yazı dosyası açılır ve bu dosya geçerli Nextcloud klasörüne kaydedilebilir. Ayrıca tarayıcı içinde bir yazı dosyasına tıklandığında dosya açılarak düzenlenebilir. Yeterli izinleri olan bir kullanıcı paylaşılmış dosyaları da tarayıcı üzerinde düzenleyip kaydedebilir.\nAyrıntılı bilgi almak için yazı düzenleyici uygulamasının belgelerine bakabilirsiniz."
 },"pluralForm" :"nplurals=2; plural=(n > 1);"
 }
