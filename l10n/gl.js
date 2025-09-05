@@ -26,7 +26,7 @@ OC.L10N.register(
     "File path not supplied." : "Non forneceu unha ruta ao ficheiro.",
     "File mtime not supplied." : "Non forneceu o ficheiro mtime.",
     "Share not found" : "Non se atopou a compartición",
-    "You are not authorized to open this share" : "Non está autorizado a abrir esta compartición",
+    "You are not authorized to open this share" : "Vde. non está autorizado a abrir esta compartición",
     "Invalid range request" : "Solicitude de intervalo incorrecta",
     "Plain text editor" : "Editor de texto simple",
     "Open, save and edit text files" : "Abrir, gardar e editar ficheiros de texto",
