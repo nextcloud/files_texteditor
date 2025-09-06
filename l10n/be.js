@@ -5,6 +5,7 @@ OC.L10N.register(
     "Saved" : "Захавана",
     "Edit" : "Рэдагаваць",
     "Preview" : "Перадпрагляд",
+    "New text file.txt" : "Новы тэкставы файл.txt",
     "You cannot open a folder" : "Вы не можаце адкрыць папку",
     "This file is too big to be opened. Please download the file instead." : "Гэты файл занадта вялікі, каб яго можна было адкрыць. Замест гэтага спампуйце файл.",
     "Cannot read the file." : "Немагчыма прачытаць файл.",
