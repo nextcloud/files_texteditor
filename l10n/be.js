@@ -2,6 +2,7 @@ OC.L10N.register(
     "files_texteditor",
     {
     "Saving …" : "Захаванне …",
+    "Saved!" : "Захавана!",
     "Saved" : "Захавана",
     "Edit" : "Рэдагаваць",
     "Preview" : "Перадпрагляд",
